@@ -1,0 +1,1 @@
+Folder that contains all of the image files in the learning content.
