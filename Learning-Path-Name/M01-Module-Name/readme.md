@@ -1,0 +1,1 @@
+Folder that contains the core learning content markdown files.
