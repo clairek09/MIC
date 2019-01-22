@@ -1,1 +1,1 @@
-Folder that contains other type of download files, lab files, lab informatoin, etc.
+Folder that contains other type of items, for example, badge or trophy, download files, lab files, lab informatoin, etc.
