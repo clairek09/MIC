@@ -1,0 +1,1 @@
+Folder that contains other type of download files, lab files, lab informatoin, etc.
