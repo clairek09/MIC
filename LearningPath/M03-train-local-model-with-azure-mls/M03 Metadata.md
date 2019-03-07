@@ -1,13 +1,11 @@
-###### Enter the module Title
-```
-Module title: Course Introduction
-```
-
 
 ###### Enter the module workitem id
 ```
 Module workitem: 786
 ```
+
+---
+
 
 ###### Enter the Target folder in github
 ```
