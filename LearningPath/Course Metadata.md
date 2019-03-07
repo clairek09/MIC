@@ -27,11 +27,3 @@ RepositoryName:"learn-pr"
 ```
 BranchName:"wwl-playground"
 ```
-
----
-
-#### TargetFolder	
-###### TargetFolder
-```
-TargetFolder:"learn-pr/azure/Traina-local-ML-model-with-Azure-Machine-Learning-service"
-```
