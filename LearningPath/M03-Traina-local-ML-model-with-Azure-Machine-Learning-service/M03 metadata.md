@@ -9,5 +9,5 @@ Module workitem: 786
 ```
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/azure/M02-use-a-computer
+Target folder in github: learn-pr/azure/M03-Traina-local-ML-model-with-Azure-Machine-Learning-service
 ```
