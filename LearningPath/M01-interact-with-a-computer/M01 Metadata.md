@@ -5,7 +5,7 @@ Module title: Demo-Interact with a Computer
 ```
 ###### Enter the module workitem id
 ```
-Module workitem: 895
+Module workitem: 888
 ```
 ###### Enter the Target folder in github
 ```
