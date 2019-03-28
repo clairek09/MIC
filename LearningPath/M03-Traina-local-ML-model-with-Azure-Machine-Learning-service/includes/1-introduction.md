@@ -1,5 +1,5 @@
 
-Once the workspace is created, you can start to build and train models.  (updated by Star 2019/3/27 09:50)
+Once the workspace is created, you can start to build and train models.  (updated by Star 2019/3/28 10:07)
 
 Training a machine learning model could be as easy as loading the data and running one line of code from packages like Scikit-Learn, but most of the time the process requires more. Before you apply different models, you need to understand how the dataset looks and apply the best model.
 
