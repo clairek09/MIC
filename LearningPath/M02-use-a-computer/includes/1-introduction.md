@@ -17,3 +17,24 @@ Keep the following **guiding questions** in mind as you complete this lesson. Se
 3.  How do files and folders help you organize things on your computer?
 4.  What does the right-click feature of an operating system help you do?
 5.  What parts of your operating system can you customize to your preferences?
+
+
+##        quiz    title: Check your knowledge (** markdown type **)(can be ignored )
+this is still the part of quiz title 
+this is still the part of quiz title 
+---
+what is an operation system?
+>>An operating system is the most important ___________ on the computer.<<
+
+( ) hardware component {{incorrect choice}}
+(x) software {{correct choice}}
+( ) peripheral device {{incorrect choice}}
+
+---
+
+>>What happens when you select the Minimize (-) button on / at the top of an application window?<<
+
+( ) The window is closed {{incorrect choice}}
+(x) The window is temporarily hidden {{correct choice}}
+( ) The window is opened in full screen {{incorrect choice}}
+( ) The window is moved to the side of the screen {{incorrect choice}}
