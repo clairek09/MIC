@@ -1,8 +1,4 @@
-		
-###### Enter the module Title
-```
-Module title: Demo-Interact with a Computer
-```
+
 ###### Enter the module workitem id
 ```
 Module workitem: 888
