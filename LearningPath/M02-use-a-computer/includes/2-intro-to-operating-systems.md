@@ -14,3 +14,24 @@ There are many operating systems provided by many companies in the world. Each o
 
 #### Video: What is an Operating System?
 > [!VIDEO https://www.youtube.com/embed/R1y4PJHB72E]
+
+
+##        quiz    title: Check your knowledge (** markdown type **)(can be ignored )
+this is still the part of quiz title 
+this is still the part of quiz title 
+---
+what is an operation system?
+>>An operating system is the most important ___________ on the computer.<<
+
+( ) hardware component {{incorrect choice}}
+(x) software {{correct choice}}
+( ) peripheral device {{incorrect choice}}
+
+---
+
+>>What happens when you select the Minimize (-) button on / at the top of an application window?<<
+
+( ) The window is closed {{incorrect choice}}
+(x) The window is temporarily hidden {{correct choice}}
+( ) The window is opened in full screen {{incorrect choice}}
+( ) The window is moved to the side of the screen {{incorrect choice}}
