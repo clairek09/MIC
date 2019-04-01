@@ -1,6 +1,6 @@
 ###### Enter the module Title
 ```
-Module title: Demo-Use a Computer
+Module title:Traina-local-ML-model-with-Azure-Machine-Learning-service
 ```
 ###### Enter the module workitem id
 ```
