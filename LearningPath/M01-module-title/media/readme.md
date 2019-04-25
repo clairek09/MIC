@@ -1,0 +1,1 @@
+Please upload the module graphics to this *media* folder
