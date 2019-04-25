@@ -1,13 +1,13 @@
 		
 ###### Enter the module Title
 ```
-Module title: Demo-Interact with a Computer
+Module title: 
 ```
 ###### Enter the module workitem id
 ```
-Module workitem: 895
+Module workitem: 
 ```
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/azure/M01-interact-with-a-computer
+Target folder in github: learn-pr/azure/xxx
 ```
