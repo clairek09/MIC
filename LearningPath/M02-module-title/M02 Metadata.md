@@ -1,7 +1,7 @@
 		
 ###### Enter the module Title
 ```
-Module title: Demo-Use a Computer
+Module title: 
 ```
 ###### Enter the module workitem id
 ```
