@@ -1,0 +1,125 @@
+﻿1
+00:00:00,000 --> 00:00:02,655
+>> Computers are now used
+everywhere around us.
+
+2
+00:00:02,655 --> 00:00:04,450
+You will find them
+at work, in stores,
+
+3
+00:00:04,450 --> 00:00:06,005
+in hospitals, and at home.
+
+4
+00:00:06,005 --> 00:00:08,820
+A computer is an electronic
+machine that can process,
+
+5
+00:00:08,820 --> 00:00:10,320
+store, and retrieve
+different types
+
+6
+00:00:10,320 --> 00:00:11,865
+of data and information.
+
+7
+00:00:11,865 --> 00:00:13,620
+You can use the
+computer to perform
+
+8
+00:00:13,620 --> 00:00:16,120
+many tasks such as
+writing documents,
+
+9
+00:00:16,120 --> 00:00:17,970
+playing games, sending emails,
+
+10
+00:00:17,970 --> 00:00:19,510
+learning new skills, browsing
+
+11
+00:00:19,510 --> 00:00:21,155
+the web, and watching movies.
+
+12
+00:00:21,155 --> 00:00:22,700
+All computers consists of
+
+13
+00:00:22,700 --> 00:00:25,565
+two main parts,
+hardware and software.
+
+14
+00:00:25,565 --> 00:00:28,740
+Software refers to the
+intangible parts of a computer,
+
+15
+00:00:28,740 --> 00:00:30,400
+the parts that can't be touched.
+
+16
+00:00:30,400 --> 00:00:32,000
+This includes
+the instructions that
+
+17
+00:00:32,000 --> 00:00:33,765
+control how the
+hardware functions,
+
+18
+00:00:33,765 --> 00:00:35,740
+the applications running
+on the computer,
+
+19
+00:00:35,740 --> 00:00:37,620
+and the data stored
+on the computer.
+
+20
+00:00:37,620 --> 00:00:39,320
+Hardware includes all of
+
+21
+00:00:39,320 --> 00:00:41,300
+the physical parts that
+make up a computer
+
+22
+00:00:41,300 --> 00:00:42,500
+such as the monitor and
+
+23
+00:00:42,500 --> 00:00:45,005
+the central processing unit,
+that keeps data moving.
+
+24
+00:00:45,005 --> 00:00:46,640
+There are various types
+of computers
+
+25
+00:00:46,640 --> 00:00:47,780
+that you may encounter,
+
+26
+00:00:47,780 --> 00:00:50,210
+but they all share
+the same fundamental purpose
+
+27
+00:00:50,210 --> 00:00:53,130
+of processing and
+storing information.
+
