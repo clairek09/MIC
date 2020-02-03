@@ -7,7 +7,7 @@ RepositoryName: learn-sandbox-pr
 #### BranchName	
 ###### BranchName  release-wwl-test /NEW-digital-literacy
 ```
-BranchName: release-wwl-test
+BranchName: master
 ```
 
 ---
