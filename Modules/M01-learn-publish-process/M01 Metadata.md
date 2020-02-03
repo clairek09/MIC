@@ -8,7 +8,7 @@ RepositoryName:learn-sandbox-pr
 #### BranchName	
 ###### BranchName release-wwl-test NEW-digital-literacy
 ```
-BranchName:RELEASE-wwl-pub2learn
+BranchName: master
 ```
 
 ###### Enter the module workitem id, click [here](https://microsoftdigitallearning.visualstudio.com/Courseware/_workitems/edit/4145) to go to view/update
