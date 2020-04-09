@@ -1,7 +1,7 @@
 ﻿#### RepositoryName	
 ###### RepositoryName  learn-sandbox-pr /learn-pr
 ```
-RepositoryName: learn-sandbox-pr
+RepositoryName: learn-pr
 ```
 ---
 #### BranchName	
