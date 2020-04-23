@@ -1,11 +1,12 @@
 ﻿#### RepositoryName	
-###### RepositoryName  learn-sandbox-pr /learn-pr
+###### RepositoryName
 ```
 RepositoryName: learn-pr
 ```
+
 ---
 #### BranchName	
-###### BranchName  release-wwl-test /NEW-digital-literacy
+###### BranchName
 ```
 BranchName: master
 ```
@@ -16,7 +17,7 @@ BranchName: master
 learnPath workitem: 4107
 ```
 ---
-#### Enter the Target folder in github  sample-module-peng  
+#### Enter the Target folder in github
 ```
-Target folder in github:   sample-module-peng 
+Target folder in github: sample-module-peng 
 ```
