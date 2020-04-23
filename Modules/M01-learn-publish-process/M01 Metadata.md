@@ -1,12 +1,12 @@
 #### RepositoryName	
-###### RepositoryName  learn-sandbox-pr learn-pr
+###### RepositoryName
 ```
 RepositoryName:learn-pr
 ```
-
+---
 
 #### BranchName	
-###### BranchName release-wwl-test NEW-digital-literacy
+###### BranchName
 ```
 BranchName: master
 ```
@@ -16,7 +16,7 @@ BranchName: master
 Module workitem: 4145
 ```
 
-###### Enter the Target folder in github  learn-pr/azure/learn-publish-process learn-sandbox-pr/azure1/learn-markdown
+###### Enter the Target folder in github
 ```
 Target folder in github: learn-pr/wwl-azure/learn-publish-process
 ```
