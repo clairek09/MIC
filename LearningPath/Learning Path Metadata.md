@@ -19,5 +19,5 @@ learnPath workitem: 4107
 ---
 #### Enter the Target folder in github
 ```
-Target folder in github: get-started-with-artificial-intelligence-on-azure
+Target folder in github: sample-module
 ```
