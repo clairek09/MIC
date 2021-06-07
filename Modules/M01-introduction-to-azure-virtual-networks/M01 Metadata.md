@@ -17,5 +17,5 @@ Module workitem: 68541
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/introduction-to-azure-virtual-networks
+Target folder in github: learn-pr/wwl-azure/introduction-to-azure-virtual-networks
 ```
