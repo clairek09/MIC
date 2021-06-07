@@ -12,12 +12,12 @@ BranchName: master
 ```
 
 ---
-#### Enter the learnPath workitem id, click [here](https://microsoftdigitallearning.visualstudio.com/Courseware/_workitems/edit/4107) to go
+#### Enter the learnPath workitem id, click [here](https://microsoftdigitallearning.visualstudio.com/Courseware/_workitems/edit/68457) to go
 ```
-learnPath workitem: 4107
+learnPath workitem: 68457
 ```
 ---
 #### Enter the Target folder in github
 ```
-Target folder in github: sample-module
+Target folder in github: designing-implementing-microsoft-azure-networking-solutions-az-700
 ```
