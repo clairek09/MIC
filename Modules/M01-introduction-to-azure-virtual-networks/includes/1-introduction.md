@@ -7,6 +7,7 @@ In this module, you will:
 -	Design and implement cross-VNET connectivity
 -	Design and implement an Azure Virtual Network NAT
 -	Implement virtual network routing
+
 Prerequisites
 -	You should be familiar with basic networking concepts and terminology.
 -	You should be familiar with Azure infrastructure concepts and terminology.
