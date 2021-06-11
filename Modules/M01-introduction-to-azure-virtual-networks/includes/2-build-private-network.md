@@ -57,3 +57,4 @@ You can associate zero or one NSG to each subnet in a virtual network. You can a
 ## Determine a naming convention
 
 As part of your Azure network design, it is important to plan your naming convention for your resources. An effective naming convention composes resource names from important information about each resource. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
+![Azure Naming Convention Piblic IP](../media/compnents-of-an-azure-resrouce-name.png)
