@@ -27,6 +27,7 @@ In addition, you cannot add the following address ranges:
 -	127.0.0.0/8 (Loopback)
 -	169.254.0.0/16 (Link-local)
 -	168.63.129.16/32 (Internal DNS)
+
 Azure assigns resources in a virtual network a private IP address from the address space that you provision. For example, if you deploy a VM in a VNet with address space 10.0.0.0/16, the VM will be assigned a private IP like 10.0.0.4. it is important to note that Azure reserves 5 IP addresses within each subnet. These are x.x.x.0-x.x.x.3 and the last address of the subnet. x.x.x.1-x.x.x.3 is reserved in each subnet for Azure services.
 -	x.x.x.0: Network address
 -	x.x.x.1: Reserved by Azure for the default gateway
