@@ -72,6 +72,7 @@ You can deploy as many virtual networks as you need within each subscription, up
 ##Azure Availability Zones
 An Azure Availability Zone enables you to define unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. Designed to ensure high-availability of your Azure services, the physical separation of Availability Zones within a region protects applications and data from datacenter failures.
  
+![availability-zone](../media/availability-zone.png)
 
 You should consider availability zones when designing your Azure network, and plan for services that support availability zones.
 Azure services that support Availability Zones fall into three categories:
@@ -79,4 +80,3 @@ Azure services that support Availability Zones fall into three categories:
 -	Zone-redundant services: Resources are replicated or distributed across zones automatically. Azure replicates the data across three zones so that a zone failure does not impact its availability.  
 -	Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
-![availability-zone](../media/availability-zone.png)
