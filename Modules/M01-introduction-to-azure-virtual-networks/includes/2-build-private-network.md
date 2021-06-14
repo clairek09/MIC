@@ -80,3 +80,22 @@ Azure services that support Availability Zones fall into three categories:
 -	Zone-redundant services: Resources are replicated or distributed across zones automatically. Azure replicates the data across three zones so that a zone failure does not impact its availability.  
 -	Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
+##Create a Virtual Network in Azure 
+
+You can create an Azure VNet directly through the Azure Portal, by using PowerShell, or the Azure CLI.
+Before you can create a VNet, you must create a resource group. A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group.
+
+**Create a Virtual Network by using the portal**
+Log in to the Azure Portal, and then click Create a resource: 
+
+ ![Create-Resource](../media/Create-Resource.png)
+
+In the search box, enter Virtual Network. Select Virtual Network in the search results.
+ 
+ ![Virtual_Network_in_Azure_Marketplace](../media/Virtual_Network_in_Azure_Marketplace.png)
+
+On the Virtual Network page, select Create. 
+ 
+ ![Create_VNet](../media/Create_VNet.png)
+
+In Create virtual network, enter or select this information in the Basics tab:
