@@ -99,3 +99,9 @@ On the Virtual Network page, select Create.
  ![Create_VNet](../media/Create_VNet.png)
 
 In Create virtual network, enter or select this information in the Basics tab:
+|Tab|Option|Value|
+|---|---|---|
+|Basics|Resrouce Group |ContosoResourceGroup|
+||Name |ManufacturingVnet|
+||Region |(Europe) North Europe|
+|IP Addresses|APv4 Address space |10.30.0.0/16|
