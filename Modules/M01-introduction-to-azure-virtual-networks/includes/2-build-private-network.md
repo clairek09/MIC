@@ -104,4 +104,4 @@ In Create virtual network, enter or select this information in the Basics tab:
 |Basics|Resrouce Group |ContosoResourceGroup|
 ||Name |ManufacturingVnet|
 ||Region |(Europe) North Europe|
-|IP Addresses|APv4 Address space |10.30.0.0/16|
+|IP Addresses|IPv4 Address space |10.30.0.0/16|
