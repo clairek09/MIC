@@ -99,9 +99,55 @@ On the Virtual Network page, select **Create.**
  ![Create_VNet](../media/Create_VNet.png)
 
 In Create virtual network, enter or select this information in the **Basics** tab:
-|Tab|Option|Value|
-|---|---|---|
-|Basics|Resrouce Group |ContosoResourceGroup|
-||Name |ManufacturingVnet|
-||Region |(Europe) North Europe|
-|IP Addresses|IPv4 Address space |10.30.0.0/16|
+
+|**Setting**||**Value**|
+|---|---|
+|**Project details**| |
+|Subscription|Select your subscription |
+|Resource group|Select an existing resource group or Create a new resource group.|
+|**instance details**||
+|Name|Enter a descriptive name for your new VNet.|
+|Region|Select the region closest to you.|
+
+In the IP Addresses tab, you can add IPv4 and IPv6 address spaces, and define IPv4 subnets.
+
+**Address space**
+
+When you set up a virtual network, you define the internal address space in Classless Inter-Domain Routing (CIDR) format. This address space needs to be unique within your subscription and any other networks that you connect to.
+
+Let's assume you choose an address space of 10.0.0.0/24 for your first virtual network. The addresses defined in this address space ranges from 10.0.0.1 - 10.0.0.254. You then create a second virtual network and choose an address space of 10.0.0.0/8. The address in this address space ranges from 10.0.0.1 - 10.255.255.254. Some of the address overlap and can't be used if you plan to connect the two virtual networks together. 
+
+However, you can use 10.0.0.0/16, with addresses ranging from 10.0.0.1 - 10.0.255.254, and 10.1.0.0/16, with addresses ranging from 10.1.0.1 - 10.1.255.254. You can assign these address spaces to your virtual networks because there's no address overlap.
+
+Note
+You can add address spaces after creating the virtual network.
+
+**Subnet**
+Within each virtual network address range, you can create one or more subnets that partition the virtual network's address space. Routing between subnets will then depend on the default traffic routes, or you can define custom routes. Alternatively, you can define one subnet that encompasses all the virtual networks' address ranges.
+
+Note
+Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
+
+ ![Address](../media/Address.png)
+
+In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
+
+**BastionHost**
+
+The Azure Bastion service is a new fully platform-managed PaaS service that you provision inside your virtual network. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines do not need a public IP address.
+
+**Distributed Denial of Service (DDoS) protection**
+
+You can select to enable Standard DDoS protection. Standard DDoS Protection is a plan is a paid service that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost. 
+
+**Firewall**
+
+Azure Firewall is a managed cloud-based network security service that protects your Azure Virtual Network resources.
+
+![VNet_Security](../media/VNet_Security.png)
+
+In the **Review + create** tab, you can define tags, which can help you to organize and manage your Azure resources.
+
+![Review_Create](../media/Review_Create.png)
+
+Click **Create** to create your subnet.
