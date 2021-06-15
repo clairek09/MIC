@@ -33,7 +33,7 @@ If you assign any of the previous address ranges within the address space of a v
 Azure adds default system routes for any Azure capabilities that you enable. Depending on the capability, Azure adds optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. The additional system routes and next hop types that Azure may add when you enable different capabilities are:
 
 |**Source**|**Address prefixs**|**Next hop type**|**Subnet within virtual network that route is added to**|
-|---|---|---|
+|---|---|---|---|
 |Default|Unique to the virtual network, for example: 10.1.0.0/16|VNet peering|All|
 |Virtual network gateway|Prefixes advertised from on-premises via BGP, or configured in the local network gateway |Virtual network gateway|All|
 |Default|multiple|VirtualNetworkServiceEndpoint|Only the subnet a service endpoint is enabled for.|
