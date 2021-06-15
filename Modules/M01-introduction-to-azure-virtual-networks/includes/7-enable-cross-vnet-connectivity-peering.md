@@ -31,6 +31,6 @@ Azure virtual networks can be deployed in a hub-and-spoke topology, with the hub
 
 The following diagram shows a scenario in which hub VNet hosts a VPN gateway that manages traffic to the on-premises network, enabling controlled communication between the on-premises network and the peered Azure VNets.
 
-![service-chaining.png](../media/service-chaining.png.png)
+![service-chaining](../media/service-chaining.png)
 
 
