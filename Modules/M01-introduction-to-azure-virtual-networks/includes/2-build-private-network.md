@@ -128,7 +128,7 @@ Within each virtual network address range, you can create one or more subnets th
  [!NOTE]
 Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
 
- ![Address](../media/Address.png)
+ ![IP_Addresses-VNet-configuration](../media/IP_Addresses-VNet-configuration.png)
 
 In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
 
