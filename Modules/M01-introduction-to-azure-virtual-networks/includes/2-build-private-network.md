@@ -152,3 +152,102 @@ In the **Review + create** tab, you can define tags, which can help you to organ
 ![Review_Create_VNet](../media/Review_Create_VNet.png)
 
 Click **Create** to create your subnet.
+
+##Create a Virtual Network by using Azure PowerShell
+
+If you prefer a command line interface or want to work towards automating your VNet creation, you can use the Azure PowerShell module version 5.4.1 or later.
+
+**Create the resource group**
+
+Before you can create a virtual network, you must create a resource group to host the virtual network. Create a resource group with [New-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.Resources/New-azResourceGroup). This example creates a resource group named **CreateVNetQS-rg** in the **EastUS** location:
+
+```azurepowershell
+$rg = @{
+
+    Name = 'CreateVNetQS-rg'
+
+    Location = 'EastUS'
+
+}
+
+New-AzResourceGroup @rg
+
+```
+
+**Create the virtual network**
+
+Create a virtual network with [New-AzVirtualNetwork](https://docs.microsoft.com/en-us/powershell/module/az.network/new-azvirtualnetwork). This example creates a default virtual network named myVNet in the EastUS location:
+
+```azurepowershell
+$vnet = @{
+
+    Name = 'myVNet'
+
+    ResourceGroupName = 'CreateVNetQS-rg'
+
+    Location = 'EastUS'
+
+    AddressPrefix = '10.0.0.0/16'
+
+}
+
+$virtualNetwork = New-AzVirtualNetwork @vnet
+
+```
+
+**Add a subnet**
+
+Azure deploys resources to a subnet within a virtual network, so you need to create a subnet. Create a subnet configuration named default with [Add-AzVirtualNetworkSubnetConfig](https://docs.microsoft.com/en-us/powershell/module/az.network/add-azvirtualnetworksubnetconfig):
+
+```azurepowershell
+$subnet = @{
+
+    Name = 'default'
+
+    VirtualNetwork = $virtualNetwork
+
+    AddressPrefix = '10.0.0.0/24'
+
+}
+
+$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
+
+```
+
+**Associate the subnet to the virtual network**
+
+You can write the subnet configuration to the virtual network with [Set-AzVirtualNetwork](https://docs.microsoft.com/en-us/powershell/module/az.network/Set-azVirtualNetwork). This command creates the subnet:
+
+```azurepowershell
+$virtualNetwork | Set-AzVirtualNetwork
+
+```
+
+Create a Virtual Network by using the Azure CLI
+
+Before you can create a virtual network, you must have a resource group to host the virtual network. If you don't have an existing resource group, or you want to manage the new VNet separately.
+
+You can create a resource group with az group create. This example creates a resource group named CreateVNetQS-rg in the EastUS location:
+
+```azurecli
+az group create \
+
+    --name CreateVNetQS-rg \
+
+    --location eastus
+
+```
+
+Once you have a resource group in place, you can create your new VNet with [az network vnet create](https://docs.microsoft.com/en-us/cli/azure/network/vnet). This example creates a default virtual network named myVNet with one subnet named default:
+
+```azurecli
+az network vnet create \
+
+  --name myVNet \
+
+  --resource-group CreateVNetQS-rg \
+
+  --subnet-name default
+
+```
+
