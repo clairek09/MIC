@@ -125,8 +125,11 @@ You can add address spaces after creating the virtual network.
 **Subnet**
 Within each virtual network address range, you can create one or more subnets that partition the virtual network's address space. Routing between subnets will then depend on the default traffic routes, or you can define custom routes. Alternatively, you can define one subnet that encompasses all the virtual networks' address ranges.
 
- [!NOTE
-Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.]
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+ [!NOTE]
+Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
 
  ![IP_Addresses-VNet-configuration](../media/IP_Addresses-VNet-configuration.png)
 
