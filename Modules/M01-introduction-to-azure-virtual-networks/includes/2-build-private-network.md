@@ -100,7 +100,7 @@ On the Virtual Network page, select **Create.**
 
 In Create virtual network, enter or select this information in the **Basics** tab:
 
-|**Setting**||**Value**|
+|**Setting**|**Value**|
 |---|---|
 |**Project details**| |
 |Subscription|Select your subscription |
@@ -119,13 +119,13 @@ Let's assume you choose an address space of 10.0.0.0/24 for your first virtual n
 
 However, you can use 10.0.0.0/16, with addresses ranging from 10.0.0.1 - 10.0.255.254, and 10.1.0.0/16, with addresses ranging from 10.1.0.1 - 10.1.255.254. You can assign these address spaces to your virtual networks because there's no address overlap.
 
-Note
+ [!NOTE]
 You can add address spaces after creating the virtual network.
 
 **Subnet**
 Within each virtual network address range, you can create one or more subnets that partition the virtual network's address space. Routing between subnets will then depend on the default traffic routes, or you can define custom routes. Alternatively, you can define one subnet that encompasses all the virtual networks' address ranges.
 
-Note
+ [!NOTE]
 Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
 
  ![Address](../media/Address.png)
