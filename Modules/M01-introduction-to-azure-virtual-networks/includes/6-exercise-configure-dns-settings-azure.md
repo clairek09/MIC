@@ -19,3 +19,30 @@ In this unit, you will configure DNS name resolution for Contoso Ltd. You will c
 
 1.	Wait until the deployment is complete, and then select **Go to resource.**
 1.	Verify that the zone has been created.
+
+
+Virtual Network	Region	Virtual network address space	Subnet 	Subnet
+
+CoreServicesVnet	West US	10.20.0.0/16
+
+			GatewaySubnet	10.20.0.0/27
+
+			SharedServicesSubnet	10.20.10.0/24
+
+			DatabaseSubnet	10.20.20.0/24
+
+			PublicWebServiceSubnet	10.20.30.0/24
+
+ManufacturingVnet	North Europe	10.30.0.0/16
+
+			ManufacturingSystemSubnet	10.30.10.0/24
+
+			SensorSubnet1	10.30.20.0/24
+
+			SensorSubnet2	10.30.21.0/24
+
+			SensorSubnet3	10.30.22.0/24
+
+ResearchVnet	West India	10.40.40.0/24
+
+			ResearchSystemSubnet	10.40.40.0/24
