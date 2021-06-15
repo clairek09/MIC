@@ -33,6 +33,7 @@ Azure provides its own default internal DNS. It provides an internal DNS zone th
 Internal DNS defines a namespace as follows: <yournamespace>.internal.cloudapp.net.
 
 Any VM created in the VNet is registered in the internal DNS zone and gets a DNS domain name like myVM.internal.cloudapp.net. It's important to recognize that it's the Azure Resource name that is registered, not the name of the guest OS on the VM. 
+
 **Limitations of Internal DNS**
 -	Can't resolve across different VNets.
 -	Registers resource names, not guest OS names.
