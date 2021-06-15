@@ -115,7 +115,7 @@ Forced tunneling in Azure is configured using virtual network custom user-define
     - On-premises routes: Route to the Azure VPN gateway.
     - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
 	
--To configure forced tunnelling, you must:
+-   To configure forced tunnelling, you must:
     - Create a routing table.
     - Add a user-defined default route to the VPN Gateway.
     - Associate the routing table to the appropriate VNet subnet(s).
