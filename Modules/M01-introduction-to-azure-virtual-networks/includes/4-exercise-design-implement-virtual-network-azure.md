@@ -8,12 +8,12 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe**
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-![Network layout for Contoso. 
+![design-implement-vnet-peering](../media/design-implement-vnet-peering.png) 
 On-premises 10.10.0.0/16
 ResearchVNet West India 10.40.40.0/24
 CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
-](../media/design-implement-vnet-peering.png)
+
 
 | **Virtual Network**| **Region**| **Virtual network address space**| **Subnet**| **Subnet**|
 | :--- | :--- | :--- | :--- | :--- |
