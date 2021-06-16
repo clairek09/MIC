@@ -8,11 +8,10 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe**
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
+
 ![design-implement-vnet-peering](../media/design-implement-vnet-peering.png) 
-On-premises 10.10.0.0/16
-ResearchVNet West India 10.40.40.0/24
-CoreServicesVNet West US 10.20.0.0/16
-ManufacturingVNet North Europe 10.30.0.0/16
+
+You will create the following resources:
 
 
 | **Virtual Network**| **Region**| **Virtual network address space**| **Subnet**| **Subnet**|
@@ -32,40 +31,68 @@ ManufacturingVNet North Europe 10.30.0.0/16
 ||||||
 
 
-To finish creating the ResearchVnet and its associated subnet, select Review + create.
 
-Verify your configuration passed validation, and then select Create.
+These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
-Verify the creation of VNets and Subnets
+##Create the Contoso resource group
 
-On the Azure Portal home page, select All resources.
+1.	Go to Azure Portal.
+1.	On the home page, under **Azure services**, select **Resource groups.**
+1.	In Resource groups, select + Create.
+1.	Use the information in the following table to create the resource group.
+ 
+ ##table 
 
-![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
+1.	In Resource groups, verify that ContosoResourceGroup appears in the list.
 
+##Create the CoreServicesVnet virtual network and subnets
 
-Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
+1.	On the Azure Portal home page, select Create a resource.
+1.	In Search services and marketplace, enter virtual network.
 
-![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+![Create-resource-search-virtual-network-Annotated.](../media/Create-resource-search-virtual-network-Annotated.png)
 
+1.	In Marketplace, in Virtual Network, select Create > Virtual network.
 
-Note that Azure creates NetworkWatchers for each region that you use.
+![Virtual-network-service-Annotated.](../media/Virtual-network-service-Annotated.png)
 
-Select CoreServicesVnet.
+1.	Use the information in the following table to create the CoreServicesVnet virtual network.
 
-In CoreServicesVnet, under Settings, select Subnets.
-
-In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
-
-![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
-
-
-Repeat steps 4 -6 for each subnet.
-
-Congratulations! You have successfully created a resource group, three VNets, and their associated subnets.
-
-
+1. Remove or overwrite the default IP Address space
+ 
+ ![Default-VNet-IP-address-range-Annotated](../media/Default-VNet-IP-address-range-Annotated.png)
 
 
+|Tab|Option|Value|
+|---|---|---|
+|Basics|Resrouce Group |ContosoResourceGroup|
+||Name |CoreServicesVnet|
+||Region |(US) West US|
+|IP Addresses|IPv4 Address space |10.20.0.0/16|
+
+1.	Use the information in the following table to create the CoreServicesVnet subnets.
+1. To begin creating each subnet, select + Add subnet. To finish creating each subnet, select Add.
+
+##table 
+
+1.To finish creating the CoreServicesVnet and its associated subnet, select Review + create.
+
+1.verify your configuration passed validation, and then select Create.
+
+
+##Create the ManufacturingVnet virtual network and subnets
+
+1.	On the Azure Portal home page, select Create a resource.
+1.	In Search services and marketplace, enter virtual network.
+ 
+ ![Create-resource-search-virtual-network-Annotated.](../media/Create-resource-search-virtual-network-Annotated.png)
+
+
+1.	In Marketplace, in Virtual Network, select Create > Virtual network.
+
+![Virtual-network-service-Annotated.](../media/Virtual-network-service-Annotated.png)
+
+1.	Use the information in the following table to create the ManufacturingVnet virtual network.
 
 
 |Tab|Option|Value|
@@ -74,3 +101,67 @@ Congratulations! You have successfully created a resource group, three VNets, an
 ||Name |ManufacturingVnet|
 ||Region |(Europe) North Europe|
 |IP Addresses|IPv4 Address space |10.30.0.0/16|
+
+1.	Use the information in the following table to create the ManufacturingVnet subnets.
+1. To begin creating each subnet, select + Add subnet. To finish creating each subnet, select Add.
+
+##table 
+
+1.	To finish creating the ManufacturingVnet and its associated subnets, select Review + create.
+1.	Verify your configuration passed validation, and then select Create.
+
+##Create the ResearchVnet virtual network and subnets
+
+1.	On the Azure Portal home page, select Create a resource.
+1.	In Search services and marketplace, enter virtual network.
+ 
+ ![Create-resource-search-virtual-network-Annotated.](../media/Create-resource-search-virtual-network-Annotated.png)
+
+
+1.	In Marketplace, in Virtual Network, select Create > Virtual network.
+
+![Virtual-network-service-Annotated.](../media/Virtual-network-service-Annotated.png)
+
+1.	Use the information in the following table to create the ResearchVnet virtual network.
+
+|Tab|Option|Value|
+|---|---|---|
+|Basics|Resrouce Group |ContosoResourceGroup|
+||Name |ResearchVnet|
+||Region |(Asia Pacific) West India|
+|IP Addresses|IPv4 Address space |10.40.0.0/24|
+
+1.	Use the information in the following table to create the ResearchVnet subnets.
+1. To begin creating each subnet, select + Add subnet. To finish creating each subnet, select Add.
+
+##table 
+
+1.	To finish creating the ResearchVnet and its associated subnets, select Review + create.
+1.	Verify your configuration passed validation, and then select Create.
+
+
+##Verify the creation of VNets and Subnets
+
+1. On the Azure Portal home page, select All resources.
+
+![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
+
+1. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
+
+![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+
+1.Note that Azure creates NetworkWatchers for each region that you use.
+
+1.Select CoreServicesVnet.
+
+1.In CoreServicesVnet, under Settings, select Subnets.
+
+1.In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
+
+![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+
+1. Repeat steps 4 -6 for each subnet.
+
+Congratulations! You have successfully created a resource group, three VNets, and their associated subnets.
+
+
