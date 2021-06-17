@@ -158,7 +158,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 1.In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+![Verify-subnets-Annotated.](../media/Verify-subnets-Annotated.png)
 
 1. Repeat steps 4 -6 for each subnet.
 
