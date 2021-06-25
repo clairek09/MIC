@@ -17,5 +17,5 @@ Module workitem: 68654
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/design-implement-private-access-to-azure-services
+Target folder in github: learn-pr/wwl-azure/design-implement-private-access-to-azure-services
 ```
