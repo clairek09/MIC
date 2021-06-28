@@ -17,5 +17,5 @@ Module workitem: 68539
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/design-implement-hybrid-networking
+Target folder in github: learn-pr/wwl-azure/design-implement-hybrid-networking
 ```
