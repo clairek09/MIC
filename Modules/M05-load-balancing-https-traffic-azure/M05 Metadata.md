@@ -17,5 +17,5 @@ Module workitem: 68657
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/load-balancing-https-traffic-azure
+Target folder in github: learn-pr/wwl-azure/load-balancing-https-traffic-azure
 ```
