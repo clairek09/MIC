@@ -190,7 +190,7 @@ Forced tunneling in Azure is configured using virtual network custom user-define
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
 
-## Check your knowledge
+## quiz title: Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
@@ -199,11 +199,8 @@ Choose the best response for each of the questions below. When you're done, sele
 What type of routes enable you to override routes that Azure configures?
 
 ( ) User-defined routes (UDR){{You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
-
 ( ) System routes{{Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
-
 ( )  Default routes{{To enable basic routing functionaltiy, Azure automatically creates default system routes for each subnet within the virtual network.}}
-
 ( )  Optional default routes {{Azure creates additional default system routes for any Azure capabilities that you enable.}}
 
 
@@ -213,11 +210,8 @@ What type of routes enable you to override routes that Azure configures?
 Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?
 
 ( ) View the effective routes for each NIC. (UDR){{You can use Azure Portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
-
 ( ) Configure every resource with a static IP address.{{This would not provide the solution to the existing problems and would be extremely time consuming.}} 
-
 ( )  Use forced tunneling to control traffic flow.{{Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
-
 ( )  Remove any VNet peering configuration. {{Before making changes to your Azure network, use tools like the Azure Portal or Azure CLI to gather information to diagnose the problem. For example, you could view routing tables for problematic NICs.}}
 
  
