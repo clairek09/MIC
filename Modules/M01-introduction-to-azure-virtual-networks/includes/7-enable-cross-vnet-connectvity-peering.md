@@ -71,7 +71,7 @@ The following diagram shows a scenario in which hub VNet hosts a VPN gateway tha
 ![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet.
 Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
 
-## Check your knowledge 
+## quiz title: Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
@@ -81,7 +81,6 @@ You want the resources in one VNet to communicate with resources in a subnet in 
 ( ) VNet peering. {{Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
 ( ) Internal DNS. {{Internal DNS is a service provided by Azure.}}
 ( ) Azure Availability Zones. {{Azure Availability Zones are a high availbility feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
-
 ( ) Resources on Azure VNets can communicate with each other by default, you don't need to perform any further configuration.{{Resources on separate VNets cannot communicate by default.}} 
 
 ## Multiple Choice 
@@ -90,5 +89,4 @@ When you configure global peering, what changes will you see in the peered VNets
 ( ) A peering entry is added to the routing table in each VNet. {{VNetGlobalPeering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
 ( ) A peering entry is added to the routing table in the source VNet only. {{The VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
 ( ) All traffic on the Vnet must be routed through a Gateway. {{YResources on each VNet can communicate seamlessly with one another.}}
-
 ( ) No changes are made in the peered VNets. {{VNetGlobalPeering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}} 
