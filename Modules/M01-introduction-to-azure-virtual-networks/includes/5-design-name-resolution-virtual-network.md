@@ -120,9 +120,7 @@ Note that if the DNS server is outside Azure, it doesn't have access to Azure DN
 
 ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external_dns_fwd.png)
 
- 
-
-## Check your knowledge 
+## quiz title: Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
@@ -131,13 +129,9 @@ Choose the best response for each of the questions below. When you're done, sele
 What is the difference between a static public IP address and a dynamic public IP address?
 
 ( ) A static IP address remains the same over the lifespan of the resource to which it is assigned. {{A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configue a static IP address, set the allocation method explicitly to static.}}
-
 ( ) A dynamic IP address remains the same over the lifespan of the resource to which it is assigned.{{A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM.}} 
-
 ( )  A static IP address can use an IPv4 address only.{{Static IP addresses are created with either an IPv4 or an IPv6 address.}}
-
 ( ) A dynamic IP address can use an IPv6 address only.{{Dynamic IP addresses are created with either an IPv4 or an IPv6 address.}}
-
 
 
 ## Multiple Choice 
@@ -145,8 +139,6 @@ What is the difference between a static public IP address and a dynamic public I
 You want to use dynamic IP addresses for specific resources on your VNet. Which SKU must you choose?
 
 ( ) Basic SKU {{Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}}
-
-( ) Standard SKU{{Standard SKU public IP addresses always use the static allocation method.}} 
-
+( ) Standard SKU{{Standard SKU public IP addresses always use the static allocation method.}}
 ( )  Either Basic or Standard SKU{{Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}} 
 
