@@ -66,31 +66,25 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
+## quiz title: Check your knowledge
+
 ## Multiple Choice 
 
 What is the purpose of NAT?
-
-( ) NAT enables you to share a single public IPv4 address among multiple internal resources.{{NAT enables internal resources to share an IP address for communication with Internet resources.}} 
-
-( ) NAT allows you to assign multiple private IPv4 addresses to a single virtual machine.{{You can assign multiple IPv4 addresses to a single virtual machine, but the NAT service is not used for this.}} 
-
-( )  NAT enables you to configure an external IPv4 address on each individual virtual machine.{{The NAT service is configured as a gateway, providing shared IPv4 address(es) for internal resoucres. It is not configured on individual virtual machines.}}
-
-( )  NAT enables you to share a single public IPv6 address among multiple internal resources.{{NAT doesn't interact with IPv6 address family. NAT can't be deployed on a subnet with an IPv6 prefix.}}
+(x) NAT enables you to share a single public IPv4 address among multiple internal resources.  {{NAT enables internal resources to share an IP address for communication with Internet resources.}} 
+( ) NAT allows you to assign multiple private IPv4 addresses to a single virtual machine.  {{You can assign multiple IPv4 addresses to a single virtual machine, but the NAT service is not used for this.}} 
+( )  NAT enables you to configure an external IPv4 address on each individual virtual machine.  {{The NAT service is configured as a gateway, providing shared IPv4 address(es) for internal resoucres. It is not configured on individual virtual machines.}}
+( )  NAT enables you to share a single public IPv6 address among multiple internal resources.  {{NAT doesn't interact with IPv6 address family. NAT can't be deployed on a subnet with an IPv6 prefix.}}
 
 
 
 ## Multiple Choice 
 
 How does NAT scale to support dynamic workloads?
-
-( ) NAT supports up to 16 public IP addresses, and for each of those, uses port network address translation (PNAT or PAT) to provide up to 64,000 concurrent traffic flows.{{NAT supports up to 16 public IP addresses. Using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address.}} 
-
-( ) NAT supports up to 4 public IP addresses.{{NAT supports up to 16 public IP addresses. Additionally, by using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address.}} 
-
-( )  NAT does not scale dynamically. You must configure NAT to scale manually, by adding additional NAT Gateways.{{NAT scales automatically to support dynamic workloads. You do not need to add extra NAT gateways.}}
-
-( )  NAT automatically duplicates the external IPv4 address that is shared by the internal resources.{{NAT does not duplicate IP addresses.}}
+(x) NAT supports up to 16 public IP addresses, and for each of those, uses port network address translation (PNAT or PAT) to provide up to 64,000 concurrent traffic flows.  {{NAT supports up to 16 public IP addresses. Using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address.}} 
+( ) NAT supports up to 4 public IP addresses.  {{NAT supports up to 16 public IP addresses. Additionally, by using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP respectively, for each attached public IP address.}} 
+( )  NAT does not scale dynamically. You must configure NAT to scale manually, by adding additional NAT Gateways.  {{NAT scales automatically to support dynamic workloads. You do not need to add extra NAT gateways.}}
+( )  NAT automatically duplicates the external IPv4 address that is shared by the internal resources.  {{NAT does not duplicate IP addresses.}}
 
 
 
