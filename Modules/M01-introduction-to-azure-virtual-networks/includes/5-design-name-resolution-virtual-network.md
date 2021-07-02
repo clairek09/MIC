@@ -130,7 +130,7 @@ Choose the best response for each of the questions below. When you're done, sele
 
 What is the difference between a static public IP address and a dynamic public IP address?
 
-(x) A static IP address remains the same over the lifespan of the resource to which it is assigned. {{that is correct, A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configue a static IP address, set the allocation method explicitly to static.}}
+(x) A static IP address remains the same over the lifespan of the resource to which it is assigned. {{that is correct, A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static.}}
 ( ) A dynamic IP address remains the same over the lifespan of the resource to which it is assigned.{{that is incorrect, A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM.}} 
 ( ) A static IP address can use an IPv4 address only.{{that is incorrect, Static IP addresses are created with either an IPv4 or an IPv6 address.}}
 
