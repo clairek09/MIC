@@ -80,11 +80,11 @@ Note that for Windows clients, you must have administrator rights on the client 
 
 What is a site-to-site VPN Gateway connection?
 
-( ) A site-to-site VPN Gateway connection securely connects two networks. {{A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network.}}
+(x) A site-to-site VPN Gateway connection securely connects two networks. {{Correct, A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network.}}
 
-( ) A site-to-site VPN Gateway connection securely connects an individual client computer to a network. {{A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer.}}
+( ) A site-to-site VPN Gateway connection securely connects an individual client computer to a network. {{Incorrect, A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer.}}
 
-( ) A site-to-site VPN Gateway connection securely connects two individual computers. {{A site-to-site (S2S)VPN gateway connection does not connect two individual computers.}} 
+( ) A site-to-site VPN Gateway connection securely connects two individual computers. {{Incorrect, A site-to-site (S2S)VPN gateway connection does not connect two individual computers.}} 
 
 
 
@@ -94,8 +94,8 @@ What is a site-to-site VPN Gateway connection?
 
 To authenticate a user connecting through a point-to-site connection using Active Directory Domain Server, what type of server is required?
 
-( ) RADIUS {{AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.}}
+(x) RADIUS {{Correct,AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.}}
 
-( ) Active Directory Domain Controller only {{An Active Directory Domain Controller alone is not sufficient. Another type of server is required.}}
+( ) Active Directory Domain Controller only {{Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required.}}
 
-( ) DNS server {{A DNS server may be required for name resolution, but it is not sufficient for authentication.}}
+( ) DNS server {{Incorrect, A DNS server may be required for name resolution, but it is not sufficient for authentication.}}
