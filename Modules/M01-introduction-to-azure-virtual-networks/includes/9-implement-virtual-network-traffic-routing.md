@@ -195,9 +195,9 @@ Choose the best response for each of the questions below. When you're done, sele
 
 What type of routes enable you to override routes that Azure configures?
 
-(x) User-defined routes (UDR){{that is correct You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
-( ) System routes{{that is incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
-( ) Default routes{{that is incorrect, To enable basic routing functionaltiy, Azure automatically creates default system routes for each subnet within the virtual network.}}
+(x) User-defined routes (UDR){{correct You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
+( ) System routes{{incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
+( ) Default routes{{incorrect, To enable basic routing functionality, Azure automatically creates default system routes for each subnet within the virtual network.}}
 
 
 
@@ -205,8 +205,8 @@ What type of routes enable you to override routes that Azure configures?
 
 Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?
 
-(x) View the effective routes for each NIC. (UDR){{that is correct, You can use Azure Portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
-( ) Configure every resource with a static IP address.{{that is incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
-( ) Use forced tunneling to control traffic flow.{{that is incorrect, Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
+(x) View the effective routes for each NIC. (UDR){{correct, You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
+( ) Configure every resource with a static IP address.{{incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
+( ) Use forced tunneling to control traffic flow.{{incorrect, Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
 
  
