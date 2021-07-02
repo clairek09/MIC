@@ -1,4 +1,4 @@
-# Configure public IP services 
+
 
 Public networks like the Internet communicate by using public IP addresses. Private networks like your Azure Virtual Network use private IP addresses, which are not routable on public networks. To support a network that exists both in Azure and on-premises, you must configure IP addressing for both types of networks.
 
