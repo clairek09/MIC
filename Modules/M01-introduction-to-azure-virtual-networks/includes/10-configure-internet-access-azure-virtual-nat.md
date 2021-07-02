@@ -1,4 +1,4 @@
-# Configure internet access with Azure Virtual NAT
+
 
  
 
