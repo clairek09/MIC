@@ -16,7 +16,6 @@ Each route contains an address prefix and next hop type. When traffic leaving a 
 | Default    | 10.0.0.0/8                    | None              |
 | Default    | 192.168.0.0/16                | None              |
 | Default    | 100.64.0.0/10                 | None              |
-|            |                               |                   |
 
 
 
@@ -39,12 +38,14 @@ If you assign any of the previous address ranges within the address space of a v
 
 Azure adds default system routes for any Azure capabilities that you enable. Depending on the capability, Azure adds optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. The additional system routes and next hop types that Azure may add when you enable different capabilities are:
 
+
+
 | **Source**              | **Address prefixes**                                         | **Next hop type**             | **Subnet within virtual network that route is added to** |
 | ----------------------- | ------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------- |
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16      | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway | Virtual network gateway       | All                                                      |
 | Default                 | Multiple                                                     | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for.       |
-|                         |                                                              |                               |                                                          |
+
 
 
 
@@ -114,7 +115,7 @@ You can view the effective routes for a network interface with the Get-AzEffecti
 
  -ResourceGroupName myResourceGroup `
 
- | Format-Table |
+ | Format-Table 
 ````
 
 
@@ -195,9 +196,9 @@ Choose the best response for each of the questions below. When you're done, sele
 
 What type of routes enable you to override routes that Azure configures?
 
-(x) User-defined routes (UDR){{that is correct You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
-( ) System routes{{that is incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
-( ) Default routes{{that is incorrect, To enable basic routing functionaltiy, Azure automatically creates default system routes for each subnet within the virtual network.}}
+(x) User-defined routes (UDR){{correct You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
+( ) System routes{{incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
+( ) Default routes{{incorrect, To enable basic routing functionality, Azure automatically creates default system routes for each subnet within the virtual network.}}
 
 
 
@@ -205,8 +206,8 @@ What type of routes enable you to override routes that Azure configures?
 
 Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?
 
-(x) View the effective routes for each NIC. (UDR){{that is correct, You can use Azure Portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
-( ) Configure every resource with a static IP address.{{that is incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
-( ) Use forced tunneling to control traffic flow.{{that is incorrect, Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
+(x) View the effective routes for each NIC. (UDR){{correct, You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
+( ) Configure every resource with a static IP address.{{incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
+( ) Use forced tunneling to control traffic flow.{{incorrect, Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
 
  
