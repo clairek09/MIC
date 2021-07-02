@@ -1,4 +1,3 @@
-# Implement virtual network traffic routing
 
 Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table. You can override some of Azure's system routes with [custom routes](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview), and add additional custom routes to route tables. Azure routes outbound traffic from a subnet based on the routes in a subnet's route table.
 
