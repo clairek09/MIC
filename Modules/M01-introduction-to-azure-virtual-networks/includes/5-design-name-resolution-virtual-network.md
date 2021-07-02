@@ -120,9 +120,11 @@ Note that if the DNS server is outside Azure, it doesn't have access to Azure DN
 
 ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external_dns_fwd.png)
 
-## quiz title: Check your knowledge
+## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+
+## quiz title:
 
 ## Multiple Choice 
 
