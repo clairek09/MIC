@@ -57,7 +57,7 @@ In this section, you will create two instances of a web application deployed in 
 
 9. You should see the two new web apps listed.
 
-   ![Picture 19](../media/create-wep-app-2.png)
+   ![Picture 19](../media/create-web-app-2.png)
 
  
 
