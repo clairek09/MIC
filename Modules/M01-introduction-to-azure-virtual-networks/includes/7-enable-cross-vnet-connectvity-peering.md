@@ -82,7 +82,7 @@ Choose the best response for each of the questions below. When you're done, sele
 You want the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature can you use?
 (x) VNet peering. {{that is correct, Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
 ( ) Internal DNS. {{that is incorrect, Internal DNS is a service provided by Azure.}}
-( ) Azure Availability Zones. {{that is incorrect, Azure Availability Zones are a high availbility feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
+( ) Azure Availability Zones. {{that is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
 
 ## Multiple Choice 
 
