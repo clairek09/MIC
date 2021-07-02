@@ -70,7 +70,7 @@ Choose the best response for each of the questions below. When you're done, sele
 
 What is the purpose of NAT?
 (x) NAT enables you to share a single public IPv4 address among multiple internal resources.  {{that is correct, NAT enables internal resources to share an IP address for communication with Internet resources.}} 
-( ) NAT allows you to assign multiple private IPv4 addresses to a single virtual machine.  {{that is incorrect,You can assign multiple IPv4 addresses to a single virtual machine, but the NAT service is not used for this.}} 
+( ) NAT allows you to assign multiple private IPv4 addresses to a single virtual machine.  {{that is incorrect, you can assign multiple IPv4 addresses to a single virtual machine, but the NAT service is not used for this.}} 
 ( )  NAT enables you to configure an external IPv4 address on each individual virtual machine.  {{that is incorrect, the NAT service is configured as a gateway, providing shared IPv4 address(es) for internal  resources. It is not configured on individual virtual machines.}}
 
 
