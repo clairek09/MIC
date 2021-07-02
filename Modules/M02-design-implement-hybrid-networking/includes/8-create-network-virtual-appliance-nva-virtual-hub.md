@@ -80,11 +80,11 @@ To learn more about deploying an NVA, see [How to create a Network Virtual Appli
 
 You want to provide a VMware SD-WAN connectivity for your clents. Which Azure resource should you deploy?
 
-( ) Network Virtual Appliance (NVA). {{Azure Virtual WAN supports connections from networking partners, such as VMware SD-WAN. These types of devices are known as network virtual appliances (NVAs).}}
+(x) Network Virtual Appliance (NVA). {{Correct, Azure Virtual WAN supports connections from networking partners, such as VMware SD-WAN. These types of devices are known as network virtual appliances (NVAs).}}
 
-( ) Point-to-site VPN Gateway {{A point-to-site VPN Gateway supports connections from individual computers.}}
+( ) Point-to-site VPN Gateway {{Incorrect, A point-to-site VPN Gateway supports connections from individual computers.}}
 
-( ) Local network gateway {{A local network gateway represents the on-premises network.}} 
+( ) Local network gateway {{Incorrect, A local network gateway represents the on-premises network.}} 
 
 
 
@@ -94,8 +94,8 @@ You want to provide a VMware SD-WAN connectivity for your clents. Which Azure re
 
 Where can you deploy an NVA?
 
-( ) NVAs are deployed directly into a Virtual WAN hub. {{NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address.}}
+(x) NVAs are deployed directly into a Virtual WAN hub. {{Correct, NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address.}}
 
-( ) NVAs are deployed into an on-premises subnet. {{NVAs are not deployed into an on-premises subnet.}}
+( ) NVAs are deployed into an on-premises subnet. {{Incorrect, NVAs are not deployed into an on-premises subnet.}}
 
-( ) NVAs are deployed into a security-isolated subnet. {{NVAs do not require security isolation.}}
+( ) NVAs are deployed into a security-isolated subnet. {{Incorrect, NVAs do not require security isolation.}}
