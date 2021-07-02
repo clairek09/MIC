@@ -115,7 +115,7 @@ You can view the effective routes for a network interface with the Get-AzEffecti
 
  -ResourceGroupName myResourceGroup `
 
- | Format-Table |
+ | Format-Table 
 ````
 
 
