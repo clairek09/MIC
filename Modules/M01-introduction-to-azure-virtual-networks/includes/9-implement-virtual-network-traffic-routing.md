@@ -190,9 +190,11 @@ Forced tunneling in Azure is configured using virtual network custom user-define
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
 
-## quiz title: Check your knowledge
+## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+
+## quiz title:
 
 ## Multiple Choice 
 
