@@ -133,7 +133,7 @@ Virtual Hub Reset is available only in the Azure portal. Resetting provides you 
 
 What is an Azure Virtual WAN?
 
-(x) Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backone. {{Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backone in a self-contained, security isolated manner.}}
+(x) Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone. {{Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone in a self-contained, security isolated manner.}}
 
 ( ) Azure WAN describes two or more VNets connected through peering. {{Incorrect, Azure WAN connects VNets,on-premises networks and individual computers to the Microsoft backbone.}}
 
