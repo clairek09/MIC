@@ -78,7 +78,7 @@ To learn more about deploying an NVA, see [How to create a Network Virtual Appli
 
 
 
-You want to provide a VMware SD-WAN connectivity for your clents. Which Azure resource should you deploy?
+You want to provide a VMware SD-WAN connectivity for your clients. Which Azure resource should you deploy?
 
 (x) Network Virtual Appliance (NVA). {{Correct, Azure Virtual WAN supports connections from networking partners, such as VMware SD-WAN. These types of devices are known as network virtual appliances (NVAs).}}
 
