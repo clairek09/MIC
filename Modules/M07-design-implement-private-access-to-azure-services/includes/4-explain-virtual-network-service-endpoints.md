@@ -94,7 +94,7 @@ As the network engineer, you're planning to move sensitive engineering diagram f
 
 You'll create a Service Endpoint and use network rules to restrict access to Azure Storage. You'll create a virtual network Service Endpoint for Azure Storage on the Databases subnet. You'll then verify that your DataServer VM can access Azure Storage. Lastly, you'll check that the AppServer VM, which is on a different subnet, can't access storage.
 
-![Picture 2](../media/exercise-task.png)
+![Service endpoints workflow: App server, Dataserver, and service endpoint are contained in a vnet called ERP-servers. The v net is connected to the internet. The service endpoint is connected to Azure storage outside the vnet. ](../media/exercise-task.png)
 
 **Add rules to the network security group**
 
@@ -370,7 +370,7 @@ As of March 2021, you can also use Service Tags in place of explicit IP ranges i
 
 You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. Create inbound/outbound network security group rules to deny traffic to/from Internet and allow traffic to/from AzureCloud or other available service tags of specific Azure services.
 
-![Picture 8](../media/service_tags.png)
+![Diagram of service tags workflow: Access control denies outbound internet traffic by the DenyAllOutBound NSG. Access control allows only Azure service traffic by the AllowStorage and Allow SQL NSGs. ](../media/service_tags.png)
 
 ## Available service tags
 
