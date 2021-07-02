@@ -17,5 +17,5 @@ Module workitem: 68655
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/design-implement-network-security-monitoring
+Target folder in github: learn-pr/wwl-azure/design-implement-network-security-monitoring
 ```
