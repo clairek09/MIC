@@ -59,9 +59,9 @@ Choose the best response for each of the questions below. When you're done, sele
 ## Multiple Choice
 
 Which of the following statements about Azure VNets is correct?
-(x) Azure VNets enable communication between Azure resources. {{Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure VM Scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
-( ) Outbound communication with the internet must be configured for each resource on the VNet. {{All resources in a VNet can communicate outbound to the internet, by default.}}
-( ) Azure VNets cannot be configured to communicate with on-premises resources. {{You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
+(x) Azure VNets enable communication between Azure resources. {{Correct, Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure VM Scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
+( ) Outbound communication with the internet must be configured for each resource on the VNet. {{incorrect, All resources in a VNet can communicate outbound to the internet, by default.}}
+( ) Azure VNets cannot be configured to communicate with on-premises resources. {{incorrect, You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
 
 ## Multiple Choice 
 
