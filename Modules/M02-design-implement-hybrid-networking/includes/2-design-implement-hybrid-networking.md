@@ -336,6 +336,6 @@ What is the default high availability configuration for VPN gateways.
 
 (x) Active-standby {{Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration.}}
 
-( ) Active-active {{Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the defuault.}}
+( ) Active-active {{Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default.}}
 
 ( ) Dual-redundancy {{Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default.}}
