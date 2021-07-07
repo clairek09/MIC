@@ -6,7 +6,7 @@ Web Application Firewall (WAF) provides centralized protection of your web appli
 
  
 
-![WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises ](./media/wafoverview.png)
+![WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises ](../media/wafoverview.png)
 
  
 
@@ -18,7 +18,7 @@ A WAF solution can react to a security threat faster by centrally patching a kno
 
 When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode. In Detection mode, WAF does not block any requests; instead, requests matching the WAF rules are logged at WAF logs. To see WAF in action, you can change the mode settings from Detection to Prevention. In Prevention mode, requests that match rules that are defined in Default Rule Set (DRS) are blocked and logged at WAF logs.
 
-![WAF policy modes](./media/waf-policy-modes.png)
+![WAF policy modes](../media/waf-policy-modes.png)
 
 ## Web Application Firewall Default Rule Set rule groups and rules
 
@@ -42,7 +42,7 @@ Azure-managed Default Rule Set is enabled by default. The current default versio
 
 To disable an individual rule, select the checkbox in front of the rule number, and select **Disable** at the top of the page. To change action types for individual rules within the rule set, select the checkbox in front of the rule number, and then select **Change action** at the top of the page.
 
-![WAF policy managed rules](./media/waf-policy-managed-rules.png)
+![WAF policy managed rules](../media/waf-policy-managed-rules.png)
 
 ### Custom rules
 
@@ -50,11 +50,11 @@ Azure WAF with Front Door allows you to control access to your web applications 
 
 When creating a WAF policy, you can create a custom rule by selecting **Add custom rule** under the **Custom rules** section. This launches the custom rule configuration page.
 
-![WAF policy add custom rule](./media/waf-policy-custom-rules-1.png)
+![WAF policy add custom rule](../media/waf-policy-custom-rules-1.png)
 
 The example screenshot below shows the configuration of a custom rule to block a request if the query string contains **blockme**.
 
-![WAF policy custom rule configuration](./media/waf-policy-custom-rules-2.png)
+![WAF policy custom rule configuration](../media/waf-policy-custom-rules-2.png)
 
  
 
