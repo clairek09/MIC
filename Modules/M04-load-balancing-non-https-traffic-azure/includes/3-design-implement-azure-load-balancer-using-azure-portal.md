@@ -279,13 +279,13 @@ Having completed the various tasks to create and configure your public load bala
 
 ## Multiple Choice 
 
-What is an Availability Zone?
+Which of the following statement about external load balancers is correct?
 
-(x) An availability zone is a physical location that offers groups of one or more datacenters that have independent power, cooling, and networking.{{Correct, An availability zone is a unique physical location within an Azure region, offering groups of one or more datacenters that have independent power, cooling, and networking.}} 
+(x) They have a public IP address.{{Correct, External load balancers have public IP addresses.}} 
 
-( ) An availability zone is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.{{Incorrect, An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.}} 
+( ) They don't have a listener IP address.{{Incorrect, External load balancers have public IP addresses.}} 
 
-( )  An availability zone is a logical grouping of multiple data centers which shares power and storage with other zones.{{Incorrect, An availability zone is a unique physical location with groups of one or more datacenters that have independent power, cooling, and networking.}}
+( )  They have a private, front-facing IP address.{{Incorrect, External load balancers have public IP addresses.}}
 
 
 
