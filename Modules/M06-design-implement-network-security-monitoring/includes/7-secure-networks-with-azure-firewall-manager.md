@@ -35,6 +35,9 @@ A Firewall policy is an Azure resource that contains NAT, network, and applicati
 
 You can create Firewall Policy and associations with Azure Firewall Manager. However, you can also create and manage a policy using REST API, templates, Azure PowerShell, and the Azure CLI. Once you create a policy, you can associate it with a firewall in a virtual WAN hub making it a Secured Virtual Hub and/or associate it with a firewall in a standard Azure virtual network making it a Hub Virtual Network.
 
+​	![Azure Firewall Manager with three firewalls deployed to different hub vnets with policies applied](../media/firewall-manager-policies.png)
+
+
 ### Deploying Azure Firewall Manager for Hub Virtual Networks
 
 The recommended process to deploy Azure Firewall Manager for Hub Virtual Networks is as follows:
