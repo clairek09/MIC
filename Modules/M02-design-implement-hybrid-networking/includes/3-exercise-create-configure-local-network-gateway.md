@@ -42,6 +42,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
    | Tags            | No changes required                                          |                                       |
    | Review + create | Review your settings and select Create                       |                                       |
 
+
 6. When the deployment is complete, select **Go to resource**.
 
 ## Create ManufacturingTestVM
