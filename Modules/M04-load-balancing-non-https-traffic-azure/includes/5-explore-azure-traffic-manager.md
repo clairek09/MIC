@@ -23,8 +23,6 @@ Traffic Manager offers the several key features.
 
 Azure Traffic Manager enables you to control the distribution of traffic across your application endpoints. An endpoint is any Internet-facing service hosted inside or outside of Azure.
 
-​	![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-works.png)
-
 Traffic Manager provides two key benefits:
 
 - Distribution of traffic according to one of several **traffic-routing methods**
@@ -32,6 +30,8 @@ Traffic Manager provides two key benefits:
 - Continuous **monitoring of endpoint** health and automatic failover when endpoints fail
 
 When a client attempts to connect to a service, it must first resolve the DNS name of the service to an IP address. The client then connects to that IP address to access the service.
+
+​	![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-works.png)
 
 Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method. Clients connect to the selected endpoint directly. Traffic Manager is not a proxy or a gateway. Traffic Manager does not see the traffic passing between the client and the service.
 
