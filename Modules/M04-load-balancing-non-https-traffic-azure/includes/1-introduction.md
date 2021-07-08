@@ -1,4 +1,4 @@
-# Introduction
+
 
 Imagine yourself in the role of a network engineer at an organization that is in the process of migrating infrastructure and applications to Azure. As the network engineer you need to ensure that line-of-business applications, services, and data are available to end users of your corporate network whenever and wherever possible and ensure that users get access to those network resources in an efficient and timely manner. 
 
