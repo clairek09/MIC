@@ -1,7 +1,7 @@
 #### RepositoryName	
 ###### RepositoryName
 ```
-RepositoryName: 
+RepositoryName: learn-pr
 ```
 
 #### BranchName	
@@ -17,5 +17,5 @@ Module workitem: 70298
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: /design-implement-network-monitoring
+Target folder in github: learn-pr/wwl-azure/design-implement-network-monitoring
 ```
