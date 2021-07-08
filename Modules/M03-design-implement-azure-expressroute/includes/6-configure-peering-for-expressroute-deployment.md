@@ -1,4 +1,4 @@
-# Configure peering for an ExpressRoute deployment
+
 
 An ExpressRoute circuit has multiple routing domains/peering associated with it: Azure public, Azure private, and Microsoft. Each peering is configured identically on a pair of routers (in active-active or load sharing configuration) for high availability. Azure services are categorized as Azure public and Azure private to represent the IP addressing schemes.
 
