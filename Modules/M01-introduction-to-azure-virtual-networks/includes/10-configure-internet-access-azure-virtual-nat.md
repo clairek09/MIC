@@ -62,8 +62,11 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
 - IP fragmentation is not supported.
 
-## quiz title: 
+## Check your knowledge
 
+Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+
+## quiz title:
 
 ## Multiple Choice 
 
@@ -71,8 +74,6 @@ What is the purpose of NAT?
 (x) NAT enables you to share a single public IPv4 address among multiple internal resources.  {{Correct, NAT enables internal resources to share an IP address for communication with Internet resources.}} 
 ( ) NAT allows you to assign multiple private IPv4 addresses to a single virtual machine.  {{Incorrect, you can assign multiple IPv4 addresses to a single virtual machine, but the NAT service is not used for this.}} 
 ( )  NAT enables you to configure an external IPv4 address on each individual virtual machine.  {{Incorrect, the NAT service is configured as a gateway, providing shared IPv4 address(es) for internal  resources. It is not configured on individual virtual machines.}}
-
-
 
 ## Multiple Choice 
 
