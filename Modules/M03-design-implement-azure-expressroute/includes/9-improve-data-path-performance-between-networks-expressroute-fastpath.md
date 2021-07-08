@@ -43,9 +43,7 @@ While FastPath supports most configurations, it does not support the following f
 How does ExpressRoute FastPath send network traffic?
 
 (X) Directly to virtual machines in the virtual network.{{Correct. FastPath sends network traffic directly to virtual machines in the virtual network, bypassing the gateway.}} 
-
 ( ) Through the gateway to Virtual machines.{{Incorrect. ExpressRoute FastPath does not send traffic through the gateway to virtual machines.}} 
-
 ( ) Through the public internet.{{Incorrect. ExpressRoute FastPath does not send traffic through the public internet.}}
 
 
@@ -55,9 +53,7 @@ How does ExpressRoute FastPath send network traffic?
 Your network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should you modify your ExpressRoute FastPath deployment?
 
 (X) Connect all the virtual networks to the ExpressRoute FastPath circuit directly.{{Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly.}} 
-
 ( ) Connect the VNet gateways to ExpressRoute FastPath.{{Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath.}} 
-
 ( ) Modify the VNet peering configuration.{{Incorrect. The VNet gateways can still support VNet-to-Vnet peering and do not have to be modified.}}
 
 
@@ -200,9 +196,7 @@ You can delete a connection and unlink your VNet to an ExpressRoute circuit by s
 What is a circuit owner?
 
 (X) A circuit owner is an authorized Power User of the ExpressRoute circuit resource, which can create authorizations to be used by circuit users.{{Correct. The circuit owner is an authorized Power User of the ExpressRoute circuit resource. The circuit owner can create, modify, and revoke authorizations that can be redeemed by circuit users.}} 
-
 ( ) A circuit owner owns virtual network gateways that are not within the same subscription as the ExpressRoute circuit.{{Incorrect. Circuit users are owners of virtual network gateways that are not within the same subscription as the ExpressRoute circuit.}} 
-
 ( ) A circuit owner is an authorized Power User of the ExpressRoute gateway resource, which can create authorizations to be used by circuit users.{{Incorrect. A circuit owner is not an authorized Power User of the ExpressRoute gateway resource.}}
 
 
@@ -212,7 +206,5 @@ What is a circuit owner?
 What does the circuit user need to redeem their connection authorization?
 
 (X) A resource ID and an authorization key.{{Correct. The circuit user needs the resource ID and an authorization key from the circuit owner to redeem their connection authorization.}} 
-
 ( ) A resource ID.{{Incorrect. A resource ID is not sufficient to redeem a connection authorization.}} 
-
 ( ) An authorization key.{{Incorrect. An authorization key is not sufficient to redeem a connection authorization.}}
