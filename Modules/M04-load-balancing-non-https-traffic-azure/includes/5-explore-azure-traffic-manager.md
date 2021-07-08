@@ -31,8 +31,6 @@ Traffic Manager provides two key benefits:
 
 When a client attempts to connect to a service, it must first resolve the DNS name of the service to an IP address. The client then connects to that IP address to access the service.
 
-​	![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-works.png)
-
 Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method. Clients connect to the selected endpoint directly. Traffic Manager is not a proxy or a gateway. Traffic Manager does not see the traffic passing between the client and the service.
 
 **Traffic Manager works at the DNS level which is at the Application layer (Layer-7).**
@@ -57,7 +55,7 @@ To achieve this configuration, they complete the following steps:
 
 Following on from the deployment example above; when a client requests the page https://partners.contoso.com/login.aspx, the client performs the following steps to resolve the DNS name and establish a connection:
 
-​	![Picture 40](../media/traffic-manager-client-usage-flow.png)
+​	![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-client-usage-flow.png)
 
 1. The client sends a DNS query to its configured recursive DNS service to resolve the name 'partners.contoso.com'. A recursive DNS service, sometimes called a 'local DNS' service, does not host DNS domains directly. Rather, the client off-loads the work of contacting the various authoritative DNS services across the Internet needed to resolve a DNS name.
 
