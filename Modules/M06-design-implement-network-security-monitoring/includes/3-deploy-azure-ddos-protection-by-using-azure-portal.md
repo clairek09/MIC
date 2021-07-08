@@ -100,7 +100,7 @@ Specific to resource attacks at the application layer, you should configure a we
 
 Even web application firewalls are susceptible to volumetric and state exhaustion attacks. Therefore, it is firmly recommended to enable DDoS Protection Standard on the WAF virtual network to help protect from volumetric and protocol attacks.
 
-# Deploying a DDoS Protection Plan
+## Deploying a DDoS Protection Plan
 
 The key stages of deploying as DDoS Protection plan are as follows:
 
