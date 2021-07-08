@@ -24,9 +24,10 @@ Azure services that support availability zones fall into three categories:
 
 - Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
-**Availability zones do not support all sizes of virtual machine and are not available in all Azure regions. You should check that they are supported in your particular region before you use them in your architecture.**
-
 **Availability zones can be used by Standard load balancers but are not supported for use in Basic load balancers (see next section).**
+Azure Load Balancer supports availability zones scenarios. You can use Standard Load Balancer to increase availability throughout your scenario by aligning resources with, and distribution across zones. Review this document to understand these concepts and fundamental scenario design guidance
+
+A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure the zone related properties (mentioned above) for your load balancer, select the appropriate type of frontend needed.
 
 ###Zone redundant
 ![Diagram illustrating Zone redundant load balancers in Azure](../media/zone-redundant.png)
