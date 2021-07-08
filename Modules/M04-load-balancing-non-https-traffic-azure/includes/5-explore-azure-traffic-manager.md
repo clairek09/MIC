@@ -295,11 +295,11 @@ All endpoints in a Traffic Manager profile share monitoring settings. If you nee
 
 What are two benefits of Traffic Manager?
 
-( ) Distribution of traffic and continuous monitoring of endpoint health.{{Distribution of traffic according to one of several traffic-routing methods and continuous monitoring of endpoint health and automatic failover when endpoints fail.}} 
+(x) Distribution of traffic and continuous monitoring of endpoint health.{{Correct, Distribution of traffic according to one of several traffic-routing methods and continuous monitoring of endpoint health and automatic failover when endpoints fail.}} 
 
-( ) Resolution of DNS queries and reduced need for DNS servers.{{Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method, it does not resolve queries itself.}} 
+( ) Resolution of DNS queries and reduced need for DNS servers.{{Incorrect, Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method, it does not resolve queries itself.}} 
 
-( )  Supports one traffic-routing method and integrates with DNS.{{Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response.}}
+( )  Supports one traffic-routing method and integrates with DNS.{{Incorrect, Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response.}}
 
 
 
@@ -307,8 +307,8 @@ What are two benefits of Traffic Manager?
 
 Which traffic-routing method should you use when you want end users to use the "closest" endpoint for the lowest network latency?
 
-( ) Performance{{Use when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency.}} 
+(x) Performance{{Correct, Use when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency.}} 
 
-( ) Geographic{{Select this routing method to direct users to specific endpoints (Azure, External, or Nested) based on where their DNS queries originate from geographically.}} 
+( ) Geographic{{Incorrect, Select this routing method to direct users to specific endpoints (Azure, External, or Nested) based on where their DNS queries originate from geographically.}} 
 
-( )  Priority{{Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable.}}
+( ) Priority{{Incorrect, Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable.}}
