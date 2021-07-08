@@ -34,7 +34,7 @@ You will create the following resources:
 |                     |              |                                   | SensorSubnet1             | 10.30.20.0/24 |
 |                     |              |                                   | SensorSubnet2             | 10.30.21.0/24 |
 |                     |              |                                   | SensorSubnet3             | 10.30.22.0/24 |
-| ResearchVnet        | West India   | 10.40.40.0/16                     |                           |               |
+| ResearchVnet        | West India   | 10.40.0.0/16                     |                           |               |
 |                     |              |                                   | ResearchSystemSubnet      | 10.40.40.0/24 |
 
 
