@@ -278,11 +278,11 @@ Having completed the various tasks to create and configure your public load bala
 
 What is an Availability Zone?
 
-( ) An availability zone is a physical location that offers groups of one or more datacenters that have independent power, cooling, and networking.{{An availability zone is a unique physical location within an Azure region, offering groups of one or more datacenters that have independent power, cooling, and networking.}} 
+(x) An availability zone is a physical location that offers groups of one or more datacenters that have independent power, cooling, and networking.{{Correct, An availability zone is a unique physical location within an Azure region, offering groups of one or more datacenters that have independent power, cooling, and networking.}} 
 
-( ) An availability zone is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.{{An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.}} 
+( ) An availability zone is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.{{Incorrect, An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed.}} 
 
-( )  An availability zone is a logical grouping of multiple data centers which shares power and storage with other zones.{{An availability zone is a unique physical location with groups of one or more datacenters that have independent power, cooling, and networking.}}
+( )  An availability zone is a logical grouping of multiple data centers which shares power and storage with other zones.{{Incorrect, An availability zone is a unique physical location with groups of one or more datacenters that have independent power, cooling, and networking.}}
 
 
 
@@ -290,8 +290,8 @@ What is an Availability Zone?
 
 You are deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should you choose?
 
-( ) Standard{{Standard SKU supports outbound rules through declarative outbound NAT configuration.}} 
+(x) Standard{{Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration.}} 
 
-( ) Basic{{Basic SKU does not support outbound rules.}} 
+( ) Basic{{Incorrect, Basic SKU does not support outbound rules.}} 
 
-( )  Either Standard or Basic{{Basic SKU does not support outbound rules.}}
+( )  Either Standard or Basic{{Incorrect, Basic SKU does not support outbound rules.}}
