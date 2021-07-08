@@ -12,12 +12,11 @@ ExpressRoute Global Reach is designed to complement your service provider’s WA
 ## Quiz title: Check your knowledge 
 
 
-
 ## Multiple Choice 
 
 What is ExpressRoute Global Reach primarily designed for?
 
-(X) Connect branch offices across the world.{{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.}} 
+(x) Connect branch offices across the world.{{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.}} 
 
 ( ) Connect a data center to the public internet.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet.}} 
 
@@ -29,7 +28,7 @@ What is ExpressRoute Global Reach primarily designed for?
 
 You are a network engineer for a company with offices in London and Tokyo. How can you configure communications between the two offices?
 
-(X) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
+(x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
 
 ( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to onnect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}} 
 
@@ -110,7 +109,7 @@ Before you start configuration, confirm the following criteria:
 
 Which of the following resources must be provisioned before you begin to configure Global Reach?
 
-(X) ExpressRoute circuits must be provisioned.{{Correct. The ExpressRoute circuits that you want to be part of the Global Reach deployment must be provisioned before you start.}} 
+(x) ExpressRoute circuits must be provisioned.{{Correct. The ExpressRoute circuits that you want to be part of the Global Reach deployment must be provisioned before you start.}} 
 
 ( ) Microsoft peering must be configured on ExpressRoute circuits.{{Incorrect. Private peering must be configured on ExpressRoute circuits.}} 
 
@@ -122,7 +121,7 @@ Which of the following resources must be provisioned before you begin to configu
 
 How do you disable connectivity for an individual circuit?
 
-(X) In the private peering properties, delete the Global Reach name - ExpressRoute Circuit entry.{{Correct. Deleting the Global Reach name - ExpressRoute Circuit entry will disable connectivity for the individual circuit.}} 
+(x) In the private peering properties, delete the Global Reach name - ExpressRoute Circuit entry.{{Correct. Deleting the Global Reach name - ExpressRoute Circuit entry will disable connectivity for the individual circuit.}} 
 
 ( ) You cannot change the configuration of a single circuit.{{Incorrect. You can modify the peering properties of an individual circuit.}} 
 
