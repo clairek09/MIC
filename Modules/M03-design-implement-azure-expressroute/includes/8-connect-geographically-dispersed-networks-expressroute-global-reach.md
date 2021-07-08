@@ -9,32 +9,6 @@ ExpressRoute Global Reach is designed to complement your service provider’s WA
 
 ​	![Global Reach layout with local providers for connectivity to global network](../media/globalreach_usecase.png)
 
-## Quiz title: Check your knowledge 
-
-
-## Multiple Choice 
-
-What is ExpressRoute Global Reach primarily designed for?
-
-(x) Connect branch offices across the world.{{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.}} 
-
-( ) Connect a data center to the public internet.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet.}} 
-
-( ) Connect a local service provider to a data center.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center.}}
-
- 
-
-## Multiple Choice 
-
-You are a network engineer for a company with offices in London and Tokyo. How can you configure communications between the two offices?
-
-(x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
-
-( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to onnect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}} 
-
-( ) Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access.{{Incorrect. Each location should connect to GlobalNet through a local service provider.}}
-
-
 
 
 ## Configure ExpressRoute Global Reach
@@ -107,24 +81,23 @@ Before you start configuration, confirm the following criteria:
 
 ## Multiple Choice 
 
-Which of the following resources must be provisioned before you begin to configure Global Reach?
+What is ExpressRoute Global Reach primarily designed for?
 
-(x) ExpressRoute circuits must be provisioned.{{Correct. The ExpressRoute circuits that you want to be part of the Global Reach deployment must be provisioned before you start.}} 
+(x) Connect branch offices across the world.{{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.}} 
 
-( ) Microsoft peering must be configured on ExpressRoute circuits.{{Incorrect. Private peering must be configured on ExpressRoute circuits.}} 
+( ) Connect a data center to the public internet.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet.}} 
 
-( ) PowerShell must be installed locally.{{Incorrect. You can install PowerShell locally to configure Global Reach, but you can also configure it in other ways like Azure CLI.}}
+( ) Connect a local service provider to a data center.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center.}}
 
-
+ 
 
 ## Multiple Choice 
 
-How do you disable connectivity for an individual circuit?
+You are a network engineer for a company with offices in London and Tokyo. How can you configure communications between the two offices?
 
-(x) In the private peering properties, delete the Global Reach name - ExpressRoute Circuit entry.{{Correct. Deleting the Global Reach name - ExpressRoute Circuit entry will disable connectivity for the individual circuit.}} 
+(x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
 
-( ) You cannot change the configuration of a single circuit.{{Incorrect. You can modify the peering properties of an individual circuit.}} 
+( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to onnect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}} 
 
-( ) Delete the Global Reach resource and redeploy it omitting the circuit.{{Incorrect. You do not have to remove and redeploy Global Reach to disconnect a circuit.}}
-
+( ) Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access.{{Incorrect. Each location should connect to GlobalNet through a local service provider.}}
 
