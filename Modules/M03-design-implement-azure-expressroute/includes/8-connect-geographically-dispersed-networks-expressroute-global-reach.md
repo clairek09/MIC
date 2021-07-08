@@ -126,3 +126,5 @@ How do you disable connectivity for an individual circuit?
 ( ) You cannot change the configuration of a single circuit.{{Incorrect. You can modify the peering properties of an individual circuit.}} 
 
 ( ) Delete the Global Reach resource and redeploy it omitting the circuit.{{Incorrect. You do not have to remove and redeploy Global Reach to disconnect a circuit.}}
+
+
