@@ -324,7 +324,7 @@ What are the two types of VPNs?
 
 ( ) PolicyBased and static. {{Incorrect, VPNs can be PolicyBased. Static is the name used for PolicyBased VPNs in the classic deployment model.}}
 
-( ) RouteBased and dynamic. {{Incorrect,VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model.}} 
+( ) RouteBased and dynamic. {{Incorrect, VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model.}} 
 
 
 
