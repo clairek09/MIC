@@ -10,33 +10,11 @@ A [**public load balancer**](https://docs.microsoft.com/en-us/azure/load-balance
 
 An [**internal load balancer**](https://docs.microsoft.com/en-us/azure/load-balancer/components) is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic from internal Azure resources to other Azure resources inside a virtual network. A load balancer frontend can also be accessed from an on-premises network in a hybrid scenario.
 
-![Picture 2](../media/load-balancer.png)
+![Diagram illustrating Internal and Public load balancers in Azure](../media/load-balancer.png)
 
  
 
-## Supporting High Availability with Azure Load Balancer
-
-To achieve high availability with Azure Load Balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available. Combine the Azure Load Balancer with an availability zone or availability set to get the most application resiliency.
-
-### Availability sets
-
-An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. So, if there's a hardware or software failure, only a subset of your virtual machines is affected, while your overall solution stays operational. In this way, availability sets are essential for building reliable cloud solutions. It is recommended that two or more VMs are created within an availability set to provide for a highly available application and to achieve a 99.95% Azure Service Level Agreement (SLA).
-
-Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. Each availability set can be configured with up to three fault domains and twenty update domains. Update domains indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time. When more than five virtual machines are configured within a single availability set, the sixth virtual machine is placed into the same update domain as the first virtual machine, the seventh in the same update domain as the second virtual machine, and so on. The order of update domains being rebooted may not proceed sequentially during planned maintenance, but only one update domain is rebooted at a time. A rebooted update domain is given 30 minutes to recover before maintenance is initiated on a different update domain.
-
-![Picture 1](../media/availability-sets-configuration.png)
-
- 
-
-**Availability sets can be used by Basic load balancers and Standard load balancers (see next section).**
-
-### Availability zones
-
-Availability zones are unique physical locations within an Azure region, and they offer groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. To ensure resiliency, there's a minimum of three separate zones in all enabled regions. This physical separation of availability zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across availability zones to protect them from single-points-of-failure. With availability zones, Azure provides a 99.99% VM uptime SLA.
-
-You would typically use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to service your users' requests.
-
-![Picture 2](../media/availability-zones-configuration.png)
+## Azure Load Balancer and availability zones 
 
 Azure services that support availability zones fall into three categories:
 
@@ -49,6 +27,13 @@ Azure services that support availability zones fall into three categories:
 **Availability zones do not support all sizes of virtual machine and are not available in all Azure regions. You should check that they are supported in your particular region before you use them in your architecture.**
 
 **Availability zones can be used by Standard load balancers but are not supported for use in Basic load balancers (see next section).**
+
+###Zone redundant
+![Diagram illustrating Zone redundant load balancers in Azure](../media/zone-redundant.png)
+
+###Zonal
+![Diagram illustrating Zonal load balancers in Azure](../media/zonal-loadbalancer.png)
+
 
 ## Selecting an Azure Load Balancer SKU
 
