@@ -28,7 +28,7 @@ A DNS zone hosts the DNS records for a domain. So, to start hosting your domain 
 
 **Note:** You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
 
-# Delegate DNS Domains
+## Delegate DNS Domains
 
 To delegate your domain to Azure DNS, you first need to know the name server names for your zone. Each time a DNS zone is created Azure DNS allocates name servers from a pool. Once the Name Servers are assigned, Azure DNS automatically creates authoritative NS records in your zone.
 
