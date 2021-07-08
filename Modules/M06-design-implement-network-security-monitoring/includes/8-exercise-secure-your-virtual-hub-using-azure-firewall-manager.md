@@ -1,4 +1,4 @@
-# Exercise: Secure your virtual hub using Azure Firewall Manager
+
 
 In this exercise, you will create the spoke virtual network and create a secured virtual hub, then you will connect the hub and spoke virtual networks and route traffic to your hub. Next you will deploy the workload servers, then create a firewall policy and secure your hub, and finally you will test the firewall.
 
