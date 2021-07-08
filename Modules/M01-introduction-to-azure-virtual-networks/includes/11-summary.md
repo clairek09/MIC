@@ -3,7 +3,7 @@ As your organization moves to Azure, you must design a secure virtual networking
 
 In this module you saw a broad overview of some of the most crucial aspects of designing and planning an Azure virtual network, including planning VNets, subnets and micro-segmentation, assigning appropriate IP addresses to resources and configuring DNS name resolution.
 
-You now have the fundamental knowledge required to plan and implement virtual networking in Azure.
+You now have the fundamental knowledge required to design and implement virtual networking in Azure.
 
 ## Summary and Resources
 
