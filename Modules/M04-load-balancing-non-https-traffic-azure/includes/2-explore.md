@@ -93,18 +93,18 @@ Now let's look at each of the main Azure load balancing services in more detail.
 
 You have a secure web application that experiences high traffic, and you want to use a load balancer to distribute the workload. Which load balancers will support this type of traffic?
 
-( ) Azure Application Gateway and Azure Front Door.{{Secure web applications use HTTPS traffic. Azure Application Gateway and Azure Front Door support HTTPS traffic.}} 
+(x) Azure Application Gateway and Azure Front Door.{{Correct, Secure web applications use HTTPS traffic. Azure Application Gateway and Azure Front Door support HTTPS traffic.}} 
 
-( ) Azure Load Balancer and Traffic Manager.{{Secure web applications use HTTPS traffic. Azure Load Balancer and Traffic Manager support non-HTTPS traffic.}} 
+( ) Azure Load Balancer and Traffic Manager.{{Incorrect, Secure web applications use HTTPS traffic. Azure Load Balancer and Traffic Manager support non-HTTPS traffic.}} 
 
-( ) Azure Application Gateway only.{{Secure web applications use HTTPS traffic. Azure Application Gateway does support HTTPS traffic, but it's not the only load balancer that does.}}
+( ) Azure Application Gateway only.{{Incorrect, Secure web applications use HTTPS traffic. Azure Application Gateway does support HTTPS traffic, but it's not the only load balancer that does.}}
 
 ## Multiple Choice 
 
 Which type of load balancing services distribute traffic within virtual networks across virtual machines?
 
-( ) Regional.{{**Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region.}} 
+(x) Regional.{{Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region.}} 
 
-( ) Global.{{**Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}} 
+( ) Global.{{Incorrect, **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}} 
 
-( ) Regional and Global.{{**Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}}
+( ) Regional and Global.{{Incorrect, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}}
