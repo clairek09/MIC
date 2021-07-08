@@ -94,7 +94,7 @@ What is a site-to-site VPN Gateway connection?
 
 To authenticate a user connecting through a point-to-site connection using Active Directory Domain Server, what type of server is required?
 
-(x) RADIUS {{Correct,AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.}}
+(x) RADIUS {{Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.}}
 
 ( ) Active Directory Domain Controller only {{Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required.}}
 
