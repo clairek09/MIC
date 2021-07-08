@@ -62,9 +62,8 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
 - IP fragmentation is not supported.
 
-## quiz title: Check your knowledge
+## quiz title: 
 
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
 ## Multiple Choice 
 
