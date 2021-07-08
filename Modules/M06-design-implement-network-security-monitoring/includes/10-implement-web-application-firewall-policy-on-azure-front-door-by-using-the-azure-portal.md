@@ -1,4 +1,3 @@
-# Implement a Web Application Firewall policy on Azure Front Door by using the Azure portal
 
  
 
