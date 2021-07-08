@@ -23,6 +23,8 @@ Traffic Manager offers the several key features.
 
 Azure Traffic Manager enables you to control the distribution of traffic across your application endpoints. An endpoint is any Internet-facing service hosted inside or outside of Azure.
 
+​	![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-works.png)
+
 Traffic Manager provides two key benefits:
 
 - Distribution of traffic according to one of several **traffic-routing methods**
