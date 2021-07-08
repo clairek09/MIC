@@ -1,4 +1,4 @@
-# Explore load balancing options in the Azure portal
+
 
 The term load balancing refers to the even distribution of workloads (i.e., incoming network traffic), across a group of backend computing resources or servers. Load balancing aims to optimize resource use, maximize throughput, minimize response time, and avoid overloading any single resource. It can also improve availability by sharing a workload across redundant computing resources.
 
