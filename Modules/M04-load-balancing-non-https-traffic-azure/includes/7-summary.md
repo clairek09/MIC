@@ -1,4 +1,4 @@
-# Summary
+
 
 In this module you had a high-level overview of the different load balancing options available to you in Azure and learned more detailed information about two of those Azure load balancing technologies, namely Azure Load Balancer and Azure Traffic Manager. 
 
