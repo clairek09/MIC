@@ -1,7 +1,7 @@
 
  
 
-Now you're ready to create and deploy some virtual networks with the IP addresses that you planned.
+Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
 
