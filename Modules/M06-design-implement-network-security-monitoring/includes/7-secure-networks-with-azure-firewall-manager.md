@@ -2,6 +2,9 @@
 
 Azure Firewall Manager is a security management service that provides central security policy and route management for cloud-based security perimeters. 
 
+​	![Azure Firewall Manager diagram showing a secure hub and hub vent deployment option ](../media/firewall-manager.png)
+
+
 Azure Firewall Manager simplifies the process of centrally defining network and application-level rules for traffic filtering across multiple Azure Firewall instances. You can span different Azure regions and subscriptions in hub and spoke architectures for traffic governance and protection.
 
 If you manage multiple firewalls, you know that continuously changing firewall rules make it difficult to keep them in sync. Central IT teams need a way to define base firewall policies and enforce them across multiple business units. At the same time, DevOps teams want to create their own local derived firewall policies that are implemented across organizations. Azure Firewall Manager can help solve these problems.
