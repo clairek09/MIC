@@ -32,9 +32,23 @@ A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure 
 ###Zone redundant
 ![Diagram illustrating Zone redundant load balancers in Azure](../media/zone-redundant.png)
 
+In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
+
+A single frontend IP address will survive zone failure. The frontend IP may be used to reach all (non-impacted) backend pool members no matter the zone. One or more availability zones can fail and the data path survives as long as one zone in the region remains healthy.
+
+The frontend's IP address is served simultaneously by multiple independent infrastructure deployments in multiple availability zones. Any retries or reestablishment will succeed in other zones not affected by the zone failure.
+
 ###Zonal
+
+You can choose to have a frontend guaranteed to a single zone, which is known as a zonal. This scenario means any inbound or outbound flow is served by a single zone in a region. Your frontend shares fate with the health of the zone. The data path is unaffected by failures in zones other than where it was guaranteed. You can use zonal frontends to expose an IP address per Availability Zone.
+
+Additionally, the use of zonal frontends directly for load balanced endpoints within each zone is supported. You can use this configuration to expose per zone load-balanced endpoints to individually monitor each zone. For public endpoints, you can integrate them with a DNS load-balancing product like Traffic Manager and use a single DNS name.
+
 ![Diagram illustrating Zonal load balancers in Azure](../media/zonal-loadbalancer.png)
 
+For a public load balancer frontend, you add a zones parameter to the public IP. This public IP is referenced by the frontend IP configuration used by the respective rule.
+
+For an internal load balancer frontend, add a zones parameter to the internal load balancer frontend IP configuration. A zonal frontend guarantees an IP address in a subnet to a specific zone.
 
 ## Selecting an Azure Load Balancer SKU
 
