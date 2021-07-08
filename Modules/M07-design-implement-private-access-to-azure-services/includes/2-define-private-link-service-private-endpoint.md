@@ -1,4 +1,4 @@
-# Define Private Link Services and Private Endpoints
+
 
 ## What is Azure Private Link?
 
