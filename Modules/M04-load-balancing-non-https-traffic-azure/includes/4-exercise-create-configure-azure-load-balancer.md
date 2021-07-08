@@ -1,4 +1,4 @@
-# Exercise: Create and configure an internal load balancer using the Azure portal
+
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
 
