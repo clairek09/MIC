@@ -1,4 +1,4 @@
-# Introduction
+
 
 As a network engineer you will design and implement various solutions to complete your enterprise network. As you deploy and manage the network infrastructure you will need to monitor and analyze your environment. There are several tools in Azure, such as Azure Monitor and Azure Network Watcher, to monitor and analyze your networks and connected resources to ensure they are in good health and working by design. 
 
