@@ -90,9 +90,13 @@ In this exercise you will configure a virtual network gateway to connect the Con
 ## Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
+
 2. Select **ManufacturingTestVM**.
+
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
+
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
+
 5. Save the RDP file to your desktop.
 6. Connect to ManufacturingTestVM using the RDP file, and the username and password you specified when you created the VM.
 7. On the Azure Portal home page, select **Virtual Machines**.
