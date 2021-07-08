@@ -1,4 +1,4 @@
-# Design an ExpressRoute deployment
+
 
 ExpressRoute enables us to connect on Premises to Azure services seamlessly. Before you learn about SKU's, let's explore the various connectivity models in ExpressRoute.
 
