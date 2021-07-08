@@ -1,4 +1,4 @@
-#Distributed Denial of Service (DDoS)
+##Distributed Denial of Service (DDoS)
 
 A denial of service attack (DoS) is an attack that has the goal of preventing access to services or systems. If the attack originates from one location, it is called a DoS. If the attack originates from multiple networks and systems, it is called distributed denial of service (DDoS).
 
@@ -8,13 +8,13 @@ Azure DDoS protection, combined with application design best practices, provide 
 * **Basic**: Automatically enabled as part of the Azure platform. Always-on traffic monitoring, and real-time mitigation of common network-level attacks, provide the same defenses utilized by Microsoft's online services. The entire scale of Azure's global network can be used to distribute and mitigate attack traffic across regions. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
 * **Standard**: Provides additional mitigation capabilities over the Basic service tier that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is simple to enable, and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated to resources deployed in virtual networks, such as Azure Load Balancer, Azure Application Gateway, and Azure Service Fabric instances, but this protection does not apply to App Service Environments. Real-time telemetry is available through Azure Monitor views during an attack, and for history. Rich attack mitigation analytics are available via diagnostic settings. Application layer protection can be added through the Azure Application Gateway Web Application Firewall or by installing a 3rd party firewall from Azure Marketplace. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
 
-# Azure DDoS Protection Standard
+## Azure DDoS Protection Standard
 
 DDoS Protection Standard protects resources in a virtual network including public IP addresses associated with virtual machines, load balancers, and application gateways. When coupled with the Application Gateway web application firewall, or a third-party web application firewall deployed in a virtual network with a public IP, DDoS Protection Standard can provide full layer 3 to layer 7 mitigation capability.
 
 Every property in Azure is protected by Azure's infrastructure DDoS (Basic) Protection at no additional cost. While DDoS Protection Standard is a paid service, design for services that are deployed in a virtual network.
 
-# Types of DDoS attacks
+## Types of DDoS attacks
 
 DDoS Protection Standard can mitigate the following types of attacks:
 
@@ -24,7 +24,7 @@ DDoS Protection Standard can mitigate the following types of attacks:
 
 **Resource (application) layer attacks** - These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection Standard to provide defense against these attacks. There are also third-party web application firewall offerings available in the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?page=1&search=web application firewall).
 
-# Azure DDoS protection features
+## Azure DDoS protection features
 
 Some of Azure DDoS protection features include:
 
