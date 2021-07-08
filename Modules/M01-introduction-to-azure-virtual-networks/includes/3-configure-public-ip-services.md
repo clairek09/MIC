@@ -53,6 +53,10 @@ You can't bring your own public IP addresses from on-premises networks into Azur
 To ensure a static range of public IP addresses, you can create a public IP address prefix. You can't specify the addresses when you create the prefix, but after the prefix is created, the addresses will be fixed. The IP addresses will be a contiguous range. The advantage of a public IP address prefix is that you can specify firewall rules for these IP addresses with the knowledge that they will not change. You can assign the addresses from a public IP address prefix to any resource in Azure that supports public IP addresses.
 
 
+## Check your knowledge
+
+Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+
 ## quiz title: 
 
 ## Multiple Choice
