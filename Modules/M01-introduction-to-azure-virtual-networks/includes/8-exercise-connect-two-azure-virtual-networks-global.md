@@ -1,5 +1,5 @@
 
-In this unit, you will configure enable connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
+In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
 ## Create a Virtual Machine to test the configuration
 
