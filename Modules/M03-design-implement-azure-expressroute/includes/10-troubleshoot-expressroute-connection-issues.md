@@ -1,4 +1,4 @@
-# Troubleshoot ExpressRoute connection issues
+
 
 As an Azure network engineer supporting an ExpressRoute deployment, you will have to diagnose and resolve any ExpressRoute connection issues that arise. 
 
