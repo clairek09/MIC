@@ -1,4 +1,4 @@
-# Configure Azure Application Gateway
+
 
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
