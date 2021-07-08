@@ -1,4 +1,3 @@
-# Connect remote resources by using Azure Virtual WANs
 
  
 
