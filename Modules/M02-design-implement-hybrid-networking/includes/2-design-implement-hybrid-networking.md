@@ -6,6 +6,8 @@ To integrate your on-premises environment with Azure, you need the ability to cr
 
 When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth. VPN gateways can also be used for connections between virtual networks in Azure.
 
+## Azure VPN Gateways 
+
 Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the gateway subnet. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly and should not deploy any additional resources into the gateway subnet.
 
 When you configure a virtual network gateway in Azure, you configure a setting that specifies the gateway type. The gateway type determines how the virtual network gateway will be used and the actions that the gateway takes. The gateway type 'Vpn' specifies that the type of virtual network gateway created is a 'VPN gateway'.
