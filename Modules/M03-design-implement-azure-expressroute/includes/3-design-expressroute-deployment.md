@@ -49,11 +49,11 @@ ExpressRoute locations (sometimes referred to as peering locations or meet-me-lo
 
 **Azure regions to ExpressRoute locations within a geopolitical region.**
 
-The following link provides a list of [Azure regions to ExpressRoute locations](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) within a geopolitical region. This page is kept up to date with the latest ExpressRoute locations and providers.
+The following link provides a list of [Azure regions to ExpressRoute locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations) within a geopolitical region. This page is kept up to date with the latest ExpressRoute locations and providers.
 
 **ExpressRoute connectivity providers**
 
-The following link list's locations by service provider. This page is kept up to date with the latest available providers by location, see [Service providers by location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers).
+The following link list's locations by service provider. This page is kept up to date with the latest available providers by location, see [Service providers by location](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers).
 
 **Connectivity through Exchange providers**
 
@@ -80,7 +80,7 @@ When you deploy ExpressRoute, you must choose between the Local, Standard and Pr
 
 The other option is the ExpressRoute Direct, connecting your network to the closest Microsoft edge node which then connects to the Microsoft Global Network, to connect to other customers offices or factories and any Azure Region. The usage of the Microsoft Global Network is charged on top of the of the ExpressRoute Direct.
 
-Please refer to the [Express Route pricing](https://azure.microsoft.com/en-us/pricing/details/expressroute/) for details on metered and unlimited data plan based on the bandwidth.
+Please refer to the [Express Route pricing](https://azure.microsoft.com/pricing/details/expressroute/) for details on metered and unlimited data plan based on the bandwidth.
 
 you can purchase ExpressRoute circuits for a wide range of bandwidths. The supported bandwidths are listed as followed. Be sure to check with your connectivity provider to determine the bandwidths they support.
 
@@ -112,7 +112,7 @@ Costs that typically accrue with ExpressRoute:-
 
 When you create an ExpressRoute circuit, you might choose to create an ExpressRoute gateway to link your virtual networks to the circuit. ExpressRoute Gateways are charged at an hourly rate plus the cost of an ExpressRoute circuit. See [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute) and select ExpressRoute Gateways to see rates for different gateway SKUs.
 
-Inbound data transfer is included in the monthly cost of the ExpressRoute circuit for all three SKUs. Outbound data transfer is only included for an unlimited data plan. For a Metered data plan, outbound data transfer is charged per GB used based on the zone number of the [peering location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers).
+Inbound data transfer is included in the monthly cost of the ExpressRoute circuit for all three SKUs. Outbound data transfer is only included for an unlimited data plan. For a Metered data plan, outbound data transfer is charged per GB used based on the zone number of the [peering location](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers).
 
 **ExpressRoute Direct**
 
