@@ -17,5 +17,5 @@ Module workitem: 68540
 
 ###### Enter the Target folder in github
 ```
-Target folder in github: learn-pr/design-implement-azure-expressroute
+Target folder in github: learn-pr/wwl-azure/design-implement-azure-expressroute
 ```
