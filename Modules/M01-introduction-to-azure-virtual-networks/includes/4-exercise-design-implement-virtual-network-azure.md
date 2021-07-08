@@ -133,10 +133,17 @@ These virtual networks and subnets are structured in a way that accommodates exi
 ## Create the ResearchVnet virtual network and subnets
 
 
+| **Tab**      | **Option**         | **Value**            |
+| ------------ | ------------------ | -------------------- |
+| Basics       | Resource Group     | ContosoResourceGroup |
+|              | Name               | ResearchVnet         |
+|              | Region             | West India           |
+| IP Addresses | IPv4 address space | 10.40.0.0/16         |
+
 | **Subnet**           | **Option**           | **Value**            |
 | -------------------- | -------------------- | -------------------- |
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
-|                      | Subnet address range | 10.40.40.0/24        |
+|                      | Subnet address range | 10.40.0.0/24        |
  
 
 ## Verify the creation of VNets and Subnets
