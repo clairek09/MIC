@@ -1,4 +1,4 @@
-# Exercise - Create an Azure Private Endpoint using Azure PowerShell
+
 
 Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including Portal, CLI, PowerShell etc. 
 
