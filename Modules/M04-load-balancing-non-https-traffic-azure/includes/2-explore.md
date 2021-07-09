@@ -52,9 +52,9 @@ When choosing an appropriate load balancing option, there are some key factors t
 
 - **Availability** - what is the Service Level Agreement (SLA) for the service?
 
-- **Cost** - In addition to the cost of the actual service itself, consider the operational cost to manage and maintain a solution built on that service. See [Load balancing pricing](https://azure.microsoft.com/en-us/pricing/details/load-balancer/).
+- **Cost** - In addition to the cost of the actual service itself, consider the operational cost to manage and maintain a solution built on that service. See [Load balancing pricing](https://azure.microsoft.com/pricing/details/load-balancer/).
 
-- **Features and limitations** - what features and benefits does each service provide, and what are its limitations? See [Load balancer limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits).
+- **Features and limitations** - what features and benefits does each service provide, and what are its limitations? See [Load balancer limits](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 The flowchart below will help you to select the most appropriate load-balancing solution for your application, by guiding you through a set of key decision criteria in order to reach a recommendation.
 
