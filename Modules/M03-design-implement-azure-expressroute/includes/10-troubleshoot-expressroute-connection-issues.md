@@ -54,7 +54,7 @@ In the preceding example, as noted Azure private peering is provisioned, whereas
 > On a /30 subnet assigned for interface, Microsoft will pick the second usable IP address of the subnet for the MSEE interface. Therefore, ensure that the first usable IP address of the subnet has been assigned on the peered CE/PE-MSEE.
 
 
- ## **Address Resolution Protocol (ARP)**
+ ## **Validate Address Resolution Protocol (ARP)**
 
 Address Resolution Protocol (ARP) is a layer 2 protocol defined in RFC 826. ARP is used to map the Ethernet address (MAC address) with an ip address. ARP tables can help validate layer 2 configuration and troubleshooting basic layer 2 connectivity issues.
 
@@ -74,6 +74,17 @@ The ARP table provides a mapping of the IP address and MAC address for a particu
   - Get route table to determine which prefixes are advertised across ExpressRoute.
 - Validate data transfer by reviewing bytes in / out.
 - Open a support ticket with Microsoft support if you're still experiencing issues.
+
+##**ExpressRoute monitoring tools**
+
+ExpressRoute uses Network insights to provide a detailed topology mapping of all ExpressRoute components (peerings, connections, gateways) in relation with one another. Network insights for ExpressRoute also have preloaded metrics dashboard for availability, throughput, packet drops, and gateway metrics.
+
+You can analyze metrics for Azure ExpressRoute with metrics from other Azure services using metrics explorer by opening Metrics from the Azure Monitor menu.
+
+- To view ExpressRoute metrics, filter by Resource Type ExpressRoute circuits.
+- To view Global Reach metrics, filter by Resource Type ExpressRoute circuits and select an ExpressRoute circuit resource that has Global Reach enabled.
+- To view ExpressRoute Direct metrics, filter Resource Type by ExpressRoute Ports.
+
 
 
 ## Quiz title: Check your knowledge 
