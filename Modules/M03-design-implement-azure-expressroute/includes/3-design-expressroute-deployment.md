@@ -2,7 +2,7 @@
 
 ExpressRoute enables us to connect on Premises to Azure services seamlessly. lets review some design decisions you will make before deploying an ExpressRoute circuit.
 
-## **ExpressRoute circuit SKUs **
+## **ExpressRoute circuit SKUs**
 
 Azure ExpressRoute has three different circuit SKUs: [Local](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs), Standard, and [Premium](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-faqs). The way you are charged for your ExpressRoute usage varies between these three SKU types. 
 
