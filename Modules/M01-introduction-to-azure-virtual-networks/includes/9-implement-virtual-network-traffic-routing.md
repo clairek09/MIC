@@ -168,13 +168,13 @@ You can view the effective routes for a network interface with the Get-AzEffecti
 
 You can view the effective routes for a network interface with the az network nic show-effective-route-table command. The following example gets the effective routes for a network interface named myVMNic1 that is in a resource group named myResourceGroup:
 
-```Azure CLI
+````Azure CLI
  az network nic show-effective-route-table 
 
  --name myVMNic1 
 
  --resource-group myResourceGroup 
-```
+````
 
 
 
