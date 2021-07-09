@@ -44,13 +44,37 @@ In the Azure portal, status of an ExpressRoute circuit peering can be checked un
 
 In the preceding example, as noted Azure private peering is provisioned, whereas Azure public and Microsoft peering are not provisioned. A successfully provisioned peering context would also have the primary and secondary point-to-point subnets listed. The /30 subnets are used for the interface IP address of the MSEEs and CEs/PE-MSEEs. For the peering that are provisioned, the listing also indicates who last modified the configuration.
 
- 
 
-> [!NOTE] If enabling a peering fails, check if the primary and secondary subnets assigned match the configuration on the linked CE/PE-MSEE. Also check if the correct VlanId, AzureASN, and PeerASN are used on MSEEs and if these values map to the ones used on the linked CE/PE-MSEE. If MD5 hashing is chosen, the shared key should be same on MSEE and PE-MSEE/CE pair. Previously configured shared key would not be displayed for security reasons. Should you need to change any of these configuration on an MSEE router, refer to [Create and modify routing for an ExpressRoute circuit](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager).
 
-> [!NOTE] On a /30 subnet assigned for interface, Microsoft will pick the second usable IP address of the subnet for the MSEE interface. Therefore, ensure that the first usable IP address of the subnet has been assigned on the peered CE/PE-MSEE.
+> [!NOTE] 
+> If enabling a peering fails, check if the primary and secondary subnets assigned match the configuration on the linked CE/PE-MSEE. Also check if the correct VlanId, AzureASN, and PeerASN are used on MSEEs and if these values map to the ones used on the linked CE/PE-MSEE. If MD5 hashing is chosen, the shared key should be same on MSEE and PE-MSEE/CE pair. Previously configured shared key would not be displayed for security reasons. Should you need to change any of these configuration on an MSEE router, refer to [Create and modify routing for an ExpressRoute circuit](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager).
 
- 
+
+> [!NOTE] 
+> On a /30 subnet assigned for interface, Microsoft will pick the second usable IP address of the subnet for the MSEE interface. Therefore, ensure that the first usable IP address of the subnet has been assigned on the peered CE/PE-MSEE.
+
+
+ ## **Validate Peering Configuration**
+
+Address Resolution Protocol (ARP) is a layer 2 protocol defined in RFC 826. ARP is used to map the Ethernet address (MAC address) with an ip address. ARP tables can help validate layer 2 configuration and troubleshooting basic layer 2 connectivity issues.
+
+
+The ARP table provides a mapping of the IP address and MAC address for a particular peering. The ARP table for an ExpressRoute circuit peering provides the following information for each interface (primary and secondary):
+- Mapping of on-premises router interface ip address to the MAC address
+- Mapping of ExpressRoute router interface ip address to the MAC address
+- Age of the mapping ARP tables can help validate layer 2 configuration and troubleshooting basic layer 2 connectivity issues.
+
+**ARP table when Microsoft side has problems**
+- You won't see an ARP table shown for a peering if there are issues on the Microsoft side.
+- Open a support ticket with Microsoft support. Specify that you have an issue with layer 2 connectivity.
+
+**Next Steps**
+- Validate Layer 3 configurations for your ExpressRoute circuit.
+  - Get route summary to determine the state of BGP sessions.
+  - Get route table to determine which prefixes are advertised across ExpressRoute.
+- Validate data transfer by reviewing bytes in / out.
+- Open a support ticket with Microsoft support if you're still experiencing issues.
+
 
 ## Quiz title: Check your knowledge 
 
