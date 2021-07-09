@@ -85,9 +85,9 @@ What are the two modes that a WAF policy can use?
 
 (x) WAF policy can either be in Prevention mode or Detection mode.{{Correct. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, but you can change it to Prevention mode.}} 
 
-() WAF policy can either be in Default mode or Custom mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, there are no modes called Default or Custom.}}
+( ) WAF policy can either be in Default mode or Custom mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, there are no modes called Default or Custom.}}
 
-( )WAF policy can either be in Default Rule Set mode or Detection mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, however there is no mode called Default Rule Set.}}
+( ) WAF policy can either be in Default Rule Set mode or Detection mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, however there is no mode called Default Rule Set.}}
 
 ## Multiple choice
 
