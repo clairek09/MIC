@@ -97,7 +97,7 @@ You are a network engineer for a company with offices in London and Tokyo. How c
 
 (x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
 
-( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to onnect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}} 
+( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to connect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}} 
 
 ( ) Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access.{{Incorrect. Each location should connect to GlobalNet through a local service provider.}}
 
