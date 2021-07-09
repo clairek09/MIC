@@ -4,7 +4,7 @@ As a network engineer you will design and implement various solutions to complet
 
 Suppose you are the Azure network engineer at a company. You are tasked with diagnosing network connectivity issues of a VM. You need to learn how to troubleshoot and fix the problem so you can establish reliable connections to this VM. 
 
-In this module you will learn about Network Watcher features and Azure Monitor as it relates to azure networking resources. You will be able to monitor and gain useful insights into the behavior and performance of the services and traffic on your networks.
+In this module you will learn about Network Watcher features and Azure Monitor as it relates to Azure networking resources. You will be able to monitor and gain useful insights into the behavior and performance of the services and traffic on your networks.
 
 ## Learning objectives
 
