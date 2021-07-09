@@ -12,9 +12,6 @@ Azure ExpressRoute has three different circuit SKUs: [Local](https://docs.micros
 > [!Important] 
 >
 > Based on requirements of workloads and data plan, selection of SKU types can help optimize cost and budget.
-### Evaluate implications of changing SKUs after deployment
-
-If you have an ExpressRoute gateway after deleting the ExpressRoute circuit, you will still be charged for the cost until you delete it.
 
 ### Explore pricing based on ExpressRoute SKU  
 
