@@ -93,8 +93,8 @@ What are the two modes that a WAF policy can use?
 
 What are the two types of custom rule in a WAF policy?
 
-(x)Match rules and rate limit rules..{{Correct. There are two types of custom rules: match rules and rate limit rules.}
+(x) Match rules and rate limit rules..{{Correct. There are two types of custom rules: match rules and rate limit rules.}
 
-( )String rules and match rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as String rule}}
+( ) String rules and match rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as String rule}}
 
-( )Priority rules and rate limit rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as Priority rule.}}
+( ) Priority rules and rate limit rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as Priority rule.}}
