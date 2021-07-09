@@ -104,7 +104,7 @@ you can purchase ExpressRoute circuits for a wide range of bandwidths. The suppo
 
 ### Choose a billing model
 
-You can pick a billing model that works best for you. Choose between the billing models listed as followed. For more information, see ExpressRoute FAQ.
+You can pick a billing model that works best for you. Choose between the billing models listed as followed.
 
 - **Unlimited data**. Billing is based on a monthly fee; all inbound and outbound data transfer is included free of charge.
 - **Metered data**. Billing is based on a monthly fee; all inbound data transfer is free of charge. Outbound data transfer is charged per GB of data transfer. Data transfer rates vary by region.
