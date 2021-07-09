@@ -25,7 +25,6 @@ In this module, you will:
 
 - You should have experience with network connectivity methods, such as VPN or WAN
 
-- You should be able to navigate the Azure portal
 
 - You should have experience with the Azure portal and Azure PowerShell
 
