@@ -54,7 +54,7 @@ In the preceding example, as noted Azure private peering is provisioned, whereas
 > On a /30 subnet assigned for interface, Microsoft will pick the second usable IP address of the subnet for the MSEE interface. Therefore, ensure that the first usable IP address of the subnet has been assigned on the peered CE/PE-MSEE.
 
 
- ## **Validate Peering Configuration**
+ ## **Address Resolution Protocol (ARP)**
 
 Address Resolution Protocol (ARP) is a layer 2 protocol defined in RFC 826. ARP is used to map the Ethernet address (MAC address) with an ip address. ARP tables can help validate layer 2 configuration and troubleshooting basic layer 2 connectivity issues.
 
