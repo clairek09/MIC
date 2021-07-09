@@ -101,8 +101,8 @@ What is the key technology behind Private Links?
 
 What is the difference between a Service Endpoint and a Private Endpoint?
 
-(X) A Service Endpoint connects to extenal systems and services.{{Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure.}} 
+(X) A Service Endpoint connects to external systems and services.{{Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure.}} 
 
-( ) A Private Endpoint connects to extenal systems and services.{{Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources.}}
+( ) A Private Endpoint connects to external systems and services.{{Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources.}}
 
 ( ) Insert the second incorrect answer text in this cell.{{Insert the second incorrect answer feedback in this cell.}}
