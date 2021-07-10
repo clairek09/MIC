@@ -19,3 +19,5 @@ Now that you have reviewed this module, you should be able to:
 ## Resources
 
 Use these resources to discover more.
+
+[Network monitoring solutions](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
