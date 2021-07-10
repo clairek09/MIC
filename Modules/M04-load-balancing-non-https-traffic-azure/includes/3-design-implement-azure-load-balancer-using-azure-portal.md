@@ -170,14 +170,10 @@ Under the **Settings** section choose **Backend pools**, and then **Add** to add
 
 You need to enter the following information on the **Add backend pool** page.
 
-| **Field**       | **Information**                                              |
-| --------------- | ------------------------------------------------------------ |
-| Name            | Enter a unique name for the backend pool.                    |
-| Virtual network | Specify the name of the virtual network where the resources are located that you will be adding to the backend pool. |
-| Associated to   | You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set. |
-| IP Version      | Select either **IPv4** or **IPv6**.                          |
-
-
+- **Name**: Enter a unique name for the backend pool
+- **Virtual network**: Specify the name of the virtual network where the resources are located that you will be adding to the backend pool
+- **Associated to**: You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set
+- **IP Version**: Select either **IPv4** or **IPv6**
 
 
 You could add existing virtual machines to the backend pool at this point, or you can create and add them later. You then click **Add** to add the backend pool.
