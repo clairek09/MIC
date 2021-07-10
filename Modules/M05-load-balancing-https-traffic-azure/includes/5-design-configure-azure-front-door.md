@@ -173,7 +173,7 @@ For more information on how to configure HTTPS on Front door, see [Tutorial - Co
 What is the difference between Azure Front Door and Azure Application Gateway?
 (x) Front Door is a global service, Application Gateway is a regional service.  {{Correct, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.}} 
 ( ) Front Door is a regional service, Application Gateway is a global service.  {{Incorrect, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.}} 
-( )  Front Door uses health probes to monitor the health of backends, Application Gateway does not.  {{Incorrect, Both Front Door and Application gateweay use health probes to monitor the health of backends.}}
+( )  Front Door uses health probes to monitor the health of backends, Application Gateway does not.  {{Incorrect, Both Front Door and Application gateway use health probes to monitor the health of backends.}}
 
 ## Multiple Choice 
 
