@@ -16,4 +16,8 @@ In this module, you will:
 
 ## Prerequisites
 
-You should be familiar with basic networking concepts and terminology, and you should be familiar with Azure infrastructure concepts and terminology, including the Azure portal, virtual machines, and virtual networks.
+- You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+
+- You should have experience with network connectivity methods, such as VPN or WAN
+
+- You should have experience with the Azure portal and Azure PowerShell
