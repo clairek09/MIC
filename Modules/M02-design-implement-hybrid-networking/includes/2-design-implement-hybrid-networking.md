@@ -48,8 +48,6 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
 
 | VPN Gateway Generation | SKU      | S2S/VNet-to-Vnet Tunnels | P2S SSTP Connections | P2S IKEv2/OpenVPN Connections | Aggregate Throughput Benchmark | BGP           | Zone-redundant |
 | ---------------------- | -------- | ------------------------ | -------------------- | ----------------------------- | ------------------------------ | ------------- | -------------- |
-|  |
-|  |
 | Generation1            | Basic    | Max. 10                  | Max. 128             | Not Supported                 | 100 Mbps                       | Not Supported | No             |
 | Generation1            | VpnGw1   | Max. 30\*                | Max. 128             | Max. 250                      | 650 Mbps                       | Supported     | No             |
 | Generation1            | VpnGw2   | Max. 30\*                | Max. 128             | Max. 500                      | 1 Gbps                         | Supported     | No             |
