@@ -84,9 +84,7 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
 Now let's look at each of the main Azure load balancing services in more detail.
 
  
-
-## Check your knowledge 
-
+## quiz title: Check your knowledge
 
 
 ## Multiple Choice 
