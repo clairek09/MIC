@@ -68,6 +68,7 @@ Custom probes give you more granular control over the health monitoring. When us
 
 The following table provides definitions for the properties of a custom health probe.
 
+
 [!div class="mx-tdBreakAll"]
 | **Probe property**  | **Description**                                              |
 | ------------------- | ------------------------------------------------------------ |
