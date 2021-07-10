@@ -29,7 +29,7 @@ Azure Load Balancer supports availability zones scenarios. You can use Standard 
 
 A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure the zone related properties (mentioned above) for your load balancer, select the appropriate type of frontend needed.
 
-###Zone redundant
+### Zone redundant
 ![Diagram illustrating Zone redundant load balancers in Azure](../media/zone-redundant.png)
 
 In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
@@ -38,7 +38,7 @@ A single frontend IP address will survive zone failure. The frontend IP may be u
 
 The frontend's IP address is served simultaneously by multiple independent infrastructure deployments in multiple availability zones. Any retries or reestablishment will succeed in other zones not affected by the zone failure.
 
-###Zonal
+### Zonal
 
 You can choose to have a frontend guaranteed to a single zone, which is known as a zonal. This scenario means any inbound or outbound flow is served by a single zone in a region. Your frontend shares fate with the health of the zone. The data path is unaffected by failures in zones other than where it was guaranteed. You can use zonal frontends to expose an IP address per Availability Zone.
 
@@ -73,7 +73,10 @@ To compare and understand the differences, review the table below.
 | **Management Operations**      | 60-90+ seconds typical                                       | Most operations < 30 seconds                                 |
 | **Service Level Agreement**    | N/A                                                          | 99.99% for 2 or more VMs                                     |
 
-|                                                                                                                                               | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
+
+
+
+| *Features*                                                                                                                                    | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | [Backend pool size](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)       | Supports up to 1000 instances.                                                                                                                          | Supports up to 300 instances.                                                                           |
 | Backend pool endpoints                                                                                                                        | Any virtual machines or virtual machine scale sets in a single virtual network.                                                                         | Virtual machines in a single availability set or virtual machine scale set.                             |
