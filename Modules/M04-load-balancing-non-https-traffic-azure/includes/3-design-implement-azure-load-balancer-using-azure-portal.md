@@ -190,13 +190,9 @@ On the **Backend pools** page, select the backend pool from the list.
 
 You need to enter the following information to add the virtual machine to the backend pool.
 
-| **Field**       | **Information**                                              |
-| --------------- | ------------------------------------------------------------ |
-| Virtual network | Specify the name of the virtual network where the resources are located that you will be adding to the backend pool. |
-| Associated to   | You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set. |
-| IP Version      | Select either **IPv4** or **IPv6**.                          |
-
-
+- **Virtual network**: Specify the name of the virtual network where the resources are located that you will be adding to the backend pool
+- **Associated to**: You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set
+- **IP Version**: Select either **IPv4** or **IPv6**
 
 
 Then under the **Virtual machines** section, click **Add**.
@@ -225,15 +221,12 @@ On the **Backend pools** page of the load balancer, under **Settings**, select *
 
 You need to enter the following information on the **Add health probe** page.
 
-| **Field**           | **Information**                                              |
-| ------------------- | ------------------------------------------------------------ |
-| Name                | Enter a unique name for the health probe.                    |
-| Protocol            | Select either **TCP** or **HTTP**.                           |
-| Port                | Specify the destination port number for the health signal. The default is port **80**. |
-| Interval            | Specify the interval time in seconds between probe attempts. The default is **5** seconds. |
-| Unhealthy threshold | Specify the number of consecutive probe failures that must occur before a virtual machine is considered to be in an unhealthy state. The default is **2** failures. |
 
-
+- **Name**: Enter a unique name for the health probe
+- **Protocol**: Select either **TCP** or **HTTP**
+- **Port**: Specify the destination port number for the health signal. The default is port **80**
+- **Interval**: Specify the interval time in seconds between probe attempts. The default is **5** seconds
+- **Unhealthy threshold**: Specify the number of consecutive probe failures that must occur before a virtual machine is considered to be in an unhealthy state. The default is **2** failures
 
 
 You then click **Add** to add the health probe.
@@ -254,19 +247,17 @@ On the **Health probes** page of the load balancer, under **Settings**, select *
 
 You need to enter the following information on the **Add load balancing rule** page.
 
-| **Field**              | **Information**                                              |
-| ---------------------- | ------------------------------------------------------------ |
-| Name                   | Enter a unique name for the load  balancing rule.            |
-| IP Version             | Select either **IPv4** or **IPv6**.                          |
-| Frontend IP address    | Select the existing public-facing IP  address of the load balancer. |
-| Protocol               | Select either the **TCP** or **UDP** protocol.               |
-| Port                   | Specify the port number for the load  balancing rule. The default is port **80**. |
-| Backend port           | You can choose to route traffic to the  virtual machine in the backend pool using a different port than the one that  clients use by default to communicate with the load balancer (port 80). |
-| Backend pool           | Select an existing backend pool.  The virtual machines in this backend pool  will be the target for the load balanced traffic of this rule. |
-| Health probe           | Select an existing health probe or create  a new one.   The load balancing rule uses the health  probe to determine which virtual machines in the backend pool are healthy and  therefore can receive load balanced traffic. |
-| Session persistence    | You can choose **None**, or **Client IP**, or **Client IP and protocol**.   Session persistence specifies that  traffic from a client should be handled by the same virtual machine in the  backend pool for the duration of a session. **None**  specifies that successive requests from the same client may be handled by any  virtual machine. **Client IP** specifies  that successive requests from the same client IP address will be handled by  the same virtual machine. **Client IP and protocol**  specifies that successive requests from the same client IP address and  protocol combination will be handled by the same virtual machine. |
-| Idle timeout (minutes) | Specify the time to keep a TCP or HTTP  connection open without relying on clients to send *keep-alive* messages.   The default idle timeout is **4** minutes, which is also the minimum setting. The  maximum setting is 30 minutes. |
-| Floating IP            | Choose between **Disabled** or **Enabled**.  With Floating IP set to **Disabled**, Azure exposes a traditional load  balancing IP address mapping scheme for ease of use (the VM instances' IP).   With Floating IP set to **Enabled**, it changes the IP address mapping to the  Frontend IP of the load balancer to allow for additional flexibility. |
+- **Name**: Enter a unique name for the load  balancing rule
+- **IP Version**: Select either **IPv4** or **IPv6**
+- **Frontend IP address**: Select the existing public-facing IP  address of the load balancer
+- **Protocol**: Select either the **TCP** or **UDP** protocol
+- **Port**: Specify the port number for the load  balancing rule. The default is port **80**
+- **Backend port**: You can choose to route traffic to the  virtual machine in the backend pool using a different port than the one that  clients use by default to communicate with the load balancer (port 80)
+- **Backend pool**: Select an existing backend pool.  The virtual machines in this backend pool  will be the target for the load balanced traffic of this rule.
+- **Health probe**: Select an existing health probe or create  a new one.   The load balancing rule uses the health  probe to determine which virtual machines in the backend pool are healthy and  therefore can receive load balanced traffic.
+- **Session persistence**: You can choose **None**, or **Client IP**, or **Client IP and protocol**.   Session persistence specifies that  traffic from a client should be handled by the same virtual machine in the  backend pool for the duration of a session. **None**  specifies that successive requests from the same client may be handled by any  virtual machine. **Client IP** specifies  that successive requests from the same client IP address will be handled by  the same virtual machine. **Client IP and protocol**  specifies that successive requests from the same client IP address and  protocol combination will be handled by the same virtual machine.
+- **Idle timeout(minutes)**: Specify the time to keep a TCP or HTTP  connection open without relying on clients to send *keep-alive* messages.   The default idle timeout is **4** minutes, which is also the minimum setting. The  maximum setting is 30 minutes.
+- **Floating IP**: Choose between **Disabled** or **Enabled**.  With Floating IP set to **Disabled**, Azure exposes a traditional load  balancing IP address mapping scheme for ease of use (the VM instances' IP).   With Floating IP set to **Enabled**, it changes the IP address mapping to the  Frontend IP of the load balancer to allow for additional flexibility.
 
 
 You then click **Add** to add the load balancing rule.
