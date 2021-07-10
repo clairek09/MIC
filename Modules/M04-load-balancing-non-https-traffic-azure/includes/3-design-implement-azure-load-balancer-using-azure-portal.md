@@ -56,24 +56,6 @@ Two SKUs are available when you create a load balancer in Azure: Basic load bala
 
 To compare and understand the differences, review the table below.
 
-| *Features*                     | **Basic Load Balancer SKU**                                  | **Standard Load Balancer SKU**                               |
-| ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Backend pool size**          | Supports up to 300 instances                                 | Supports up to 1,000 instances                               |
-| **Backend pool endpoints**     | Virtual machines in a single availability  set or virtual machine scale set | Any virtual machines or virtual machine  scale sets in a single virtual network |
-| **Health probes**              | TCP, HTTP  Does not support secure HTTP (HTTPS)              | TCP, HTTP, HTTPS                                             |
-| **Health probe down behavior** | TCP connections stay alive on an instance  probe down. All TCP connections end when all probes are down | TCP connections stay alive on an instance  probe down **and** on all probes  down |
-| **Availability Sets**          | Supported                                                    | Supported                                                    |
-| **Availability Zones**         | N/A                                                          | Zone-redundant and zonal frontends for  inbound and outbound traffic |
-| **Diagnostics**                | Azure Monitor logs                                           | Azure Monitor multi-dimensional metrics                      |
-| **HA ports**                   | N/A                                                          | Available for Internal Load Balancer                         |
-| **Secure by default**          | Open by default. Network security group  optional            | Closed to inbound flows unless allowed by  a network security group. Internal traffic from the virtual network to the  internal load balancer is allowed |
-| **Outbound Rules**             | N/A                                                          | Declarative outbound NAT configuration                       |
-| **TCP Reset on Idle**          | N/A                                                          | Available on any rule                                        |
-| **Multiple front ends**        | Inbound only                                                 | Inbound and outbound                                         |
-| **Management Operations**      | 60-90+ seconds typical                                       | Most operations < 30 seconds                                 |
-| **Service Level Agreement**    | N/A                                                          | 99.99% for 2 or more VMs                                     |
-
-
 
 
 | *Features*                                                                                                                                    | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
