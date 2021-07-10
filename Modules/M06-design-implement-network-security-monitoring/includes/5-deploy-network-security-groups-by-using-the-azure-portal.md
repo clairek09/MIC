@@ -20,6 +20,7 @@ Network security group security rules are evaluated by priority using the 5-tupl
 
 Azure creates the following default rules in each network security group that you create:
 
+
 | Direction | Name                          | Priority | Source            | Source Ports | Destination    | Destination Ports | Protocol | Access |
 | --------- | ----------------------------- | -------- | ----------------- | ------------ | -------------- | ----------------- | -------- | ------ |
 | Inbound   | AllowVNetInBound              | 65000    | VirtualNetwork    | 0-65535      | VirtualNetwork | 0-65535           | Any      | Allow  |
