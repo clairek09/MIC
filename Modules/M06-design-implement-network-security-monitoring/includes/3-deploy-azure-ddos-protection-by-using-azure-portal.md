@@ -132,7 +132,7 @@ Which one of these is a symptom of a DDoS attack?
 
 (x ) An unexplained surge in requests. {{Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources.}}
 
-( ) Application running slowly. {{Incorrect. This could just be other performance related issues in your application/connectivity.}}
+( ) Application running slowly. {{Incorrect. This could just be other performance-related issues in your application/connectivity.}}
 
 ( ) HTTP 400 Bad Request {{Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error}} 
 
