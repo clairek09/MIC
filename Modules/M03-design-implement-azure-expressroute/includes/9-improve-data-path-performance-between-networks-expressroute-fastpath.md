@@ -103,7 +103,8 @@ The circuit owner has the power to modify and revoke authorizations at any time.
 
 The circuit owner creates an authorization, which creates an authorization key to be used by a circuit user to connect their virtual network gateways to the ExpressRoute circuit. An authorization is valid for only one connection.
 
-> [!NOTE] Each connection requires a separate authorization.
+> [!NOTE] 
+> Each connection requires a separate authorization.
 
 1. In the ExpressRoute page, select **Authorizations** and then type a **name** for the authorization and select **Save**.
 
@@ -135,13 +136,15 @@ To redeem a connection authorization
 
 1. Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
-  > [!Note] The location must match the virtual network gateway location you are creating the connection for.
+  > [!Note] 
+  > The location must match the virtual network gateway location you are creating the connection for.
 
   ​	![Azure portal - create connection basics tab](../media/connection-basics.png)
 
 1. In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
 
-  > [!Note] The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
+  > [!Note] 
+  > The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
 
   ![Azure portal - create connection settings tab](../media/connection-settings.png)
 
