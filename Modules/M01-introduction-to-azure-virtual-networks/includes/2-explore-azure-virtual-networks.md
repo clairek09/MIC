@@ -165,7 +165,7 @@ Let's assume you choose an address space of 10.0.0.0/24 for your first virtual n
 
 However, you can use 10.0.0.0/16, with addresses ranging from 10.0.0.1 - 10.0.255.254, and 10.1.0.0/16, with addresses ranging from 10.1.0.1 - 10.1.255.254. You can assign these address spaces to your virtual networks because there's no address overlap.
 
-> [!Note]
+> [!NOTE]
 >
 > You can add address spaces after creating the virtual network.
 
