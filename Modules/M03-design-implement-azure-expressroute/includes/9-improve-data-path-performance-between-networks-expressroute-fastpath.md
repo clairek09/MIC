@@ -66,7 +66,8 @@ This section shows you how to create a connection to link a virtual network to a
 
 **Connect a VNet to a circuit - same subscription**
 
-> [!NOTE] BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
+> [!NOTE] 
+> BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
 
 1. To create a connection Ensure that your ExpressRoute circuit and Azure private peering have been configured successfully. Your ExpressRoute circuit should look like the following image:
 
