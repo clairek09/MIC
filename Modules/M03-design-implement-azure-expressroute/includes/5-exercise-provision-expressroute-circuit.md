@@ -135,13 +135,4 @@ You need access to regions in or near the same metropolitan area. Which SKU shou
 
 ( )Standard.{{Incorrect. Standard SKU will give you more functionality than you require in this case.}}
 
-## Multiple choice
-
-When does billing begin for an ExpressRoute circuit?
-
-(x)Billing begins the moment a service key is used.{{Correct. Billing begins the moment a service key is used.}}
-
-( )When data starts flowing between circuits.{{Incorrect. Data flowing between circuits does not trigger the start of billing.}}
-
-( )When the SKU is selected.{{Incorrect. The SKU being selected does not trigger the start of billing.}}
 
