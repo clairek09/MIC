@@ -55,7 +55,6 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
 | Generation1            | VpnGw1AZ | Max. 30\*                | Max. 128             | Max. 250                      | 650 Mbps                       | Supported     | Yes            |
 | Generation1            | VpnGw2AZ | Max. 30\*                | Max. 128             | Max. 500                      | 1 Gbps                         | Supported     | Yes            |
 | Generation1            | VpnGw3AZ | Max. 30\*                | Max. 128             | Max. 1000                     | 1.25 Gbps                      | Supported     | Yes            |
-|                        |          |                          |                      |                               |                                |               |                |
 | Generation2            | VpnGw2   | Max. 30\*                | Max. 128             | Max. 500                      | 1.25 Gbps                      | Supported     | No             |
 | Generation2            | VpnGw3   | Max. 30\*                | Max. 128             | Max. 1000                     | 2.5 Gbps                       | Supported     | No             |
 | Generation2            | VpnGw4   | Max. 30\*                | Max. 128             | Max. 5000                     | 5 Gbps                         | Supported     | No             |
