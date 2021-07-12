@@ -60,7 +60,7 @@ Azure Front Door redirects traffic at each of the following levels: protocol, ho
 
 A redirect type sets the response status code for the clients to understand the purpose of the redirect. The following types of redirection are supported:
 
-[!div class="mx-tdBreakAll"]
+
 | **Redirection type** | **Action**         | **Description**                                              |
 | -------------------- | ------------------ | ------------------------------------------------------------ |
 | 301                  | Moved permanently  | Indicates that the target resource has been assigned a new permanent URI. Any future references to this resource will use one of the enclosed URIs. Use 301 status code for HTTP to HTTPS redirection. |
