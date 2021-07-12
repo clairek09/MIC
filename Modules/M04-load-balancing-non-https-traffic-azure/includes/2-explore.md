@@ -58,7 +58,7 @@ When choosing an appropriate load balancing option, there are some key factors t
 
 The flowchart below will help you to select the most appropriate load-balancing solution for your application, by guiding you through a set of key decision criteria in order to reach a recommendation.
 
-![Picture 2](../media/load-balancing-decision-tree.png)
+![flow chart to help select a load-balancing solution for your application](../media/load-balancing-decision-tree.png)
 
 **As every application will have its own unique requirements, you should only use this flowchart and the suggested recommendation as a starting point, and then perform a more detailed evaluation yourself in order to select the best option for your environment.**
 
