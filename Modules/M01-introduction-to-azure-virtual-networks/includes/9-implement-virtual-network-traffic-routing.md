@@ -160,9 +160,7 @@ You can view the effective routes for a network interface with the Get-AzEffecti
  -NetworkInterfaceName myVMNic1 `
 
  -ResourceGroupName myResourceGroup `
-
- | Format-Table 
-    ```
+  ```
 
 
 ### Resolve the routing issue
