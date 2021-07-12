@@ -125,7 +125,7 @@ Front Door supports the following HTTP methods for sending the health probes:
 
 The following table describes responses to the health probe:
 
-[!div class="mx-tdBreakAll"]
+
 | **Response**       | **Description**                                              |
 | ------------------ | ------------------------------------------------------------ |
 | Determining Health | A 200 OK status code indicates the backend is healthy. Everything else is considered a failure. If for any reason (including network failure) a valid HTTP response isn't received for a probe, the probe is counted as a failure. |
