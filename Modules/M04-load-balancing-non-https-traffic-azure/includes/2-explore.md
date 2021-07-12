@@ -71,7 +71,7 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
 - Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 
 - In the search box at the top of the page, type load balancing. When **Load balancing - help me choose (Preview)** appears in the search results, click it.
-  ![Picture 5](../media/choosing-load-balancing-service-1.png)
+  ![Azure portal screenshot of Load balancing - help me choose](../media/choosing-load-balancing-service-1.png)
 
 - Answer the Yes or No questions on this page to get a recommended solution. Note, that the final recommended solution may be a combination of multiple load balancing services.
   ![Picture 6](../media/choosing-load-balancing-service-2.png)
