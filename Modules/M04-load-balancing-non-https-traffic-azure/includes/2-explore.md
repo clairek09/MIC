@@ -77,7 +77,7 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
   ![Azure portal screenshot load balancing help me choose](../media/choosing-load-balancing-service-2.png)
 
 - Depending on what answers you give, the list of potential load balancing services will change.
-  ![Azure portal screenshot Load balancing solution](../media/choosing-load-balancing-service-3.png)
+  ![Azure portal screenshot Load balancing help me choose](../media/choosing-load-balancing-service-3.png)
 
 - Optionally, you can also click the **Service comparison** or **Tutorial** tabs for more information and training on the different load balancing services.
 
