@@ -176,7 +176,7 @@ How does ExpressRoute FastPath send network traffic?
 
 ## Multiple Choice 
 
-Your network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should you modify your ExpressRoute FastPath deployment?
+A network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?
 
 (x) Connect all the virtual networks to the ExpressRoute FastPath circuit directly.{{Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly.}} 
 ( ) Connect the VNet gateways to ExpressRoute FastPath.{{Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath.}} 
