@@ -190,7 +190,7 @@ The following diagram illustrates the DNS resolution from an on-premises network
 
 The conditional forwarding must be made to the recommended public DNS zone forwarder. For example: database.windows.net instead of privatelink.database.windows.net.
 
-![Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.](../media/on-premises-forwarding-to-azure.png)
+![Diagram illustrating DNS resolution from an on-premises network. DNS resolution is conditionally forwarded to Azure. The resolution is made by a private DNS zone linked to a virtual network](../media/on-premises-forwarding-to-azure.png)
 
  
 
