@@ -7,7 +7,7 @@ In this exercise, you will create a Virtual WAN for Contoso.
 In this exercise, you will:
 
 + Task 1: Create a Virtual WAN
-+ Task 2: Create a hub by using Azure Portal
++ Task 2: Create a hub by using Azure portal
 + Task 3: Connect a VNet to the Virtual Hub
 + Task 4: Clean up resources
 
@@ -19,7 +19,7 @@ In this exercise, you will:
 
 2. In the portal, type Virtual WAN into the search box and select **Virtual WANs** from the results list.
 
-   ![Search for Virtual WAN in Azure Portal.](../media/search-for-virtual-wan.png)
+   ![Search for Virtual WAN in Azure portal.](../media/search-for-virtual-wan.png)
 
  
 
@@ -41,7 +41,7 @@ In this exercise, you will:
 
 6. Once validation passes, select **Create** to create the Virtual WAN.
 
-## Task 2: Create a hub by using Azure Portal
+## Task 2: Create a hub by using Azure portal
 
 A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functionality. It takes 30 minutes to create the site-to-site VPN gateway in the virtual hub. You must create a Virtual WAN before you can create a hub.
 
