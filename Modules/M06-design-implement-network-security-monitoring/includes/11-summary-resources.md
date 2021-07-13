@@ -20,6 +20,6 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-[Azure best practices for network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
+[Azure best practices for network security](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)
 
-[Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices)
+[Azure DDoS Protection](https://docs.microsoft.com/azure/ddos-protection/fundamental-best-practices)
