@@ -246,7 +246,7 @@ The urlPathMap element is used to specify Path patterns to back-end server pool 
 
  "defaultBackendAddressPool": {
 
- "id": "/subscriptions/ {subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName1}"
+ "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName1}"
 
  },
 
