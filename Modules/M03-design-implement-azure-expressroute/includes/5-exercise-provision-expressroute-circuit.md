@@ -65,7 +65,7 @@ In this exercise, you will:
 
 - **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
-## Task 2: Retrieve your Service key
+## Task 2: Retrieve your service key
  
 
 1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
