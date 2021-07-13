@@ -196,7 +196,7 @@ Network Limits and limitations
 - **The gateway subnet must be /27 or a shorter prefix**, (such as /26, /25), or you will receive an error message when you add the ExpressRoute virtual network gateway.
 - **Coexistence in a dual stack VNet is not supported.** If you are using ExpressRoute IPv6 support and a dual-stack ExpressRoute gateway, coexistence with VPN Gateway will not be possible.
 
-### Create a zone redundant VNET gateway in Azure Availability zones
+### Create a zone redundant VNet gateway in Azure availability zones
 
 You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview). This brings resiliency, scalability, and higher availability to virtual network gateways. Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures.
 
