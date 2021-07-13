@@ -87,7 +87,7 @@ A route filter can have only one rule, and the rule must be of type 'Allow'. Thi
 
 To add and update rules, select the manage rule tab for your route filter.
 
-![Azure portal - Route filter properties](../media/manage-route-filter.png)
+![Azure portal - manage route filter properties](../media/manage-route-filter.png)
 
 - Select the services you want to connect to from the drop-down list and save the rule when done.
 
@@ -113,7 +113,7 @@ To add and update rules, select the manage rule tab for your route filter.
 
 - You can view properties of a route filter when you open the resource in the portal.
 
-![Azure portal - Route filter properties](../media/view-route-filter.png)
+![Azure portal - View Route filter properties](../media/view-route-filter.png)
 
  
 
