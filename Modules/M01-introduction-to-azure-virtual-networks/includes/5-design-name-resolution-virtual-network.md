@@ -178,7 +178,7 @@ What is the difference between a static public IP address and a dynamic public I
 
 ## Multiple Choice 
 
-You want to use dynamic IP addresses for specific resources on your VNet. Which SKU must you choose?
+Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?
 
 (x) Basic SKU {{that is correct. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}}
 ( ) Standard SKU{{that is incorrect. Standard SKU public IP addresses always use the static allocation method.}}
