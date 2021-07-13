@@ -70,7 +70,7 @@ Additional Connectivity options:
 - National Research and Education networks (NERN)
 - System integrators
 
-## Choose the right ExpressRoute Circuit and billing model
+## Choose the right ExpressRoute circuit and billing model
 
 Microsoft offers various Express Route options depending on the desired bandwidth of this private connection between the customer on premises network and the selected Azure region. Typically, enterprises need to evaluate their current usage and determine how much data they use monthly to start with. 
 
