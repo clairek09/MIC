@@ -351,7 +351,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 9. Open Internet Explorer and click **OK** in the **Set up Internet Explorer 11** dialog box.
 
-10. Browse to **https://** **www.microsoft.com**.
+10. Browse to **https://www.microsoft.com**.
 
 11. In the **Security Alert** dialog box, click **OK**.
 
@@ -361,7 +361,7 @@ In this task you will test the application rule to confirm that it works as expe
 
     ![RDP session browsing microsoft.com](../media/microsoft-home-page.png)
 
-14. Browse to **https://** **www.google.com**.
+14. Browse to **https://www.google.com**.
 
 15. You should be blocked by the firewall.
 
