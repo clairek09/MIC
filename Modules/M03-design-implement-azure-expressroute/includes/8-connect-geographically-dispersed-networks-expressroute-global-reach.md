@@ -93,7 +93,7 @@ What is ExpressRoute Global Reach primarily designed for?
 
 ## Multiple Choice 
 
-You are a network engineer for a company with offices in London and Tokyo. How can you configure communications between the two offices?
+How can a network engineer for a company with offices in London and Tokyo configure communications between the two offices?
 
 (x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}} 
 
