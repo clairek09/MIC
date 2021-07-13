@@ -70,7 +70,7 @@ To disable a Network Watcher for a region in the Azure portal, expand the region
 
 Network security groups (NSG) allow or deny inbound or outbound traffic to a network interface in a VM. 
 
-NSG flow logs is a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through an NSG. The NSG flow log capability allows you to log the source and destination IP address, port, protocol, and whether traffic was allowed or denied by an NSG. You can analyze logs using a variety of tools, such as PowerBI and the Traffic Analytics feature in Azure Network Watcher. 
+NSG flow logs is a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through an NSG. The NSG flow log capability allows you to log the source and destination IP address, port, protocol, and whether traffic was allowed or denied by an NSG. You can analyze logs using a variety of tools, such as Power BI and the Traffic Analytics feature in Azure Network Watcher. 
 
 Common use cases for NSG flow logs are:
 
