@@ -134,7 +134,7 @@ Also in the right pane is the Take action tab. Use this tab to take further acti
 
 ## Network Security
 
-Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V2: Network Security on Microsoft Docs](https://docs.microsoft.com/en-us/security/benchmark/azure/security-controls-v2-network-security).
+Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V2: Network Security on Microsoft Docs](https://docs.microsoft.com/security/benchmark/azure/security-controls-v2-network-security).
 
 ### NS-1: Implement security for internal traffic
 
@@ -148,7 +148,7 @@ Azure Security Center is a unified infrastructure security management system tha
 
 - **Get secure faster:** In Security Center, everything is done in cloud speed. Because it is natively integrated, deployment of Security Center is easy, providing you with auto-provisioning and protection with Azure services.
 
-[Azure Security Center Adaptive Network Hardening](https://docs.microsoft.com/en-us/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Azure Security Center - nothing needs to be installed on your machines to benefit from this network hardening tool. [Azure Security Center Adaptive Network Hardening](https://docs.microsoft.com/en-us/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-adaptive-network-hardening).
+[Azure Security Center Adaptive Network Hardening](https://docs.microsoft.com/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Azure Security Center - nothing needs to be installed on your machines to benefit from this network hardening tool. [Azure Security Center Adaptive Network Hardening](https://docs.microsoft.com/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-adaptive-network-hardening).
 
 ### NS-2: Connect private networks together
 
