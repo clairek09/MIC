@@ -277,7 +277,7 @@ Which of the following statement about external load balancers is correct?
 
 ## Multiple Choice 
 
-You are deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should you choose?
+When deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should be selected?
 
 (x) Standard{{Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration.}} 
 
