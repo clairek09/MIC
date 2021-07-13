@@ -123,7 +123,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 4. Click **Add**.
 
-   ![Show backend pool created in load balancer](../media/create-backendpool.png)
+   ![Show backend pool created in load balancer](../media/create-backend-pool.png)
 
    
 
@@ -209,7 +209,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 6. On the **myBackendPool** page, click **Save**.
 
-   ![Show VMs added to backend pool in load balancer](../media/add-vms-backendpool.png)
+   ![Show VMs added to backend pool in load balancer](../media/add-vms-backend-pool.png)
 
  
 
