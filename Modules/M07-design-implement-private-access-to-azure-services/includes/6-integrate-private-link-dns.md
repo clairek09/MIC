@@ -256,7 +256,7 @@ The following diagram shows the DNS resolution for both networks, on-premises an
 
 ## Multiple Choice 
 
-To ensure that communications with Azure Storage pass through the Service Endpoint, you
+How can one ensure that communications with Azure Storage pass through the Service Endpoint? 
 ( x) Add an outbound rule to allow access to storage.  {{Correct! Create an Allow_Storage outbound rule to allow access to Storage.}} 
 ( ) Add an inbound rule to allow access to storage. {{Incorrect, create an Allow_Storage outbound rule to allow access to Storage.}} 
 ( )  Do nothing, it is automatically configured.  {{Incorrect, create an Allow_Storage outbound rule to allow access to Storage.}}
