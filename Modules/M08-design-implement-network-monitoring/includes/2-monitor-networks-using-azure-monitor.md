@@ -185,7 +185,7 @@ The **Alert** box on the right side of the page provides a view of all alerts ge
 
 Dependency view helps you visualize how a resource is configured. Dependency view is currently available for **Azure Application Gateway**, **Azure Virtual WAN**, and **Azure Load Balancer**. For example, for Application Gateway, you can access dependency view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Virtual WAN and Load Balancer.
 
-![Azure Monitor Network Insights - Network Health - Show health view](../media/network-insights-dependencyview.png)
+![Azure Monitor Network Insights - Network Health - Show health view](../media/network-insights-dependency-view.png)
 
  
 
