@@ -14,7 +14,7 @@ An [**internal load balancer**](https://docs.microsoft.com/en-us/azure/load-bala
 
  
 
-## Azure Load Balancer and availability zones 
+## Azure load balancer and availability zones 
 
 Azure services that support availability zones fall into three categories:
 
@@ -50,7 +50,7 @@ For a public load balancer frontend, you add a zones parameter to the public IP.
 
 For an internal load balancer frontend, add a zones parameter to the internal load balancer frontend IP configuration. A zonal frontend guarantees an IP address in a subnet to a specific zone.
 
-## Selecting an Azure Load Balancer SKU
+## Selecting an Azure load balancer SKU
 
 Two SKUs are available when you create a load balancer in Azure: Basic load balancers and Standard load balancers. These SKUs differ in terms of their scenario scope and scale, features, and cost. Any scenario that is possible with the Basic load balancer can also be created with the Standard load balancer.
 
@@ -83,7 +83,7 @@ To compare and understand the differences, review the table below.
 
 
 
-## Creating and Configuring an Azure Load Balancer
+## Creating and configuring an Azure load balancer
 
 There are several tasks you need to perform to successfully create and configure an Azure Load Balancer. 
 
