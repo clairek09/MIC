@@ -118,7 +118,7 @@ You can pick a billing model that works best for you. Choose between the billing
 
 ## Multiple choice
 
-Which of the following can you connect with ExpressRoute Premium?
+Which of the following can be connected with ExpressRoute Premium?
 
 (x) Resources in different Geopolitical regions.{{Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries. For example, if you connect to Microsoft in Amsterdam through ExpressRoute, you'll have access to all Microsoft cloud services hosted in all regions across the world.}} 
 
@@ -128,7 +128,7 @@ Which of the following can you connect with ExpressRoute Premium?
 
 ## Multiple choice
 
-How can you provide a failover path for ExpressRoute?
+How can one provide a failover path for ExpressRoute?
 
 (x)Configure a Site-to-Site VPN connection as a backup for ExpressRoute.{{Correct. You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path.}}
 
