@@ -12,7 +12,7 @@ Integrating Azure services to an Azure virtual network enables private access to
 
 Azure VNet Limits
 
-There are certain limits around the number of Azure resources you can deploy. Most Azure networking limits are at the maximum values. However, you can increase certain networking limits as specified on the [VNet limits page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits).
+There are certain limits around the number of Azure resources you can deploy. Most Azure networking limits are at the maximum values. However, you can increase certain networking limits as specified on the [VNet limits page](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 ## Configure App Service for regional VNET integration 
 
@@ -150,7 +150,7 @@ These settings send all your outbound calls from your app into your VNet and ena
 
 **Private Endpoints**
 
-If you want to make calls to [Private Endpoints](https://docs.microsoft.com/en-us/azure/app-service/networking/private-endpoint), then you must make sure that your DNS lookups resolve to the Private Endpoint. You can enforce this behavior in one of the following ways:
+If you want to make calls to [Private Endpoints](https://docs.microsoft.com/azure/app-service/networking/private-endpoint), then you must make sure that your DNS lookups resolve to the Private Endpoint. You can enforce this behavior in one of the following ways:
 
 - Integrate with Azure DNS private zones. When your VNet doesn't have a custom DNS server, this is done automatically.
 
@@ -178,11 +178,11 @@ With kubenet, only the nodes receive an IP address in the virtual network subnet
 
 - Features **not supported on kubenet** include:
 
-  - [Azure network policies](https://docs.microsoft.com/en-us/azure/aks/use-network-policies), but Calico network policies are supported on kubenet
+  - [Azure network policies](https://docs.microsoft.com/azure/aks/use-network-policies), but Calico network policies are supported on kubenet
 
-  - [Windows node pools](https://docs.microsoft.com/en-us/azure/aks/windows-faq)
+  - [Windows node pools](https://docs.microsoft.com/azure/aks/windows-faq)
 
-  - [Virtual nodes add-on](https://docs.microsoft.com/en-us/azure/aks/virtual-nodes)
+  - [Virtual nodes add-on](https://docs.microsoft.com/azure/aks/virtual-nodes)
 
 The choice of which network plugin to use for your AKS cluster is usually a balance between flexibility and advanced configuration needs. The following considerations help outline when each network model may be the most appropriate.
 
