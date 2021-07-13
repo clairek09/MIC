@@ -159,7 +159,7 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 
 - Choose the circuit that you want to change.
 
-![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-list_s.png)
+![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-lists.png)
 
  
 
