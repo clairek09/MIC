@@ -88,7 +88,7 @@ Azure Traffic Manager supports six traffic-routing methods to determine how to r
 The following traffic routing methods are available in Traffic Manager:
 
 | **Routing method** | **When to use**                                              |
-| ------------------ | ------------------------------------------------------------ |
+|:-:|:-:|
 | **Priority**       | Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable. |
 | **Weighted**       | Select this routing method when you want to distribute traffic across a set of endpoints based on their weight. Set the weight the same to distribute evenly across all endpoints. |
 | **Performance**    | Select the routing method when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency. |
