@@ -222,7 +222,7 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 1. Find the public IP address for the application gateway on its **Overview** page. 
 
-   ![Azure portal look up Frontend Public IP address ](../media/app-gw-public-ip.png)
+   ![Azure portal look up Frontend Public IP address ](../media/app-gateway-public-ip.png)
 
 2. Copy the public IP address, and then paste it into the address bar of your browser to browse that IP address.
 
