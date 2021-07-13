@@ -51,7 +51,7 @@ To configure the peering use the **Add peering** page. There are only a few opti
 
 ![Image](../media/Conf_VNet_Peering.png)
 
-**Note:** When you add a peering on one virtual network, the second virtual network configuration is automatically added.
+> [!NOTE]  When you add a peering on one virtual network, the second virtual network configuration is automatically added.
 
 
 ## Gateway Transit and Connectivity
