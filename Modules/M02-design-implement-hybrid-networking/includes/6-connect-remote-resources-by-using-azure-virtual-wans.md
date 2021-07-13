@@ -144,7 +144,7 @@ What is an Azure Virtual WAN?
 
 
 
-What is the purpose of associating a connection to a route table.
+What is the purpose of associating a connection to a route table?
 
 (x) Associating a connection to a route table allows the traffic to be sent to the destinations indicated as routes in the route table. {{Correct, Associating a connection to a route table allows the traffic to be sent to the destination indicated as routes in the route table. Each connection is associated to one route table.}}
 
