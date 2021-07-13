@@ -28,7 +28,7 @@ In this exercise, you will:
 3. Select **+** **Create**.
 
 4. Enter, or select, the following information
-   ![Graphical user interface, text, application Description automatically generated](../media/create-virtual-network.png)
+   ![creating a VirtualNetwork in the Azure portal](../media/create-virtual-network.png)
 
    | **Setting**    | **Value**                                     |
    | -------------- | --------------------------------------------- |
