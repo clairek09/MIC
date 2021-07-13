@@ -62,7 +62,7 @@ Select **Add VNet**.
 
 The drop-down list contains all of the Azure Resource Manager virtual networks in your subscription in the same region. Underneath that is a list of the Resource Manager virtual networks in all other regions. Select the VNet you want to integrate with.
 
-![Select the VNet](../media/vnet-config.png)
+![Select the VNet](../media/vnet-integration-configuration.png)
 
 If the VNet is in the same region, either create a new subnet or select an empty preexisting subnet.
 
