@@ -67,9 +67,9 @@ Following on from the deployment example above; when a client requests the page 
 
    - The configured state of each endpoint (disabled endpoints are not returned)
 
-   - The current health of each endpoint, as determined by the Traffic Manager health checks. (see [Endpoint Monitoring Options](#_Endpoint_Monitoring_Options))
+   - The current health of each endpoint, as determined by the Traffic Manager health checks. 
 
-   - The chosen traffic-routing method. (see [Traffic Routing Methods](#_Traffic_Routing_Methods))
+   - The chosen traffic-routing method. 
 
 5. The chosen endpoint is returned as another DNS CNAME record. In this case, let us suppose contoso-eu.cloudapp.net is returned.
 
