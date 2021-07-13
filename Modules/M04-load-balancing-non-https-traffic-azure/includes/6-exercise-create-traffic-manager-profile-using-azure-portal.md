@@ -10,7 +10,7 @@ You will then create a Traffic Manager profile based on endpoint priority. This 
 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
-​	![Traffic manager profile pointed to ](../media/exercise-traffic-manager-environment-diagram.png)
+![Traffic manager profile pointed to two app service plans](../media/exercise-traffic-manager-environment-diagram.png)
 
  In this exercise, you will:
 
@@ -48,7 +48,7 @@ In this section, you will create two instances of a web application deployed in 
 
 5. Click **Review + create**.
 
-   ![Picture 18](../media/create-web-app-1.png)
+![create a web app](../media/create-web-app-1.png)
 
 6. Click **Create**. When the Web App successfully deploys, it creates a default web site.
 
@@ -66,7 +66,7 @@ In this section, you will create two instances of a web application deployed in 
 
 9. You should see the two new web apps listed.
 
-   ![Picture 19](../media/create-web-app-2.png)
+![showing two web apps listed in the Azure portal](../media/create-web-app-2.png)
 
  
 
