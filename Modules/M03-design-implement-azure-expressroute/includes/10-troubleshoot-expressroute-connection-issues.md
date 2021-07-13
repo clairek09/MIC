@@ -76,7 +76,7 @@ The ARP table provides a mapping of the IP address and MAC address for a particu
 - Validate data transfer by reviewing bytes in / out.
 - Open a support ticket with Microsoft support if you're still experiencing issues.
 
-##**ExpressRoute monitoring tools**
+## **ExpressRoute monitoring tools**
 
 ExpressRoute uses Network insights to provide a detailed topology mapping of all ExpressRoute components (peerings, connections, gateways) in relation with one another. Network insights for ExpressRoute also have preloaded metrics dashboard for availability, throughput, packet drops, and gateway metrics.
 
