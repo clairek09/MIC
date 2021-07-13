@@ -7,7 +7,7 @@ ExpressRoute is a private and resilient way to connect your on-premises networks
 
 ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world. For example, if your service provider primarily operates in the United States and has linked all your branches in the U.S., but the service provider does not operate in Japan and Hong Kong, with ExpressRoute Global Reach you can work with a local service provider and Microsoft will connect your branches there to the ones in the U.S. using ExpressRoute and the Microsoft global network.
 
-​	![Global Reach layout with local providers for connectivity to global network](../media/globalreach_usecase.png)
+​	![Global Reach layout with local providers for connectivity to global network](../media/globalreach-usecase.png)
 
 
 
