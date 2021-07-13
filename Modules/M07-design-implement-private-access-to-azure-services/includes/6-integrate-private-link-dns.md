@@ -168,7 +168,7 @@ If you're using a Private Endpoint in a hub-and-spoke model from a different sub
 
 In this scenario, there's a hub and spoke networking topology. The spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.
 
-![Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.](../media/hub-and-spoke-azure-dns.png)
+![Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.](../media/hub-spoke-azure-dns.png)
 
 This configuration can be extended for an on-premises network that already has a DNS solution in place. The on-premises DNS solution is configured to forward DNS traffic to Azure DNS via a conditional forwarder. The conditional forwarder references the DNS forwarder deployed in Azure.
 
