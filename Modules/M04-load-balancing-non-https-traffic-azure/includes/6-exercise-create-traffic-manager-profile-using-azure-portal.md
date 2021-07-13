@@ -10,7 +10,7 @@ You will then create a Traffic Manager profile based on endpoint priority. This 
 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
-​	![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
+​	![Traffic manager profile pointed to ](../media/exercise-traffic-manager-environment-diagram.png)
 
  In this exercise, you will:
 
