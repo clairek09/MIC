@@ -78,7 +78,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 2. In the search box at the top of the page, type **Traffic Manager profile**, and then select it from the pop-up list.
 
-![search results for traffic manager profile](../media/create-tmprofile-1.png)
+![search results for traffic manager profile](../media/create-traffic-manager-profile-1.png)
 
 3. Click **Create**.
 
@@ -105,7 +105,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 2. Under **Settings**, select **Endpoints**, and then click **Add**.
 
-![add endpoints](../media/create-tmendpoints-1.png)
+![add endpoints](../media/create-traffic-manager-endpoints-1.png)
 
 3. On the **Add endpoint** page, enter the information from the table below.
 
@@ -133,7 +133,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 7. The two new endpoints are displayed in the Traffic Manager profile. Notice that after a few minutes the **Monitoring status** should change to **Online**.
 
-![two traffic manager endpoints](../media/create-tmendpoints-2.png)
+![two traffic manager endpoints](../media/create-traffic-manager-endpoints-2.png)
  
 
 ## Task 4: Test the Traffic Manager profile
@@ -150,7 +150,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 4. The web app's default web site should be displayed.
 
-![web apps default webpage](../media/tm-webapp-test-1a.png)
+![web apps default webpage](../media/traffic-manager-webapp-test-1a.png)
 
 5. Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 
