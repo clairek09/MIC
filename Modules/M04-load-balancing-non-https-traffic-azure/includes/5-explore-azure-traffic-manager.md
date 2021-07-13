@@ -305,7 +305,7 @@ What are two benefits of Traffic Manager?
 
 ## Multiple Choice 
 
-Which traffic-routing method should you use when you want end users to use the "closest" endpoint for the lowest network latency?
+Which traffic-routing method should be use when end users need to use the "closest" endpoint for the lowest network latency?
 
 (x) Performance{{Correct, Use when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency.}} 
 
