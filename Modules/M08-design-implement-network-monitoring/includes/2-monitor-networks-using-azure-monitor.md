@@ -24,7 +24,7 @@ The diagram below offers a high-level view of Azure Monitor. At the center of th
 
  
 
-### Monitoring data types
+### Monitor data types in Azure Monitor
 
 The data collected by Azure Monitor fits into one of two fundamental types:
 
@@ -93,7 +93,7 @@ The data collected by Azure Monitor Metrics is stored in a time-series database 
 
 **Some metrics may have multiple dimensions, and custom metrics can have up to 10 dimensions**.
 
-### Accessing Metrics
+### Access Metrics in the Azure portal
 
 You can access metrics from the **Metrics** option in the Azure Monitor menu.
 
@@ -103,7 +103,7 @@ You can also access metrics from the **Metrics** menu of most other services and
 
 ![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)
 
-### Creating metric charts
+### Create metric charts with metrics explorer
 
 Azure Monitor **Metrics Explorer** is a component of the Microsoft Azure portal that allows plotting charts, visually correlating trends, and investigating spikes and dips in metrics' values. Use the metrics explorer to investigate the health and utilization of your resources. 
 
