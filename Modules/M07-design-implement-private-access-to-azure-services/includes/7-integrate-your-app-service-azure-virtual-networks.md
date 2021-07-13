@@ -104,7 +104,7 @@ By default, your app routes only RFC1918 traffic into your VNet. If you want to 
 
 2. Enter WEBSITE_VNET_ROUTE_ALL in the Name box and enter 1 in the Value box.
 
-  ![Provide application setting](../media/vnet-app-setting.png)
+  ![Provide application setting](../media/vnet-integration-app-setting.png)
 
 3. Select OK.
 
