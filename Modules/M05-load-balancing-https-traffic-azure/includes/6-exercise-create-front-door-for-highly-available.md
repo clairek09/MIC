@@ -22,7 +22,7 @@ This exercise requires two instances of a web application that run in different 
 2. On the Azure portal home page, select + **Create a resource**.
 
 3. On the Create a resource page, select **WebApp**.
-   ![Azure portal Create a web app. ](../media/create-a-web-app.png)
+   ![Azure portal Create a web app. ](../media/create-web-app.png)
 
 4. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
