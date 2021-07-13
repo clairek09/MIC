@@ -131,7 +131,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                                      | Virtual network gateway or Route Server       | None (default)                        |
 | Remote virtual network               |                                               |                                       |
 |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-|                                      | Virtual network deployment model              | Resource manager                      |
+|                                      | Virtual network deployment model              | Resource Manager                      |
 |                                      | I know my resource ID                         | Not selected                          |
 |                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
 |                                      | Virtual network                               | ManufacturingVnet                     |
