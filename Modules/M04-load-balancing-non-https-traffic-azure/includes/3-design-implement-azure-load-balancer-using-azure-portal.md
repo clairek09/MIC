@@ -4,7 +4,7 @@
 
 ## Choosing a Load Balancer Type
 
-Load balancers can be public (a.k.a. external) or internal (a.k.a. private).
+Load balancers can be public (also known as external) or internal (also known as private).
 
 A [**public load balancer**](https://docs.microsoft.com/en-us/azure/load-balancer/components) can provide outbound connections for virtual machines (VMs) inside your virtual network. These connections are accomplished by translating their private IP addresses to public IP addresses. External load balancers are used to distribute client traffic from the internet across your VMs. That internet traffic might come from web browsers, module apps, or other sources.
 
