@@ -32,7 +32,7 @@ Azure Network Watcher is a regional service that enables you to monitor and diag
 >
 > To use Network Watcher, you must be an Owner, Contributor, or Network Contributor. If you create a custom role, the role must be able to read, write, and delete the Network Watcher.
 
-### Configuring Network Watcher
+### configure Network Watcher
 
 When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region. There is no impact to your resources or associated charge for automatically enabling Network Watcher.
 
@@ -138,7 +138,7 @@ Here are some benefits of Connection Monitor:
 
 - Metrics and Log Analytics support for both Azure and non-Azure test setups
 
-### Setting up Connection Monitor
+### Set up Connection Monitor
 
 There are several key steps you need to perform in order to setup Connection Monitor for monitoring:
 
