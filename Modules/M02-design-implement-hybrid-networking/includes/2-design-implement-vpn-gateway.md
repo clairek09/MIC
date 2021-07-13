@@ -328,7 +328,7 @@ What are the two types of VPNs?
 
 
 
-What is the default high availability configuration for VPN gateways.
+What is the default high availability configuration for VPN gateways?
 
 (x) Active-standby {{Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration.}}
 
