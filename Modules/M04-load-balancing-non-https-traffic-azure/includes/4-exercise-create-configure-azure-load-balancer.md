@@ -8,7 +8,7 @@ The steps to create an internal load balancer, are very similar to those you hav
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
 In this exercise, you will:
