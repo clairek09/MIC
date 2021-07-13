@@ -22,8 +22,8 @@ In this exercise, you will:
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
-[ARM Templates for creating VNets](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M02)
-3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
+[Azure Resource Manager Templates for creating VNets](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M02)
+3. Deploy the following Azure Resource Manager templates to create the virtual network and subnets needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
