@@ -71,7 +71,7 @@ The key stages to create a WAF policy on Azure Front Door using the Azure portal
 
 3. **Configure WAF policy settings and rules** - this is an optional stage, where you can configure policy settings such as the **Mode** (Prevention or Detection) and configure managed rules and custom rules.
 
-To view the detailed steps for all these tasks, see [Tutorial: Create a Web Application Firewall policy on Azure Front Door using the Azure portal](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal).
+To view the detailed steps for all these tasks, see [Tutorial: Create a Web Application Firewall policy on Azure Front Door using the Azure portal](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
 
 
 
