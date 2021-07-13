@@ -26,7 +26,7 @@ A DNS zone hosts the DNS records for a domain. So, to start hosting your domain 
  -  Root/Parent domain is registered at the registrar and pointed to Azure NS.
  -  Child domains are registered in AzureDNS directly.
 
->[!NOTE] You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
+> [!NOTE] You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
 
 ## Delegate DNS Domains
 
@@ -34,7 +34,7 @@ To delegate your domain to Azure DNS, you first need to know the name server nam
 
 Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Each registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
 
->[!NOTE] When delegating a domain to Azure DNS, you must use the name server names provided by Azure DNS. You should always use all four name server names, regardless of the name of your domain.
+> [!NOTE] When delegating a domain to Azure DNS, you must use the name server names provided by Azure DNS. You should always use all four name server names, regardless of the name of your domain.
 
 ## Child Domains
 
@@ -42,7 +42,7 @@ If you want to set up a separate child zone, you can delegate a subdomain in Azu
 
 Setting up a subdomain follows the same process as typical delegation. The only difference is that NS records must be created in the parent zone contoso.com in Azure DNS, rather than in the domain registrar.
 
->[!NOTE] The parent and child zones can be in the same or different resource group. Notice that the record set name in the parent zone matches the child zone name, in this case *partners*.
+> [!NOTE] The parent and child zones can be in the same or different resource group. Notice that the record set name in the parent zone matches the child zone name, in this case *partners*.
 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
 
@@ -157,7 +157,7 @@ Forwarding takes two forms:
 
 - Conditional forwarding - specifies a DNS server for a named zone, so that all queries for that zone are routed to the specified DNS server. 
 
->[!NOTE] If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
+> [!NOTE] If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
 
 ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external_dns_fwd.png)
 
