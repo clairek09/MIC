@@ -66,7 +66,7 @@ Users use the native VPN clients on Windows and Mac devices for P2S. Azure provi
 
 The zip file also provides the values of some of the important settings on the Azure side that you can use to create your own profile for these devices. Some of the values include the VPN gateway address, configured tunnel types, routes, and the root certificate for gateway validation.
 
-Note that for Windows clients, you must have administrator rights on the client device to initiate the VPN connection from the client device to Azure.
+> [!NOTE] that for Windows clients, you must have administrator rights on the client device to initiate the VPN connection from the client device to Azure.
 
  
 
