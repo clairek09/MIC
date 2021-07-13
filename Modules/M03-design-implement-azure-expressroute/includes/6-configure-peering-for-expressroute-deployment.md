@@ -129,7 +129,7 @@ You can update the list of BGP community values attached to a circuit by selecti
 
 - Select the service communities you want and then select **Save**.
 
-![Azure portal - Add another rule](../media/add-route-filter-rule_s.png)
+![Azure portal - Add another rule](../media/add-route-filter-rules.png)
 
  
 
