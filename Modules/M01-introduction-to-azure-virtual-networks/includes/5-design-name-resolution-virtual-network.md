@@ -113,9 +113,9 @@ For scenarios which require more flexibility than Internal DNS allows, you can c
 
 ### Create a private DNS zone by using the portal
 
-You can create a private DNS zone using the Azure Portal, Azure PowerShell, or Azure CLI.
+You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI.
 
-![Azure Portal - creata private DNS zone.](../media/search-private-dns.png)
+![Azure portal - creata private DNS zone.](../media/search-private-dns.png)
 
 When the new DNS zone is deployed, you can manually create resource records, or use auto-registration, which will create resource records based on the Azure resource name.
 
