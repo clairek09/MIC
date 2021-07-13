@@ -89,7 +89,7 @@ Now let's look at each of the main Azure load balancing services in more detail.
 
 ## Multiple Choice 
 
-You have a secure web application that experiences high traffic, and you want to use a load balancer to distribute the workload. Which load balancers will support this type of traffic?
+An engineer has a secure web application that experiences high traffic, and they want to use a load balancer to distribute the workload. Which load balancers will support this type of traffic?
 
 (x) Azure Application Gateway and Azure Front Door.{{Correct, Secure web applications use HTTPS traffic. Azure Application Gateway and Azure Front Door support HTTPS traffic.}} 
 
