@@ -216,7 +216,7 @@ You need to enter the following information on the **Add health probe** page.
 
 You then click **Add** to add the health probe.
 
-![Add health probes](../media/create-healthprobe-2.png)
+![configure health probe settings](../media/create-healthprobe-2.png)
 
 ![View list of added health probes in load balancer](../media/create-healthprobe-3.png)
 
