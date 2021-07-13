@@ -222,7 +222,7 @@ Choose the best response for each of the questions below. When you're done, sele
 
 ## Multiple Choice 
 
-What type of routes enable you to override routes that Azure configures?
+What type of routes enable traffic to override routes that Azure configures?
 
 (x) User-defined routes (UDR){{correct You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
 ( ) System routes{{incorrect, Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
@@ -232,7 +232,7 @@ What type of routes enable you to override routes that Azure configures?
 
 ## Multiple Choice 
 
-Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?
+A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?
 
 (x) View the effective routes for each NIC. (UDR){{correct, You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
 ( ) Configure every resource with a static IP address.{{incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
