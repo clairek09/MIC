@@ -100,15 +100,15 @@ Route tables (UDRs): You can place a route table on the integration subnet to se
 
 By default, your app routes only RFC1918 traffic into your VNet. If you want to route all your outbound traffic into your VNet, use the following steps to add the WEBSITE_VNET_ROUTE_ALL setting in your app:
 
-- Go to the Configuration UI in your app portal. Select New application setting.
+1. Go to the Configuration UI in your app portal. Select New application setting.
 
-- Enter WEBSITE_VNET_ROUTE_ALL in the Name box and enter 1 in the Value box.
+2. Enter WEBSITE_VNET_ROUTE_ALL in the Name box and enter 1 in the Value box.
 
   ![Provide application setting](../media/vnet-app-setting.png)
 
-- Select OK.
+3. Select OK.
 
-- Select Save.
+4. Select Save.
 
 When you route all your outbound traffic into your VNet, it's subject to the NSGs and UDRs that are applied to your integration subnet. When WEBSITE_VNET_ROUTE_ALL is set to 1, outbound traffic is still sent from the addresses that are listed in your app properties, unless you provide routes that direct the traffic elsewhere.
 
