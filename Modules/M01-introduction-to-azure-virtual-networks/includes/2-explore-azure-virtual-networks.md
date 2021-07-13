@@ -103,6 +103,7 @@ For example, a virtual network has a resource group scope, which means that ther
 All Azure resources are created in an Azure region and subscription. A resource can only be created in a virtual network that exists in the same region and subscription as the resource. You can, however, connect virtual networks that exist in different subscriptions and regions. Azure regions are important to consider as you design your Azure network in relation to your infrastructure, data, applications, and end users. 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
+
 ![World map showing Azure global network.](../media/microsoft-global-wan.png)
 
 ### Azure Availability Zones
