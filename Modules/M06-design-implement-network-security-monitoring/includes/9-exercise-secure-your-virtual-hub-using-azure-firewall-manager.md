@@ -65,7 +65,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 6. For **Region**, select your region.
 
-7. For the **S** **ecured virtual hub name**, enter **Hub-01**.
+7. For the **secured virtual hub name**, enter **Hub-01**.
 
 8. For **Hub address space**, enter **10.2.0.0/16**.
 
