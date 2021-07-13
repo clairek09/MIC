@@ -28,7 +28,7 @@ The source IP address Application Gateway uses for health probes depends on the 
 
 - If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space.
 
-  ![example heath probe for Azure App Gateway ](../media/appgatewayprobe.png)
+  ![example heath probe for Azure App Gateway ](../media/app-gateway-probe.png)
 
  
 
@@ -103,7 +103,7 @@ A listener is a logical entity that checks for incoming connection requests by u
 
 When you create an application gateway by using the Azure portal, you also create a default listener by choosing the protocol and port for the listener. You can choose whether to enable HTTP2 support on the listener. After you create the application gateway, you can edit the settings of that default listener (appGatewayHttpListener) or create new listeners.
 
-![app gateway listener configuration ](../media/appgateway-error-codes.png)
+![app gateway listener configuration ](../media/app-gateway-error-codes.png)
 
  
 
