@@ -84,15 +84,15 @@ Common use cases for NSG flow logs are:
 
 You can enable NSG flow logs from any of the following:
 
-- [Azure portal](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-portal)
+- [Azure portal](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-portal)
 
-- [PowerShell](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-powershell)
+- [PowerShell](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-powershell)
 
-- [Azure CLI](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-cli)
+- [Azure CLI](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli)
 
-- [REST](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-rest)
+- [REST](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-rest)
 
-- [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-azure-resource-manager)
+- [Azure Resource Manager](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-azure-resource-manager)
 
 To configure the parameters of NSG flow logs in the Azure portal, navigate to the **NSG Flow Logs** section in **Network Watcher**. 
 
@@ -145,8 +145,8 @@ There are several key steps you need to perform in order to setup Connection Mon
 1. **Install monitoring agents** - Connection Monitor relies on lightweight executable files to run connectivity checks. It supports connectivity checks from both Azure environments and on-premises environments. The executable file that you use depends on whether your VM is hosted on Azure or on-premises. For more information, visit [Install monitoring agents](https://docs.microsoft.com/azure/network-watcher/connection-monitor-overview).
 2. **Enable Network Watcher on your subscription** - All subscriptions that have a virtual network are enabled with Network Watcher. When you create a virtual network in your subscription, Network Watcher is automatically enabled in the virtual network's region and subscription. This automatic enabling doesn't affect your resources or incur a charge. Ensure that Network Watcher isn't explicitly disabled on your subscription. 
 3. **Create a connection monitor** - Connection Monitor monitors communication at regular intervals. It informs you of changes in reachability and latency. You can also check the current and historical network topology between source agents and destination endpoints. Sources can be Azure VMs or on-premises machines that have an installed monitoring agent. Destination endpoints can be Microsoft 365 URLs, Dynamics 365 URLs, custom URLs, Azure VM resource IDs, IPv4, IPv6, FQDN, or any domain name. 
-4. **Set up data analysis and alerts** - The data that Connection Monitor collects is stored in the Log Analytics workspace. You set up this workspace when you created the connection monitor. Monitoring data is also available in Azure Monitor Metrics. You can use Log Analytics to keep your monitoring data for as long as you want. Azure Monitor stores metrics for only 30 days by default. For more information, visit [Data collection, analysis, and alerts](https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor-overview).
-5. **Diagnose issues in your network** - Connection Monitor helps you diagnose issues in your connection monitor and your network. Issues in your hybrid network are detected by the Log Analytics agents that you installed earlier. Issues in Azure are detected by the Network Watcher extension. You can view issues in the Azure network in the network topology. For more information, visit [Diagnose issues in your network](https://docs.microsoft.com/en-us/azure/network-watcher/connection-monitor-overview).
+4. **Set up data analysis and alerts** - The data that Connection Monitor collects is stored in the Log Analytics workspace. You set up this workspace when you created the connection monitor. Monitoring data is also available in Azure Monitor Metrics. You can use Log Analytics to keep your monitoring data for as long as you want. Azure Monitor stores metrics for only 30 days by default. For more information, visit [Data collection, analysis, and alerts](https://docs.microsoft.com/azure/network-watcher/connection-monitor-overview).
+5. **Diagnose issues in your network** - Connection Monitor helps you diagnose issues in your connection monitor and your network. Issues in your hybrid network are detected by the Log Analytics agents that you installed earlier. Issues in Azure are detected by the Network Watcher extension. You can view issues in the Azure network in the network topology. For more information, visit [Diagnose issues in your network](https://docs.microsoft.com/azure/network-watcher/connection-monitor-overview).
 
 ### Create a Connection Monitor
 
