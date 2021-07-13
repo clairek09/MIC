@@ -10,7 +10,7 @@ Integrating Azure services to an Azure virtual network enables private access to
 
 - You can also access the service using public endpoints by extending a virtual network to the service, through Service Endpoints. Service Endpoints allow service resources to be secured to the virtual network.
 
-Azure VNet Limits
+## Azure VNet Limits
 
 There are certain limits around the number of Azure resources you can deploy. Most Azure networking limits are at the maximum values. However, you can increase certain networking limits as specified on the [VNet limits page](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
