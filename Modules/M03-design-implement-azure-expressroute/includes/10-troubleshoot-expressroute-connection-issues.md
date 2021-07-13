@@ -106,7 +106,7 @@ What property of an ExpressRoute circuit is useful when opening a support ticket
 
 ## Multiple Choice 
 
-You want to know if your service provider has made any changes that affect your circuit. Where can you check for this information?
+An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?
 
 (X) Check the **Last modified by** property of the relevant peering.{{Correct. Azure resources record information about changes, in this case, who made the last change.}} 
 
