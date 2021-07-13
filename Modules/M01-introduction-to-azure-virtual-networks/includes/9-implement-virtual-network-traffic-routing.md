@@ -127,9 +127,9 @@ The last step in our example is to associate the Public subnet with the new rout
 
 ![Screenshot of a route table being assocated with a virtual network.](../media/associate_a_route.png)
 
-**Note:** By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
+> [!NOTE] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
 
-**Note:** In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
+> [!NOTE] In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
 
 
 ## Diagnose a routing problem
@@ -232,7 +232,7 @@ What type of routes enable traffic to override routes that Azure configures?
 
 ## Multiple Choice 
 
-A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?
+A VNet is experiencing some routing problems. What would an engnieer do to begin to diagnose the problem?
 
 (x) View the effective routes for each NIC. (UDR){{correct, You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
 ( ) Configure every resource with a static IP address.{{incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
