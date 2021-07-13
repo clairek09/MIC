@@ -13,7 +13,7 @@ ExpressRoute Global Reach is designed to complement your service provider’s WA
 
 ## Configure ExpressRoute Global Reach
 
-These steps show you how to configure ExpressRoute Global Reach using Azure Portal. 
+These steps show you how to configure ExpressRoute Global Reach using Azure portal. 
 
 **Before you begin**
 
