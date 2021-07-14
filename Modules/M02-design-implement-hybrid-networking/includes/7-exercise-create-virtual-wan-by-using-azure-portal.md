@@ -96,7 +96,8 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 
 ## Task 4: Clean up resources
 
-> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
