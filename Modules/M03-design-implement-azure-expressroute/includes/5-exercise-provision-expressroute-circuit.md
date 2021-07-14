@@ -5,7 +5,8 @@
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
 
-![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
 
 To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15).
 
