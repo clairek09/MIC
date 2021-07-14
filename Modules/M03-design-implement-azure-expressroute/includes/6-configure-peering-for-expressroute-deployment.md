@@ -99,7 +99,7 @@ To add and update rules, select the manage rule tab for your route filter.
 
 - Attach the route filter to a circuit by selecting the **+ Add Circuit** button and selecting the ExpressRoute circuit from the drop-down list.
 
-![Azure portal - Add a circuit to a route filter](../media/add-circuit-to-route-filter.png)
+![Azure portal - Add a circuit to a route filter](../media/add-circuit-route-filter.png)
 
  
 
