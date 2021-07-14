@@ -105,13 +105,15 @@ All Azure resources are created in an Azure region and subscription. A resource 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
 
-![World map showing Azure global network.](../media/microsoft-global-wan.png)
+> [!div class="mx-imgBorder"]
+>![World map showing Azure global network.](../media/microsoft-global-wan.png)
 
 ### Azure Availability Zones
 
 An Azure Availability Zone enables you to define unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. Designed to ensure high-availability of your Azure services, the physical separation of Availability Zones within a region protects applications and data from datacenter failures.
 
-![Azure region showing three availability zones.](../media/availability-zone.png)
+> [!div class="mx-imgBorder"]
+>![Azure region showing three availability zones.](../media/availability-zone.png)
 
 You should consider availability zones when designing your Azure network, and plan for services that support availability zones.
 
