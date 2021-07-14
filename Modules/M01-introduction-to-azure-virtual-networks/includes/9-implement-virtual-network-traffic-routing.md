@@ -104,7 +104,8 @@ Here is an example where you have a virtual network that includes three subnets.
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
-![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 
@@ -117,7 +118,8 @@ For our example,
  -  The route uses a virtual appliance. Notice the other choices for *Next hop type*: virtual network gateway, virtual network, internet, and none.
  -  The virtual appliance is located at 10.0.2.4.
 
-![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-custom-route.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-custom-route.png)
 
 In summary, this route applies to any address prefixes in 10.0.1.0/24 (private subnet). Traffic headed to these addresses will be sent to the virtual appliance with a 10.0.2.4 address.
 
@@ -125,7 +127,8 @@ In summary, this route applies to any address prefixes in 10.0.1.0/24 (private s
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
-![Screenshot of a route table being assocated with a virtual network.](../media/associate-route.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a route table being assocated with a virtual network.](../media/associate-route.png)
 
 > [!NOTE] 
 > By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
@@ -185,7 +188,8 @@ Forced tunneling lets you redirect or "force" all Internet-bound traffic back to
 
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
 
- ![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
+ > [!div class="mx-imgBorder"]
+ > ![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
 
 ### Configure forced tunneling
 
