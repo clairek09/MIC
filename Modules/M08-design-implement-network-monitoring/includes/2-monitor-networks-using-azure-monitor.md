@@ -39,9 +39,8 @@ Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data f
 The table below provides a summary of the various types of tasks you can perform by utilizing metrics in Azure Monitor:
 
 
-[!div class="mx-tdBreakAll"]
 |  Task     | Description                                                                                                                                                                                                                                             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:-:|:-:|
 | Analyze   | Use metrics explorer to analyze collected metrics on a chart and compare metrics from different resources.                                                                                                                                              |
 | Alert     | Configure a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.                                                                                                                            |
 | Visualize | Pin a chart from metrics explorer to an Azure dashboard.<br>Create a workbook to combine with multiple sets of data in an interactive report.Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources. |
