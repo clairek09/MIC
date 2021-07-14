@@ -260,7 +260,7 @@ In this task, you will add an application rule that allows outbound access to ww
    | Destination            | **www.google.com**                        |
 
 
-   ![Add an application rule collection](../media/add-application-rule-for-firewall.png)
+   ![Add an application rule collection](../media/add-application-rule-firewall.png)
 
 6. Click **Add**.
 
