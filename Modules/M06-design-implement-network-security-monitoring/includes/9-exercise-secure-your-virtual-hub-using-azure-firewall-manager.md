@@ -74,7 +74,8 @@ In this task you will create your secured virtual hub using Firewall Manager.
 10. In **Virtual WAN Name**, enter **Vwan-01**.
 
 11. Click **Next: Azure Firewall**.
-    ![Create new secured virtual hub - Basics tab](../media/create-new-secured-virtual-hub-1.png)
+     > [!div class="mx-imgBorder"]
+     > ![Create new secured virtual hub - Basics tab](../media/create-new-secured-virtual-hub-1.png)
 
 12. Click **Next: Security Partner Provider**.
 
@@ -86,7 +87,8 @@ In this task you will create your secured virtual hub using Firewall Manager.
     >
     > This can take up to 30 minutes to deploy.
 
-    ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
 
 15. When the deployment completes, from the Azure portal home page, click **All services**.
 
@@ -113,10 +115,12 @@ In this task you will connect the hub and spoke virtual networks. This is common
 7. For **Resource group**, select **fw-manager-rg**.
 8. For **Virtual network**, select **Spoke-01**.
 9. Click **Create**.
-   ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
 10. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
 
-![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
+> [!div class="mx-imgBorder"]
+> ![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
 
  
 
@@ -228,7 +232,8 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 21. Click **Add**.
 
-    ![Add application rule collection to firewall policy](../media/add-rule-collection-firewall-policy-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add application rule collection to firewall policy](../media/add-rule-collection-firewall-policy-1.png)
 
 22. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, click **Add a rule collection**.
 
@@ -284,7 +289,8 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 48. Click **Add**.
 
-    ![List rule collections in the firewall policy](../media/list-rule-collections-firewall-policy.png)
+    > [!div class="mx-imgBorder"]
+    > ![List rule collections in the firewall policy](../media/list-rule-collections-firewall-policy.png)
 
 49. You should now have 3 rule collections listed.
 
