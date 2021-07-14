@@ -69,7 +69,7 @@ Key features that ExpressRoute Direct provides includes:
 
 
 | **ExpressRoute using a  Service Provider** | **ExpressRoute Direct**                  |
-| ---------------------------------------- | ---------------------------------------- |
+|:-:|:-:|
 | Uses service providers to enable fast  onboarding and connectivity into existing infrastructure | Requires 100 Gbps/10 Gbps infrastructure  and full management of all layers |
 | Integrates with hundreds of providers  including Ethernet and MPLS | Direct/Dedicated capacity for regulated  industries and massive data ingestion |
 | Circuits SKUs from 50 Mbps to 10 Gbps    | Customer may select a combination of the  following circuit SKUs on 100-Gbps ExpressRoute Direct:   5 Gbps  10 Gbps  40 Gbps  100 Gbps  Customer may select a combination of the  following circuit SKUs on 10-Gbps ExpressRoute Direct:  1 Gbps  2 Gbps  5 Gbps  10 Gbps |
