@@ -92,7 +92,8 @@ You can associate zero or one NSG to each subnet in a virtual network. You can a
 
 As part of your Azure network design, it is important to plan your naming convention for your resources. An effective naming convention composes resource names from important information about each resource. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
 
-![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-azure-resource-name.png)
+> [!div class="mx-imgBorder"]
+>![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-azure-resource-name.png)
 
 All Azure resource types have a scope that defines the level that resource names must be unique. A resource must have a unique name within its scope. There are four levels you can specify a scope: [management group](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview), subscription, [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview), and resource. Scopes are hierarchical, with each level of hierarchy making the scope more specific. 
 
