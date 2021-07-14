@@ -8,7 +8,8 @@ NAT services provide mappings for a single IP address, a range of IP addresses d
 
 The following diagram shows outbound traffic flow from Subnet 1 through the NAT gateway to be mapped to a Public IP address or a Public IP prefix.
 
-![NAT service provides internet connectivity for internal resources.](../media/nat-flow-map.png)
+> [!div class="mx-imgBorder"]
+> ![NAT service provides internet connectivity for internal resources.](../media/nat-flow-map.png)
 
 You define the NAT configuration for each subnet within a VNet to enable outbound connectivity by specifying which NAT gateway resource to use. After NAT is configured, all UDP and TCP outbound flows from any virtual machine instance will use NAT for internet connectivity. No further configuration is necessary, and you don’t need to create any user-defined routes. NAT takes precedence over other outbound scenarios and replaces the default Internet destination of a subnet.
 
@@ -47,8 +48,8 @@ NAT is compatible with the following standard SKU resources:
 NAT and compatible Standard SKU features are aware of the direction the flow was started. Inbound and outbound scenarios can coexist. These scenarios will receive the correct network address translations because these features are aware of the flow direction. When used together with NAT, these resources provide inbound Internet connectivity to your subnet(s). NAT provides all outbound Internet connectivity from your subnet(s).
 
  
-
-![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-and-outbound.png)
+>[!div class="mx-imgBorder"]
+>![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-and-outbound.png)
 
  
 
@@ -62,11 +63,10 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
 - IP fragmentation is not supported.
 
-## Check your knowledge
+## Quiz title: Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
-## quiz title:
 
 ## Multiple Choice 
 
