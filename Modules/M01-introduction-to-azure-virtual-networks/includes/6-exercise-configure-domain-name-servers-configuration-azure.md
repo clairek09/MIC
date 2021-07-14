@@ -17,18 +17,18 @@ In this exercise, you will:
 1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.  
-   ‎![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
+    ‎![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
 
 3. In Private DNS zones, select **+ Create**.
 
 4. Use the information in the following table to create the private DNS zone.
 
-| **Tab**         | **Option**                             | **Value**            |
-| --------------- | -------------------------------------- | -------------------- |
-| Basics          | Resource group                         | ContosoResourceGroup |
-|                 | Name                                   | Contoso.com          |
-| Tags            | No changes required                    |                      |
-| Review + create | Review your settings and select Create |                      |
+    | **Tab**         | **Option**                             | **Value**            |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                         | ContosoResourceGroup |
+    |                 | Name                                   | Contoso.com          |
+    | Tags            | No changes required                    |                      |
+    | Review + create | Review your settings and select Create |                      |
 
 
 5. Wait until the deployment is complete, and then select **Go to resource**.
@@ -45,13 +45,13 @@ In this exercise, you will:
 
 3. Use the information in the following table to add the virtual network link.
 
-| **Option**                          | **Value**                               |
-| ----------------------------------- | --------------------------------------- |
-| Link name                           | CoreServicesVnetLink                    |
-| Subscription                        | No changes required                     |
-| Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
-| Enable auto registration            | Selected                                |
-| Review your settings and select OK. |                                         |
+    | **Option**                          | **Value**                               |
+    |:-:|:-:|
+    | Link name                           | CoreServicesVnetLink                    |
+    | Subscription                        | No changes required                     |
+    | Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
+    | Enable auto registration            | Selected                                |
+    | Review your settings and select OK. |                                         |
 
 
 4. Select **Refresh**.
@@ -60,13 +60,13 @@ In this exercise, you will:
 
 6. Repeat steps 2 - 5 for the ManufacturingVnet, using the information in the following table: 
 
-| **Option**                          | **Value**                                |
-| ----------------------------------- | ---------------------------------------- |
-| Link name                           | ManufacturingVnetLink                    |
-| Subscription                        | No changes required                      |
-| Virtual Network                     | ManufacturingVnet (ContosoResourceGroup) |
-| Enable auto registration            | Selected                                 |
-| Review your settings and select OK. |                                          |
+    | **Option**                          | **Value**                                |
+    |:-:|:-:|
+    | Link name                           | ManufacturingVnetLink                    |
+    | Subscription                        | No changes required                      |
+    | Virtual Network                     | ManufacturingVnet (ContosoResourceGroup) |
+    | Enable auto registration            | Selected                                 |
+    | Review your settings and select OK. |                                          |
 
 
 7. Select **Refresh**.
@@ -75,13 +75,13 @@ In this exercise, you will:
 
 9. Repeat steps 2 - 5 for the ResearchVnet, using the information in the following table: 
 
-| **Option**                          | **Value**                           |
-| ----------------------------------- | ----------------------------------- |
-| Link name                           | ResearchVnetLink                    |
-| Subscription                        | No changes required                 |
-| Virtual Network                     | ResearchVnet (ContosoResourceGroup) |
-| Enable auto registration            | Selected                            |
-| Review your settings and select OK. |                                     |
+    | **Option**                          | **Value**                           |
+    |:-:|:-:|
+    | Link name                           | ResearchVnetLink                    |
+    | Subscription                        | No changes required                 |
+    | Virtual Network                     | ResearchVnet (ContosoResourceGroup) |
+    | Enable auto registration            | Selected                            |
+    | Review your settings and select OK. |                                     |
 
 
 10. Select **Refresh**.
@@ -100,7 +100,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
 
-![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -108,32 +108,32 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 5. Use the information in the following table to create your first VM.
 
-| **Tab**         | **Option**                                                   | **Value**                             |
-| --------------- | ------------------------------------------------------------ | ------------------------------------- |
-| Basics          | Resource group                                               | ContosoResourceGroup                  |
-|                 | Virtual machine name                                         | TestVM1                               |
-|                 | Region                                                       | (US) West US                          |
-|                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
-|                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
-|                 | Username                                                     | TestUser                              |
-|                 | Password                                                     | TestPa$$w0rd!                         |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
-| Disks           | No changes required                                          |                                       |
-| Networking      | Virtual network                                              | CoreServicesVnet                      |
-|                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
-|                 | Public IP                                                    | (new) TestVM1-ip                      |
-|                 | NIC network security group                                   | Basic                                 |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | Load balancing                                               | Not selected                          |
-| Management      | No changes required                                          |                                       |
-| Advanced        | No changes required                                          |                                       |
-| Tags            | No changes required                                          |                                       |
-| Review + create | Review your settings and select Create                       |                                       |
+    | **Tab**         | **Option**                                                   | **Value**                             |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                                               | ContosoResourceGroup                  |
+    |                 | Virtual machine name                                         | TestVM1                               |
+    |                 | Region                                                       | (US) West US                          |
+    |                 | Availability options                                         | No infrastructure redundancy required |
+    |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+    |                 | Azure Spot instance                                          | Not selected                          |
+    |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+    |                 | Username                                                     | TestUser                              |
+    |                 | Password                                                     | TestPa$$w0rd!                         |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
+    | Disks           | No changes required                                          |                                       |
+    | Networking      | Virtual network                                              | CoreServicesVnet                      |
+    |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
+    |                 | Public IP                                                    | (new) TestVM1-ip                      |
+    |                 | NIC network security group                                   | Basic                                 |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | Load balancing                                               | Not selected                          |
+    | Management      | No changes required                                          |                                       |
+    | Advanced        | No changes required                                          |                                       |
+    | Tags            | No changes required                                          |                                       |
+    | Review + create | Review your settings and select Create                       |                                       |
 
 
 6. While the deployment is in progress, you can proceed with creating TestVM2.
@@ -152,32 +152,32 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 5. Use the information in the following table to create your second VM.
 
-| **Tab**         | **Option**                                                   | **Value**                             |
-| --------------- | ------------------------------------------------------------ | ------------------------------------- |
-| Basics          | Resource group                                               | ContosoResourceGroup                  |
-|                 | Virtual machine name                                         | TestVM2                               |
-|                 | Region                                                       | (US) West US                          |
-|                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
-|                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
-|                 | Username                                                     | TestUser                              |
-|                 | Password                                                     | TestPa$$w0rd!                         |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
-| Disks           | No changes required                                          |                                       |
-| Networking      | Virtual network                                              | CoreServicesVnet                      |
-|                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
-|                 | Public IP                                                    | (new) TestVM2-ip                      |
-|                 | NIC network security group                                   | Basic                                 |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | Load balancing                                               | Not selected                          |
-| Management      | No changes required                                          |                                       |
-| Advanced        | No changes required                                          |                                       |
-| Tags            | No changes required                                          |                                       |
-| Review + create | Review your settings and select **Create**                   |                                       |
+    | **Tab**         | **Option**                                                   | **Value**                             |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                                               | ContosoResourceGroup                  |
+    |                 | Virtual machine name                                         | TestVM2                               |
+    |                 | Region                                                       | (US) West US                          |
+    |                 | Availability options                                         | No infrastructure redundancy required |
+    |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+    |                 | Azure Spot instance                                          | Not selected                          |
+    |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+    |                 | Username                                                     | TestUser                              |
+    |                 | Password                                                     | TestPa$$w0rd!                         |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
+    | Disks           | No changes required                                          |                                       |
+    | Networking      | Virtual network                                              | CoreServicesVnet                      |
+    |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
+    |                 | Public IP                                                    | (new) TestVM2-ip                      |
+    |                 | NIC network security group                                   | Basic                                 |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | Load balancing                                               | Not selected                          |
+    | Management      | No changes required                                          |                                       |
+    | Advanced        | No changes required                                          |                                       |
+    | Tags            | No changes required                                          |                                       |
+    | Review + create | Review your settings and select **Create**                   |                                       |
 
 
 6. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
