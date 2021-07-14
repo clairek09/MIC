@@ -2,7 +2,7 @@
 
 A Point-to-Site (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer. A P2S connection is established by starting it from the client computer. This solution is useful for telecommuters who want to connect to Azure VNets from a remote location, such as from home or a conference. P2S VPN is also a useful solution to use instead of S2S VPN when you have only a few clients that need to connect to a VNet.
 
-![Connect from a computer to an Azure VNet - point-to-site connection diagram](../media/point-to-site-diagram.png)
+![Connect from a computer to an Azure VNet - point-to-site connection diagram](../media/point-site-diagram.png)
 
  
 
@@ -60,7 +60,7 @@ Users use the native VPN clients on Windows and Mac devices for P2S. Azure provi
 
 - For Mac devices, it consists of the mobileconfig file that users install on their devices.
 
-![configuration window in the azure portal for a point to site connection](../media/configure-point-to-site.png)
+![configuration window in the azure portal for a point to site connection](../media/configure-point-site.png)
 
  
 
