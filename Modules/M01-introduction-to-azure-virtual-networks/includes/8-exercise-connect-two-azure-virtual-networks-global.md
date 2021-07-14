@@ -21,7 +21,8 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On the Azure home page, select Virtual Machines.
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
-    ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    > [!div class="mx-imgBorder"]
+    > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -116,7 +117,8 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 2. In CoreServicesVnet, under **Settings**, select **Peerings**.
-    ![screen shot of core services VNet Peering settings ](../media/create-peering-coreservicesvnet.png)
+    > [!div class="mx-imgBorder"]
+    > ![screen shot of core services VNet Peering settings ](../media/create-peering-coreservicesvnet.png)
 
 3. On CoreServicesVnet | Peerings, select **+ Add**.
 
