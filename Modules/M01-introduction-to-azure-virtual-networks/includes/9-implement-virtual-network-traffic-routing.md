@@ -105,7 +105,7 @@ Here is an example where you have a virtual network that includes three subnets.
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
+> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/create-routing-table.png)
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 
