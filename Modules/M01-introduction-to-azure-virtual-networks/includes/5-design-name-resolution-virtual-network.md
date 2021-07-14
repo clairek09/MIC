@@ -134,7 +134,8 @@ At the VNet level, default DNS configuration is part of the DHCP assignments mad
 
 If necessary, you can override the default configuration by configuring an alternate DNS server at the VM NIC.
 
-![DNS default configuration.](../media/dns-config.png)
+> [!div class="mx-imgBorder"]
+> ![DNS default configuration.](../media/dns-config.png)
 
  
 
@@ -144,7 +145,8 @@ Two ways to link VNets to a private zone:
 
 - **Resolution:** There may be many other private DNS zones for different namespaces. You can link a VNet to each of those zones for name resolution. Each VNet can link to up to 1000 private DNS Zones for name resolution. 
 
-![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns-zones.png)
+> [!div class="mx-imgBorder"]
+> ![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns-zones.png)
 
  
 
@@ -165,7 +167,8 @@ Forwarding takes two forms:
 > [!NOTE] 
 > If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
 
-![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external-dns-fwd.png)
+> [!div class="mx-imgBorder"]
+> ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external-dns-fwd.png)
 
 ## Check your knowledge
 
