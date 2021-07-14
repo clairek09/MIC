@@ -25,7 +25,7 @@ You will create the following resources:
  
 
 | **Virtual Network** | **Region**   | **Virtual network address space** | **Subnet**                | **Subnet**    |
-| ------------------- | ------------ | --------------------------------- | ------------------------- | ------------- |
+|:-:|:-:|:-:|:-:|:-:|
 | CoreServicesVnet    | West US      | 10.20.0.0/16                      |                           |               |
 |                     |              |                                   | GatewaySubnet             | 10.20.0.0/27  |
 |                     |              |                                   | SharedServicesSubnet      | 10.20.10.0/24 |
