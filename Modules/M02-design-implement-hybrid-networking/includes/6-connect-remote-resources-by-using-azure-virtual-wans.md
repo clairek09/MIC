@@ -27,7 +27,7 @@ There are two types of Virtual WANs: Basic and Standard. The following table sho
 
 
 | Virtual WAN type | Hub type | Available configurations                                                                                              |
-| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+|:-:|:-:|:-:|
 | Basic            | Basic    | Site-to-site VPN only                                                                                                 |
 | Standard         | Standard | ExpressRoute<br>User VPN (P2S)<br>VPN (site-to-site)<br>Inter-hub and VNet-to-VNet transiting through the virtual hub |
 
