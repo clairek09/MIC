@@ -28,7 +28,7 @@ In this exercise, you will:
 4. On the Create application gateway **Basics** tab, enter, or select the following information:
 
    | **Setting**         | **Value**                                    |
-   | ------------------- | -------------------------------------------- |
+   |:-:|:-:|
    | Subscription        | Select your subscription.                    |
    | Resource group      | Select the resource group provided by Learn. |
    | Application Gateway | ContosoAppGateway                            |
@@ -38,7 +38,7 @@ In this exercise, you will:
 5. In Create virtual network, enter, or select the following information:
 
    | **Setting**       | **Value**                          |
-   | ----------------- | ---------------------------------- |
+   |:-:|:-:|
    | Name              | ContosoVNet                        |
    | **ADDRESS SPACE** |                                    |
    | Address range     | 10.0.0.0/16                        |
@@ -63,7 +63,7 @@ In this exercise, you will:
 12. In the **Add a backend pool** window that opens, enter the following values to create an empty backend pool:
 
     | **Setting**                      | **Value**   |
-    | -------------------------------- | ----------- |
+    |:-:|:-:|
     | Name                             | BackendPool |
     | Add backend pool without targets | Yes         |
 
@@ -80,7 +80,7 @@ In this exercise, you will:
 18. On the **Listener** tab, enter or select the following information:
 
     | **Setting**   | **Value**         |
-    | ------------- | ----------------- |
+    |:-:|:-:|
     | Listener name | Listener          |
     | Frontend IP   | Select **Public** |
 
@@ -93,14 +93,14 @@ In this exercise, you will:
 21. On the **Backend targets** tab, enter or select the following information:
 
     | **Setting**   | **Value**      |
-    | ------------- | -------------- |
+    |:-:|:-:|
     | Target type   | Backend pool   |
     | HTTP Settings | **Create new** |
 
 22. In **Add a HTTP setting**, enter or select the following information:
 
     | **Setting**        | **Value**   |
-    | ------------------ | ----------- |
+    |:-:|:-:|
     | HTTP settings name | HTTPSetting |
     | Backend port       | 80          |
 
@@ -137,7 +137,7 @@ To do this, you'll:
 3. In **Create a virtual machine**, enter, or select the following information (If the setting is not listed, use the default value):
 
    | **Setting**          | **Value**                                        |
-   | -------------------- | ------------------------------------------------ |
+   |:-:|:-:|
    | **Basics** tab       |                                                  |
    | Subscription         | Select the subscription provided by Learn.       |
    | Resource group       | Select the Resource Group provided by Learn.     |
