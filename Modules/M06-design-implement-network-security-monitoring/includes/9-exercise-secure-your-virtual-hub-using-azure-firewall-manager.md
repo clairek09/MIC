@@ -311,7 +311,8 @@ In this task you will associate the firewall policy with the virtual hub.
 6. Click **Add**.
 7. When the policy has been attached, click **Refresh**. The association should be displayed.
 
-![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
+> [!div class="mx-imgBorder"]
+> ![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
 
  
 
