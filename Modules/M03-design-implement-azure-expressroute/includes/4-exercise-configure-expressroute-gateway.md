@@ -31,7 +31,7 @@ In this exercise, you will:
 3. On the Create virtual networks pane, on the **Basics** tab, use the information in the following table to create the VNet:
 
    | **Setting**          | **Value**                        |
-   | -------------------- | -------------------------------- |
+   |:-:|:-:|
    | Virtual Network Name | CoreServicesVNet                 |
    | Resource Group       | Resource Group provided by Learn |
    | Location             | West US                          |
@@ -43,7 +43,7 @@ In this exercise, you will:
 6. In the Add subnet pane, use the information in the following table to create the subnet:
 
    | **Setting**                  | **Value**     |
-   | ---------------------------- | ------------- |
+   |:-:|:-:|
    | Gateway Subnet name          | GatewaySubnet |
    | Gateway Subnet address space | 10.20.0.0/27  |
 
@@ -66,7 +66,7 @@ In this exercise, you will:
 2. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 
    | **Setting**               | **Value**                  |
-   | ------------------------- | -------------------------- |
+   |:-:|:-:|
    | **Project details**       |                            |
    | Subscription              | Provided by Learn          |
    | Resource Group            | Provided by Learn          |
