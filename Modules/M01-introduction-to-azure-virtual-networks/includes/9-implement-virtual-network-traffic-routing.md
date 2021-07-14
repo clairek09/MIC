@@ -104,7 +104,7 @@ Here is an example where you have a virtual network that includes three subnets.
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
-![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-a-routing-table.png)
+![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 
@@ -125,7 +125,7 @@ In summary, this route applies to any address prefixes in 10.0.1.0/24 (private s
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
-![Screenshot of a route table being assocated with a virtual network.](../media/associate-a-route.png)
+![Screenshot of a route table being assocated with a virtual network.](../media/associate-route.png)
 
 > [!NOTE] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
 
