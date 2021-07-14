@@ -186,7 +186,7 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 
 ## Multiple choice
 
-An engineer wants to consume a specific set of services through Microsoft peering. Which feature should you configure?
+An engineer wants to consume a specific set of services through Microsoft peering. Which feature should be configured?
 
 (x) Route filters.{{Correct. Route filters are a way to consume a subset of supported services through Microsoft peering.}} 
 
@@ -196,7 +196,7 @@ An engineer wants to consume a specific set of services through Microsoft peerin
 
 ## Multiple choice
 
-To provide connectivity to Microsoft 365 and PaaS services. Which peering service must you select?
+To provide connectivity to Microsoft 365 and PaaS services. Which peering service should select?
 
 (x)Microsoft Peering.{{Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering.}}
 
