@@ -49,7 +49,7 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
  
 >[!div class="mx-imgBorder"]
->![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-and-outbound.png)
+>![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-outbound.png)
 
  
 
