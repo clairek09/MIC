@@ -15,7 +15,9 @@ A secured virtual hub is an Azure Virtual WAN Hub with associated security and r
 
 The following diagram shows an organization with a single Virtual WAN hub connecting the spokes. VNets, Site-to-site and point-to-site VPNs, SD WANs, and ExpressRoute connectivity are all supported.
 
-![Azure Virtual WAN with two regional hubs, several VNets, and multiple remote connections including Site-to-Site VPN, Point-to-Site VPN, and ExpressRoute.](../media/azure-wan-regions.png)
+> [!div class="mx-imgBorder"]
+
+>![Azure Virtual WAN with two regional hubs, several VNets, and multiple remote connections including Site-to-Site VPN, Point-to-Site VPN, and ExpressRoute.](../media/azure-wan-regions.png)
 
 ## Gateway scale
 
@@ -40,7 +42,9 @@ The minimum address space is /24 to create a hub. If you use anything in the ran
 
 You can use Virtual WAN to connect a VNet to a virtual hub in a different tenant. This architecture is useful if you have client workloads that must be connected to be the same network but are on different tenants. For example, as shown in the following diagram, you can connect a non-Contoso VNet (the Remote Tenant) to a Contoso virtual hub (the Parent Tenant).
 
-![Connect a non-Contoso VNet to a Contoso virtual hub (the Parent Tenant).](../media/cross-tenant-connectivity.png)
+> [!div class="mx-imgBorder"]
+
+>![Connect a non-Contoso VNet to a Contoso virtual hub (the Parent Tenant).](../media/cross-tenant-connectivity.png)
 
 Before you can connect a cross-tenant VNet to a Virtual WAN hub, you must have the following configuration already set up:
 
@@ -90,7 +94,9 @@ Each connection is associated to one route table. Associating a connection to a 
 
 By default, all connections are associated to a Default route table in a virtual hub. Each virtual hub has its own Default route table, which can be edited to add a static route(s). Routes added statically take precedence over dynamically learned routes for the same prefixes.
 
-![Association - default routing table.](../media/concepts-association.png)
+> [!div class="mx-imgBorder"]
+
+>![Association - default routing table.](../media/concepts-association.png)
 
  
 
@@ -100,7 +106,9 @@ Connections dynamically propagate routes to a route table. With a VPN connection
 
 A None route table is also available for each virtual hub. Propagating to the None route table implies that no routes are required to be propagated from the connection. VPN, ExpressRoute, and User VPN connections propagate routes to the same set of route tables.
 
-![Propagation - default routing table.](../media/concepts-propagation.png)
+> [!div class="mx-imgBorder"]
+
+>![Propagation - default routing table.](../media/concepts-propagation.png)
 
 ### Labels
 
