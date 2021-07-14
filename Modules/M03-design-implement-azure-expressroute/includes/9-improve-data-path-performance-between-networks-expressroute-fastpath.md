@@ -146,16 +146,16 @@ To redeem a connection authorization
 
 2. Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
-  > [!Note] 
-  > The location must match the virtual network gateway location you are creating the connection for.
+   > [!Note] 
+   > The location must match the virtual network gateway location you are creating the connection for.
 
    > [!div class="mx-imgBorder"]
    >![Azure portal - create connection basics tab](../media/connection-basics.png)
 
 3. In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
 
-  > [!Note] 
-  > The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
+   > [!Note] 
+   > The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
 
    > [!div class="mx-imgBorder"]
    > ![Azure portal - create connection settings tab](../media/connection-settings.png)
