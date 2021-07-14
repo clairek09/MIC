@@ -51,21 +51,21 @@ In this exercise, you will:
 - Provider is the internet service provider who you will be requesting your service from.
 - Peering Location is the physical location where you are peering with Microsoft.
 
-> [!Important]
->
-> The Peering Location indicates the [physical location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) where you are peering with Microsoft. This is not linked to "Location" property, which refers to the geography where the Azure Network Resource Provider is located. While they are not related, it is a good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
+    > [!Important]
+    >
+    > The Peering Location indicates the [physical location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) where you are peering with Microsoft. This is not linked to "Location" property, which refers to the geography where the Azure Network Resource Provider is located. While they are not related, it is a good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
 
 - **SKU** determines whether an ExpressRoute local, ExpressRoute standard, or an ExpressRoute premium add-on is enabled. You can specify **Local** to get the local SKU, **Standard** to get the standard SKU or **Premium** for the premium add-on. You can change the SKU to enable the premium add-on.
 
-> [!Important]
->
-> You cannot change the SKU from Standard/Premium to Local.
+    > [!Important]
+    >
+     > You cannot change the SKU from Standard/Premium to Local.
 
 - **Billing model** determines the billing type. You can specify **Metered** for a metered data plan and **Unlimited** for an unlimited data plan. You can change the billing type from **Metered** to **Unlimited**.
 
-> [!Important]
->
-> You cannot change the type from Unlimited to Metered.
+    > [!Important]
+    >
+    > You cannot change the type from Unlimited to Metered.
 
 - **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
