@@ -41,7 +41,7 @@ In this exercise, you will:
 
 2. On Contoso.com | Virtual network links, select **+ Add**.
 
-![contoso.com | Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
+    ![contoso.com | Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
 
 3. Use the information in the following table to add the virtual network link.
 
@@ -144,7 +144,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
 
-![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -194,7 +194,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 3. Verify that host (A) records are listed for both VMs, as shown:
 
-![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso-com-dns-zone.png)
+    ![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso-com-dns-zone.png)
 
  
 
@@ -210,7 +210,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 3. In TestVM1, select **Connect &gt; RDP**.
 
-![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
+    ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
 
 4. In TestVM1 | Connect, select **Download RDP file**.
 
