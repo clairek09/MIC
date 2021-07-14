@@ -146,7 +146,7 @@ You can view the effective routes for each network interface by using the Azure 
 4. Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name.
    ![Azure Portal - select a specific NIC.](../media/view-nics.png)
 
-8. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:
+5. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:
    ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
 
 
