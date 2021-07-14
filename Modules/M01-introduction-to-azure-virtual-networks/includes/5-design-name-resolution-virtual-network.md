@@ -49,7 +49,8 @@ Setting up a subdomain follows the same process as typical delegation. The only 
 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
 
-![Screenshot of the Add a record set page.](../media/dns-record-set1.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add a record set page.](../media/dns-record-set1.png)
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
@@ -80,7 +81,8 @@ DNS forwarding also enables DNS resolution between virtual networks and allows y
 
  
 
-![image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method](../media/inter-vnet-dns.png)
+> [!div class="mx-imgBorder"]
+> ![image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method](../media/inter-vnet-dns.png)
 
  
 
