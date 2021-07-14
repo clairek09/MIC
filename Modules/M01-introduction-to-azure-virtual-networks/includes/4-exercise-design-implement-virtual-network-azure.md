@@ -61,12 +61,12 @@ In this exercise, you will:
 
 4. Use the information in the following table to create the resource group.
 
-| **Tab**         | **Option**                                 | **Value**            |
-| --------------- | ------------------------------------------ | -------------------- |
-| Basics          | Resource group                             | ContosoResourceGroup |
-|                 | Region                                     | (US) West US         |
-| Tags            | No changes required                        |                      |
-| Review + create | Review your settings and select **Create** |                      |
+    | **Tab**         | **Option**                                 | **Value**            |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                             | ContosoResourceGroup |
+    |                 | Region                                     | (US) West US         |
+    | Tags            | No changes required                        |                      |
+    | Review + create | Review your settings and select **Create** |                      |
 
 
 5. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
@@ -83,29 +83,27 @@ In this exercise, you will:
 4. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
- 
-
-| **Tab**      | **Option**         | **Value**            |
-| ------------ | ------------------ | -------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup |
-|              | Name               | CoreServicesVnet     |
-|              | Region             | (US) West US         |
-| IP Addresses | IPv4 address space | 10.20.0.0/16         |
+    | **Tab**      | **Option**         | **Value**            |
+    |:-:|:-:|:-:|
+    | Basics       | Resource Group     | ContosoResourceGroup |
+    |              | Name               | CoreServicesVnet     |
+    |              | Region             | (US) West US         |
+    | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
  5. Use the information in the following table to create the CoreServicesVnet subnets.
 
  6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
-| **Subnet**             | **Option**           | **Value**              |
-| ---------------------- | -------------------- | ---------------------- |
-| GatewaySubnet          | Subnet name          | GatewaySubnet          |
-|                        | Subnet address range | 10.20.0.0/27           |
-| SharedServicesSubnet   | Subnet name          | SharedServicesSubnet   |
-|                        | Subnet address range | 10.20.10.0/24          |
-| DatabaseSubnet         | Subnet name          | DatabaseSubnet         |
-|                        | Subnet address range | 10.20.20.0/24          |
-| PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
-|                        | Subnet address range | 10.20.30.0/24          |
+    | **Subnet**             | **Option**           | **Value**              |
+    |:-:|:-:|:-:|
+    | GatewaySubnet          | Subnet name          | GatewaySubnet          |
+    |                        | Subnet address range | 10.20.0.0/27           |
+    | SharedServicesSubnet   | Subnet name          | SharedServicesSubnet   |
+    |                        | Subnet address range | 10.20.10.0/24          |
+    | DatabaseSubnet         | Subnet name          | DatabaseSubnet         |
+    |                        | Subnet address range | 10.20.20.0/24          |
+    | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
+    |                        | Subnet address range | 10.20.30.0/24          |
 
  7. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
@@ -117,7 +115,7 @@ In this exercise, you will:
 
 
 | **Tab**      | **Option**         | **Value**             |
-| ------------ | ------------------ | --------------------- |
+|:-:|:-:|:-:|
 | Basics       | Resource Group     | ContosoResourceGroup  |
 |              | Name               | ManufacturingVnet     |
 |              | Region             | (Europe) North Europe |
@@ -126,7 +124,7 @@ In this exercise, you will:
 
 
 | **Subnet**                | **Option**           | **Value**                 |
-| ------------------------- | -------------------- | ------------------------- |
+|:-:|:-:|:-:|
 | ManufacturingSystemSubnet | Subnet name          | ManufacturingSystemSubnet |
 |                           | Subnet address range | 10.30.10.0/24             |
 | SensorSubnet1             | Subnet name          | SensorSubnet1             |
@@ -141,14 +139,14 @@ In this exercise, you will:
 
 
 | **Tab**      | **Option**         | **Value**            |
-| ------------ | ------------------ | -------------------- |
+|:-:|:-:|:-:|
 | Basics       | Resource Group     | ContosoResourceGroup |
 |              | Name               | ResearchVnet         |
 |              | Region             | West India           |
 | IP Addresses | IPv4 address space | 10.40.0.0/16         |
 
 | **Subnet**           | **Option**           | **Value**            |
-| -------------------- | -------------------- | -------------------- |
+|:-:|:-:|:-:|
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
 |                      | Subnet address range | 10.40.0.0/24         |
  
@@ -157,11 +155,11 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **All resources**.
 
-   ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
+    ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+    ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
@@ -171,7 +169,7 @@ In this exercise, you will:
 
 6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-   ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+    ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
 7. Repeat steps 4 -6 for each VNet.
 
