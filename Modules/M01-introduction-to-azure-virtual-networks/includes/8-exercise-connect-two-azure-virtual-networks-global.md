@@ -116,7 +116,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 2. In CoreServicesVnet, under **Settings**, select **Peerings**.
-    ![screen shot of core services VNet Peering settings ](../media/create-peering-on-coreservicesvnet.png)
+    ![screen shot of core services VNet Peering settings ](../media/create-peering-coreservicesvnet.png)
 
 3. On CoreServicesVnet | Peerings, select **+ Add**.
 
