@@ -98,7 +98,7 @@ Here is an example where you have a virtual network that includes three subnets.
  -  The subnets are Private, DMZ, and Public. In the DMZ subnet, there is a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.
  -  You want to ensure all traffic from the Public subnet goes through the NVA to the Private subnet.
 
-![Image](../media/routing-example.png)
+![Image](../media/route-example.png)
 
 ### Create a Routing Table
 
