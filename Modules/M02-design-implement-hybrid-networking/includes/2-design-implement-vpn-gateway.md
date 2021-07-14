@@ -260,7 +260,7 @@ This topology will require two local network gateways and two connections to sup
 
 The same active-active configuration can also apply to Azure VNet-to-VNet connections. You can create active-active VPN gateways for both virtual networks, and connect them together to form the same full mesh connectivity of 4 tunnels between the two VNets, as shown in the diagram below:
 
-![Highly available VNet-to-VNet VPN Gateway configuration.](../media/vpn-vnet-to-vnet.png)
+![Highly available VNet-to-VNet VPN Gateway configuration.](../media/vpn-vnet-vnet.png)
 
 This ensures there are always a pair of tunnels between the two virtual networks for any planned maintenance events, providing even better availability. Even though the same topology for cross-premises connectivity requires two connections, the VNet-to-VNet topology shown above will need only one connection for each gateway. Additionally, BGP is optional unless transit routing over the VNet-to-VNet connection is required.
 
