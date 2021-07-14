@@ -114,7 +114,7 @@ The following table lists the requirements for PolicyBased and RouteBased VPN ga
 The VPN gateway settings that you chose are critical to creating a successful connection.
   > [!div class="mx-imgBorder"]
 
-  >![Screenshot of the Create virtual network gateway page in the Azure portal. The parameters discussed in the topic are shown, including: Name and Gateway Type, VPN Type, SKU, Virtual Networks, and Public IP Address.](../media/vpn-gateway-config.png)
+  > ![Screenshot of the Create virtual network gateway page in the Azure portal. The parameters discussed in the topic are shown, including: Name and Gateway Type, VPN Type, SKU, Virtual Networks, and Public IP Address.](../media/vpn-gateway-config.png)
 
  
 
@@ -146,7 +146,7 @@ The local network gateway typically refers to the on-premises location. You give
  
 > [!div class="mx-imgBorder"]
 
->![Screenshot of the Create local network gateway page. The Name is VNet1LocalNet. The IP address is 128.8.8.8. The Address space is 10.101.0.0 24.](../media/local-network-gateway.png)
+> ![Screenshot of the Create local network gateway page. The Name is VNet1LocalNet. The IP address is 128.8.8.8. The Address space is 10.101.0.0 24.](../media/local-network-gateway.png)
 
  
 
@@ -176,7 +176,7 @@ Once your VPN gateways are created, you can create the connection between them. 
 
 > [!div class="mx-imgBorder"] 
 
->![Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.](../media/gateway-conections.png)
+> ![Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.](../media/gateway-conections.png)
 
 **Name**. Enter a name for your connection.
 
