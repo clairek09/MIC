@@ -117,7 +117,7 @@ For our example,
  -  The route uses a virtual appliance. Notice the other choices for *Next hop type*: virtual network gateway, virtual network, internet, and none.
  -  The virtual appliance is located at 10.0.2.4.
 
-![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-a-custom-route.png)
+![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-custom-route.png)
 
 In summary, this route applies to any address prefixes in 10.0.1.0/24 (private subnet). Traffic headed to these addresses will be sent to the virtual appliance with a 10.0.2.4 address.
 
