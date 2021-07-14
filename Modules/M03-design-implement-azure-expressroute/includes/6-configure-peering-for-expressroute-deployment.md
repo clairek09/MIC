@@ -16,7 +16,7 @@ An ExpressRoute circuit two peering options associated with it: Azure private, a
 The following table compares the two peering. Public peering is deprecated for new peering.
 
 | Max. # prefixes supported per peering | **Private Peering**                      | **Microsoft Peering**                    |
-| ------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+|:-:|:-:|:-:|
 | IP address ranges supported           | 4000 by default, 10,000 with ExpressRoute  Premium | 200                                      |
 | AS Number requirements                | Any valid IP address within your WAN.    | Public IP addresses owned by you or your connectivity  provider. |
 | IP protocols supported                | Private and public AS numbers. You must  own the public AS number if you choose to use one. | Private and public AS numbers. However,  you must prove ownership of public IP addresses. |
