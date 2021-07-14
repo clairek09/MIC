@@ -85,9 +85,7 @@ The new v2 SKU includes the following enhancements:
 
 When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the region in which you want to deploy, the scaling strategy you want to follow and the cost of the service. 
 
-### Supported regions
-
-The Standard_v2 and WAF_v2 SKU is available in the following regions: North Central US, South Central US, West US, West US 2, East US, East US 2, Central US, North Europe, West Europe, Southeast Asia, France Central, UK West, Japan East, Japan West, Australia East, Australia Southeast, Brazil South, Canada Central, Canada East, East Asia, Korea Central, Korea South, UK South, Central India, West India, South India.
+Check to see if it is avaiable in your desired region on the [products avaiable by region page](https://azure.microsoft.com/global-infrastructure/services/)
 
 ### Scaling Application Gateway and WAF v2
 
