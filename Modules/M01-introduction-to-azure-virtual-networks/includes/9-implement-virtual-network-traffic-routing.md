@@ -163,13 +163,13 @@ You can view the effective routes for each network interface by using the Azure 
 
 You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1, that is in a resource group named myResourceGroup:
 
- ```powershell
-     Get-AzEffectiveRouteTable `
+```powershell
+ Get-AzEffectiveRouteTable `
 
  -NetworkInterfaceName myVMNic1 `
 
  -ResourceGroupName myResourceGroup `
-  ```
+```
 
 
 ### Resolve the routing issue
@@ -201,25 +201,25 @@ Forced tunneling in Azure is configured using virtual network custom user-define
 
 - Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
 
-  - Local VNet routes: Route directly to the destination VMs in the same virtual network.
+   - Local VNet routes: Route directly to the destination VMs in the same virtual network.
 
-  - On-premises routes: Route to the Azure VPN gateway.
+   - On-premises routes: Route to the Azure VPN gateway.
 
-  - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
+   - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
 
 - To configure forced tunneling, you must:
 
-  - Create a routing table.
+   - Create a routing table.
 
-  - Add a user-defined default route to the VPN Gateway.
+   - Add a user-defined default route to the VPN Gateway.
 
-  - Associate the routing table to the appropriate VNet subnet(s).
+   - Associate the routing table to the appropriate VNet subnet(s).
 
 - Forced tunneling must be associated with a VNet that has a route-based VPN gateway. 
 
-  - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
+   - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
 
-  - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
+   - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
 
