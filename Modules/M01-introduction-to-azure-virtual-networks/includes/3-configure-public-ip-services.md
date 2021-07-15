@@ -71,4 +71,4 @@ Which of the following statements about Azure VNets is correct?
 Which of the following statements about subnets is NOT correct?
 (x) You can assign the same IP address range to multiple subnets within the same VNet. {{That is correct. Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.}}
 ( ) You can create multiple subnets within one VNet. {{That is incorrect. You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.}}
-( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{That is incorrect. You can associate zero or one NSGs to each subnet to control access to the subnet and the resources on it.}}
+( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{That is incorrect. You can associate zero or one NSG to each subnet to control access to the subnet and the resources on it.}}
