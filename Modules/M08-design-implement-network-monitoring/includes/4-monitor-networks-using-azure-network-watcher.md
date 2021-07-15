@@ -38,34 +38,34 @@ When you create or update a virtual network in your subscription, Network Watche
 
 To create a Network Watcher in the Azure portal:
 
-Navigate to **All services&gt; Networking&gt;Network Watcher**.
+1. Navigate to **All services&gt; Networking&gt;Network Watcher**.
 
 > [!div class="mx-imgBorder"]
 > ![Opening Network Watcher from the Azure portal home page](../media/network-watcher-enable-0.png)
 
-Right-click your subscription and choose **Enable network watcher in all regions**.
+2. Right-click your subscription and choose **Enable network watcher in all regions**.
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher - Overview page - enable network watcher highlighted](../media/network-watcher-enable-1.png)
 
-Note that the status is now showing as **Enabled**.
+3. Note that the status is now showing as **Enabled**.
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher - Overview page - showing network watcher enabled](../media/network-watcher-enable-2.png)
 
-If you expand the regions, you will see that all regions within this subscription are enabled.
+4. If you expand the regions, you will see that all regions within this subscription are enabled.
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher - Overview page - showing network watcher enabled on all regions](../media/network-watcher-enable-3.png)
 
-When you enable Network Watcher using the portal, the name of the Network Watcher instance is automatically set to NetworkWatcher_region_name where region_name corresponds to the Azure region where the instance is enabled. For example, a Network Watcher enabled in the West US region is named **NetworkWatcher_westus**.
+5. When you enable Network Watcher using the portal, the name of the Network Watcher instance is automatically set to NetworkWatcher_region_name where region_name corresponds to the Azure region where the instance is enabled. For example, a Network Watcher enabled in the West US region is named **NetworkWatcher_westus**.
 
-The Network Watcher instance is automatically created in a resource group named **NetworkWatcherRG**. The resource group is created if it does not already exist.
+6. The Network Watcher instance is automatically created in a resource group named **NetworkWatcherRG**. The resource group is created if it does not already exist.
 
 > [!div class="mx-imgBorder"]
 > ![Resource Groups list- Network Watcher resource group highlighted](../media/network-watcher-enable-4.png)
 
-To disable a Network Watcher for a region in the Azure portal, expand the regions section, right click the name of the region you wish to disable the Network Watcher on, and click **Disable network watcher**.
+7. To disable a Network Watcher for a region in the Azure portal, expand the regions section, right click the name of the region you wish to disable the Network Watcher on, and click **Disable network watcher**.
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher - Overview page - Disable network watcher highlighted](../media/network-watcher-enable-5.png)
