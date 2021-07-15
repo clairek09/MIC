@@ -100,14 +100,14 @@ You can enable NSG flow logs from any of the following:
 
 - [Azure Resource Manager](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-azure-resource-manager)
 
-To configure the parameters of NSG flow logs in the Azure portal, navigate to the **NSG Flow Logs** section in **Network Watcher**. 
+1. To configure the parameters of NSG flow logs in the Azure portal, navigate to the **NSG Flow Logs** section in **Network Watcher**. 
 
-Click the name of the NSG to bring up the **Settings** pane for the Flow log. 
+2. Click the name of the NSG to bring up the **Settings** pane for the Flow log. 
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher - Flow logs settings page](../media/flow-logs-1.png)
 
-Change the parameters you want and click **Save** to deploy the changes.
+3. Change the parameters you want and click **Save** to deploy the changes.
 
 ## Connection Monitor
 
@@ -179,17 +179,17 @@ You can create a connection monitor using Azure portal, ARMClient or PowerShell.
 
 To create a monitor in **Connection Monitor** by using the **Azure portal**:
 
-On the Azure portal home page, go to **Network Watcher**.
+1. On the Azure portal home page, go to **Network Watcher**.
 
 > [!div class="mx-imgBorder"]
 > ![Opening Network Watcher from the Azure portal home page using the Network Watcher tile](../media/create-connection-monitor-1.png)
 
-In the left pane, under **Monitoring**, select **Connection monitor**, and then click **Create**.
+2. In the left pane, under **Monitoring**, select **Connection monitor**, and then click **Create**.
 
 > [!div class="mx-imgBorder"]
 > ![Network Watcher>Create Connection Monitor](../media/create-connection-monitor-2.png)
 
-On the **Basics** tab of the **Create Connection Monitor** page, you need to enter the following information for your new connection monitor:
+3. On the **Basics** tab of the **Create Connection Monitor** page, you need to enter the following information for your new connection monitor:
 
 | **Field**               | **Information**                                              |
 |:-:|:-:|
@@ -202,23 +202,23 @@ On the **Basics** tab of the **Create Connection Monitor** page, you need to ent
 > [!div class="mx-imgBorder"]
 > ![Create Connection Monitor - Basics tab](../media/create-connection-monitor-3.png)
 
-Click **Next: Test groups &gt;&gt;**.
+4. Click **Next: Test groups &gt;&gt;**.
 
-On the next page, you can add sources, test configurations, and destinations in your test groups. Each test group in a connection monitor includes sources and destinations that get tested on network parameters. They are tested for the percentage of checks that fail and the round-trip-time (RTT) over test configurations.
+5. On the next page, you can add sources, test configurations, and destinations in your test groups. Each test group in a connection monitor includes sources and destinations that get tested on network parameters. They are tested for the percentage of checks that fail and the round-trip-time (RTT) over test configurations.
 
 > [!div class="mx-imgBorder"]
 > ![Create Connection Monitor - Test groups tab - Add test group](../media/create-connection-monitor-4.png)
 
-Click **Add Test Group**.
+6. Click **Add Test Group**.
 
 > [!div class="mx-imgBorder"]
 > ![Create Connection Monitor - Test groups tab - New test group listed](../media/create-connection-monitor-5.png)
 
-Click **Next: Create Alerts &gt;&gt;**.
+7. Click **Next: Create Alerts &gt;&gt;**.
 
-On the **Create alert** tab, you can set up alerts on tests that are failing based on the thresholds set in test configurations.
+8. On the **Create alert** tab, you can set up alerts on tests that are failing based on the thresholds set in test configurations.
 
-You need to enter the following information for your alert:
+9. You need to enter the following information for your alert:
 
 - Create alert (check box): You can select this check box to create a metric alert in Azure Monitor. When you select this check box, the other fields will be enabled for editing. (Note: Additional charges for the alert will be applicable.) 
 - Scope (Resource/Hierarchy): The values here are automatically filled in for you, based on the values you specified on the **Basics** tab.
@@ -232,12 +232,12 @@ You need to enter the following information for your alert:
 > [!div class="mx-imgBorder"]
 > ![Create Connection Monitor - Create Alerts tab](../media/create-connection-monitor-6.png)
 
-Click **Next: Review + create &gt;&gt;**.
+10. Click **Next: Review + create &gt;&gt;**.
 
 > [!div class="mx-imgBorder"]
 > ![Create Connection Monitor - Review + create tab](../media/create-connection-monitor-7.png)
 
-Review your information, and then click **Create**.
+11. Review your information, and then click **Create**.
 
 ## Traffic Analytics
 
