@@ -224,7 +224,7 @@ The next task is to create a health probe to monitor the virtual machines in the
 On the **Backend pools** page of the load balancer, under **Settings**, select **Health probes**, and then click **Add**.
 
 > [!div class="mx-imgBorder"]
-> ![Add health probes](../media/create-healthprobe-1.png)
+> ![Add health probes](../media/create-health-probe-1.png)
 
 You need to enter the following information on the **Add health probe** page.
 
@@ -239,10 +239,10 @@ You need to enter the following information on the **Add health probe** page.
 You then click **Add** to add the health probe.
 
 > [!div class="mx-imgBorder"]
-> ![configure health probe settings](../media/create-healthprobe-2.png)
+> ![configure health probe settings](../media/create-health-probe-2.png)
 
 > [!div class="mx-imgBorder"]
-> ![View list of added health probes in load balancer](../media/create-healthprobe-3.png)
+> ![View list of added health probes in load balancer](../media/create-health-probe-3.png)
 
  
 
