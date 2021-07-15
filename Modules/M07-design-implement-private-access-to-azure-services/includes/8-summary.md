@@ -22,7 +22,7 @@ Use these resources to discover more.
 
 - [virtual network service endpoints overview](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)
 
-- [design ip addressing for azure](https://docs.microsoft.com/learn/modules/design-ip-addressing-for-azure)
+- [design ip addressing for Azure](https://docs.microsoft.com/learn/modules/design-ip-addressing-for-azure)
 
 - [secure and isolate with nsg and service endpoints](https://docs.microsoft.com/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints)
 
