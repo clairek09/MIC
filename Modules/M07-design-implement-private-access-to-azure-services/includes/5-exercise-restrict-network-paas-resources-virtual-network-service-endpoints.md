@@ -50,7 +50,7 @@ In this exercise, you will:
 
 6. Select the **Security** tab and enter the following values:
    > [!div class="mx-imgBorder"]
-   > ![Network security settings](../media/ create-virtual-network-security.png)
+   > ![Network security settings](../media/create-virtual-network-security.png)
 
    | **Setting**     | **Value** |
    |:-:|:-:|
