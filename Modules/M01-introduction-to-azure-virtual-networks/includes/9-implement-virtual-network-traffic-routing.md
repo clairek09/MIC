@@ -238,7 +238,7 @@ What type of routes enable traffic to override routes that Azure configures?
 
 ## Multiple Choice 
 
-A VNet is experiencing some routing problems. What would an engnieer do to begin to diagnose the problem?
+A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?
 
 (x) View the effective routes for each NIC. (UDR){{correct, You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
 ( ) Configure every resource with a static IP address.{{incorrect, This would not provide the solution to the existing problems and would be extremely time consuming.}} 
