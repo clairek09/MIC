@@ -355,7 +355,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 8. Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights functional dependency view](../media/network-insights-functional-dependency-view-2.png)
+   > [![Azure Monitor Network Insights functional dependency view](../media/network-insights-functional-dependency-view-2.png)](../media/network-insights-functional-dependency-view-2.png#lightbox)
 
 9. To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder. 
 
@@ -382,7 +382,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 3. Click the **Frontend &amp; Backend Availability** tab and scroll down the page to see the Health Probe Status charts. If you see **values that are lower than 100** for these items, it indicates an outage of some kind on those resources.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted](../media/network-insights-detailed-metrics-5.png)
+   > [![Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted](../media/network-insights-detailed-metrics-5.png)](../media/network-insights-detailed-metrics-5.png#lightbox)
 
 4. Click the **Data Throughput** tab and scroll down the page to see the other data throughput charts.
 
@@ -393,7 +393,7 @@ In this section, you will create a test VM, and then test the load balancer.
 6. Click the **Flow Distribution** tab and scroll down the page to see the charts under the **VM Flow Creation and Network Traffic** section. 
 
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts](../media/network-insights-detailed-metrics-4.png)
+   > [![Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts](../media/network-insights-detailed-metrics-4.png)](../media/network-insights-detailed-metrics-4.png#lightbox)
 
  
 
@@ -415,7 +415,7 @@ In this section, you will create a test VM, and then test the load balancer.
 6. The **Resource health** page will identify any major availability issues with your load balancer resource. If there are any events under the **Health History** section, you can expand the health event to see more detail about the event. You can even save the detail about the event as a PDF file for later review and for reporting.
 
    > [!div class="mx-imgBorder"]
-   > ![Service Health>Resource health view](../media/resource-health-2.png)
+   > [![Service Health>Resource health view](../media/resource-health-2.png)](../media/resource-health-2.png#lightbox)
 
  
 
@@ -428,7 +428,7 @@ In this section, you will create a test VM, and then test the load balancer.
 3. Under **Monitoring**, select **Diagnostic settings**, then click **Add diagnostic setting**.
 
    > [!div class="mx-imgBorder"]
-   > ![Diagnostic settings>Add diagnostic setting button highlighted](../media/diagnostic-settings-1.png)
+   > [![Diagnostic settings>Add diagnostic setting button highlighted](../media/diagnostic-settings-1.png)](../media/diagnostic-settings-1.png#lightbox)
 
 4. On the **Diagnostic setting** page, in the name box, type **myLBDiagnostics**.
 
