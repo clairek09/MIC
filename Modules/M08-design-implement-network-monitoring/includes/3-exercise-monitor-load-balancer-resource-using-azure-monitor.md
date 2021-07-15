@@ -374,26 +374,26 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. To view more comprehensive metrics for this network resource, click **View detailed metrics**.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - View detailed metrics button highlighted](../media/network-insights-detailedmetrics-1.png)
+   > ![Azure Monitor Network Insights - View detailed metrics button highlighted](../media/network-insights-detailed-metrics-1.png)
 
 2. This opens a large full **Metrics** page in the Azure Network Insights platform. The first tab you land on is the **Overview** tab, which shows the availability status of the load balancer and overall Data Throughput and Frontend and Backend Availability for each of the Frontend IPs attached to your Load Balancer. These metrics indicate whether the Frontend IP is responsive and the compute instances in your Backend Pool are individually responsive to inbound connections.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - Overview tab](../media/network-insights-detailedmetrics-2.png)
+   > ![Azure Monitor Network Insights - Detailed metrics view - Overview tab](../media/network-insights-detailed-metrics-2.png)
 
 3. Click the **Frontend &amp; Backend Availability** tab and scroll down the page to see the Health Probe Status charts. If you see **values that are lower than 100** for these items, it indicates an outage of some kind on those resources.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted](../media/network-insights-detailedmetrics-5.png)
+   > ![Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted](../media/network-insights-detailed-metrics-5.png)
 
 4. Click the **Data Throughput** tab and scroll down the page to see the other data throughput charts.
 
 5. Hover over some of the data points in the charts, and you will see that the values change to show the exact value at that point in time.
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab](../media/network-insights-detailedmetrics-3.png)
+   > ![Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab](../media/network-insights-detailed-metrics-3.png)
 
 6. Click the **Flow Distribution** tab and scroll down the page to see the charts under the **VM Flow Creation and Network Traffic** section. 
 
    > [!div class="mx-imgBorder"]
-   > ![Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts](../media/network-insights-detailedmetrics-4.png)
+   > ![Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts](../media/network-insights-detailed-metrics-4.png)
 
  
 
