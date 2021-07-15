@@ -2,7 +2,7 @@
 > To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
 
 
-Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including Portal, CLI, PowerShell etc. 
+Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including portal, CLI, PowerShell etc. 
 
 You'll create a Private Endpoint for an Azure web app and deploy a virtual machine to test the private connection.
 
