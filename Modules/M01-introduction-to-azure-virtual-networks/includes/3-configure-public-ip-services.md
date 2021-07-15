@@ -63,12 +63,12 @@ Choose the best response for each of the questions below. When you're done, sele
 
 Which of the following statements about Azure VNets is correct?
 (x) Azure VNets enable communication between Azure resources. {{Correct, Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
-( ) Outbound communication with the internet must be configured for each resource on the VNet. {{incorrect, All resources in a VNet can communicate outbound to the internet, by default.}}
-( ) Azure VNets cannot be configured to communicate with on-premises resources. {{incorrect, You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
+( ) Outbound communication with the internet must be configured for each resource on the VNet. {{Incorrect, All resources in a VNet can communicate outbound to the internet, by default.}}
+( ) Azure VNets cannot be configured to communicate with on-premises resources. {{Incorrect, You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
 
 ## Multiple Choice 
 
 Which of the following statements about subnets is NOT correct?
-(x) You can assign the same IP address range to multiple subnets within the same VNet. {{that is correct, Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.}}
-( ) You can create multiple subnets within one VNet. {{that is incorrect, You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.}}
-( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{that is incorrect, You can associate zero or one NSGs to each subnet to control access to the subnet and the resources on it.}}
+(x) You can assign the same IP address range to multiple subnets within the same VNet. {{That is correct, Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.}}
+( ) You can create multiple subnets within one VNet. {{That is incorrect, You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.}}
+( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{That is incorrect, You can associate zero or one NSGs to each subnet to control access to the subnet and the resources on it.}}
