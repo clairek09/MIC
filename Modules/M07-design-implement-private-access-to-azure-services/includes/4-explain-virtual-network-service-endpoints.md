@@ -3,7 +3,7 @@
 Use virtual network Service Endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service Endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
 
 > [!div class="mx-imgBorder"]
-> ![image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to azure storage outside the v-net. ](../media/service-endpoint.png)
+> ![image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to Azure storage outside the v-net. ](../media/service-endpoint.png)
 
 By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services, such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
 
@@ -314,11 +314,11 @@ In this step, you'll connect to both of your servers, and verify that only DataS
 - To connect to your **AppServer** VM, and attempt to mount the Azure file share, in the Cloud Shell, run the following command.
 
   ```AzureCLI
-    ssh -t azureuser@$APPSERVERIP \
+    ssh -t Azureuser@$APPSERVERIP \
   
-   "mkdir azureshare; \
+   "mkdir Azureshare; \
   
-   sudo mount -t cifs //$STORAGEACCT.file.core.windows.net/erp-data-share azureshare \
+   sudo mount -t cifs //$STORAGEACCT.file.core.windows.net/erp-data-share Azureshare \
   
    -o vers=3.0,username=$STORAGEACCT,password=$STORAGEKEY,dir_mode=0777,file_mode=0777,sec=ntlmssp; findmnt \
   
@@ -335,11 +335,11 @@ In this step, you'll connect to both of your servers, and verify that only DataS
 - To connect to your DataServer VM, and attempt to mount the Azure file share, in the Cloud Shell, run the following command.
 
   ```AzureCLI
-    ssh -t azureuser@$DATASERVERIP \
+    ssh -t Azureuser@$DATASERVERIP \
   
-   "mkdir azureshare; \
+   "mkdir Azureshare; \
   
-   sudo mount -t cifs //$STORAGEACCT.file.core.windows.net/erp-data-share azureshare \
+   sudo mount -t cifs //$STORAGEACCT.file.core.windows.net/erp-data-share Azureshare \
   
    -o vers=3.0,username=$STORAGEACCT,password=$STORAGEKEY,dir_mode=0777,file_mode=0777,sec=ntlmssp;findmnt \
   
@@ -441,7 +441,7 @@ By default, service tags reflect the ranges for the entire cloud. Some service t
 | PowerBI                                                      | PowerBi. Note: This tag is not currently configurable via Azure Portal. | Both                         | No               | No                           |
 | PowerQueryOnline                                             | Power Query Online.                                          | Both                         | No               | No                           |
 | ServiceBus                                                   | Azure Service Bus traffic that uses the Premium service tier. | Outbound                     | Yes              | Yes                          |
-| ServiceFabric                                                | Azure Service Fabric. Note: This tag represents the Service Fabric Service Endpoint for control plane per region. This enables customers to perform management operations for their Service Fabric clusters from their VNET (endpoint eg. https:// westus.servicefabric.azure.com) | Both                         | No               | No                           |
+| ServiceFabric                                                | Azure Service Fabric. Note: This tag represents the Service Fabric Service Endpoint for control plane per region. This enables customers to perform management operations for their Service Fabric clusters from their VNET (endpoint eg. https:// westus.servicefabric.Azure.com) | Both                         | No               | No                           |
 | Sql                                                          | Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure Synapse Analytics. Note: This tag represents the service, but not specific instances of the service. For example, the tag represents the Azure SQL Database service, but not a specific SQL database or server. This tag does not apply to SQL managed instance. | Outbound                     | Yes              | Yes                          |
 | SqlManagement                                                | Management traffic for SQL-dedicated deployments.            | Both                         | No               | Yes                          |
 | Storage                                                      | Azure Storage. Note: This tag represents the service, but not specific instances of the service. For example, the tag represents the Azure Storage service, but not a specific Azure Storage account. | Outbound                     | Yes              | Yes                          |
@@ -458,7 +458,7 @@ In the classic deployment model (before Azure Resource Manager), a subset of the
 
 | Classic Spelling   | Equivalent Resource Manager Tag |
 |:-:|:-:|
-| AZURE_LOADBALANCER | AzureLoadBalancer               |
+| Azure_LOADBALANCER | AzureLoadBalancer               |
 | INTERNET           | Internet                        |
 | VIRTUAL_NETWORK    | VirtualNetwork                  |
 
