@@ -366,7 +366,7 @@ In this section, you will create a test VM, and then test the load balancer.
 11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
     > [!div class="mx-imgBorder"]
-    > ![Azure Monitor Network Insights - Basic metrics view](../media/network-insights-basicmetrics-view.png)
+    > ![Azure Monitor Network Insights - Basic metrics view](../media/network-insights-basic-metrics-view.png)
 
  
 
