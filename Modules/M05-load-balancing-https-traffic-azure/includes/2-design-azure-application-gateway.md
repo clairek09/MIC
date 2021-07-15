@@ -83,9 +83,8 @@ The new v2 SKU includes the following enhancements:
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs 
 
-When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the region in which you want to deploy, the scaling strategy you want to follow and the cost of the service. 
+When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow and the cost of the service. 
 
-Check to see if it is avaiable in your desired region on the [products avaiable by region page](https://azure.microsoft.com/global-infrastructure/services/)
 
 ### Scaling Application Gateway and WAF v2
 
