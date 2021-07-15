@@ -122,7 +122,7 @@ New-AzBastion @parameters3
 
 In this section, you'll create a virtual machine that will be used to test the Private Endpoint.
 
-- Create the virtual machine with:
+Create the virtual machine with:
 
 - Get-Credential
 
