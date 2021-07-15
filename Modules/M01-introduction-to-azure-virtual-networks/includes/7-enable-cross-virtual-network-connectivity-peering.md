@@ -95,13 +95,13 @@ Choose the best response for each of the questions below. When you're done, sele
 ## Multiple Choice
 
 want the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature can use?
-(x) VNet peering. {{that is correct, Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
-( ) Internal DNS. {{that is incorrect, Internal DNS is a service provided by Azure.}}
-( ) Azure Availability Zones. {{that is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
+(x) VNet peering. {{That is correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
+( ) Internal DNS. {{That is incorrect, internal DNS is a service provided by Azure.}}
+( ) Azure Availability Zones. {{That is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
 
 ## Multiple Choice 
 
 When configure global peering, what changes will see in the peered VNets?
-(x) A peering entry is added to the routing table in each VNet. {{that is correct, VNetGlobalPeering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
-( ) A peering entry is added to the routing table in the source VNet only. {{that is incorrect, The VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
-( ) All traffic on the Vnet must be routed through a Gateway. {{that is incorrect, Resources on each VNet can communicate seamlessly with one another.}}
+(x) A peering entry is added to the routing table in each VNet. {{That is correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
+( ) A peering entry is added to the routing table in the source VNet only. {{That is incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
+( ) All traffic on the Vnet must be routed through a Gateway. {{That is incorrect, resources on each VNet can communicate seamlessly with one another.}}
