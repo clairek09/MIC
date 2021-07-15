@@ -106,7 +106,7 @@ You can access metrics from the **Metrics** option in the Azure Monitor menu.
 You can also access metrics from the **Metrics** menu of most other services and resources in the Azure portal. The screenshot below for example, displays the **Metrics** page for a virtual network resource.
 
 > [!div class="mx-imgBorder"]
-> [![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)](../media/azure-monitor-metrics-2.png#ligthbox)
+> [![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)](../media/azure-monitor-metrics-2.png#lightbox)
 
 ### Create metric charts with metrics explorer
 
