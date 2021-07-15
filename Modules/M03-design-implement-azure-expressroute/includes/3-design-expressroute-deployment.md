@@ -24,12 +24,6 @@ Use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculato
 - Then select the SKU, Circuit Speed, and the Data Plan you would like an estimate for.
 - In the Additional outbound data transfer, enter an estimate in GB of how much outbound data you might use over the course of a month.
 - Lastly, you can add the Global Reach Add-on to the estimate.
-
-The following screenshot shows the cost estimation by using the calculator:
-
-> [!div class="mx-imgBorder"]
-> ![Azure - capacity calculator cost estimate](../media/capacity-calculator-cost-estimate.png)
-
  
 
 ## Choose a peering location
