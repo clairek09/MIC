@@ -158,7 +158,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 4. The web app's default web site should be displayed.
 
     > [!div class="mx-imgBorder"]
-    > ![web apps default webpage](../media/traffic-manager-web-app-test-1-a.png)
+    > ![web apps default webpage](../media/traffic-manager-web-app-test-1.png)
 
 5. Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 
