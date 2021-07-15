@@ -19,11 +19,11 @@ SKU models have been discussed previously as Local, Standard and Premium. It is 
 
 Use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs before you create an Azure ExpressRoute circuit.
 
-- On the left, select **Networking**, then select **Azure ExpressRoute** to begin.
-- Select the appropriate Zone depending on your peering location. 
-- Then select the SKU, Circuit Speed, and the Data Plan you would like an estimate for.
-- In the Additional outbound data transfer, enter an estimate in GB of how much outbound data you might use over the course of a month.
-- Lastly, you can add the Global Reach Add-on to the estimate.
+1. On the left, select **Networking**, then select **Azure ExpressRoute** to begin.
+2. Select the appropriate Zone depending on your peering location. 
+3. Then select the SKU, Circuit Speed, and the Data Plan you would like an estimate for.
+4. In the Additional outbound data transfer, enter an estimate in GB of how much outbound data you might use over the course of a month.
+5. Lastly, you can add the Global Reach Add-on to the estimate.
  
 
 ## Choose a peering location
