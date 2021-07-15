@@ -175,6 +175,6 @@ In this exercise, you will:
     > [!div class="mx-imgBorder"]
     > ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
-7. Repeat steps 4 -6 for each VNet.
+7. Repeat steps 4 - 6 for each VNet.
 
 Congratulations! You have successfully created a resource group, three VNets, and their associated subnets. 
