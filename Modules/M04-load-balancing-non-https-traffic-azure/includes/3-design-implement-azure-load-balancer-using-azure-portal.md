@@ -47,7 +47,7 @@ You can choose to have a frontend guaranteed to a single zone, which is known as
 Additionally, the use of zonal frontends directly for load balanced endpoints within each zone is supported. You can use this configuration to expose per zone load-balanced endpoints to individually monitor each zone. For public endpoints, you can integrate them with a DNS load-balancing product like Traffic Manager and use a single DNS name.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating Zonal load balancers in Azure](../media/zonal-loadbalancer.png)
+> ![Diagram illustrating Zonal load balancers in Azure](../media/zonal-load-balancer.png)
 
 For a public load balancer frontend, you add a zones parameter to the public IP. This public IP is referenced by the frontend IP configuration used by the respective rule.
 
