@@ -253,7 +253,7 @@ The last task is to create a load balancing rule for the load balancer. A load b
 On the **Health probes** page of the load balancer, under **Settings**, select **Load balancing rules**, and then click **Add**.
 
 > [!div class="mx-imgBorder"]
-> ![Add load balancing rule](../media/create-loadbalancing-rule-1.png)
+> ![Add load balancing rule](../media/create-load-balancing-rule-1.png)
 
 You need to enter the following information on the **Add load balancing rule** page.
 
@@ -273,10 +273,10 @@ You need to enter the following information on the **Add load balancing rule** p
 You then click **Add** to add the load balancing rule.
 
 > [!div class="mx-imgBorder"]
-> ![Add load balancing rule - Add](../media/create-loadbalancing-rule-2.png)
+> ![Add load balancing rule - Add](../media/create-load-balancing-rule-2.png)
 
 > [!div class="mx-imgBorder"]
-> ![View list of added load balancing rules](../media/create-loadbalancing-rule-3.png)
+> ![View list of added load balancing rules](../media/create-load-balancing-rule-3.png)
 
  
 
