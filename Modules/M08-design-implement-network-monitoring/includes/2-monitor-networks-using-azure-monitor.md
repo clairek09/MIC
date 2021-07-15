@@ -146,7 +146,7 @@ Start in the following order:
 
 ## Monitor network resources with Azure Monitor Network Insights
 
-You can use the **Insights&gt;Networks** section in **Azure Monitor** to obtain a broad view of health and metrics for all your deployed network resources, without requiring any configuration. It also provides access to network monitoring features such as Connection Monitor, flow logging for network security groups (NSG) flow logs, and Traffic Analytics., and it provides other network diagnostic features.
+You can use the **Insights&gt;Networks** section in **Azure Monitor** to obtain a broad view of health and metrics for all your deployed network resources, without requiring any configuration. It also provides access to network monitoring features such as Connection Monitor, flow logging for network security groups (NSG) flow logs, and Traffic Analytics, and it provides other network diagnostic features.
 
 Azure Monitor Network Insights is structured around these key components of monitoring:
 
