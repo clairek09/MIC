@@ -105,7 +105,7 @@ To configure the parameters of NSG flow logs in the Azure portal, navigate to th
 Click the name of the NSG to bring up the **Settings** pane for the Flow log. 
 
 > [!div class="mx-imgBorder"]
-> ![Network Watcher - Flow logs settings page](../media/nsg-flowlogs-1.png)
+> ![Network Watcher - Flow logs settings page](../media/flow-logs-1.png)
 
 Change the parameters you want and click **Save** to deploy the changes.
 
@@ -259,7 +259,7 @@ Traffic analytics examines the raw NSG flow logs and captures reduced logs by ag
 
 The diagram below illustrates the data flow:
 
-![Diagram illustrating Traffic Analytics](../media/traffic-analytics-data-flow-nsg-flow-logs.png)
+![Diagram illustrating Traffic Analytics](../media/traffic-analytics-data-flow-logs.png)
 
 The key components of Traffic Analytics are:
 
