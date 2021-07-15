@@ -20,15 +20,15 @@ A DNS zone hosts the DNS records for a domain. So, to start hosting your domain 
 
 ## Considerations
 
- -  The name of the zone must be unique within the resource group, and the zone must not exist already.
+- The name of the zone must be unique within the resource group, and the zone must not exist already.
 
- -  The same zone name can be reused in a different resource group or a different Azure subscription.
+- The same zone name can be reused in a different resource group or a different Azure subscription.
  
- -  Where multiple zones share the same name, each instance is assigned different name server addresses.
+- Where multiple zones share the same name, each instance is assigned different name server addresses.
  
- -  Root/Parent domain is registered at the registrar and pointed to Azure NS.
+- Root/Parent domain is registered at the registrar and pointed to Azure NS.
  
- -  Child domains are registered in AzureDNS directly.
+- Child domains are registered in AzureDNS directly.
 
 > [!NOTE] 
 >
