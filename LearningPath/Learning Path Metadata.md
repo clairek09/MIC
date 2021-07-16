@@ -19,5 +19,5 @@ learnPath workitem: 68457
 ---
 #### Enter the Target folder in github
 ```
-Target folder in github: designing-implementing-microsoft-azure-networking-solutions-az-700
+Target folder in github: design-implementing-microsoft-azure-networking-solutions-az-700
 ```
