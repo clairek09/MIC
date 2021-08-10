@@ -1,5 +1,3 @@
-
-
 Azure Traffic Manager is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness.
 
 Traffic Manager uses DNS to direct the client requests to the appropriate service endpoint based on a traffic-routing method. Traffic manager also provides health monitoring for every endpoint. The endpoint can be any Internet-facing service hosted inside or outside of Azure. Traffic Manager provides a range of traffic-routing methods and endpoint monitoring options to suit different application needs and automatic failover models. Traffic Manager is resilient to failure, including the failure of an entire Azure region.
@@ -37,7 +35,7 @@ Traffic Manager uses DNS to direct clients to specific service endpoints based o
 
 ### Traffic Manager example deployment
 
-Contoso Corp have developed a new partner portal. The URL for this portal is https://partners.contoso.com/login.aspx. 
+Contoso Corp have developed a new partner portal. The URL for this portal is 'https://partners.contoso.com/login.aspx'. 
 
 The application is hosted in three regions of Azure. To improve availability and maximize global performance, they use Traffic Manager to distribute client traffic to the closest available endpoint.
 
@@ -54,7 +52,7 @@ To achieve this configuration, they complete the following steps:
 
 ### Traffic Manager example client usage
 
-Following on from the deployment example above; when a client requests the page https://partners.contoso.com/login.aspx, the client performs the following steps to resolve the DNS name and establish a connection:
+Following on from the deployment example above; when a client requests the page 'https://partners.contoso.com/login.aspx', the client performs the following steps to resolve the DNS name and establish a connection:
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-client-usage-flow.png)
@@ -108,28 +106,28 @@ This is an example of the **Priority** routing method.
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating the 'Priority' routing method](../media/routing-method-priority.png)
 
-For more information, see [Priority traffic-routing method](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods). 
+For more information, see [Priority traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods). 
 
 This is an example of the **Weighted** routing method.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating the 'Weighted' routing method](../media/routing-method-weighted.png)
 
-For more information, see [Weighted traffic-routing method](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods).
+For more information, see [Weighted traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Performance** routing method.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating the 'Performance' routing method](../media/routing-method-performance.png)
 
-For more information, see [Performance traffic-routing method](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods).
+For more information, see [Performance traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Geographic** routing method.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating the 'Geographic' routing method](../media/routing-method-geographic.png)
 
-For more information, see [Geographic traffic-routing method](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods).
+For more information, see [Geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 ### Traffic Manager profiles
 
@@ -165,7 +163,7 @@ With the above configuration, traffic directed via the parent profile (using the
 
 When the parent profile uses the **Performance** traffic-routing method, each endpoint must be assigned a location, which is done when you configure the endpoint. Choose the Azure region closest to your deployment.
 
-For more information, and for more example scenarios, see [Nested Traffic Manager profiles](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-nested-profiles).
+For more information, and for more example scenarios, see [Nested Traffic Manager profiles](/azure/traffic-manager/traffic-manager-nested-profiles).
 
 ## Traffic Manager endpoints
 
@@ -183,7 +181,7 @@ There are no restrictions on how different endpoints types can be combined in a 
 
 You add endpoints to existing Traffic Manager profiles from the **Endpoints** page of a Traffic Manager profile in the Azure portal.
 
-For more information, visit [Traffic Manager endpoints](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types).
+For more information, visit [Traffic Manager endpoints](/azure/traffic-manager/traffic-manager-endpoint-types).
 
 ## Configuring Traffic Manager profiles
 
@@ -301,32 +299,4 @@ In all cases, Traffic Manager probes from multiple locations. The consecutive fa
 
 **For HTTP or HTTPS monitoring protocol, a common practice on the endpoint side is to implement a custom page within your application - for example, /health.aspx. Using this path for monitoring, you can perform application-specific checks, such as checking performance counters or verifying database availability. Based on these custom checks, the page returns an appropriate HTTP status code.**
 
-All endpoints in a Traffic Manager profile share monitoring settings. If you need to use different monitoring settings for different endpoints, you can create [nested Traffic Manager profiles](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-nested-profiles).
-
- 
-
-## Quiz title: Check your knowledge
-
-
-
-## Multiple Choice 
-
-What are two benefits of Traffic Manager?
-
-(x) Distribution of traffic and continuous monitoring of endpoint health.{{Correct, Distribution of traffic according to one of several traffic-routing methods and continuous monitoring of endpoint health and automatic failover when endpoints fail.}} 
-
-( ) Resolution of DNS queries and reduced need for DNS servers.{{Incorrect, Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method, it does not resolve queries itself.}} 
-
-( )  Supports one traffic-routing method and integrates with DNS.{{Incorrect, Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response.}}
-
-
-
-## Multiple Choice 
-
-Which traffic-routing method should be use when end users need to use the "closest" endpoint for the lowest network latency?
-
-(x) Performance{{Correct, Use when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency.}} 
-
-( ) Geographic{{Incorrect, Select this routing method to direct users to specific endpoints (Azure, External, or Nested) based on where their DNS queries originate from geographically.}} 
-
-( ) Priority{{Incorrect, Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable.}}
+All endpoints in a Traffic Manager profile share monitoring settings. If you need to use different monitoring settings for different endpoints, you can create [nested Traffic Manager profiles](/azure/traffic-manager/traffic-manager-nested-profiles).
