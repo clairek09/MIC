@@ -13,8 +13,8 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe** re
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-> [!div class="mx-imgBorder"]
-> ![Network layout for Contoso. On-premises 10.10.0.0/16. ResearchVNet West India 10.40.40.0/24. CoreServicesVNet West US 10.20.0.0/16. ManufacturingVNet North Europe 10.30.0.0/16](../media/design-implement-vnet-peering.png)
+
+![Network layout for Contoso. On-premises 10.10.0.0/16. ResearchVNet West India 10.40.40.0/24. CoreServicesVNet West US 10.20.0.0/16. ManufacturingVNet North Europe 10.30.0.0/16](../media/design-implement-vnet-peering.png)
 
 
 You will create the following resources:
@@ -51,8 +51,7 @@ In this exercise, you will:
 1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
-   >[!div class="mx-imgBorder"]
-   >![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
+   ![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
 
 3. In Resource groups, select **+ Create**.
 
@@ -74,15 +73,12 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **Create a resource**.
 2. In **Search services and marketplace**, enter virtual network.
-   > [!div class="mx-imgBorder"]
-   > ![Azure portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
+   ![Azure portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
 3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.
-   > [!div class="mx-imgBorder"]
-   > ![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
+   ![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
 4. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space
-   > [!div class="mx-imgBorder"]
-   >![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
+   ![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
     | **Tab**      | **Option**         | **Value**            |
     |:-|:-|:-|
@@ -156,13 +152,11 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **All resources**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
+   ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
-
-    > [!div class="mx-imgBorder"]
-    > ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+    
+   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
@@ -171,9 +165,7 @@ In this exercise, you will:
 5. In CoreServicesVnet, under **Settings**, select **Subnets**.
 
 6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
-
-    > [!div class="mx-imgBorder"]
-    > ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+   ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
 7. Repeat steps 4 - 6 for each VNet.
 
