@@ -17,8 +17,7 @@ In this exercise, you will:
 1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.
-    > [!div class="mx-imgBorder"]
-    >![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
+    ![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
 3. In Private DNS zones, select **+ Create**.
 
 4. Use the information in the following table to create the private DNS zone.
@@ -41,8 +40,7 @@ In this exercise, you will:
 
 2. On Contoso.com | Virtual network links, select **+ Add**.
 
-    > [!div class="mx-imgBorder"]
-    > ![contoso.com | Virtual links with + Add highlighted.](../media/add-network-link-domain-name-system.png)
+    ![contoso.com | Virtual links with + Add highlighted.](../media/add-network-link-domain-name-system.png)
 
 3. Use the information in the following table to add the virtual network link.
 
@@ -101,8 +99,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -146,8 +143,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -197,8 +193,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 3. Verify that host (A) records are listed for both VMs, as shown:
 
-    > [!div class="mx-imgBorder"]
-    > ![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso-com-dns-zone.png)
+    ![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso-com-dns-zone.png)
 
  
 
@@ -214,8 +209,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 3. In TestVM1, select **Connect &gt; RDP**.
 
-    > [!div class="mx-imgBorder"]
-    > ![TestVM1 with Connect and RDP highlighted.](../media/connect-vm.png)
+    ![TestVM1 with Connect and RDP highlighted.](../media/connect-vm.png)
 
 4. In TestVM1 | Connect, select **Download RDP file**.
 
