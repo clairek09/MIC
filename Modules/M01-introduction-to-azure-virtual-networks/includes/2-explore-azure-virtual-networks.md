@@ -92,8 +92,8 @@ You can associate zero or one NSG to each subnet in a virtual network. You can a
 
 As part of your Azure network design, it is important to plan your naming convention for your resources. An effective naming convention composes resource names from important information about each resource. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
 
-> [!div class="mx-imgBorder"]
->![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-azure-resource-name.png)
+
+![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-azure-resource-name.png)
 
 All Azure resource types have a scope that defines the level that resource names must be unique. A resource must have a unique name within its scope. There are four levels you can specify a scope: [management group](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview), subscription, [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview), and resource. Scopes are hierarchical, with each level of hierarchy making the scope more specific. 
 
@@ -105,15 +105,15 @@ All Azure resources are created in an Azure region and subscription. A resource 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
 
-> [!div class="mx-imgBorder"]
->![World map showing Azure global network.](../media/microsoft-global-wan.png)
+
+![World map showing Azure global network.](../media/microsoft-global-wan.png)
 
 ### Azure Availability Zones
 
 An Azure Availability Zone enables you to define unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. Designed to ensure high-availability of your Azure services, the physical separation of Availability Zones within a region protects applications and data from datacenter failures.
 
-> [!div class="mx-imgBorder"]
->![Azure region showing three availability zones.](../media/availability-zone.png)
+
+![Azure region showing three availability zones.](../media/availability-zone.png)
 
 You should consider availability zones when designing your Azure network, and plan for services that support availability zones.
 
@@ -137,18 +137,18 @@ Before you can create a VNet, you must create a resource group. A resource group
 
 Log in to the Azure portal, and then click **Create a resource**: 
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal with Create a resource highlighted.](../media/create-resource.png)
+
+![Azure portal with Create a resource highlighted.](../media/create-resource.png)
 
 In the search box, enter **Virtual Network**. Select Virtual Network in the search results.
 
-> [!div class="mx-imgBorder"]
-> ![Search results showing Virtual Network resource.](../media/virtual-network-azure-marketplace.png)
+
+![Search results showing Virtual Network resource.](../media/virtual-network-azure-marketplace.png)
 
 On the Virtual Network page, select **Create**. 
 
-> [!div class="mx-imgBorder"]
-> ![Create virtual network - Basics tab.](../media/create-vnet.png)
+
+![Create virtual network - Basics tab.](../media/create-vnet.png)
 
 In Create virtual network, enter or select this information in the **Basics** tab:
 
@@ -173,7 +173,6 @@ Let's assume you choose an address space of 10.0.0.0/24 for your first virtual n
 However, you can use 10.0.0.0/16, with addresses ranging from 10.0.0.1 - 10.0.255.254, and 10.1.0.0/16, with addresses ranging from 10.1.0.1 - 10.1.255.254. You can assign these address spaces to your virtual networks because there's no address overlap.
 
 > [!NOTE]
->
 > You can add address spaces after creating the virtual network.
 
 **Subnet**
@@ -181,11 +180,10 @@ However, you can use 10.0.0.0/16, with addresses ranging from 10.0.0.1 - 10.0.25
 Within each virtual network address range, you can create one or more subnets that partition the virtual network's address space. Routing between subnets will then depend on the default traffic routes, or you can define custom routes. Alternatively, you can define one subnet that encompasses all the virtual networks' address ranges.
 
 > [!NOTE]
->
 > Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
 
-> [!div class="mx-imgBorder"]
-> ![Create virtual network - IP Addresses tab.](../media/ip-addresses-vnet-configuration.png)
+
+![Create virtual network - IP Addresses tab.](../media/ip-addresses-vnet-configuration.png)
 
 In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
 
@@ -200,13 +198,13 @@ You can select to enable Standard DDoS protection. Standard DDoS Protection is a
 
 Azure Firewall is a managed cloud-based network security service that protects your Azure Virtual Network resources.
 
-> [!div class="mx-imgBorder"]
-> ![Create virtual network - Security tab.](../media/vnet-security.png)
+
+![Create virtual network - Security tab.](../media/vnet-security.png)
 
 In the **Review + create** tab, you can define tags, which can help you to organize and manage your Azure resources.
 
-> [!div class="mx-imgBorder"]
-> ![Create virtual network - Review + create tab.](../media/review-create-vnet.png)
+
+![Create virtual network - Review + create tab.](../media/review-create-vnet.png)
 
 Click **Create** to create your virtual network.
 
