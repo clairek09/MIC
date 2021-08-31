@@ -10,8 +10,7 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
 
 
 
-> [!div class="mx-imgBorder"]
-> ![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
+![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
 
 The benefits of using virtual network peering, whether local or global, include:
 
@@ -29,16 +28,13 @@ The benefits of using virtual network peering, whether local or global, include:
 
 The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
 
->[!div class="mx-imgBorder"]
->![Scenario requiring cross-VNet connectivity from Contoso subscription (../media/az-700-azure-networking-solutions-module-1-34.png) in US West region to Fabrikam (10.10.26.0/24) subscription in US East region.](../media/vnet-peering.png)
+![Scenario requiring cross-VNet connectivity from Contoso subscription (../media/az-700-azure-networking-solutions-module-1-34.png) in US West region to Fabrikam (10.10.26.0/24) subscription in US East region.](../media/vnet-peering.png)
 
 The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
-> [!div class="mx-imgBorder"]
-> ![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contoso-vm-routes-peering-annotated.png)
+![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contoso-vm-routes-peering-annotated.png)
 
 The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.17.26.0/25 subnet.
-> [!div class="mx-imgBorder"]
-> ![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikam-vm-routes-peering-annotated.png)
+![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikam-vm-routes-peering-annotated.png)
 
 ## Configure VNet Peering
 
@@ -50,8 +46,7 @@ Here are the steps to configure VNet peering. Notice you will need two virtual n
 4.  Test the communication between the virtual machines.
 
 To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider.
-> [!div class="mx-imgBorder"]
-> ![configure virtual network peering](../media/configure-vnet-peering.png)
+![configure virtual network peering](../media/configure-vnet-peering.png)
 
 > [!NOTE]  
 > When you add a peering on one virtual network, the second virtual network configuration is automatically added.
@@ -72,7 +67,6 @@ When you Allow Gateway Transit the virtual network can communicate to resources 
 In these scenarios, gateway transit allows peered virtual networks to share the gateway and get access to resources. This means you do not need to deploy a VPN gateway in the peer virtual network.
 
 > [!NOTE]
->
 > Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
 
  
@@ -86,8 +80,7 @@ To enable service chaining, add user-defined routes pointing to virtual machines
 Azure virtual networks can be deployed in a hub-and-spoke topology, with the hub VNet acting as a central point of connectivity to all the spoke VNets. The hub virtual network hosts infrastructure components such as an NVA, virtual machines and a VPN gateway. All the spoke virtual networks peer with the hub virtual network. Traffic flows through network virtual appliances or VPN gateways in the hub virtual network. The benefits of using a hub and spoke configuration include cost savings, overcoming subscription limits, and workload isolation.
 
 The following diagram shows a scenario in which hub VNet hosts a VPN gateway that manages traffic to the on-premises network, enabling controlled communication between the on-premises network and the peered Azure VNets.
-> [!div class="mx-imgBorder"]
-> ![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet. Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
+![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet. Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
 
 ## Check your knowledge
 
@@ -96,14 +89,12 @@ Choose the best response for each of the questions below. When you're done, sele
 ## quiz title:
 
 ## Multiple Choice
-
 When one needs the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature should be used?
 (x) VNet peering. {{That is correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
 ( ) Internal DNS. {{That is incorrect, internal DNS is a service provided by Azure.}}
 ( ) Azure Availability Zones. {{That is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
 
 ## Multiple Choice 
-
 When configure global peering, what changes will see in the peered VNets?
 (x) A peering entry is added to the routing table in each VNet. {{That is correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
 ( ) A peering entry is added to the routing table in the source VNet only. {{That is incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
