@@ -9,7 +9,7 @@ NAT services provide mappings for a single IP address, a range of IP addresses d
 The following diagram shows outbound traffic flow from Subnet 1 through the NAT gateway to be mapped to a Public IP address or a Public IP prefix.
 
 
-> ![NAT service provides internet connectivity for internal resources.](../media/nat-flow-map.png)
+![NAT service provides internet connectivity for internal resources.](../media/nat-flow-map.png)
 
 You define the NAT configuration for each subnet within a VNet to enable outbound connectivity by specifying which NAT gateway resource to use. After NAT is configured, all UDP and TCP outbound flows from any virtual machine instance will use NAT for internet connectivity. No further configuration is necessary, and you don’t need to create any user-defined routes. NAT takes precedence over other outbound scenarios and replaces the default Internet destination of a subnet.
 
@@ -49,7 +49,7 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 
  
 
->![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-outbound.png)
+![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-outbound.png)
 
  
 
