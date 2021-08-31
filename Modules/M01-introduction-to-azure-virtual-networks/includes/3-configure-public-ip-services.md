@@ -60,6 +60,7 @@ Choose the best response for each of the questions below. When you're done, sele
 ## quiz title: 
 
 ## Multiple Choice
+
 Which of the following statements about Azure VNets is correct?
 (x) Azure VNets enable communication between Azure resources. {{Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
 ( ) Outbound communication with the internet must be configured for each resource on the VNet. {{Incorrect. All resources in a VNet can communicate outbound to the internet, by default.}}

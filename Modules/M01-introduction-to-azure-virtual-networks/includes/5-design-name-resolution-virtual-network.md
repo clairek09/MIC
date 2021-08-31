@@ -31,6 +31,7 @@ A DNS zone hosts the DNS records for a domain. So, to start hosting your domain 
 - Child domains are registered in AzureDNS directly.
 
 > [!NOTE] 
+>
 > You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
 
 ## Delegate DNS Domains
@@ -40,6 +41,7 @@ To delegate your domain to Azure DNS, you first need to know the name server nam
 Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Each registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
 
 > [!NOTE] 
+>
 > When delegating a domain to Azure DNS, you must use the name server names provided by Azure DNS. You should always use all four name server names, regardless of the name of your domain.
 
 ## Child Domains
@@ -49,16 +51,19 @@ If you want to set up a separate child zone, you can delegate a subdomain in Azu
 Setting up a subdomain follows the same process as typical delegation. The only difference is that NS records must be created in the parent zone contoso.com in Azure DNS, rather than in the domain registrar.
 
 > [!NOTE] 
+>
 > The parent and child zones can be in the same or different resource group. Notice that the record set name in the parent zone matches the child zone name, in this case *partners*.
 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
 
-![Screenshot of the Add a record set page.](../media/dns-record-set-1.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add a record set page.](../media/dns-record-set-1.png)
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
 The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried.
-![Screenshot of the Add a record page.](../media/dns-record-set-2.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add a record page.](../media/dns-record-set-2.png)
 
 
 ## Private DNS services
@@ -83,7 +88,8 @@ DNS forwarding also enables DNS resolution between virtual networks and allows y
 
  
 
-![image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method](../media/inter-vnet-dns.png)
+> [!div class="mx-imgBorder"]
+> ![image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method](../media/inter-vnet-dns.png)
 
  
 
@@ -120,7 +126,8 @@ For scenarios which require more flexibility than Internal DNS allows, you can c
 ### Create a private DNS zone by using the portal
 
 You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI.
-![Azure portal - creata private DNS zone.](../media/search-private-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Azure portal - creata private DNS zone.](../media/search-private-dns.png)
 
 When the new DNS zone is deployed, you can manually create resource records, or use auto-registration, which will create resource records based on the Azure resource name.
 
@@ -134,7 +141,8 @@ At the VNet level, default DNS configuration is part of the DHCP assignments mad
 
 If necessary, you can override the default configuration by configuring an alternate DNS server at the VM NIC.
 
-![DNS default configuration.](../media/dns-config.png)
+> [!div class="mx-imgBorder"]
+> ![DNS default configuration.](../media/dns-config.png)
 
  
 
@@ -144,7 +152,8 @@ Two ways to link VNets to a private zone:
 
 - **Resolution:** There may be many other private DNS zones for different namespaces. You can link a VNet to each of those zones for name resolution. Each VNet can link to up to 1000 private DNS Zones for name resolution. 
 
-![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns-zones.png)
+> [!div class="mx-imgBorder"]
+> ![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns-zones.png)
 
  
 
@@ -165,7 +174,8 @@ Forwarding takes two forms:
 > [!NOTE] 
 > If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
 
-![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external-dns-fwd.png)
+> [!div class="mx-imgBorder"]
+> ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external-dns-fwd.png)
 
 ## Check your knowledge
 
@@ -174,15 +184,19 @@ Choose the best response for each of the questions below. When you're done, sele
 ## quiz title:
 
 ## Multiple Choice 
+
 What is the difference between a static public IP address and a dynamic public IP address?
+
 (x) A static IP address remains the same over the lifespan of the resource to which it is assigned. {{That is correct. A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static.}}
-( ) A dynamic IP address remains the same over the lifespan of the resource to which it is assigned. {{That is incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM.}} 
-( ) A static IP address can use an IPv4 address only. {{That is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address.}}
+( ) A dynamic IP address remains the same over the lifespan of the resource to which it is assigned.{{That is incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM.}} 
+( ) A static IP address can use an IPv4 address only.{{That is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address.}}
 
 
 ## Multiple Choice 
+
 Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?
+
 (x) Basic SKU {{That is correct. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}}
-( ) Standard SKU {{That is incorrect. Standard SKU public IP addresses always use the static allocation method.}}
-( ) Either Basic or Standard SKU {{That is incorrect. Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}} 
+( ) Standard SKU{{That is incorrect. Standard SKU public IP addresses always use the static allocation method.}}
+( )  Either Basic or Standard SKU{{That is incorrect. Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}} 
 
