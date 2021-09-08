@@ -1,8 +1,6 @@
-
-
 Public networks like the Internet communicate by using public IP addresses. Private networks like your Azure Virtual Network use private IP addresses, which are not routable on public networks. To support a network that exists both in Azure and on-premises, you must configure IP addressing for both types of networks.
 
-Public IP addresses enable Internet resources to communicate with Azure resources and enable Azure resources to communicate outbound with Internet and public-facing Azure services. A public IP address in Azure is dedicated to a specific resource, until it's unassigned by a network engineer. A resource without a public IP assigned can communicate outbound through network address translation services, where Azure dynamically assigns an available IP address that isn't dedicated to the resource. 
+Public IP addresses enable Internet resources to communicate with Azure resources and enable Azure resources to communicate outbound with Internet and public-facing Azure services. A public IP address in Azure is dedicated to a specific resource, until it's unassigned by a network engineer. A resource without a public IP assigned can communicate outbound through network address translation services, where Azure dynamically assigns an available IP address that isn't dedicated to the resource.
 
 As an example, public resources like web servers must be accessible from the internet. You want to ensure that you plan IP addresses that support these requirements.
 
@@ -12,23 +10,19 @@ In this unit, you will learn about requirements for IP addressing when integrati
 
 In Azure Resource Manager, a [public IP](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-public-ip-address) address is a resource that has its own properties. Some of the resources you can associate a public IP address resource with:
 
-- Virtual machine network interfaces
+ -  Virtual machine network interfaces
+ -  Internet-facing load balancers
+ -  VPN gateways
+ -  Application gateways
+ -  Azure Firewall
 
-- Internet-facing load balancers
-
-- VPN gateways
-
-- Application gateways
-
-- Azure Firewall
-
-Public IP addresses are created with an IPv4 or IPv6 address, which can be either static or dynamic. 
+Public IP addresses are created with an IPv4 or IPv6 address, which can be either static or dynamic.
 
 **A dynamic public IP address** is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM. The IP address is released when you stop or delete the VM. In each Azure region, public IP addresses are assigned from a unique pool of addresses. The default allocation method is dynamic.
 
 **A static public IP address** is an assigned address that will not change over the lifespan of the Azure resource. To ensure that the IP address for the resource remains the same, set the allocation method explicitly to static. In this case, an IP address is assigned immediately. It is released only when you delete the resource or change the IP allocation method to dynamic.
 
-## Choose the appropriate SKU for a public IP address 
+## Choose the appropriate SKU for a public IP address
 
 For public IP addresses, there are two types of SKUs to choose from: Basic and Standard. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you have the option to specify which SKU you would like the public IP address to be.
 
@@ -52,23 +46,16 @@ You can't bring your own public IP addresses from on-premises networks into Azur
 
 To ensure a static range of public IP addresses, you can create a public IP address prefix. You can't specify the addresses when you create the prefix, but after the prefix is created, the addresses will be fixed. The IP addresses will be a contiguous range. The advantage of a public IP address prefix is that you can specify firewall rules for these IP addresses with the knowledge that they will not change. You can assign the addresses from a public IP address prefix to any resource in Azure that supports public IP addresses.
 
-
 ## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
 
-## quiz title: 
+## quiz title:
 
 ## Multiple Choice
 
-Which of the following statements about Azure VNets is correct?
-(x) Azure VNets enable communication between Azure resources. {{Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
-( ) Outbound communication with the internet must be configured for each resource on the VNet. {{Incorrect. All resources in a VNet can communicate outbound to the internet, by default.}}
-( ) Azure VNets cannot be configured to communicate with on-premises resources. {{Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
+Which of the following statements about Azure VNets is correct? ( ) Outbound communication with the internet must be configured for each resource on the VNet. \{\{Incorrect. All resources in a VNet can communicate outbound to the internet, by default.\}\} (x) Azure VNets enable communication between Azure resources. \{\{Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.\}\}( ) Azure VNets cannot be configured to communicate with on-premises resources. \{\{Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.\}\}
 
-## Multiple Choice 
+## Multiple Choice
 
-Which of the following statements about subnets is NOT correct?
-(x) You can assign the same IP address range to multiple subnets within the same VNet. {{That is correct. Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.}}
-( ) You can create multiple subnets within one VNet. {{That is incorrect. You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.}}
-( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{That is incorrect. You can associate zero or one NSG to each subnet to control access to the subnet and the resources on it.}}
+Which of the following statements about subnets is NOT correct? (x) You can assign the same IP address range to multiple subnets within the same VNet. \{\{That is correct. Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.\}\} ( ) You can create multiple subnets within one VNet. \{\{That is incorrect. You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.\}\} ( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. \{\{That is incorrect. You can associate zero or one NSG to each subnet to control access to the subnet and the resources on it.\}\}

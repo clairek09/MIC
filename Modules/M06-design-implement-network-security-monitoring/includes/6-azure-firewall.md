@@ -1,41 +1,26 @@
-
-
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram of sample firewall configuration](../media/azure-sample-firewall-configuration.png)
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-sample-firewall-configuration-2762a7f8.png" alt-text="Diagram of sample firewall configuration":::
+
 
 ## Azure Firewall features
 
 Azure Firewall includes the following features:
 
-- **Built-in high availability** - High availability is built in, so no extra load balancers are required and there's nothing you need to configure.
-
-- **Unrestricted cloud scalability** - Azure Firewall can scale out as much as you need to accommodate changing network traffic flows, so you do not need to budget for your peak traffic.
-
-- **Application FQDN filtering rules** - You can limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards. This feature does not require TLS termination.
-
-- **Network traffic filtering rules** - You can centrally create allow or deny network filtering rules by source and destination IP address, port, and protocol. Azure Firewall is fully stateful, so it can distinguish legitimate packets for different types of connections. Rules are enforced and logged across multiple subscriptions and virtual networks.
-
-- **FQDN tags** - These tags make it easy for you to allow well-known Azure service network traffic through your firewall. For example, say you want to allow Windows Update network traffic through your firewall. You create an application rule and include the Windows Update tag. Now network traffic from Windows Update can flow through your firewall.
-
-- **Service tags** - A service tag represents a group of IP address prefixes to help minimize complexity for security rule creation. You cannot create your own service tag, nor specify which IP addresses are included within a tag. Microsoft manages the address prefixes encompassed by the service tag, and automatically updates the service tag as addresses change.
-
-- **Threat intelligence** - Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed.
-
-- **Outbound SNAT support** - All outbound virtual network traffic IP addresses are translated to the Azure Firewall public IP (Source Network Address Translation (SNAT)). You can identify and allow traffic originating from your virtual network to remote Internet destinations. 
-
-- **Inbound DNAT support** - Inbound Internet network traffic to your firewall public IP address is translated (Destination Network Address Translation) and filtered to the private IP addresses on your virtual networks.
-
-- **Multiple public IP addresses** - You can associate multiple public IP addresses (up to 250) with your firewall, to enable specific DNAT and SNAT scenarios.
-
-- **Azure Monitor logging** - All events are integrated with Azure Monitor, allowing you to archive logs to a storage account, stream events to your Event Hub, or send them to Azure Monitor logs.
-
-- **Forced tunneling** - You can configure Azure Firewall to route all Internet-bound traffic to a designated next hop instead of going directly to the Internet. For example, you may have an on-premises edge firewall or other network virtual appliance (NVA) to process network traffic before it is passed to the Internet.
-
-- **Web categories (preview)** - Web categories let administrators allow or deny user access to web site categories such as gambling websites, social media websites, and others. Web categories are included in Azure Firewall Standard, but it is more fine-tuned in Azure Firewall Premium Preview. As opposed to the Web categories capability in the Standard SKU that matches the category based on an FQDN, the Premium SKU matches the category according to the entire URL for both HTTP and HTTPS traffic.
-
-- **Certifications** - Azure Firewall is Payment Card Industry (PCI), Service Organization Controls (SOC), International Organization for Standardization (ISO), and ICSA Labs compliant.
+ -  **Built-in high availability** \- High availability is built in, so no extra load balancers are required and there's nothing you need to configure.
+ -  **Unrestricted cloud scalability** \- Azure Firewall can scale out as much as you need to accommodate changing network traffic flows, so you do not need to budget for your peak traffic.
+ -  **Application FQDN filtering rules** \- You can limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards. This feature does not require TLS termination.
+ -  **Network traffic filtering rules** \- You can centrally create allow or deny network filtering rules by source and destination IP address, port, and protocol. Azure Firewall is fully stateful, so it can distinguish legitimate packets for different types of connections. Rules are enforced and logged across multiple subscriptions and virtual networks.
+ -  **FQDN tags** \- These tags make it easy for you to allow well-known Azure service network traffic through your firewall. For example, say you want to allow Windows Update network traffic through your firewall. You create an application rule and include the Windows Update tag. Now network traffic from Windows Update can flow through your firewall.
+ -  **Service tags** \- A service tag represents a group of IP address prefixes to help minimize complexity for security rule creation. You cannot create your own service tag, nor specify which IP addresses are included within a tag. Microsoft manages the address prefixes encompassed by the service tag, and automatically updates the service tag as addresses change.
+ -  **Threat intelligence** \- Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed.
+ -  **Outbound SNAT support** \- All outbound virtual network traffic IP addresses are translated to the Azure Firewall public IP (Source Network Address Translation (SNAT)). You can identify and allow traffic originating from your virtual network to remote Internet destinations.
+ -  **Inbound DNAT support** \- Inbound Internet network traffic to your firewall public IP address is translated (Destination Network Address Translation) and filtered to the private IP addresses on your virtual networks.
+ -  **Multiple public IP addresses** \- You can associate multiple public IP addresses (up to 250) with your firewall, to enable specific DNAT and SNAT scenarios.
+ -  **Azure Monitor logging** \- All events are integrated with Azure Monitor, allowing you to archive logs to a storage account, stream events to your Event Hub, or send them to Azure Monitor logs.
+ -  **Forced tunneling** \- You can configure Azure Firewall to route all Internet-bound traffic to a designated next hop instead of going directly to the Internet. For example, you may have an on-premises edge firewall or other network virtual appliance (NVA) to process network traffic before it is passed to the Internet.
+ -  **Web categories (preview)** \- Web categories let administrators allow or deny user access to web site categories such as gambling websites, social media websites, and others. Web categories are included in Azure Firewall Standard, but it is more fine-tuned in Azure Firewall Premium Preview. As opposed to the Web categories capability in the Standard SKU that matches the category based on an FQDN, the Premium SKU matches the category according to the entire URL for both HTTP and HTTPS traffic.
+ -  **Certifications** \- Azure Firewall is Payment Card Industry (PCI), Service Organization Controls (SOC), International Organization for Standardization (ISO), and ICSA Labs compliant.
 
 ## Rule processing in Azure Firewall
 
@@ -49,11 +34,9 @@ With classic rules, rule collections are processed according to the rule type in
 
 With Firewall Policy, rules are organized inside Rule Collections which are contained in Rule Collection Groups. Rule Collections can be of the following types:
 
-- DNAT (Destination Network Address Translation)
-
-- Network
-
-- Application
+ -  DNAT (Destination Network Address Translation)
+ -  Network
+ -  Application
 
 You can define multiple Rule Collection types within a single Rule Collection Group, and you can define zero or more Rules in a Rule Collection, but the rules within a Rule Collection must be of the same type (i.e., DNAT, Network, or Application).
 
@@ -77,41 +60,26 @@ Application rules aren't applied for inbound connections. So, if you want to fil
 
 For enhanced security, if you modify a rule to deny access to traffic that had previously been allowed, any relevant existing sessions are dropped.
 
- 
-
 ## Deploying and configuring Azure Firewall
 
 Be aware of the following when deploying Azure Firewall:
 
-- It can centrally create, enforce, and log application and network connectivity policies across subscriptions and virtual networks.
-
-- It uses a static, public IP address for your virtual network resources. This allows outside firewalls to identify traffic originating from your virtual network.
-
-- It is fully integrated with Azure Monitor for logging and analytics.
-
-- When creating firewall rules, it is best to use the FQDN tags.
+ -  It can centrally create, enforce, and log application and network connectivity policies across subscriptions and virtual networks.
+ -  It uses a static, public IP address for your virtual network resources. This allows outside firewalls to identify traffic originating from your virtual network.
+ -  It is fully integrated with Azure Monitor for logging and analytics.
+ -  When creating firewall rules, it is best to use the FQDN tags.
 
 The key stages of deploying and configuring Azure Firewall are as follows:
 
-- Create a resource group
-
-- Create a virtual network and subnets
-
-- Create a workload VM in a subnet
-
-- Deploy the firewall and policy to the virtual network
-
-- Create a default outbound route
-
-- Configure an application rule
-
-- Configure a network rule
-
-- Configure a Destination NAT (DNAT) rule
-
-- Test the firewall
-
- 
+ -  Create a resource group
+ -  Create a virtual network and subnets
+ -  Create a workload VM in a subnet
+ -  Deploy the firewall and policy to the virtual network
+ -  Create a default outbound route
+ -  Configure an application rule
+ -  Configure a network rule
+ -  Configure a Destination NAT (DNAT) rule
+ -  Test the firewall
 
 ### Deploying Azure Firewall with Availability Zones
 
@@ -123,7 +91,7 @@ You can also associate Azure Firewall to a specific zone just for proximity reas
 
 For more information, see the [Azure Firewall Service Level Agreement (SLA)](https://azure.microsoft.com/support/legal/sla/azure-firewall/v1_0/).
 
-There is no additional cost for a firewall deployed in an Availability Zone. However, there are added costs for inbound and outbound data transfers associated with Availability Zones. 
+There is no additional cost for a firewall deployed in an Availability Zone. However, there are added costs for inbound and outbound data transfers associated with Availability Zones.
 
 For more information, see [Bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth/).
 
@@ -135,36 +103,28 @@ Availability Zones can only be configured during firewall deployment. You cannot
 
 You can use several methods for deploying your Azure Firewall using Availability Zones.
 
-- Azure portal 
+ -  Azure portal
+ -  Azure PowerShell - see [Deploy an Azure Firewall with Availability Zones using Azure PowerShell](https://docs.microsoft.com/azure/firewall/deploy-availability-zone-powershell)
+ -  Azure Resource Manager template - see [Quickstart: Deploy Azure Firewall with Availability Zones - Azure Resource Manager template](https://docs.microsoft.com/azure/firewall/deploy-template)
 
-- Azure PowerShell - see [Deploy an Azure Firewall with Availability Zones using Azure PowerShell](https://docs.microsoft.com/azure/firewall/deploy-availability-zone-powershell)
+## Quiz title: Check your knowledge
 
-- Azure Resource Manager template - see [Quickstart: Deploy Azure Firewall with Availability Zones - Azure Resource Manager template](https://docs.microsoft.com/azure/firewall/deploy-template)
-
-  
-
-## Quiz title: Check your knowledge 
-
-
-
-## Multiple Choice 
+## Multiple Choice
 
 Filtering of which direction of traffic does Azure Firewall support?
 
-(X) Inbound and Outbound.{{Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols.}} 
+(X) Inbound and Outbound.\{\{Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols.\}\}
 
-( ) Outbound only.{{Incorrect. Azure Firewall supports inbound and outbound filtering.}} 
+( ) Outbound only.\{\{Incorrect. Azure Firewall supports inbound and outbound filtering.\}\}
 
-( ) Inbound only.{{Incorrect. Azure Firewall supports inbound and outbound filtering.}}
+( ) Inbound only.\{\{Incorrect. Azure Firewall supports inbound and outbound filtering.\}\}
 
-
-
-## Multiple Choice 
+## Multiple Choice
 
 Which one of the following priority levels is considered to be highest for a security rule?
 
-( ) 0{{Incorrect. Priority settings must use a number between 100 and 65000.}} 
+( ) 0\{\{Incorrect. Priority settings must use a number between 100 and 65000.\}\}
 
-(X) 100{{Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority.}} 
+(X) 100\{\{Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority.\}\}
 
-( ) 110{{Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority.}}
+( ) 110\{\{Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority.\}\}
