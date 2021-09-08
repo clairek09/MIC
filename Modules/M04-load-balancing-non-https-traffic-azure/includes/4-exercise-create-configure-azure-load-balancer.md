@@ -12,9 +12,9 @@ The diagram below illustrates the environment you will be deploying in this exer
 In this exercise, you will:
 
  -  Task 1: Create the virtual network
- -  Task 2: Create the load balancer
- -  Task 3: Create load balancer resources
- -  Task 4: Create backend servers
+ -  Task 2: Create backend servers
+ -  Task 3: Create the load balancer
+ -  Task 4: Create load balancer resources
  -  Task 5: Test the load balancer
 
 ## Task 1: Create the virtual network
@@ -76,8 +76,9 @@ In this section, you will create a virtual network and a subnet.
 7.  Under **Subnet name**, select the word **default**.
 8.  In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 9.  Click **Save**.
-10. Click **Next : Security**.
-11. Under **BastionHost** select **Enable**, then enter the information from the table below.
+10. Click **Add subnet,** provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24.** Click **Add**
+11. Click **Next : Security**.
+12. Under **BastionHost** select **Enable**, then enter the information from the table below.
     
     :::row:::
       :::column:::
@@ -112,10 +113,28 @@ In this section, you will create a virtual network and a subnet.
       :::column-end:::
     :::row-end:::
     
-12. Click **Review + create**.
-13. Click **Create**.
+13. Click **Review + create**.
+14. Click **Create**.
 
-## Task 2: Create the load balancer
+## 
+
+## Task 2: Create backend servers
+
+In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
+
+1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+2.  In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory. [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
+3.  Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
+    
+    ```powershell
+    $RGName = "IntLB-RG"
+    
+    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
+    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
+    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+    ```
+
+## Task 3: Create the load balancer
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
@@ -124,10 +143,10 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 \[!NOTE\]<br>do not select one from the list
 
-3.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
-4.  Click **Create**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="create a load balancer":::
+1.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
+2.  Click **Create**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="create a load balancer":::
     
-5.  On the **Basics** tab, use the information in the table below to create the load balancer.
+3.  On the **Basics** tab, use the information in the table below to create the load balancer.
     
     :::row:::
       :::column:::
@@ -185,6 +204,27 @@ In this section, you will create an internal Standard SKU load balancer. The rea
         **Standard**
       :::column-end:::
     :::row-end:::
+    
+4.  Click **Next: Frontend IP configurations.**
+5.  Click Add a frontend IP
+6.  On the **Add frontend IP address** blade, enter the information from the table below.
+    
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Name
+      :::column-end:::
+      :::column:::
+        **LoadBalancerFrontEnd**
+      :::column-end:::
+    :::row-end:::
     :::row:::
       :::column:::
         Virtual network
@@ -198,26 +238,26 @@ In this section, you will create an internal Standard SKU load balancer. The rea
         Subnet
       :::column-end:::
       :::column:::
-        **myBackendSubnet**
+        **myFrontEndSubnet**
       :::column-end:::
     :::row-end:::
     :::row:::
       :::column:::
-        IP address assignment
+        Assignment
       :::column-end:::
       :::column:::
         **Dynamic**
       :::column-end:::
     :::row-end:::
     
-6.  Click **Review + create**.
-7.  Click **Create**.
+7.  Click **Review + create**.
+8.  Click **Create**.
 
-## Task 3: Create load balancer resources
+## Task 4: Create load balancer resources
 
 In this section, you will configure load balancer settings for a backend address pool, then create a health probe and a load balancer rule.
 
-### Create a backend pool
+### Create a backend pool and add VMs to the backend pool
 
 The backend address pool contains the IP addresses of the virtual NICs connected to the load balancer.
 
@@ -258,7 +298,9 @@ The backend address pool contains the IP addresses of the virtual NICs connected
       :::column-end:::
     :::row-end:::
     
-4.  Click **Add**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-98ba1ce4.png" alt-text="create a backend pool":::
+4.  Under **Virtual machines**, click **Add.**
+5.  Select the checkboxes for all 3 VMs (**myVM1, myVM2,** and **myVM3**), then click **Add**<br>
+6.  Click **Add**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vms-backend-pool-f47c982b.png" alt-text="add vms to backend pool":::
     
 
 ### Create a health probe
@@ -433,32 +475,6 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
     :::row-end:::
     
 3.  Click **Add**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-rule-ba7cac96.png" alt-text="create a load balancer rule":::
-    
-
-## Task 4: Create backend servers
-
-In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
-
-1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-2.  In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory. [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
-3.  Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
-    
-    ```powershell
-    $RGName = "IntLB-RG"
-    
-    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
-    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
-    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
-    
-    ```
-
-### Add VMs to the backend pool
-
-1.  On the Azure portal home page, click **All resources**, then click on **myIntLoadBalancer** from the resources list.
-2.  Under **Settings**, select **Backend pools**., and then select **myBackendPool**.
-3.  Under **Virtual machines**, click **Add**.
-4.  Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
-5.  On the **myBackendPool** page, click **Save**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vms-backend-pool-f47c982b.png" alt-text="add vms to backend pool":::
     
 
 ## Task 5: Test the load balancer
