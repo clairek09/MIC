@@ -171,19 +171,13 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 ## Multiple choice
 
 An engineer wants to consume a specific set of services through Microsoft peering. Which feature should be configured?
-
-(x) Route filters.\{\{Correct. Route filters are a way to consume a subset of supported services through Microsoft peering.\}\}
-
-( )Network Firewall.\{\{Incorrect. Network Firewall allows control traffic flow using rules that specify allowed or blocked IP address and ports.\}\}
-
-( ) You cannot consume only a subset of services.\{\{Incorrect. You can configure Microsoft peering to consume only a subset of services.\}\}
+( ) Network Firewall.{{Incorrect. Network Firewall allows control traffic flow using rules that specify allowed or blocked IP address and ports.}}
+(x) Route filters.{{Correct. Route filters are a way to consume a subset of supported services through Microsoft peering.}}
+( ) You cannot consume only a subset of services.{{Incorrect. You can configure Microsoft peering to consume only a subset of services.}}
 
 ## Multiple choice
 
 To provide connectivity to Microsoft 365 and PaaS services. Which peering service should select?
-
-(x)Microsoft Peering.\{\{Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering.\}\}
-
-( )Private peering.\{\{Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through private peering.\}\}
-
-( )Public peering.\{\{Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through public peering.\}\}
+( )Private peering.{{Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through private peering.}}
+( )Public peering.{{Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through public peering.}}
+(x)Microsoft Peering.{{Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering.}}
