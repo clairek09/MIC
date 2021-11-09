@@ -71,18 +71,14 @@ Also consider the following details:
 
 What is the key technology behind Private Links?
 
-(X) Private Endpoint.\{\{Correct! Private Links are dependent on Private Endpoints.\}\}
-
-( ) DNS Resolution.\{\{Incorrect, though the recommended practice is to use a single Private Endpoint for a given Private Link resource to avoid duplicate entries or conflicts in DNS resolution. Private Links are dependent on Private Endpoints.\}\}
-
-( ) Virtual Networks.\{\{Incorrect. Though Private Endpoint must be deployed in the same region and subscription as the virtual network, Private Links are dependent on Private Endpoints. \}\}
+(X) Private Endpoint.{{Correct! Private Links are dependent on Private Endpoints.}}
+( ) DNS Resolution.{{Incorrect, though the recommended practice is to use a single Private Endpoint for a given Private Link resource to avoid duplicate entries or conflicts in DNS resolution. Private Links are dependent on Private Endpoints.}}
+( ) Virtual Networks.{{Incorrect. Though Private Endpoint must be deployed in the same region and subscription as the virtual network, Private Links are dependent on Private Endpoints. }}
 
 ## Multiple Choice
 
 What is the difference between a Service Endpoint and a Private Endpoint?
 
-(X) A Service Endpoint connects to external systems and services.\{\{Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure.\}\}
-
-( ) A Private Endpoint connects to external systems and services.\{\{Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources.\}\}
-
-( ) Insert the second incorrect answer text in this cell.\{\{Insert the second incorrect answer feedback in this cell.\}\}
+( ) A Private Endpoint connects to external systems and services.{{Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources.}}
+(X) A Service Endpoint connects to external systems and services.{{Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure.}}
+( ) A Service Endpoint enables a private and secure connection between your virtual network and Azure.{{Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources.}}
