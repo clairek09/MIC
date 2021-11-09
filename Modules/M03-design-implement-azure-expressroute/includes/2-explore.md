@@ -280,19 +280,13 @@ ExpressRoute Direct provides customers the opportunity to connect directly into 
 ## Multiple choice
 
 Which one of the following is the most effective use of ExpressRoute?
-
-(x) Provide reliable and secure connectivity to Azure services.\{\{Correct. Azure ExpressRoute is used to create private connections between Azure data centers, Azure services, and infrastructure on your premises or in a colocation environment.\}\}
-
-( ) Connect your network to the public internet.\{\{Incorrect. Azure ExpressRoute isn't the most effective way to connect your network to the public internet.\}\}
-
-( ) Connect data center services internal to an organization.\{\{Incorrect. Azure ExpressRoute isn't used to connect data center services internal to an organization.\}\}
+(x) Provide reliable and secure connectivity to Azure services.{{Correct. Azure ExpressRoute is used to create private connections between Azure data centers, Azure services, and infrastructure on your premises or in a colocation environment.}}
+( ) Connect your network to the public internet.{{Incorrect. Azure ExpressRoute isn't the most effective way to connect your network to the public internet.}}
+( ) Connect data center services internal to an organization.{{Incorrect. Azure ExpressRoute isn't used to connect data center services internal to an organization.}}
 
 ## Multiple choice
 
 What is the benefit of Bidirectional forwarding?
-
-(x)Bidirectional forwarding reduces the failure deduction time.\{\{Correct. Enabling BFD over an ExpressRoute circuit can reduce the failure deduction time from a few tens of seconds to less than a second.\}\}
-
-( )Bidirectional forwarding allows traffic to flow in both directions.\{\{Incorrect. Bidirectional forwarding isn't concerned with normal traffic flow.\}\}
-
-( )Bidirectional forwarding enables you to configure BGP keep-alive times of less than 3 seconds.\{\{Incorrect. The BGP keep-alive can be set as low as three seconds, but this aggressive schedule isn't recommended.\}\}
+(x)Bidirectional forwarding reduces the failure deduction time.{{Correct. Enabling BFD over an ExpressRoute circuit can reduce the failure deduction time from a few tens of seconds to less than a second.}}
+( )Bidirectional forwarding allows traffic to flow in both directions.{{Incorrect. Bidirectional forwarding isn't concerned with normal traffic flow.}}
+( )Bidirectional forwarding enables you to configure BGP keep-alive times of less than 3 seconds.{{Incorrect. The BGP keep-alive can be set as low as three seconds, but this aggressive schedule isn't recommended.}}
