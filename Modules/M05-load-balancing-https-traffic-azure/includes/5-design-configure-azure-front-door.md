@@ -151,8 +151,14 @@ For more information on how to configure HTTPS on Front door, see [Tutorial - Co
 
 ## Multiple Choice
 
-What is the difference between Azure Front Door and Azure Application Gateway? (x) Front Door is a global service, Application Gateway is a regional service. \{\{Correct, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.\}\} ( ) Front Door is a regional service, Application Gateway is a global service. \{\{Incorrect, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.\}\} ( ) Front Door uses health probes to monitor the health of backends, Application Gateway does not. \{\{Incorrect, Both Front Door and Application gateway use health probes to monitor the health of backends.\}\}
+What is the difference between Azure Front Door and Azure Application Gateway? 
+( ) Front Door is a regional service, Application Gateway is a global service. {{Incorrect, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.}} 
+(x) Front Door is a global service, Application Gateway is a regional service. {{Correct, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service.}} 
+( ) Front Door uses health probes to monitor the health of backends, Application Gateway does not. {{Incorrect, Both Front Door and Application gateway use health probes to monitor the health of backends.}}
 
 ## Multiple Choice
 
-Front Door route rules determine whether the incoming request matches the routing rule and route traffic accordingly. What properties are matched? (x) HTTP protocols (HTTP/HTTPS), Hosts, and Paths. \{\{Correct, When evaluating routing rules, Front Door looks for matches in HTTP protocols (HTTP/HTTPS), Hosts, and Paths.\}\} ( ) HTTP protocols (HTTP/HTTPS), Hosts, and time stamp. \{\{Incorrect, When evaluating routing rules, Front Door does not look for matches in time stamps.\}\} ( ) Hosts, paths, and user certificates. \{\{Incorrect, When evaluating routing rules, Front Door does not look for matches in user certificates.\}\}
+Front Door route rules determine whether the incoming request matches the routing rule and route traffic accordingly. What properties are matched? 
+( ) HTTP protocols (HTTP/HTTPS), Hosts, and time stamp. {{Incorrect, When evaluating routing rules, Front Door does not look for matches in time stamps.}} 
+(x) HTTP protocols (HTTP/HTTPS), Hosts, and Paths. {{Correct, When evaluating routing rules, Front Door looks for matches in HTTP protocols (HTTP/HTTPS), Hosts, and Paths.}} 
+( ) Hosts, paths, and user certificates. {{Incorrect, When evaluating routing rules, Front Door does not look for matches in user certificates.}}
