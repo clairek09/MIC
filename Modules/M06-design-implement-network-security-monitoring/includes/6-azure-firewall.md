@@ -112,19 +112,13 @@ You can use several methods for deploying your Azure Firewall using Availability
 ## Multiple Choice
 
 Filtering of which direction of traffic does Azure Firewall support?
-
-(X) Inbound and Outbound.\{\{Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols.\}\}
-
-( ) Outbound only.\{\{Incorrect. Azure Firewall supports inbound and outbound filtering.\}\}
-
-( ) Inbound only.\{\{Incorrect. Azure Firewall supports inbound and outbound filtering.\}\}
+( ) Outbound only.{{Incorrect. Azure Firewall supports inbound and outbound filtering.}}
+( ) Inbound only.{{Incorrect. Azure Firewall supports inbound and outbound filtering.}}
+(X) Inbound and Outbound.{{Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols.}}
 
 ## Multiple Choice
 
 Which one of the following priority levels is considered to be highest for a security rule?
-
-( ) 0\{\{Incorrect. Priority settings must use a number between 100 and 65000.\}\}
-
-(X) 100\{\{Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority.\}\}
-
-( ) 110\{\{Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority.\}\}
+( ) 0{{Incorrect. Priority settings must use a number between 100 and 65000.}}
+(X) 100{{Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority.}}
+( ) 110{{Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority.}}
