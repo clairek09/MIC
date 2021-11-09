@@ -2,7 +2,7 @@ One of the benefits of Azure Virtual WAN is the ability to support reliable conn
 
 ## Manage an NVA in a Virtual Hub
 
-The NVAs available in the Azure Marketplace are designed to be deployed directly into a virtual hub and nowhere else. Each is deployed as a Managed Application, which allows Azure Virtual WAN to manage the configuration of the NVA. They cannot be deployed within an arbitrary VNet.
+The NVAs available in the Azure Marketplace can be deployed directly into a virtual hub and nowhere else. Each is deployed as a Managed Application, which allows Azure Virtual WAN to manage the configuration of the NVA. They cannot be deployed within an arbitrary VNet.
 
 The following diagram shows the NVA deployment process:
 
@@ -15,7 +15,7 @@ Although each NVA offers support for different CPEs and has a slightly different
 
 To deploy an NVA in your virtual hub, you can access the Azure Marketplace through the Azure portal and select the Managed Application for the NVA partner that you need to enable connectivity for your devices. When you create an NVA in the Virtual WAN hub, like all Managed Applications, there will be two Resource Groups created in your subscription.
 
- -  **Customer Resource Group** \- This will contain an application placeholder for the Managed Application. Partners can use this to expose whatever customer properties they choose here.
+ -  **Customer Resource Group** \- This will contain an application placeholder for the Managed Application. Partners can use this resource group to expose whatever customer properties they choose here.
  -  **Managed Resource Group** \- Customers cannot configure or change resources in this resource group directly, as this is controlled by the publisher of the Managed Application. This Resource Group will contain the NetworkVirtualAppliances resource.
 
 The NVA is configured automatically as part of the deployment process. Once the NVA has been provisioned into the virtual hub, any additional configuration must be performed via the NVA partners portal or management application. You cannot access the NVA directly.
