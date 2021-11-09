@@ -343,8 +343,14 @@ For more information on Configuring rewrites in application Gateway, see [Rewrit
 
 ## Multiple Choice
 
-You are configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure? (x) Autoscaling \{\{Correct, With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements.\}\} ( ) Manual scaling \{\{Incorrect, With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss.\}\} ( ) Health probes \{\{Incorrect, Health probes monitor the health of all resources in the back-end pool and automatically removes any resource considered unhealthy from the pool.\}\}
+You are configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure? 
+(x) Autoscaling {{Correct, With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements.}} 
+( ) Manual scaling {{Incorrect, With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss.}} 
+( ) Health probes {{Incorrect, Health probes monitor the health of all resources in the back-end pool and automatically removes any resource considered unhealthy from the pool.}}
 
 ## Multiple Choice
 
-What is a listener? (x) A listener is an entity that checks for incoming connection requests. \{\{Correct, A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address.\}\} ( ) A listener is an entity that routes traffic based on basic or path-based rules. \{\{Incorrect, A routing rule is an entity that routes traffic based on basic or path-based rules.\}\} ( ) A listener is a collection of servers that respond to requests. \{\{Incorrect, A backend pool\}\}
+What is a listener? 
+(x) A listener is an entity that checks for incoming connection requests. {{Correct, A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address.}} 
+( ) A listener is an entity that routes traffic based on basic or path-based rules. {{Incorrect, A routing rule is an entity that routes traffic based on basic or path-based rules.}} 
+( ) A listener is a collection of servers that respond to requests. {{Incorrect, A backend pool}}
