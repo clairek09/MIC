@@ -83,18 +83,14 @@ You can analyze metrics for Azure ExpressRoute with metrics from other Azure ser
 
 What property of an ExpressRoute circuit is useful when opening a support ticket with the service provider?
 
-(X) Service key.\{\{Correct. A service key uniquely identifies an ExpressRoute circuit. If you need assistance from Microsoft or from an ExpressRoute partner to troubleshoot an ExpressRoute issue, provide the service key to readily identify the circuit.\}\}
-
-( ) Circuit name.\{\{Incorrect. The Circuit name may not be unique or easily searchable for the service provider.\}\}
-
-( ) Circuit number.\{\{Incorrect. There is no circuit number property.\}\}
+(X) Service key.{{Correct. A service key uniquely identifies an ExpressRoute circuit. If you need assistance from Microsoft or from an ExpressRoute partner to troubleshoot an ExpressRoute issue, provide the service key to readily identify the circuit.}}
+( ) Circuit name.{{Incorrect. The Circuit name may not be unique or easily searchable for the service provider.}}
+( ) Circuit number.{{Incorrect. There is no circuit number property.}}
 
 ## Multiple Choice
 
 An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?
 
-(X) Check the **Last modified by** property of the relevant peering.\{\{Correct. Azure resources record information about changes, in this case, who made the last change.\}\}
-
-( ) Call the service provider and ask them.\{\{Incorrect. This may get you the correct answer, but it is not the quickest way to check.\}\}
-
-( ) Raise a support ticket with Microsoft.\{\{Incorrect. This may get you the correct answer, but it is not the quickest way to check.\}\}
+(X) Check the **Last modified by** property of the relevant peering.{{Correct. Azure resources record information about changes, in this case, who made the last change.}}
+( ) Call the service provider and ask them.{{Incorrect. This may get you the correct answer, but it is not the quickest way to check.}}
+( ) Raise a support ticket with Microsoft.{{Incorrect. This may get you the correct answer, but it is not the quickest way to check.}}
