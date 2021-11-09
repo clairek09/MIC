@@ -220,7 +220,7 @@ In summary, this route applies to any address prefixes in 10.0.1.0/24 (private s
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/associate-route-69efb42a.png" alt-text="Screenshot of a route table being assocated with a virtual network.":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/associate-route-69efb42a.png" alt-text="Screenshot of a route table being associated with a virtual network.":::
 
 
 \[!NOTE\] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
