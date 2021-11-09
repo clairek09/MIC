@@ -109,19 +109,13 @@ You can pick a billing model that works best for you. Choose between the billing
 ## Multiple choice
 
 Which of the following can be connected with ExpressRoute Premium?
-
-(x) Resources in different Geopolitical regions.\{\{Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries. For example, if you connect to Microsoft in Amsterdam through ExpressRoute, you'll have access to all Microsoft cloud services hosted in all regions across the world.\}\}
-
-( ) Resources within local regions.\{\{Incorrect. Azure Premium can connect more than resources within local regions.\}\}
-
-( ) Resources within a single metropolitan area only.\{\{Incorrect. Azure Premium can connect more than resources within a single metropolitan area.\}\}
+( ) Resources within local regions.{{Incorrect. Azure Premium can connect more than resources within local regions.}}
+( ) Resources within a single metropolitan area only.{{Incorrect. Azure Premium can connect more than resources within a single metropolitan area.}}
+(x) Resources in different Geopolitical regions.{{Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries. For example, if you connect to Microsoft in Amsterdam through ExpressRoute, you'll have access to all Microsoft cloud services hosted in all regions across the world.}}
 
 ## Multiple choice
 
 How can one provide a failover path for ExpressRoute?
-
-(x)Configure a Site-to-Site VPN connection as a backup for ExpressRoute.\{\{Correct. You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path.\}\}
-
-( )Configure a Point-to-Site VPN connection as a backup for ExpressRoute.\{\{Incorrect. A Point-to-Site VPN connection will not function as a backup for ExpressRoute.\}\}
-
-( )You cannot configure a backup path for ExpressRoute.\{\{Incorrect. It is possible to configure a backup path for ExpressRoute.\}\}
+( )Configure a Point-to-Site VPN connection as a backup for ExpressRoute.{{Incorrect. A Point-to-Site VPN connection will not function as a backup for ExpressRoute.}}
+(x)Configure a Site-to-Site VPN connection as a backup for ExpressRoute.{{Correct. You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path.}}
+( )You cannot configure a backup path for ExpressRoute.{{Incorrect. It is possible to configure a backup path for ExpressRoute.}}
