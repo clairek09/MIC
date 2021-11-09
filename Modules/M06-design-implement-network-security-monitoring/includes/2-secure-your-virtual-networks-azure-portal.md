@@ -172,19 +172,13 @@ Follow the best practices for DNS security to mitigate against common attacks li
 ### Multiple Choice
 
 What Azure service can we use to create a private connection between Azure PaaS and hosted services?
-
-(x ) Azure Private Link \{\{Correct. Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network.\}\}
-
-( ) Azure Service Endpoint \{\{Incorrect. Azure Service Endpoint provides secure and direct connectivity to Azure PaaS services over an optimized route over the Azure backbone network.\}\}
-
-( ) Azure NaaS (network as a service) \{\{Incorrect. There is no such service as Azure NaaS.\}\}
+(x) Azure Private Link {{Correct. Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network.}}
+( ) Azure Service Endpoint {{Incorrect. Azure Service Endpoint provides secure and direct connectivity to Azure PaaS services over an optimized route over the Azure backbone network.}}
+( ) Azure NaaS (network as a service) {{Incorrect. There is no such service as Azure NaaS.}}
 
 ### Multiple Choice
 
 Which tool in Azure automatically collects, analyzes, and integrates log data from your Azure resources?
-
-(x ) Azure Security Center \{\{Correct. Security Center automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions, such as firewall and endpoint protection solutions.\}\}
-
-( ) Azure Security Benchmark \{\{Incorrect. The Azure Security Benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. It includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure.\}\}
-
-( ) Azure Sentinel \{\{Incorrect. Azure Sentinel is a scalable, cloud-native, security information event management and security orchestration automated response solution. It delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. It needs to be onboarded and configured to collect data from your resources in Azure.\}\}
+(x) Azure Security Center {{Correct. Security Center automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions, such as firewall and endpoint protection solutions.}}
+( ) Azure Security Benchmark {{Incorrect. The Azure Security Benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. It includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure.}}
+( ) Azure Sentinel {{Incorrect. Azure Sentinel is a scalable, cloud-native, security information event management and security orchestration automated response solution. It delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. It needs to be onboarded and configured to collect data from your resources in Azure.}}
