@@ -41,20 +41,20 @@ In this step, you will create a Network Virtual Appliance in the hub. The proced
      -  **Resource Group** \- Choose the same Resource Group you used to deploy the Virtual WAN and hub.
      -  **Region** \- Choose the same Region in which your Virtual hub resource is located.
      -  **Application Name** \- The Barracuda NextGen WAN is a Managed Application. Choose a name that makes it easy to identify this resource, as this is what it will be called when it appears in your subscription.
-     -  **Managed Resource Group** \- This is the name of the Managed Resource Group in which Barracuda will deploy resources that are managed by them. The name should be pre-populated for this.
+     -  **Managed Resource Group** \- This is the name of the Managed Resource Group in which Barracuda will deploy resources that are managed by them. The name should be pre-populated.
 6.  Select the Next: CloudGen WAN gateway button. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/barracuda-cloudgen-wan-ebe559b5.png" alt-text="screenshot":::
     
 7.  Provide the following information here:
     
      -  **Virtual WAN Hub** \- The Virtual WAN hub you want to deploy this NVA into.
      -  **NVA Infrastructure Units** \- Indicate the number of NVA Infrastructure Units you want to deploy this NVA with. Choose the amount of aggregate bandwidth capacity you want to provide across all of the branch sites that will be connecting to this hub through this NVA.
-     -  **Token** \- Barracuda requires that you provide an authentication token here in order to identify yourself as a registered user of this product. You'll need to obtain this from Barracuda.
+     -  **Token** \- Barracuda requires that you provide an authentication token here in order to identify yourself as a registered user of this product. 
 
 ### NVA Infrastructure Units
 
 When you create an NVA in the Virtual WAN hub, you must choose the number of NVA Infrastructure Units you want to deploy it with. An NVA Infrastructure Unit is a unit of aggregate bandwidth capacity for an NVA in the Virtual WAN hub. An NVA Infrastructure Unit is similar to a VPN Scale Unit in terms of the way you think about capacity and sizing.
 
- -  1 NVA Infrastructure Unit represents 500 Mbps of aggregate bandwidth for all branch site connections coming into this NVA.
+ -  One NVA Infrastructure Unit represents 500 Mbps of aggregate bandwidth for all branch site connections coming into this NVA.
  -  Azure supports from 1-80 NVA Infrastructure Units for a given NVA virtual hub deployment.
  -  Each partner may offer different NVA Infrastructure Unit bundles that are a subset of all supported NVA Infrastructure Unit configurations.
 
