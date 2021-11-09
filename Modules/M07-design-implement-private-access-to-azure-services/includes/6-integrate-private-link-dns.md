@@ -57,58 +57,8 @@ Your applications don't need to change the connection URL. When resolving to a p
 
 Private networks already using the private DNS zone for a given type, can only connect to public resources if they don't have any Private Endpoint connections, otherwise a corresponding DNS configuration is required on the private DNS zone in order to complete the DNS resolution sequence.
 
-For Azure services, use the recommended zone names as described in the following table:
+For Azure services, use the [recommended zone names](https://docs.microsoft.com/azure/private-link/private-endpoint-dns#azure-services-dns-zone-configuration) found in the documentation. 
 
-|                                      **Private Link resource type / Subresource**                                       |              **Private DNS zone name**               |          **Public DNS zone forwarders**           |
-|:-----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------:|:-------------------------------------------------:|
-|               Azure Automation / (Microsoft.Automation/automationAccounts) / Webhook, DSCAndHybridWorker                |           privatelink.azure-automation.net           |               azure-automation.net                |
-|                                 Azure SQL Database (Microsoft.Sql/servers) / sqlServer                                  |           privatelink.database.windows.net           |               database.windows.net                |
-|                               Azure Synapse Analytics (Microsoft.Sql/servers) / sqlServer                               |           privatelink.database.windows.net           |               database.windows.net                |
-|                              Azure Synapse Analytics (Microsoft.Synapse/workspaces) / Sql                               |           privatelink.sql.azuresynapse.net           |               sql.azuresynapse.net                |
-|                   Storage account (Microsoft.Storage/storageAccounts) / Blob (blob, blob\_secondary)                    |          privatelink.blob.core.windows.net           |               blob.core.windows.net               |
-|                  Storage account (Microsoft.Storage/storageAccounts) / Table (table, table\_secondary)                  |          privatelink.table.core.windows.net          |              table.core.windows.net               |
-|                  Storage account (Microsoft.Storage/storageAccounts) / Queue (queue, queue\_secondary)                  |          privatelink.queue.core.windows.net          |              queue.core.windows.net               |
-|                   Storage account (Microsoft.Storage/storageAccounts) / File (file, file\_secondary)                    |          privatelink.file.core.windows.net           |               file.core.windows.net               |
-|                     Storage account (Microsoft.Storage/storageAccounts) / Web (web, web\_secondary)                     |           privatelink.web.core.windows.net           |               web.core.windows.net                |
-| Azure Data Lake File System Gen2 (Microsoft.Storage/storageAccounts) / Data Lake File System Gen2 (dfs, dfs\_secondary) |           privatelink.dfs.core.windows.net           |               dfs.core.windows.net                |
-|                            Azure Cosmos DB (Microsoft.AzureCosmosDB/databaseAccounts) / SQL                             |           privatelink.documents.azure.com            |                documents.azure.com                |
-|                          Azure Cosmos DB (Microsoft.AzureCosmosDB/databaseAccounts) / MongoDB                           |          privatelink.mongo.cosmos.azure.com          |              mongo.cosmos.azure.com               |
-|                         Azure Cosmos DB (Microsoft.AzureCosmosDB/databaseAccounts) / Cassandra                          |        privatelink.cassandra.cosmos.azure.com        |            cassandra.cosmos.azure.com             |
-|                          Azure Cosmos DB (Microsoft.AzureCosmosDB/databaseAccounts) / Gremlin                           |         privatelink.gremlin.cosmos.azure.com         |             gremlin.cosmos.azure.com              |
-|                           Azure Cosmos DB (Microsoft.AzureCosmosDB/databaseAccounts) / Table                            |          privatelink.table.cosmos.azure.com          |              table.cosmos.azure.com               |
-|          Azure Database for PostgreSQL - Single server (Microsoft.DBforPostgreSQL/servers) / postgresqlServer           |       privatelink.postgres.database.azure.com        |            postgres.database.azure.com            |
-|                          Azure Database for MySQL (Microsoft.DBforMySQL/servers) / mysqlServer                          |         privatelink.mysql.database.azure.com         |             mysql.database.azure.com              |
-|                       Azure Database for MariaDB (Microsoft.DBforMariaDB/servers) / mariadbServer                       |        privatelink.mariadb.database.azure.com        |            mariadb.database.azure.com             |
-|                                   Azure Key Vault (Microsoft.KeyVault/vaults) / vault                                   |           privatelink.vaultcore.azure.net            |                  vault.azure.net                  |
-|                                                   vaultcore.azure.net                                                   |                                                      |                                                   |
-|           Azure Kubernetes Service - Kubernetes API (Microsoft.ContainerService/managedClusters) / management           |           privatelink.\{region\}.azmk8s.io           |               \{region\}.azmk8s.io                |
-|                             Azure Search (Microsoft.Search/searchServices) / searchService                              |            privatelink.search.windows.net            |                search.windows.net                 |
-|                      Azure Container Registry (Microsoft.ContainerRegistry/registries) / registry                       |                privatelink.azurecr.io                |                    azurecr.io                     |
-|             Azure App Configuration (Microsoft.AppConfiguration/configurationStores) / configurationStores              |               privatelink.azconfig.io                |                    azconfig.io                    |
-|                                Azure Backup (Microsoft.RecoveryServices/vaults) / vault                                 |    privatelink.\{region\}.backup.windowsazure.com    |        \{region\}.backup.windowsazure.com         |
-|                             Azure Site Recovery (Microsoft.RecoveryServices/vaults) / vault                             | \{region\}.privatelink.siterecovery.windowsazure.com | \{region\}.hypervrecoverymanager.windowsazure.com |
-|                              Azure Event Hubs (Microsoft.EventHub/namespaces) / namespace                               |          privatelink.servicebus.windows.net          |              servicebus.windows.net               |
-|                             Azure Service Bus (Microsoft.ServiceBus/namespaces) / namespace                             |          privatelink.servicebus.windows.net          |              servicebus.windows.net               |
-|                                   Azure IoT Hub (Microsoft.Devices/IotHubs) / iotHub                                    |            privatelink.azure-devices.net             |                 azure-devices.net                 |
-|                                           privatelink.servicebus.windows.net1                                           |                servicebus.windows.net                |                                                   |
-|                                  Azure Relay (Microsoft.Relay/namespaces) / namespace                                   |          privatelink.servicebus.windows.net          |              servicebus.windows.net               |
-|                                  Azure Event Grid (Microsoft.EventGrid/topics) / topic                                  |           privatelink.eventgrid.azure.net            |                eventgrid.azure.net                |
-|                                 Azure Event Grid (Microsoft.EventGrid/domains) / domain                                 |           privatelink.eventgrid.azure.net            |                eventgrid.azure.net                |
-|                                      Azure Web Apps (Microsoft.Web/sites) / sites                                       |            privatelink.azurewebsites.net             |                 azurewebsites.net                 |
-|                  Azure Machine Learning (Microsoft.MachineLearningServices/workspaces) / amlworkspace                   |              privatelink.api.azureml.ms              |                  api.azureml.ms                   |
-|                                             privatelink.notebooks.azure.net                                             |                 notebooks.azure.net                  |                                                   |
-|                                                                                                                         |                 instances.azureml.ms                 |                                                   |
-|                                                                                                                         |                   aznbcontent.net                    |                                                   |
-|                                  SignalR (Microsoft.SignalRService/SignalR) / signalR                                   |           privatelink.service.signalr.net            |                service.signalr.net                |
-|                           Azure Monitor (Microsoft.Insights/privateLinkScopes) / azuremonitor                           |            privatelink.monitor.azure.com             |                 monitor.azure.com                 |
-|                                          privatelink.oms.opinsights.azure.com                                           |               oms.opinsights.azure.com               |                                                   |
-|                                          privatelink.ods.opinsights.azure.com                                           |               ods.opinsights.azure.com               |                                                   |
-|                                        privatelink.agentsvc.azure-automation.net                                        |            agentsvc.azure-automation.net             |                                                   |
-|                           Cognitive Services (Microsoft.CognitiveServices/accounts) / account                           |       privatelink.cognitiveservices.azure.com        |            cognitiveservices.azure.com            |
-|                            Azure File Sync (Microsoft.StorageSync/storageSyncServices) / afs                            |              privatelink.afs.azure.net               |                   afs.azure.net                   |
-|                           Azure Data Factory (Microsoft.DataFactory/factories) / dataFactory                            |          privatelink.datafactory.azure.net           |               datafactory.azure.net               |
-|                              Azure Data Factory (Microsoft.DataFactory/factories) / portal                              |              privatelink.adf.azure.com               |                   adf.azure.com                   |
-|                               Azure Cache for Redis (Microsoft.Cache/Redis) / redisCache                                |         privatelink.redis.cache.windows.net          |              redis.cache.windows.net              |
 
 ## DNS configuration scenarios
 
@@ -222,8 +172,15 @@ The following diagram shows the DNS resolution for both networks, on-premises an
 
 ## Multiple Choice
 
-How can one ensure that communications with Azure Storage pass through the Service Endpoint? ( x) Add an outbound rule to allow access to storage. \{\{Correct! Create an Allow\_Storage outbound rule to allow access to Storage.\}\} ( ) Add an inbound rule to allow access to storage. \{\{Incorrect, create an Allow\_Storage outbound rule to allow access to Storage.\}\} ( ) Do nothing, it is automatically configured. \{\{Incorrect, create an Allow\_Storage outbound rule to allow access to Storage.\}\}
+What resrouce is associated with a Private Endpoint that contains the information to configure your Private Endpoint DNS?  
+( ) The virtual network {{Incorrect, the virtual network does not include the information needed to configure your Private Endpoint DNS.}}
+(x) The network interface {{Correct! The network interface information includes FQDN and private IP addresses for your Private Link resource.}}
+( ) The private DNS zone {{Incorrect, the private DNS zone does not include the information needed to configure your Private Endpoint DNS.}}
+
 
 ## Multiple Choice
 
-What is the significance of IP address 168.63.129.16? (x ) It is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources. \{\{Correct! Additionally, customers can define any address space for their private virtual network in Azure.\}\} ( ) It is a non-virtual (Classic) public IP address that is used to facilitate a communication channel to Azure platform resources. \{\{Incorrect, in a non-virtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP. In a virtual network, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources.\}\} ( ) It is a static address of a DNS forwarder. \{\{Incorrect, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources.\}\}
+What is the significance of IP address 168.63.129.16? 
+( ) It is a non-virtual (Classic) public IP address that is used to facilitate a communication channel to Azure platform resources. {{Incorrect, in a non-virtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP. In a virtual network, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources.}} 
+( ) It is a static address of a DNS forwarder. {{Incorrect, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources.}}
+(x) It is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources. {{Correct! Additionally, customers can define any address space for their private virtual network in Azure.}} 
