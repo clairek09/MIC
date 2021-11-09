@@ -70,11 +70,13 @@ To view the detailed steps for all these tasks, see [Tutorial: Create a Web Appl
 ## Multiple choice
 
 What are the two modes that a WAF policy can use?
-
-(x) WAF policy can either be in Prevention mode or Detection mode.\{\{Correct. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, but you can change it to Prevention mode.\}\} ( ) WAF policy can either be in Default mode or Custom mode.\{\{Incorrect. When you create a Web Application Firewall (WAF) policy, there are no modes called Default or Custom.\}\} ( ) WAF policy can either be in Default Rule Set mode or Detection mode.\{\{Incorrect. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, however there is no mode called Default Rule Set.\}\}
+( ) WAF policy can either be in Default mode or Custom mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, there are no modes called Default or Custom.}} 
+( ) WAF policy can either be in Default Rule Set mode or Detection mode.{{Incorrect. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, however there is no mode called Default Rule Set.}}
+(x) WAF policy can either be in Prevention mode or Detection mode.{{Correct. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, but you can change it to Prevention mode.}} 
 
 ## Multiple choice
 
 What are the two types of custom rule in a WAF policy?
-
-(x) Match rules and rate limit rules..\{\{Correct. There are two types of custom rules: match rules and rate limit rules.\}\} ( ) String rules and match rules.\{\{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as String rule\}\} ( ) Priority rules and rate limit rules.\{\{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as Priority rule.\}\}
+( ) String rules and match rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as String rule}} 
+(x) Match rules and rate limit rules.{{Correct. There are two types of custom rules: match rules and rate limit rules.}} 
+( ) Priority rules and rate limit rules.{{Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as Priority rule.}}
