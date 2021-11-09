@@ -113,18 +113,14 @@ The key stages of deploying as DDoS Protection plan are as follows:
 
 Which one of these is a symptom of a DDoS attack?
 
-(x ) An unexplained surge in requests. \{\{Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources.\}\}
-
-( ) Application running slowly. \{\{Incorrect. This could just be other performance-related issues in your application/connectivity.\}\}
-
-( ) HTTP 400 Bad Request \{\{Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error\}\}
+(x) An unexplained surge in requests. {{Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources.}}
+( ) Application running slowly. {{Incorrect. This could just be other performance-related issues in your application/connectivity.}}
+( ) HTTP 400 Bad Request {{Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error}}
 
 ### Multiple Choice
 
 Which action shall we take when under DDoS attack?
 
-(x ) Monitor Alerts and review attack profile. \{\{Correct. You should look at any alerts sent out and review the attack profile (what type of attack, where is it originating, is it targeting a particular resource).\}\}
-
-( )Scale out your Azure resources to keep systems running. \{\{Incorrect. Adding more resources will only help temporarily make your services available. The attacker could just ramp up the attack to overwhelm new resources.\}\}
-
-( ) Email your IT team. \{\{Incorrect. Letting your IT team know is a good idea, but you need to monitor and protect your resources first.\}\}
+(x) Monitor Alerts and review attack profile. {{Correct. You should look at any alerts sent out and review the attack profile (what type of attack, where is it originating, is it targeting a particular resource).}}
+( )Scale out your Azure resources to keep systems running. {{Incorrect. Adding more resources will only help temporarily make your services available. The attacker could just ramp up the attack to overwhelm new resources.}}
+( ) Email your IT team. {{Incorrect. Letting your IT team know is a good idea, but you need to monitor and protect your resources first.}}
