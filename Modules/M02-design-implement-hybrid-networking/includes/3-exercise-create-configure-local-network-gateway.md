@@ -58,7 +58,7 @@ In this exercise, you will:
     |                 |                               Virtual machine name                                |           CoreServicesTestVM           |
     |                 |                                      Region                                       |              (US) West US              |
     |                 |                               Availability options                                | No infrastructure redundancy required  |
-    |                 |                                       Image                                       |  Windows 10 Pro, Version 20H2 - Gen 1  |
+    |                 |                                       Image                                       |  Windows Server 2022 Datacenter- Gen2  |
     |                 |                                Azure Spot instance                                |              Not selected              |
     |                 |                                       Size                                        | Standard\_D2\_v3 - 2vcpus, 8GiB memory |
     |                 |                                     Username                                      |                TestUser                |
@@ -98,7 +98,7 @@ In this exercise, you will:
     |                 |                               Virtual machine name                                |            ManufacturingTestVM            |
     |                 |                                      Region                                       |           (Europe) North Europe           |
     |                 |                               Availability options                                |   No infrastructure redundancy required   |
-    |                 |                                       Image                                       |   Windows 10 Pro, Version 20H2 - Gen 1    |
+    |                 |                                       Image                                       |   Windows Server 2022 Datacenter- Gen2    |
     |                 |                                Azure Spot instance                                |               Not selected                |
     |                 |                                       Size                                        |  Standard\_D2\_v3 - 2vcpus, 8GiB memory   |
     |                 |                                     Username                                      |                 TestUser                  |
