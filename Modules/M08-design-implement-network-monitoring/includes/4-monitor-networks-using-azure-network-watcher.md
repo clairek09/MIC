@@ -246,8 +246,14 @@ The example screenshot below shows the Traffic Analytics dashboard.
 
 ## Multiple Choice
 
-Which of the following statements about Network Watcher is correct? (x) Network Watcher is enabled automatically when you create a virtual network. \{\{Correct. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region.\}\} ( ) Network Watcher must be manually enabled for each virtual network. \{\{Incorrect. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region.\}\} ( ) Network Watcher is enabled by default for all regions. \{\{Incorrect. Network Watcher is enabled automatically in your Virtual Network's region, when you create or update a virtual network in your subscription.\}\}
+Which of the following statements about Network Watcher is correct? 
+( ) Network Watcher must be manually enabled for each virtual network. {{Incorrect. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region.}} 
+( ) Network Watcher is enabled by default for all regions. {{Incorrect. Network Watcher is enabled automatically in your Virtual Network's region, when you create or update a virtual network in your subscription.}}
+(x) Network Watcher is enabled automatically when you create a virtual network. {{Correct. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region.}} 
 
 ## Multiple Choice
 
-Which of the following is a component of Traffic Analytics? (x) Network security group (NSG) flow logs \{\{Correct. Allow you to view information about ingress and egress IP traffic through a network security group.\}\} ( ) Backend pool \{\{Incorrect. A backend pool is not required for traffic analytics.\}\} ( ) Availability zones \{\{Incorrect. Availability zones are not required for traffic analytics.\}\}
+Which of the following is a component of Traffic Analytics? 
+( ) Backend pool {{Incorrect. A backend pool is not required for traffic analytics.}} 
+(x) Network security group (NSG) flow logs {{Correct. Allow you to view information about ingress and egress IP traffic through a network security group.}} 
+( ) Availability zones {{Incorrect. Availability zones are not required for traffic analytics.}}
