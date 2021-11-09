@@ -272,18 +272,14 @@ Use Azure Monitor to analyze the data collected in the diagnostic logs.
 
 What are the two types of VPNs?
 
-(x) PolicyBased and RouteBased. \{\{Correct, VPNs can be RouteBased or PolicyBased.\}\}
-
-( ) PolicyBased and static. \{\{Incorrect, VPNs can be PolicyBased. Static is the name used for PolicyBased VPNs in the classic deployment model.\}\}
-
-( ) RouteBased and dynamic. \{\{Incorrect, VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model.\}\}
+(x) PolicyBased and RouteBased. {{Correct, VPNs can be RouteBased or PolicyBased.}}
+( ) PolicyBased and static. {{Incorrect, VPNs can be PolicyBased. Static is the name used for PolicyBased VPNs in the classic deployment model.}}
+( ) RouteBased and dynamic. {{Incorrect, VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model.}}
 
 ### Multiple Choice
 
 What is the default high availability configuration for VPN gateways?
 
-(x) Active-standby \{\{Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration.\}\}
-
-( ) Active-active \{\{Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default.\}\}
-
-( ) Dual-redundancy \{\{Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default.\}\}
+(x) Active-standby {{Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration.}}
+( ) Active-active {{Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default.}}
+( ) Dual-redundancy {{Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default.}}
