@@ -152,11 +152,13 @@ You can delete a connection and unlink your VNet to an ExpressRoute circuit by s
 ## Multiple Choice
 
 How does ExpressRoute FastPath send network traffic?
-
-(x) Directly to virtual machines in the virtual network.\{\{Correct. FastPath sends network traffic directly to virtual machines in the virtual network, bypassing the gateway.\}\} ( ) Through the gateway to Virtual machines.\{\{Incorrect. ExpressRoute FastPath does not send traffic through the gateway to virtual machines.\}\} ( ) Through the public internet.\{\{Incorrect. ExpressRoute FastPath does not send traffic through the public internet.\}\}
+(x) Directly to virtual machines in the virtual network.{{Correct. FastPath sends network traffic directly to virtual machines in the virtual network, bypassing the gateway.\}\} 
+( ) Through the gateway to Virtual machines.{{Incorrect. ExpressRoute FastPath does not send traffic through the gateway to virtual machines.\}\} 
+( ) Through the public internet.{{Incorrect. ExpressRoute FastPath does not send traffic through the public internet.\}\}
 
 ## Multiple Choice
 
 A network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?
-
-(x) Connect all the virtual networks to the ExpressRoute FastPath circuit directly.\{\{Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly.\}\} ( ) Connect the VNet gateways to ExpressRoute FastPath.\{\{Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath.\}\} ( ) Modify the VNet peering configuration.\{\{Incorrect. The VNet gateways can still support VNet-to-Vnet peering and do not have to be modified.\}\}
+( ) Connect the VNet gateways to ExpressRoute FastPath.{{Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath.\}\} 
+(x) Connect all the virtual networks to the ExpressRoute FastPath circuit directly.{{Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly.\}\} 
+( ) Modify the VNet peering configuration.{{Incorrect. The VNet gateways can still support VNet-to-Vnet peering and do not have to be modified.\}\}
