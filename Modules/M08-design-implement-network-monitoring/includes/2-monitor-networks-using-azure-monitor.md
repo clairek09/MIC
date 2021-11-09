@@ -225,8 +225,14 @@ The **Diagnostic Toolkit** drop-down list provides to access to the following ne
 
 ## Multiple Choice
 
-What two types of data are used by Azure Monitor? (x) Metrics and logs \{\{Correct, metrics and logs are the two fundamental data types used by Azure Monitor.\}\} ( ) Policies and locks \{\{Incorrect, policies and locks are not data types.\}\} ( ) Database and storage \{\{Incorrect, databases and storage are not data types.\}\}
+What two types of data are used by Azure Monitor? 
+( ) Policies and locks {{Incorrect, policies and locks are not data types.}} 
+( ) Database and storage {{Incorrect, databases and storage are not data types.}}
+(x) Metrics and logs {{Correct, metrics and logs are the two fundamental data types used by Azure Monitor.}} 
 
 ## Multiple Choice
 
-Which of the following statements about Azure Monitor Logs is correct? (x) Azure Monitor Logs collects and organizes log and performance data from monitored resources. \{\{Correct. Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources.\}\} ( ) Azure Monitor Logs collects data from all Azure resources automatically. \{\{Incorrect. When you have created a Log Analytics workspace, you must configure different sources to send their data. No data is collected automatically.\}\} ( ) You can use Azure Monitor Logs with or without a workspace. \{\{Incorrect. You must create at least one workspace to use Azure Monitor Logs.\}\}
+Which of the following statements about Azure Monitor Logs is correct? 
+( ) Azure Monitor Logs collects data from all Azure resources automatically. {{Incorrect. When you have created a Log Analytics workspace, you must configure different sources to send their data. No data is collected automatically.}} 
+(x) Azure Monitor Logs collects and organizes log and performance data from monitored resources. {{Correct. Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources.}} 
+( ) You can use Azure Monitor Logs with or without a workspace. {{Incorrect. You must create at least one workspace to use Azure Monitor Logs.}}
