@@ -116,19 +116,13 @@ Virtual Hub Reset is available only in the Azure portal. Resetting provides you 
 ### Multiple Choice
 
 What is an Azure Virtual WAN?
-
-(x) Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone. \{\{Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone in a self-contained, security isolated manner.\}\}
-
-( ) Azure WAN describes two or more VNets connected through peering. \{\{Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone.\}\}
-
-( ) Azure WAN is a collection of on-premises networks connected to each other through VPNs. \{\{Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone.\}\}
+(x) Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone. {{Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone in a self-contained, security isolated manner.}}
+( ) Azure WAN describes two or more VNets connected through peering. {{Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone.}}
+( ) Azure WAN is a collection of on-premises networks connected to each other through VPNs. {{Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone.}}
 
 ### Multiple Choice
 
 What is the purpose of associating a connection to a route table?
-
-(x) Associating a connection to a route table allows the traffic to be sent to the destinations indicated as routes in the route table. \{\{Correct, Associating a connection to a route table allows the traffic to be sent to the destination indicated as routes in the route table. Each connection is associated to one route table.\}\}
-
-( ) Associating a connection to a route table allows the connection to dynamically propagate routes to other route tables. \{\{Incorrect, Connections dynamically propagate routes to a specified route table.\}\}
-
-( ) Associating a connection to a route table allows users to be authenticated. \{\{Incorrect, Users are not authenticated using route tables.\}\}
+(x) Associating a connection to a route table allows the traffic to be sent to the destinations indicated as routes in the route table. {{Correct, Associating a connection to a route table allows the traffic to be sent to the destination indicated as routes in the route table. Each connection is associated to one route table.}}
+( ) Associating a connection to a route table allows the connection to dynamically propagate routes to other route tables. {{Incorrect, Connections dynamically propagate routes to a specified route table.}}
+( ) Associating a connection to a route table allows users to be authenticated. {{Incorrect, Users are not authenticated using route tables.}}
