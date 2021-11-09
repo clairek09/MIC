@@ -64,5 +64,5 @@ Which of the following statements about Azure VNets is correct?
 How are public IP address prefixes assigned? 
 ( ) Bring your own public IP address from on-premises. {{That's incorrect, you can't bring your own public IP addresses from on-premises networks into Azure.}}
 ( ) Create a new public IP address prefix in the Azure portal. {{That's incorrect, you can't create your own public IP addresses prefix in Azure.}}
-(x) IP address is assigned from a pool of available addresses. {{Thats Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource.}}
+(x) IP address is assigned from a pool of available addresses. {{That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource.}}
 
