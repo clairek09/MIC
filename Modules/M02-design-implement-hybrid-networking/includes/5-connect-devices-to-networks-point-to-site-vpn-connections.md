@@ -66,19 +66,13 @@ The zip file also provides the values of some of the important settings on the A
 ### Multiple Choice
 
 What is a site-to-site VPN Gateway connection?
-
-(x) A site-to-site VPN Gateway connection securely connects two networks. \{\{Correct, A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network.\}\}
-
-( ) A site-to-site VPN Gateway connection securely connects an individual client computer to a network. \{\{Incorrect, A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer.\}\}
-
-( ) A site-to-site VPN Gateway connection securely connects two individual computers. \{\{Incorrect, A site-to-site (S2S)VPN gateway connection does not connect two individual computers.\}\}
+(x) A site-to-site VPN Gateway connection securely connects two networks. {{Correct, A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network.}}
+( ) A site-to-site VPN Gateway connection securely connects an individual client computer to a network. {{Incorrect, A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer.}}
+( ) A site-to-site VPN Gateway connection securely connects two individual computers. {{Incorrect, A site-to-site (S2S)VPN gateway connection does not connect two individual computers.}}
 
 ### Multiple Choice
 
 To authenticate a user connecting through a point-to-site connection using Active Directory Domain Server, what type of server is required?
-
-(x) RADIUS \{\{Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.\}\}
-
-( ) Active Directory Domain Controller only \{\{Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required.\}\}
-
-( ) DNS server \{\{Incorrect, A DNS server may be required for name resolution, but it is not sufficient for authentication.\}\}
+(x) RADIUS {{Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server.}}
+( ) Active Directory Domain Controller only {{Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required.}}
+( ) DNS server {{Incorrect, A DNS server may be required for name resolution, but it is not sufficient for authentication.}}
