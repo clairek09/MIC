@@ -95,4 +95,4 @@ Which one of these is a default network security rule in an NSG?
 
 ( )AllowAllInbound.\{\{Incorrect. There is no default rule to allow all inbound traffic.\}\}
 
-( )AllowVnetOutBound.\{\{Incorrect. VNet OutBound traffic is allowed (not denied) where the source and destination are Virtual Network.\}\}
+( )DenyVnetOutBound.\{\{Incorrect. VNet OutBound traffic is allowed (not denied) where the source and destination are Virtual Network.\}\}
