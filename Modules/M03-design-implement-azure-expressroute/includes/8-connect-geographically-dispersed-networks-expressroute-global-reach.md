@@ -78,19 +78,13 @@ To disable connectivity between an individual circuit, select the delete button 
 ## Multiple Choice
 
 What is ExpressRoute Global Reach primarily designed for?
-
-(x) Connect branch offices across the world.\{\{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.\}\}
-
-( ) Connect a data center to the public internet.\{\{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet.\}\}
-
-( ) Connect a local service provider to a data center.\{\{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center.\}\}
+( ) Connect a data center to the public internet.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet.}}
+( ) Connect a local service provider to a data center.{{Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center.}}
+(x) Connect branch offices across the world.{{Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world.}}
 
 ## Multiple Choice
 
 How can a network engineer for a company with offices in London and Tokyo configure communications between the two offices?
-
-(x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.\{\{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.\}\}
-
-( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to connect to each local service provider location.\{\{Incorrect. You can use different local service providers in each location.\}\}
-
-( ) Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access.\{\{Incorrect. Each location should connect to GlobalNet through a local service provider.\}\}
+( ) Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to connect to each local service provider location.{{Incorrect. You can use different local service providers in each location.}}
+(x) Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network.{{Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network.}}
+( ) Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access.{{Incorrect. Each location should connect to GlobalNet through a local service provider.}}
