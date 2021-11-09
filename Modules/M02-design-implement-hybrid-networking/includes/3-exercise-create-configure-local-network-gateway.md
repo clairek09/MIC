@@ -284,7 +284,7 @@ You will not be able to complete this configuration until the virtual network ga
     ```
 3.  The test connection should succeed, and you will see a result similar to the following:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/test-connection-succeeded-ad24c05a.png" alt-text="Test-NetConnection suceeded.":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/test-connection-succeeded-ad24c05a.png" alt-text="Test-NetConnection succeeded.":::
 
 
 Congratulations! You have configured a VNet-to-VNet connection by using a virtual network gateway.
