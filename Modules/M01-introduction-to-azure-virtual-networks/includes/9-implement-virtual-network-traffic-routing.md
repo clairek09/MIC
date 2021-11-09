@@ -238,9 +238,9 @@ You can view the effective routes for each network interface by using the Azure 
 1.  Log into the Azure portal with an Azure account that has the [necessary permissions](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface).
 2.  In the search box, enter the name of the VM that you want to investigate.
 3.  Select the VM from the search results.
-4.  Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name. :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Azure Portal - select a specific NIC.":::
+4.  Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name. :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Azure portal - select a specific NIC.":::
     
-5.  Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image: :::image type="content" source="../media/view-effective-routes-69875697.png" alt-text="Azure Portal - effective routes for a specific NIC.":::
+5.  Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image: :::image type="content" source="../media/view-effective-routes-69875697.png" alt-text="Azure portal - effective routes for a specific NIC.":::
     
 
 ### View effective routes by using Azure PowerShell
