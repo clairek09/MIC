@@ -220,15 +220,13 @@ You now need to configure the storage account to be accessible only from databas
  -  To deny all access to change the default action to Deny, in the Cloud Shell, run the following command. After network access is denied, the storage account is not accessible from any network.
     
     ```AzureCLI
-       az storage account network-rule add \
-    
-     --resource-group $rg \
-    
-     --account-name $STORAGEACCT \
-    
-     --vnet ERP-servers \
-    
-     --subnet Databases
+       az storage account update \
+      
+      --name $storageAcctName \
+  
+      --resource-group myResourceGroup \
+  
+      --default-action Deny
     
     ```
  -  To restrict access to the storage account, in the Cloud Shell, run the following command. By default, storage accounts are open to accept all traffic. You want only traffic from the **Databases** subnet to be able to access the storage.
