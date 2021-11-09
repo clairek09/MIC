@@ -89,7 +89,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
         Image
       :::column-end:::
       :::column:::
-        Windows 10 Pro, Version 20H2 - Gen 1
+        Windows Server 2022 Datacenter- Gen2
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -156,17 +156,6 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
       :::column-end:::
       :::column:::
         RDP (3389)
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        
-      :::column-end:::
-      :::column:::
-        I confirm I have an eligible Windows 10 license with multi-tenant hosting rights.
-      :::column-end:::
-      :::column:::
-        Selected
       :::column-end:::
     :::row-end:::
     :::row:::
