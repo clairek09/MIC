@@ -91,8 +91,9 @@ An engineer has a secure web application that experiences high traffic, and they
 
 Which type of load balancing services distribute traffic within virtual networks across virtual machines?
 
-(x) Regional.{{Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region.}}
 
 ( ) Global.{{Incorrect, **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}}
+
+(x) Regional.{{Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region.}}
 
 ( ) Regional and Global.{{Incorrect, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}}
