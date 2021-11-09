@@ -17,7 +17,6 @@ From the previous diagram, it is important to highlight that:
  -  Central networking and/or central platform teams must ensure that whenever Private Endpoints are created, the corresponding records are automatically created in the centralized private DNS zone that matches the service created.
  -  DNS record needs to follow the lifecycle of the Private Endpoint and automatically remove the DNS record when the Private Endpoint is deleted.
 
-The following sections describe how application teams can enable these conditions by using Azure Policy. We will use Azure Storage as the Azure service that application teams need to deploy in our example below, but the same principle can be applied to most Azure services that support Private Link.
 
 ## Azure Private Endpoint DNS configuration
 
