@@ -111,9 +111,9 @@ BFD is configured by default under all the newly created ExpressRoute private pe
 
 When you disable a peering, the Border Gateway Protocol (BGP) session for both the primary and the secondary connection of your ExpressRoute circuit is shut down. When you enable a peering, the BGP session on both the primary and the secondary connection of your ExpressRoute circuit is restored.
 
-\[!NOTE\]
-
-The first time you configure the peering on your ExpressRoute circuit, the Peerings are enabled by default.
+> [!NOTE]
+> 
+> The first time you configure the peering on your ExpressRoute circuit, the Peerings are enabled by default.
 
 Resetting your ExpressRoute Peerings might be helpful in the following scenarios:
 
