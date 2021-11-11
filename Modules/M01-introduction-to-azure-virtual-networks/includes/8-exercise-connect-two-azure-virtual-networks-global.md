@@ -331,13 +331,17 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
       :::column-end:::
     :::row-end:::
     
-3.  The test connection should fail, and you will see a result similar to the following: :::image type="content" source="../media/test-netconnection-fail-7f001091.png" alt-text="PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed":::
+3.  The test connection should fail, and you will see a result similar to the following: 
+
+:::image type="content" source="../media/test-netconnection-fail-7f001091.png" alt-text="PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed":::
     
 
 ## Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 
 1.  On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
-2.  In CoreServicesVnet, under **Settings**, select **Peerings**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-peering-coreservicesvnet-53ca7694.png" alt-text="screen shot of core services VNet Peering settings":::
+2.  In CoreServicesVnet, under **Settings**, select **Peerings**.
+
+    :::image type="content" source="../media/create-peering-coreservicesvnet-53ca7694.png" alt-text="screen shot of core services VNet Peering settings":::
     
 3.  On CoreServicesVnet \| Peerings, select **+ Add**.
 4.  Use the information in the following table to create the peering.
