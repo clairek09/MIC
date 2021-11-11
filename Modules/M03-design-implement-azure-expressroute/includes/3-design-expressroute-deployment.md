@@ -7,9 +7,9 @@ Azure ExpressRoute has three different circuit SKUs: [Local](https://docs.micros
  -  **Local SKU** \- With Local SKU, you are automatically charged with an Unlimited data plan.
  -  **Standard and Premium SKU** \- You can select between a Metered or an Unlimited data plan. All ingress data are free of charge except when using the Global Reach add-on.
 
-\[!Important\]
-
-Based on requirements of workloads and data plan, selection of SKU types can help optimize cost and budget.
+> [!Important]
+>
+> Based on requirements of workloads and data plan, selection of SKU types can help optimize cost and budget.
 
 ### Explore pricing based on ExpressRoute SKU
 
@@ -27,9 +27,9 @@ Use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculato
 
 Peering location is of importance when working with ExpressRoute.
 
-\[!Note\]
-
-Azure regions and ExpressRoute locations are two distinct and different concepts, understanding the difference between the two is critical to exploring Azure hybrid networking connectivity.
+> [!Note]
+>
+> Azure regions and ExpressRoute locations are two distinct and different concepts, understanding the difference between the two is critical to exploring Azure hybrid networking connectivity.
 
 **Azure regions**
 
