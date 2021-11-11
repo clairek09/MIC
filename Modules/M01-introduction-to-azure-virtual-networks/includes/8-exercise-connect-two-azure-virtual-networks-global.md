@@ -21,7 +21,8 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1.  On the Azure home page, select Virtual Machines.
 2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**. 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Screenshot of adding a VM preset in the Azure portal":::
+
+    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Screenshot of adding a VM preset in the Azure portal":::
     
 3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 4.  Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
@@ -547,14 +548,17 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
       :::column-end:::
     :::row-end:::
     
-3.  The test connection should succeed, and you will see a result similar to the following: :::image type="content" source="../media/test-connection-succeeded-7c2cc7f6.png" alt-text="Screenshot of test connection succeeded":::
+3.  The test connection should succeed, and you will see a result similar to the following: 
+
+    :::image type="content" source="../media/test-connection-succeeded-7c2cc7f6.png" alt-text="Screenshot of test connection succeeded":::
     
 
 Congratulations! You have successful configured connectivity between VNets by adding peerings.
 
 ## Task 6: Clean up resources
 
-\[!NOTE\] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE]
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
@@ -564,4 +568,5 @@ Congratulations! You have successful configured connectivity between VNets by ad
     
     ```
 
-\[!NOTE\] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE] 
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
