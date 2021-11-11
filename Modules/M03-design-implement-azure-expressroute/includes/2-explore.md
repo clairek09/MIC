@@ -26,7 +26,7 @@ Azure ExpressRoute is used to create private connections between Azure datacente
 
 You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct. Connectivity providers may offer one or more connectivity models.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/expressroute-connectivity-models-diagram-d3bd1d21.png" alt-text="ExpressRoute connectivity models":::
+:::image type="content" source="../media/expressroute-connectivity-models-diagram-d3bd1d21.png" alt-text="ExpressRoute connectivity models":::
 
 
 **Co-located at a cloud exchange**
@@ -102,7 +102,7 @@ In this scenario, BFD can help. BFD provides low-overhead link failure detection
 
 The following diagram shows the benefit of enabling BFD over an ExpressRoute circuit:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/bfd-need-6f1a22c9.png" alt-text="Bidirectional flow between partner or customer edge and Microsoft edge.":::
+:::image type="content" source="../media/bfd-need-6f1a22c9.png" alt-text="Bidirectional flow between partner or customer edge and Microsoft edge.":::
 
 
 **Enabling BFD**
@@ -129,7 +129,7 @@ This section shows you how to use Azure Virtual WAN to establish an IPsec/IKE VP
 
 The following diagram shows an example of VPN connectivity over ExpressRoute private peering:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vwan-vpn-over-er-a7493b36.png" alt-text="VWAN to VPN over ExpressRoute":::
+:::image type="content" source="../media/vwan-vpn-over-er-a7493b36.png" alt-text="VWAN to VPN over ExpressRoute":::
 
 
 The diagram shows a network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering. The connectivity establishment is straightforward:
@@ -194,14 +194,14 @@ You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](https
 
 To automatically deploy your virtual network gateways across availability zones, you can use zone-redundant virtual network gateways. With zone-redundant gateways, you can benefit from zone-resiliency to access your mission-critical, scalable services on Azure.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/zone-redundant-07ede6af.png" alt-text="Zone redundant gateways layout":::
+:::image type="content" source="../media/zone-redundant-07ede6af.png" alt-text="Zone redundant gateways layout":::
 
 
 **Zonal gateways**
 
 To deploy gateways in a specific zone, you can use zonal gateways. When you deploy a zonal gateway, all instances of the gateway are deployed in the same Availability Zone.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/zonal-d0bfecdb.png" alt-text="Zonal gateways layout":::
+:::image type="content" source="../media/zonal-d0bfecdb.png" alt-text="Zonal gateways layout":::
 
 
 **Gateway SKUs**
@@ -228,13 +228,13 @@ Zone-redundant gateways and zonal gateways both rely on the Azure public IP reso
 
 You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path. There is no VPN-based failover solution for services accessible through Azure Microsoft peering. The ExpressRoute circuit is always the primary link. Data flows through the Site-to-Site VPN path only if the ExpressRoute circuit fails. To avoid asymmetrical routing, your local network configuration should also prefer the ExpressRoute circuit over the Site-to-Site VPN. You can prefer the ExpressRoute path by setting higher local preference for the routes received the ExpressRoute.
 
-\[!Note\]
+> [!Note]
+>
+> If you have ExpressRoute Microsoft Peering enabled, you can receive the public IP address of your Azure VPN gateway on the ExpressRoute connection. To set up your site-to-site VPN connection as a backup, you must configure your on-premises network so that the VPN connection is routed to the Internet.
 
-If you have ExpressRoute Microsoft Peering enabled, you can receive the public IP address of your Azure VPN gateway on the ExpressRoute connection. To set up your site-to-site VPN connection as a backup, you must configure your on-premises network so that the VPN connection is routed to the Internet.
-
-\[!Note\]
-
-While ExpressRoute circuit is preferred over Site-to-Site VPN when both routes are the same, Azure will use the longest prefix match to choose the route towards the packet's destination.
+> [!Note]
+>
+> While ExpressRoute circuit is preferred over Site-to-Site VPN when both routes are the same, Azure will use the longest prefix match to choose the route towards the packet's destination.
 
 ## Use cross-region connectivity to link multiple ExpressRoute locations
 
