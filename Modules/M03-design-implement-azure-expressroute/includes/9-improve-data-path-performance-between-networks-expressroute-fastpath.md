@@ -15,7 +15,8 @@ To configure FastPath, the virtual network gateway must be either:
  -  Ultra-Performance
  -  ErGw3AZ
 
-\[!IMPORTANT\] If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
+> [!IMPORTANT]
+> If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
 
 **Limitations**
 
@@ -47,31 +48,32 @@ This section shows you how to create a connection to link a virtual network to a
 
 **Connect a VNet to a circuit - same subscription**
 
-\[!NOTE\] BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
+> [!NOTE]
+> BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
 
 1.  To create a connection Ensure that your ExpressRoute circuit and Azure private peering have been configured successfully. Your ExpressRoute circuit should look like the following image:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/express-route-circuit-ba06fb75.png" alt-text="Azure portal - ExpressRoute circuit provisioned for private peering":::
+    :::image type="content" source="../media/express-route-circuit-ba06fb75.png" alt-text="Azure portal - ExpressRoute circuit provisioned for private peering":::
 
 
 2.  You can now start provisioning a connection to link your virtual network gateway to your ExpressRoute circuit. Select **Connection** &gt; **Add** to open the **Add connection** page.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-connection-3d903613.png" alt-text="Azure portal - Add a connection":::
+    :::image type="content" source="../media/add-connection-3d903613.png" alt-text="Azure portal - Add a connection":::
 
 
 3.  Enter a name for the connection and then select **Next: Settings >**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-basic-9e210444.png" alt-text="Azure portal - Create connection basics tab":::
+    :::image type="content" source="../media/create-connection-basic-9e210444.png" alt-text="Azure portal - Create connection basics tab":::
 
 
 4.  Select the gateway that belongs to the virtual network that you want to link to the circuit and select **Review + create**. Then select **Create** after validation completes.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-settings-5e5bf3ff.png" alt-text="Azure portal - Create connection settings tab - specify ERGW virtual network gateway":::
+    :::image type="content" source="../media/create-connection-settings-5e5bf3ff.png" alt-text="Azure portal - Create connection settings tab - specify ERGW virtual network gateway":::
 
 
 5.  After your connection has been successfully configured, your connection object will show the information for the connection.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connection-object-c2c46f5e.png" alt-text="Azure portal - verify connection i successful":::
+    :::image type="content" source="../media/connection-object-c2c46f5e.png" alt-text="Azure portal - verify connection i successful":::
 
 
 **Administration - About circuit owners and circuit users**
@@ -86,28 +88,29 @@ The circuit owner has the power to modify and revoke authorizations at any time.
 
 The circuit owner creates an authorization, which creates an authorization key to be used by a circuit user to connect their virtual network gateways to the ExpressRoute circuit. An authorization is valid for only one connection.
 
-\[!NOTE\] Each connection requires a separate authorization.
+> [!NOTE]
+> Each connection requires a separate authorization.
 
 1.  In the ExpressRoute page, select **Authorizations** and then type a **name** for the authorization and select **Save**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/authorization-ea88e96f.png" alt-text="Azure portal - configure authorization":::
+    :::image type="content" source="../media/authorization-ea88e96f.png" alt-text="Azure portal - configure authorization":::
 
 
 2.  Once the configuration is saved, copy the **Resource ID** and the **Authorization Key**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/authorization-key-a8f3cdc7.png" alt-text="Azure portal - configure authorization showing resource Id and Authorization key":::
+    :::image type="content" source="../media/authorization-key-a8f3cdc7.png" alt-text="Azure portal - configure authorization showing resource Id and Authorization key":::
 
 
 3.  To delete a connection authorization
 
 You can delete a connection by selecting the Delete icon for the authorization key for your connection.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/delete-authorization-key-eb398439.png" alt-text="Azure portal - delete authorization key only":::
+    :::image type="content" source="../media/delete-authorization-key-eb398439.png" alt-text="Azure portal - delete authorization key only":::
 
 
 If you want to delete the connection but retain the authorization key, you can delete the connection from the connection page of the circuit.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/delete-connection-owning-circuit-d3fe783f.png" alt-text="Azure portal - delete connection owning circuit":::
+    :::image type="content" source="../media/delete-connection-owning-circuit-d3fe783f.png" alt-text="Azure portal - delete connection owning circuit":::
 
 
 **Circuit user operations**
@@ -118,33 +121,34 @@ To redeem a connection authorization
 
 1.  Select the + Create a resource button. Search for Connection and select Create.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/create-new-resources-a1ecba8a.png" alt-text="Azure portal - create new connection":::
-](../media/create-new-resources-67585e26.png#lightbox)
+    :::image type="content" source="../media/create-new-resources-a1ecba8a.png" alt-text="Azure portal - create new connection" lightbox="../media/create-new-resources-67585e26.png":::
 
 2.  Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
-\[!Note\] The location must match the virtual network gateway location you are creating the connection for.
+    >[!Note]
+    > The location must match the virtual network gateway location you are creating the connection for.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connection-basics-f709aea2.png" alt-text="Azure portal - create connection basics tab":::
+    :::image type="content" source="../media/connection-basics-f709aea2.png" alt-text="Azure portal - create connection basics tab":::
 
 
 3.  In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
 
-\[!Note\] The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
+    > [!Note] 
+    > The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connection-settings-4ed83727.png" alt-text="Azure portal - create connection settings tab":::
+    :::image type="content" source="../media/connection-settings-4ed83727.png" alt-text="Azure portal - create connection settings tab":::
 
 
 4.  Review the information in the **Summary** page and select **OK**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connection-summary-56e92204.png" alt-text="Azure portal - create connection summary":::
+    :::image type="content" source="../media/connection-summary-56e92204.png" alt-text="Azure portal - create connection summary":::
 
 
 **Clean up resources**
 
 You can delete a connection and unlink your VNet to an ExpressRoute circuit by selecting the **Delete** icon on the page for your connection.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/delete-connection-cf82781a.png" alt-text="Azure portal - delete connection":::
+    :::image type="content" source="../media/delete-connection-cf82781a.png" alt-text="Azure portal - delete connection":::
 
 
 ## Quiz title: Check your knowledge
