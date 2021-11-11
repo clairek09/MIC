@@ -1,6 +1,6 @@
 An ExpressRoute circuit two peering options associated with it: Azure private, and Microsoft. Each peering is configured identically on a pair of routers (in active-active or load sharing configuration) for high availability. Azure services are categorized as Azure public and Azure private to represent the IP addressing schemes.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/expressroute-peerings-31290ff8.png" alt-text="ExpressRoute peerings use cases":::
+:::image type="content" source="../media/expressroute-peerings-31290ff8.png" alt-text="ExpressRoute peerings use cases":::
 
 
 **Create Peering configuration**
@@ -27,9 +27,9 @@ You may enable one or more of the routing domains as part of your ExpressRoute c
 
 Each peering requires separate BGP sessions (one pair for each peering type). The BGP session pairs provide a highly available link. If you are connecting through layer 2 connectivity providers, you are responsible for configuring and managing routing.
 
-\[!Important\]
-
-IPv6 support for private peering is currently in Public Preview. If you would like to connect your virtual network to an ExpressRoute circuit with IPv6-based private peering configured, please make sure that your virtual network is dual stack and follows the guidelines for [IPv6 for Azure VNet](https://docs.microsoft.com/en-us/azure/virtual-network/ipv6-overview).
+> [!Important]
+>
+> IPv6 support for private peering is currently in Public Preview. If you would like to connect your virtual network to an ExpressRoute circuit with IPv6-based private peering configured, please make sure that your virtual network is dual stack and follows the guidelines for [IPv6 for Azure VNet](https://docs.microsoft.com/en-us/azure/virtual-network/ipv6-overview).
 
 ## Configure private peering
 
@@ -72,36 +72,36 @@ A route filter can have only one rule, and the rule must be of type 'Allow'. Thi
 
  -  Select **Create a resource** then search for Route filter as shown in the following image:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-route-filter-4c39f8b7.png" alt-text="Azure portal - create route filter":::
+    :::image type="content" source="../media/create-route-filter-4c39f8b7.png" alt-text="Azure portal - create route filter":::
 
 
  -  Place the route filter in a resource group. Ensure the location is the same as the ExpressRoute circuit. Select **Review + create** and then **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-route-filter-basic-ee3bf46b.png" alt-text="Azure portal - create route filter basics tab":::
+    :::image type="content" source="../media/create-route-filter-basic-ee3bf46b.png" alt-text="Azure portal - create route filter basics tab":::
 
 
 **Create a filter rule**
 
 To add and update rules, select the manage rule tab for your route filter.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/manage-route-filter-25ae788c.png" alt-text="Azure portal - manage route filter properties":::
+:::image type="content" source="../media/manage-route-filter-25ae788c.png" alt-text="Azure portal - manage route filter properties":::
 
 
  -  Select the services you want to connect to from the drop-down list and save the rule when done.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-route-filter-rule-e0f3ba9b.png" alt-text="Azure portal - Add a route filter rule":::
+    :::image type="content" source="../media/add-route-filter-rule-e0f3ba9b.png" alt-text="Azure portal - Add a route filter rule":::
 
 
 **Attach the route filter to an ExpressRoute circuit**
 
  -  Attach the route filter to a circuit by selecting the **+ Add Circuit** button and selecting the ExpressRoute circuit from the drop-down list.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-circuit-route-filter-d47edd82.png" alt-text="Azure portal - Add a circuit to a route filter":::
+    :::image type="content" source="../media/add-circuit-route-filter-d47edd82.png" alt-text="Azure portal - Add a circuit to a route filter":::
 
 
  -  If the connectivity provider configures peering for your ExpressRoute circuit, refresh the circuit from the ExpressRoute circuit page before you select the **+ Add Circuit** button.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/refresh-express-route-circuit-e67a2d97.png" alt-text="Azure portal - Microsoft peering with provisioned status":::
+    :::image type="content" source="../media/refresh-express-route-circuit-e67a2d97.png" alt-text="Azure portal - Microsoft peering with provisioned status":::
 
 
 **Common tasks**
@@ -110,33 +110,33 @@ To add and update rules, select the manage rule tab for your route filter.
 
  -  You can view properties of a route filter when you open the resource in the portal.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/view-route-filter-89cb9a5c.png" alt-text="Azure portal - View Route filter properties":::
+    :::image type="content" source="../media/view-route-filter-89cb9a5c.png" alt-text="Azure portal - View Route filter properties":::
 
 
 **To update the properties of a route filter**
 
 You can update the list of BGP community values attached to a circuit by selecting the **Manage rule** button.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/update-route-filter-eb52b0cd.png" alt-text="Azure portal - Route filter manage rule":::
+:::image type="content" source="../media/update-route-filter-eb52b0cd.png" alt-text="Azure portal - Route filter manage rule":::
 
 
  -  Select the service communities you want and then select **Save**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-route-filter-rules-ab446c9f.png" alt-text="Azure portal - Add another rule":::
+    :::image type="content" source="../media/add-route-filter-rules-ab446c9f.png" alt-text="Azure portal - Add another rule":::
 
 
 **To detach a route filter from an ExpressRoute circuit**
 
  -  To detach a circuit from the route filter, right-click on the circuit and select **Disassociate**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/detach-route-filter-c150ae13.png" alt-text="Azure portal - dissociate rule from route filter":::
+    :::image type="content" source="../media/detach-route-filter-c150ae13.png" alt-text="Azure portal - dissociate rule from route filter":::
 
 
 **Clean up resources**
 
  -  You can delete a route filter by selecting the **Delete** button. Ensure the Route filter is not associate to any circuits before doing so.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/delete-route-filter-4e6da3a8.png" alt-text="Azure portal - delete a rule":::
+    :::image type="content" source="../media/delete-route-filter-4e6da3a8.png" alt-text="Azure portal - delete a rule":::
 
 
 ## **Reset peering**
@@ -151,17 +151,17 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 
  -  Choose the circuit that you want to change.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/expressroute-circuit-lists-7c5d1fa6.png" alt-text="Azure portal - select ExpressRoute circuit":::
+    :::image type="content" source="../media/expressroute-circuit-lists-7c5d1fa6.png" alt-text="Azure portal - select ExpressRoute circuit":::
 
 
  -  Choose the peering configuration that you want to reset.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/expressroute-circuit-7347c31c.png" alt-text="Azure portal - select peering to reset":::
+    :::image type="content" source="../media/expressroute-circuit-7347c31c.png" alt-text="Azure portal - select peering to reset":::
 
 
  -  Clear the **Enable Peering** check box, and then select **Save** to disable the peering configuration.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/disable-peering-bb360e83.png" alt-text="Azure portal - disable peering":::
+    :::image type="content" source="../media/disable-peering-bb360e83.png" alt-text="Azure portal - disable peering":::
 
 
  -  Select the **Enable Peering** check box, and then select **Save** to re-enable the peering configuration.
