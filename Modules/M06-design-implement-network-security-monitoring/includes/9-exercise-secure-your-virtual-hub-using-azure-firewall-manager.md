@@ -73,7 +73,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
     > 
     > This can take up to 30 minutes to deploy.
 
-    :::image type="content" source="../media/create-new-secured-virtual-hub-2-b3f0cf62.png":::
+    :::image type="content" source="../media/create-new-secured-virtual-hub-2-b3f0cf62.png" alt-text="Create new secured virtual hub - Review and Create":::
 
 
 15. When the deployment completes, from the Azure portal home page, click **All services**.
