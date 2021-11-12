@@ -121,7 +121,7 @@ To redeem a connection authorization
 
 1.  Select the + Create a resource button. Search for Connection and select Create.
 
-    :::image type="content" source="../media/create-new-resources-a1ecba8a.png" alt-text="Azure portal - create new connection" lightbox="../media/create-new-resources-67585e26.png":::
+    :::image type="content" source="../media/create-new-resources.png" alt-text="Azure portal - create new connection" lightbox="../media/create-new-resources-67585e26.png":::
 
 2.  Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
