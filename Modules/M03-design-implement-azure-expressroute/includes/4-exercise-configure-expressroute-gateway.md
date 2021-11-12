@@ -90,8 +90,8 @@ In this exercise, you will:
 7.  And then select **Add**.
 8.  On the Create virtual network page, select **Review + Create**.
     
-    \[!div class="mx-imgBorder"\] [:::image type="content" source="https://microsoftdigitallearning.visualstudio.com/DefaultCollection/993acdae-446e-4d5e-aebb-6245b9c1d12d/_apis/git/repositories/63429027-476c-4e2b-8735-057288b03d1f/items?path=%2FModules%2FM03-design-implement-azure-expressroute%2Fmedia%2Fadd-gateway-subnet.png&amp;versionDescriptor%5BversionOptions%5D=0&amp;versionDescriptor%5BversionType%5D=0&amp;versionDescriptor%5Bversion%5D=master&amp;resolveLfs=true&amp;%24format=octetStream&amp;api-version=5.0" alt-text="Azure portal - add gateway subnet":::
-    ](https://microsoftdigitallearning.visualstudio.com/DefaultCollection/Courseware/_git/LP_AZ_designing-implementing-microsoft-azure-networking?path=%2FModules%2FM03-design-implement-azure-expressroute%2Fmedia%2Fadd-gateway-subnet.png&amp;version=GBmaster&amp;anchor=lightbox)
+    \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/add-gateway-subnet.png" alt-text="Azure portal - add gateway subnet":::]
+    
 9.  Confirm that the VNet passes the validation and then select **Create**.
 
 > [!NOTE]
