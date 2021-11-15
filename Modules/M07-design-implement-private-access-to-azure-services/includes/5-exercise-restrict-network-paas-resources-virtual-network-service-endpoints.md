@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
 
 Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network.
 
@@ -66,7 +67,7 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 
 You should now have two subnets configured:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/configured-subnets-6b1573a3.png" alt-text="subnets created in the virtual network":::
+:::image type="content" source="../media/configured-subnets-6b1573a3.png" alt-text="subnets created in the virtual network":::
 
 
 ## Task 3: Restrict network access for a subnet
@@ -284,16 +285,17 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 7.  Select **File shares** then select my-file-share.
 8.  You receive the error shown in the following screenshot:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/no-access-1c32a070.png" alt-text="error showing no access":::
+
+:::image type="content" source="../media/no-access-1c32a070.png" alt-text="error showing no access":::
 
 
 Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
 
-\[!WARNING\]
-
-Prior to continuing you should remove all resources used for this lab. To do this in the Azure portal click Resource groups. Select any resources groups you have created. On the resource group blade click Delete Resource group, enter the Resource Group Name and click Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
-
-Results: You have now completed this lab.
+> [!WARNING]
+> 
+> Prior to continuing you should remove all resources used for this lab. To do this in the Azure portal click Resource groups. Select any resources groups you have created. On the resource group blade click Delete Resource group, enter the Resource Group Name and click Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
+> 
+> Results: You have now completed this lab.
 
 ## Task 11: Clean up resources
 
