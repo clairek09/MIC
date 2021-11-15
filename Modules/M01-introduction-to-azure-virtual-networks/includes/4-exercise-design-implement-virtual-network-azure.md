@@ -7,7 +7,7 @@ Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
 
-The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
+The **CoreServicesVnet** virtual network is deployed in the **East US** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
 The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
 
@@ -40,7 +40,7 @@ You will create the following resources:
     CoreServicesVnet
   :::column-end:::
   :::column:::
-    West US
+    East US
   :::column-end:::
   :::column:::
     10.20.0.0/16
@@ -291,7 +291,7 @@ In this exercise, you will:
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        (US) East US
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -376,7 +376,7 @@ In this exercise, you will:
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        (US) East US
       :::column-end:::
     :::row-end:::
     :::row:::
