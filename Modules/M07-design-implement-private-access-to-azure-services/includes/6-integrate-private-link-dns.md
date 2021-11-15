@@ -4,7 +4,7 @@ Application teams do have permissions to create Azure resource in their own subs
 
 The following diagram shows a typical high-level architecture for enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/private-link-example-central-dns-73e26cad.png" alt-text="Diagram of high-level workflow of enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS.":::
+:::image type="content" source="../media/private-link-example-central-dns-73e26cad.png" alt-text="Diagram of high-level workflow of enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS.":::
 
 
 From the previous diagram, it is important to highlight that:
@@ -32,9 +32,9 @@ You can use the following options to configure your DNS settings for Private End
  -  **Use a private DNS zone**. You can use private DNS zones to override the DNS resolution for a Private Endpoint. A private DNS zone can be linked to your virtual network to resolve specific domains.
  -  **Use your DNS forwarder** (optional). You can use your DNS forwarder to override the DNS resolution for a Private Link resource. Create a DNS forwarding rule to use a private DNS zone on your DNS server hosted in a virtual network.
 
-\[!Important\]
-
-Is not recommended to override a zone that's actively in use to resolve public endpoints. Connections to resources won't be able to resolve correctly without DNS forwarding to the public DNS. To avoid issues, create a different domain name or follow the suggested name for each service below.
+> [!Important]
+> 
+> Is not recommended to override a zone that's actively in use to resolve public endpoints. Connections to resources won't be able to resolve correctly without DNS forwarding to the public DNS. To avoid issues, create a different domain name or follow the suggested name for each service below.
 
 ## Significance of IP address 168.63.129.16
 
@@ -87,7 +87,7 @@ To configure properly, you need the following resources:
 
 The following screenshot illustrates the DNS resolution sequence from virtual network workloads using the private DNS zone:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/single-vnet-azure-dns-662ee269.png" alt-text="Diagram illustrating the DNS resolution sequence from virtual network workloads using the private DNS zone.":::
+:::image type="content" source="../media/single-vnet-azure-dns-662ee269.png" alt-text="Diagram illustrating the DNS resolution sequence from virtual network workloads using the private DNS zone.":::
 
 
 You can extend this model to peered virtual networks associated to the same Private Endpoint. Add new virtual network links to the private DNS zone for all peered virtual networks.
@@ -98,7 +98,7 @@ If you're using a Private Endpoint in a hub-and-spoke model from a different sub
 
 In this scenario, there's a hub and spoke networking topology. The spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/hub-spoke-azure-dns-0b3715ed.png" alt-text="Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.":::
+:::image type="content" source="../media/hub-spoke-azure-dns-0b3715ed.png" alt-text="Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.":::
 
 
 This configuration can be extended for an on-premises network that already has a DNS solution in place. The on-premises DNS solution is configured to forward DNS traffic to Azure DNS via a conditional forwarder. The conditional forwarder references the DNS forwarder deployed in Azure.
@@ -117,7 +117,7 @@ The following diagram illustrates the DNS resolution from an on-premises network
 
 The conditional forwarding must be made to the recommended public DNS zone forwarder. For example: database.windows.net instead of privatelink.database.windows.net.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/on-premises-forwarding-to-azure-543858c8.png" alt-text="Diagram illustrating DNS resolution from an on-premises network. DNS resolution is conditionally forwarded to Azure. The resolution is made by a private DNS zone linked to a virtual network":::
+:::image type="content" source="../media/on-premises-forwarding-to-azure-543858c8.png" alt-text="Diagram illustrating DNS resolution from an on-premises network. DNS resolution is conditionally forwarded to Azure. The resolution is made by a private DNS zone linked to a virtual network":::
 
 
 ### On-premises workloads using a DNS forwarder
@@ -138,7 +138,7 @@ To configure properly, you need the following resources:
 
 The following diagram illustrates the DNS resolution sequence from an on-premises network. The configuration uses a DNS forwarder deployed in Azure. The resolution is made by a private DNS zone linked to a virtual network:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/on-premises-using-azure-dns-ccdbeaf1.png" alt-text="Diagram illustrating the DNS resolution sequence from an on-premises network using a DNS forwarder deployed in Azure.":::
+:::image type="content" source="../media/on-premises-using-azure-dns-ccdbeaf1.png" alt-text="Diagram illustrating the DNS resolution sequence from an on-premises network using a DNS forwarder deployed in Azure.":::
 
 
 ### Virtual network and on-premises workloads using a DNS forwarder
@@ -164,7 +164,7 @@ To configure properly, you need the following resources:
 
 The following diagram shows the DNS resolution for both networks, on-premises and virtual networks. The resolution is using a DNS forwarder. The resolution is made by a private DNS zone linked to a virtual network:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/hybrid-scenario-c0545c37.png" alt-text="Diagram illustrating the DNS resolution for both on-premises and virtual networks.":::
+:::image type="content" source="../media/hybrid-scenario-c0545c37.png" alt-text="Diagram illustrating the DNS resolution for both on-premises and virtual networks.":::
 
 
 ## quiz title: Check your knowledge
