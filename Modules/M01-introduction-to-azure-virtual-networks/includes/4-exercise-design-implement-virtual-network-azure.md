@@ -254,10 +254,7 @@ In this exercise, you will:
 ## Task 1: Create the Contoso resource group
 
 1.  Go to [Azure portal](https://portal.azure.com/).
-2.  On the home page, under **Azure services**, select **Resource groups**.
-    
-    :::image type="content" source="../media/azure-portal-home-page-annotated-4c34708f.png" alt-text="Azure portal home page with Resource groups highlighted.":::
-    
+2.  On the home page, under **Azure services**, select **Resource groups**.    
 3.  In Resource groups, select **+ Create**.
 4.  Use the information in the following table to create the resource group.
     
