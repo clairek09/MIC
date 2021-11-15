@@ -1,6 +1,6 @@
 Use virtual network Service Endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service Endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/service-endpoint-e15a99ae.png" alt-text="image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to Azure storage outside the v-net.":::
+:::image type="content" source="../media/service-endpoint-e15a99ae.png" alt-text="image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to Azure storage outside the v-net.":::
 
 
 By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services, such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
@@ -77,8 +77,7 @@ As the network engineer, you're planning to move sensitive engineering diagram f
 
 You'll create a Service Endpoint and use network rules to restrict access to Azure Storage. You'll create a virtual network Service Endpoint for Azure Storage on the Databases subnet. You'll then verify that your DataServer VM can access Azure Storage. Lastly, you'll check that the AppServer VM, which is on a different subnet, can't access storage.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/exercise-task-723aea52.png":::
-](../media/exercise-task-01619f49.png#lightbox)
+:::image type="content" source="../media/exercise-task-723aea52.png" lightbox="../media/exercise-task-723aea52.png":::
 
 **Add rules to the network security group**
 
