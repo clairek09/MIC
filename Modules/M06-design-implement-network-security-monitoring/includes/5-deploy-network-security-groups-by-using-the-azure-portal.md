@@ -80,9 +80,9 @@ To view the detailed steps for all these tasks, see [Tutorial: Filter network tr
 ## Multiple choice
 
 What should be the principle when designing security configurations?
-(x)deny by default, permit by exception.{{Correct. Denying all will stop all possible access, and then you can allow as needed.}}
-( )deny specific, permit all.{{In Correct. Denying only known and allowing all access can result in unwanted/yet-to-be-discovered access to your resources.}}
-( )permit all, monitor and deny as needed.{{Incorrect. Allowing all access can result in unwanted/yet-to-be-discovered access to your resources, and you will be at risk during discovery phase.}}
+(x)Deny by default, permit by exception.{{Correct. Denying all will stop all possible access, and then you can allow as needed.}}
+( )Deny specific, permit all.{{In Correct. Denying only known and allowing all access can result in unwanted/yet-to-be-discovered access to your resources.}}
+( )Permit all, monitor and deny as needed.{{Incorrect. Allowing all access can result in unwanted/yet-to-be-discovered access to your resources, and you will be at risk during discovery phase.}}
 
 ## Multiple choice
 
