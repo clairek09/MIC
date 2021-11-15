@@ -318,16 +318,14 @@ In this exercise, you will:
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
-1.  On the Azure portal home page, select **Create a resource**.
-2.  In **Search services and marketplace**, enter virtual network. 
+1. On the Azure Portal home page, naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services. 
+ :::image type="content" source="../media/global-search-bar.png" alt-text="Azure portal home page Global Search bar results for virtual network.":::
 
-    :::image type="content" source="../media/create-resource-search-virtual-network-annotated-7b909a50.png" alt-text="Azure portal Create a resource page with Search services and marketplace box highlighted.":::
-    
-3.  In Marketplace, in Virtual Network, select **Create > Virtual network**. 
+2.   Select **Create** on the Virtual networks page.
 
-    :::image type="content" source="../media/virtual-network-service-annotated-438cc2d0.png" alt-text="Virtual Network tile with Create Virtual network highlighted.":::
-    
-4.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
+    :::image type="content" source="../media/create-virtual-network.png.png" alt-text="Create a virtual network wizard.":::
+      
+3.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
 
     :::image type="content" source="../media/default-vnet-ip-address-range-annotated-22032ab7.png" alt-text="ip address configuration for azure virtual network deployment":::
     
@@ -388,8 +386,8 @@ In this exercise, you will:
       :::column-end:::
     :::row-end:::
     
-5.  Use the information in the following table to create the CoreServicesVnet subnets.
-6.  To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+4.  Use the information in the following table to create the CoreServicesVnet subnets.
+5.  To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
     
     :::row:::
       :::column:::
@@ -491,9 +489,9 @@ In this exercise, you will:
       :::column-end:::
     :::row-end:::
     
-7.  To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
-8.  Verify your configuration passed validation, and then select **Create**.
-9.  Repeat steps 1 -8 for each VNet based on the tables below
+6.  To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+7.  Verify your configuration passed validation, and then select **Create**.
+8.  Repeat steps 1 -8 for each VNet based on the tables below
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
 
