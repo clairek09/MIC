@@ -9,9 +9,9 @@ Consider the fictional organization Contoso Ltd, which is in the process of migr
 
 The **CoreServicesVnet** virtual network is deployed in the **East US** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
-The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
+The **ManufacturingVnet** virtual network is deployed in the **West Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
 
-The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
+The **ResearchVnet** virtual network is deployed in the **Southeast Asia** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
 :::image type="content" source="../media/design-implement-vnet-peering-0b789104.png" alt-text="Global virtual network architecture":::
 
@@ -125,7 +125,7 @@ You will create the following resources:
     ManufacturingVnet
   :::column-end:::
   :::column:::
-    North Europe
+    West Europe
   :::column-end:::
   :::column:::
     10.30.0.0/16
@@ -210,7 +210,7 @@ You will create the following resources:
     ResearchVnet
   :::column-end:::
   :::column:::
-    West India
+    Southeast Asia
   :::column-end:::
   :::column:::
     10.40.0.0/16
@@ -541,7 +541,7 @@ In this exercise, you will:
     Region
   :::column-end:::
   :::column:::
-    (Europe) North Europe
+    (Europe) West Europe
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -701,7 +701,7 @@ In this exercise, you will:
     Region
   :::column-end:::
   :::column:::
-    West India
+    Southeast Asia
   :::column-end:::
 :::row-end:::
 :::row:::
