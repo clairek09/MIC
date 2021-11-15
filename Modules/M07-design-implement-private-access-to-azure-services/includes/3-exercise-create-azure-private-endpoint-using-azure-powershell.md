@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
 
 Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including portal, CLI, PowerShell etc.
 
@@ -340,27 +341,27 @@ In this section, you'll use the virtual machine you created in the previous step
 8.  Open Windows PowerShell on the server after you connect.
 9.  Enter nslookup `<your- webapp-name>.Azurewebsites.net`. Replace `<your-webapp-name>` with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
-```
-Server: UnKnown
+    ```
+    Server: UnKnown
 
-Address: 168.63.129.16
+    Address: 168.63.129.16
 
-Non-authoritative answer:
+    Non-authoritative answer:
 
-Name: mywebapp8675.privatelink.Azurewebsites.net
+    Name: mywebapp8675.privatelink.Azurewebsites.net
 
-Address: 10.0.0.5
+    Address: 10.0.0.5
 
-Aliases: mywebapp8675.Azurewebsites.net  
+    Aliases: mywebapp8675.Azurewebsites.net  
 
-```
+    ```
 
-A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
+    A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
 10. In the bastion connection to **myVM**, open Internet Explorer.
 11. Enter the url of your web app, **https://<your-webapp-name>.Azurewebsites.net**.
 
- -  You'll receive the default web app page if your application hasn't been deployed: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/web-app-default-page-33cb121e.png" alt-text="screen shot of page in Azure indicating an app service is up and running":::
+    -  You'll receive the default web app page if your application hasn't been deployed: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/web-app-default-page-33cb121e.png" alt-text="screen shot of page in Azure indicating an app service is up and running":::
     
 
 12. Close the connection to **myVM**.
