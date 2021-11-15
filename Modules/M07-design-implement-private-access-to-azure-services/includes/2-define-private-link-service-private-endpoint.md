@@ -14,7 +14,7 @@ The concern here is that your Azure SQL database is exposed to the internet via 
  -  An on-premises network that connects to Azure using ExpressRoute and Microsoft peering
  -  A customer's Azure virtual network that connects to an Azure service offered by your company
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/private-link-71e02d03.png" alt-text="image showing private endpoint and private link zone, customer v-net zone, and intersection with customer premises":::
+:::image type="content" source="../media/private-link-71e02d03.png" alt-text="image showing private endpoint and private link zone, customer v-net zone, and intersection with customer premises":::
 
 
 Private Link is designed to eliminate these security risks by removing the public part of the connection.
@@ -39,8 +39,7 @@ Yes, by using Azure Private Link Service. This service lets you offer Private Li
 
 Azure Private Link service is the reference to your own service that is powered by Azure Private Link. Your service that is running behind Azure standard load balancer can be enabled for Private Link access so that consumers to your service can access it privately from their own VNets. Your customers can create a private endpoint inside their VNet and map it to this service. A Private Link service receives connections from multiple private endpoints. A private endpoint connects to one Private Link service.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/consumer-provider-endpoint-2c5222b7.png" alt-text="Private link service workflow":::
-](../media/consumer-provider-endpoint-43df688f.png#lightbox)
+:::image type="content" source="../media/consumer-provider-endpoint-2c5222b7.png" alt-text="Private link service workflow" lightbox="../media/consumer-provider-endpoint-2c5222b7.png":::
 
 ## Plan Private Endpoints
 
