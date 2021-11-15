@@ -13,7 +13,7 @@ The **ManufacturingVnet** virtual network is deployed in the **West Europe** reg
 
 The **ResearchVnet** virtual network is deployed in the **Southeast Asia** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-:::image type="content" source="../media/design-implement-vnet-peering-0b789104.png" alt-text="Global virtual network architecture":::
+:::image type="content" source="../media/design-implement-vnet-peering.png" alt-text="Global virtual network architecture":::
 
 
 You will create the following resources:
