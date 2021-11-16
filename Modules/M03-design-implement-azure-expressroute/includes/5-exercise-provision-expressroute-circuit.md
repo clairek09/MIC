@@ -29,8 +29,6 @@ In this exercise, you will:
 
 3.  On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, East US 2, TestERCircuit . Then select **Next: Configuration >**.
 
-    :::image type="content" source="../media/expressroute-create-basic-27693770.png" alt-text="Azure portal - Create ExpressRoute basic tab":::
-
 
 4.  When you are filling in the values on this page, make sure that you specify the correct SKU tier (Local, Standard, or Premium) and data metering billing model (Unlimited or Metered).
 
