@@ -214,22 +214,6 @@ In this exercise, you will:
         Not configurable
       :::column-end:::
     :::row-end:::
-    :::row:::
-      :::column:::
-        Enable active-active mode
-      :::column-end:::
-      :::column:::
-        Disabled
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Configure BGP
-      :::column-end:::
-      :::column:::
-        Disabled
-      :::column-end:::
-    :::row-end:::
     
 3.  Select **Review + Create**.
 4.  Confirm that the Gateway configuration passes validation and then select **Create**.
