@@ -81,7 +81,7 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
     
     ```
 
