@@ -90,8 +90,7 @@ In this exercise, you will:
         
          -  Provider status: Provisioned
          -  Circuit status: Enabled
-     -  You should periodically check the provisioning status and the state of the circuit key.
-6.  You can view the properties of the circuit that you are interested in by selecting it. Check the **Provider status** and ensure that it has moved to **Provisioned** before you continue.
+     -  You should periodically check the provisioning status and the state of the circuit status.
 
 :::image type="content" source="../media/provisioned-68d55b81.png" alt-text="Azure portal - ExpressRoute circuit properties showing status is now provisioned":::
 
@@ -124,8 +123,8 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
-    
+    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
+    Remove-AzResourceGroup -Name 'ExpressRouteResourceGroup' -Force -AsJob
     ```
 
 > [!NOTE]
