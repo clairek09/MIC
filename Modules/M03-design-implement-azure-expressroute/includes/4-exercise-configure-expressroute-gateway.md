@@ -54,7 +54,7 @@ In this exercise, you will:
         Location
       :::column-end:::
       :::column:::
-        West US
+        East US
       :::column-end:::
     :::row-end:::
     
@@ -147,7 +147,7 @@ In this exercise, you will:
         Region
       :::column-end:::
       :::column:::
-        West US
+        East US
       :::column-end:::
     :::row-end:::
     :::row:::
