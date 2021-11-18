@@ -99,7 +99,7 @@ The following table lists the requirements for PolicyBased and RouteBased VPN ga
 
 ### Create the VPN Gateway
 
-The VPN gateway settings that you chose are critical to creating a successful connection. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/vpn-gateway-config-79862df4.png":::
+The VPN gateway settings that you chose are critical to creating a successful connection. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/vpn-gateway-config-79862df4.png" alt-text="Create a virtual network gateway page in the Azure portal":::
 
 
  -  Gateway type. VPN or ExpressRoute.
