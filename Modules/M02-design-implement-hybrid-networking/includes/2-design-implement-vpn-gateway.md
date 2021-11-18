@@ -214,7 +214,7 @@ When a planned maintenance or unplanned event happens to one gateway instance, t
 
 The most reliable option is to combine the active-active gateways on both your network and Azure, as shown in the diagram below.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vpn-dual-redundancy-567620af.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vpn-dual-redundancy-567620af.png" alt-text="active-active VPN gateway configuration diagram":::
 
 
 Here you create and set up the Azure VPN gateway in an active-active configuration and create two local network gateways and two connections for your two on-premises VPN devices as described above. The result is a full mesh connectivity of 4 IPsec tunnels between your Azure virtual network and your on-premises network.
