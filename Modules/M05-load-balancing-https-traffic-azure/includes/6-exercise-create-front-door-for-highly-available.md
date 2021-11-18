@@ -71,7 +71,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 4.  Select **Next: Configuration**.
 5.  On the Configuration tab, in **Frontends/domains**, select **+** to add a frontend host.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-frontends-domains-6811137a.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-frontends-domains-6811137a.png" alt-text="Adding a frontend in the Azure portal":::
 
 
 6.  Enter a globally unique **host name**, like contoso-frontend, and then select **Add**.
