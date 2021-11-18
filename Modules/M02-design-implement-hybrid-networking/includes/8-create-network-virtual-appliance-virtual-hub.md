@@ -28,8 +28,8 @@ You still need to create Hub-to-VNet connections to connect your Virtual WAN hub
 
 In this step, you will create a Network Virtual Appliance in the hub. The procedure for each NVA will be different for each NVA partner's product. For this example, we are creating a Barracuda CloudGen WAN Gateway.
 
-1.  Locate the Virtual WAN hub you created in the previous step and open it. \[!div class="mx-imgBorder"\] [ :::image type="content" source="../media/nva-hub-eec1b931.png" alt-text="screenshot of Azure Virtual WAN resource ion the Azure portal.":::
-     ](../media/nva-hub-41883bcc.png#lightbox)
+1.  Locate the Virtual WAN hub you created in the previous step and open it. \[!div class="mx-imgBorder"\]  :::image type="content" source="../media/nva-hub-eec1b931.png" alt-text="screenshot of Azure Virtual WAN resource ion the Azure portal.":::
+  
 2.  Find the Network Virtual Appliances tile and select the Create link.
 3.  On the Network Virtual Appliance blade, select Barracuda CloudGen WAN, then select the Create button. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/select-nva-0c5ab0b6.png" alt-text="screenshot of Network Virtual Appliance configuration blade in Azure portal":::
     
