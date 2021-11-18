@@ -257,7 +257,7 @@ On the **Create load balancer** page, you must supply the following required inf
 
 After you click **Review + Create**, the configuration settings for the new load balancer resource will be validated, and then you can click **Create** to start creating it. 
 
-:::image type="content" source="../media/create-load-balancer-6-0581f2dc.png" :::
+:::image type="content" source="../media/create-load-balancer-6-0581f2dc.png" alt-text="screenshot of the configuration settings for the new load balancer":::
 
 
 The resource will start to be deployed.
