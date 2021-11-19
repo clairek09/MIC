@@ -15,6 +15,7 @@ In this exercise, you will:
  -  Task 8: Configure a Destination NAT (DNAT) rule
  -  Task 9: Change the primary and secondary DNS address for the server's network interface
  -  Task 10: Test the firewall
+ -  Task 11: Clean up resources
 
 ## Task 1: Create a resource group
 
@@ -816,3 +817,15 @@ In this final task, you will test the firewall to verify that the rules are conf
 13. You should be blocked by the firewall.
 
     :::image type="content" source="../media/remote-desktop-connection-3-a750974c.png" alt-text="RDP session on Srv-work server - browser blocked on microsoft.com":::
+
+## Task 11: Clean up resources 
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'Test-FW-RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
