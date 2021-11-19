@@ -370,7 +370,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'Contoso-RG-TM1' -Force -AsJob
     
     ```
 
