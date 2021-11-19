@@ -293,14 +293,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
         **IntLB-VNet**
       :::column-end:::
     :::row-end:::
-    :::row:::
-      :::column:::
-        Associated to
-      :::column-end:::
-      :::column:::
-        **Virtual machines**
-      :::column-end:::
-    :::row-end:::
+
     
 4.  Under **Virtual machines**, click **Add.**
 5.  Select the checkboxes for all 3 VMs (**myVM1, myVM2,** and **myVM3**), then click **Add**<br>
