@@ -16,7 +16,7 @@ In this exercise, you will:
 ## Task 1: Create an application gateway
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
-2.  On any Azure portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/search-application-gateway.png" alt-text="Azure portal search for application gateway":::
+2.  On any Azure portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/search-application-gateway-36e26855.png" alt-text="Azure portal search for application gateway":::
     
 3.  On the Application gateways page, select **+ Create**.
 4.  On the Create application gateway **Basics** tab, enter, or select the following information:
@@ -130,7 +130,7 @@ Wait for the virtual machine creation to complete before continuing.
 In this example, you install IIS on the virtual machines to verify Azure created the application gateway successfully.
 
 1.  Open Azure PowerShell.
-2.  Select **Cloud Shell** from the top navigation bar of the Azure portal and then select **PowerShell** from the drop-down list. :::image type="content" source="../media/application-gateway-extension-c65527aa.png" alt-text="Azure portal and Azure PowerShell Install IIS on backends":::
+2.  Select **Cloud Shell** from the top navigation bar of the Azure portal and then select **PowerShell** from the drop-down list. :::image type="content" source="../media/application-gateway-extension.png" alt-text="Azure portal and Azure PowerShell Install IIS on backends":::
     
 3.  Run the following command to install IIS on the virtual machine. Change the Location parameter if necessary:
     
