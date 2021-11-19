@@ -130,8 +130,8 @@ Azure Monitor Network Insights is structured around these key components of moni
  -  Traffic
  -  Diagnostic Toolkit
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-overview-1-f02d3b1b.png" alt-text="Azure Monitor Network Insights - Networks page, all tabs highlighted":::
-](../media/network-insights-overview-1-72622270.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-overview.png" alt-text="Azure Monitor Network Insights - Networks page, all tabs highlighted":::
+](../media/network-insights-overview.png#lightbox)
 
 ### Network health and metrics
 
@@ -143,8 +143,8 @@ You can customize the resource health and alerts view by using filters such as *
 
 You can use the search box to search for network resources and their associated resources. For example, a public IP is associated with an application gateway, so a search for the public IP's DNS name would return both the public IP and the associated application gateway.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-search-b71aa092.png" alt-text="Azure Monitor Network Insights - Network health tab":::
-](../media/network-insights-search-c70e78f6.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-search.png" alt-text="Azure Monitor Network Insights - Network health tab":::
+](../media/network-insights-search.png#lightbox)
 
 **Network resource health and metrics**
 
