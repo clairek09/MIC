@@ -68,7 +68,7 @@ Microsoft offers various Express Route options depending on the desired bandwidt
 
 The next step is to figure out which of the available ExpressRoute is the best choice depending upon the requirements of the Enterprise keeping in mind the budget and SLA requirements.
 
-When you deploy ExpressRoute, you must choose between the Local, Standard and Premium SKUs. All these options are available in a metered version, where you pay per used GB and an unlimited option.
+When you deploy ExpressRoute, you must choose between the Local, Standard and Premium SKUs. The Standard and Premium SKU are available in a metered version, where you pay per used GB and an unlimited option.
 
 The other option is the ExpressRoute Direct, connecting your network to the closest Microsoft Edge node which then connects to the Microsoft Global Network, to connect to other customers offices or factories and any Azure Region. The usage of the Microsoft Global Network is charged on top of the of the ExpressRoute Direct.
 
