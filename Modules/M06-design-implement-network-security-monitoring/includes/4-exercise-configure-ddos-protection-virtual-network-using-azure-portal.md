@@ -238,7 +238,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 ### Assign the Public IP address
 
 1.  On the **Overview** page of the new virtual machine, under **Settings**, click **Networking**.
-2.  Next to **Network Interface**, click **myvirtualmachine**xxx (e.g., myvirtualmachine892).
+2.  Next to **Network Interface**, click **myvirtualmachine** (e.g., myvirtualmachine892).
 3.  Under **Settings**, click **IP configurations**.
 4.  Select **ipconfig1**.
 5.  In the **Public IP address** list, select **MyPublicIPAddress**.
