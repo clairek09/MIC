@@ -80,8 +80,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
     |    Resource group     |       **IntLB-RG**       |
     |         Name          |  **myIntLoadBalancer**   |
     |        Region         |     **(US) West US**     |
-    |         Type          |       **Internal**       |
     |          SKU          |       **Standard**       |
+    |         Type          |       **Internal**       |
+    | Frontend IP configuration tab | + Add a frontend IP configuration |
     |    Virtual network    |      **IntLB-VNet**      |
     |        Subnet         |   **myBackendSubnet**    |
     | IP address assignment |       **Dynamic**        |
@@ -156,7 +157,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-2.  In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory. [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
+2.  In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory. [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M08)
 3.  Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
     
     ```powershell
@@ -349,7 +350,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
     
     ```
 
