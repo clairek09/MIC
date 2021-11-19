@@ -220,7 +220,7 @@ Traffic analytics examines the raw NSG flow logs and captures reduced logs by ag
 
 The diagram below illustrates the data flow:
 
-[:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics":::](../media/traffic-analytics-data-flow-logs-ccc5dfe4.png#lightbox)
+[:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics":::](../media/traffic-analytics-data-flow-logs-980b3d12.png#lightbox)
 
 The key components of Traffic Analytics are:
 
