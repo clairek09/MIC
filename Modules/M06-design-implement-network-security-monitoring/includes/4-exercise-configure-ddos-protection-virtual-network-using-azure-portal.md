@@ -300,7 +300,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 ## Task 8: Clean up resources
 
-> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+\[!NOTE\]<br> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -311,4 +311,4 @@ In this step you will create a virtual machine, assign a public IP address to it
    ```
 
 
-> [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+\[!NOTE\]<br> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
