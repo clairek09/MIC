@@ -101,23 +101,23 @@ Start in the following order:
 4.  To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
 5.  Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-1-5f9ad41e.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted":::
-](../media/metrics-explorer-1-36040f7e.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-resource.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted":::
+](../media/metrics-explorer-resource.png#lightbox)
 
 6.  For some resources, you must pick a namespace. The namespace is just a way to organize metrics so that you can easily find them. For example, storage accounts have separate namespaces for storing Files, Tables, Blobs, and Queues metrics. Many resource types only have one namespace.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-2-49ae9454.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted":::
-](../media/metrics-explorer-2-6645af44.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-namespace.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted":::
+](../media/metrics-explorer-namespace.png#lightbox)
 
 7.  Select a metric from the list of available metrics. This list will vary depending on what resource and scope you select.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-3-9e66f15b.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted":::
-](../media/metrics-explorer-3-c80084d6.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-metric.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted":::
+](../media/metrics-explorer-metric.png#lightbox)
 
 8.  Optionally, you can change the metric aggregation. For example, you might want your chart to show minimum, maximum, or average values of the metric.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-4-7889092d.png" alt-text="The Metrics Explorer pane in Azure Monitor - Aggregation highlighted":::
-](../media/metrics-explorer-4-96fb34aa.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-aggregation.png" alt-text="The Metrics Explorer pane in Azure Monitor - Aggregation highlighted":::
+](../media/metrics-explorer-aggregation.png#lightbox)
 
 ## Monitor network resources with Azure Monitor Network Insights
 
