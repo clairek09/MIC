@@ -101,8 +101,8 @@ Start in the following order:
 4.  To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
 5.  Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-resource.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted":::
-](../media/metrics-explorer-resource.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-scope.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted":::
+](../media/metrics-explorer-scope.png#lightbox)
 
 6.  For some resources, you must pick a namespace. The namespace is just a way to organize metrics so that you can easily find them. For example, storage accounts have separate namespaces for storing Files, Tables, Blobs, and Queues metrics. Many resource types only have one namespace.
 
