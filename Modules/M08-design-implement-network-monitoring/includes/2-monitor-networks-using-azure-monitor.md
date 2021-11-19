@@ -111,8 +111,8 @@ Start in the following order:
 
 7.  Select a metric from the list of available metrics. This list will vary depending on what resource and scope you select.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-metric.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted":::
-](../media/metrics-explorer-metric.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-metrics.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted":::
+](../media/metrics-explorer-metrics.png#lightbox)
 
 8.  Optionally, you can change the metric aggregation. For example, you might want your chart to show minimum, maximum, or average values of the metric.
 
