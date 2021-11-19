@@ -287,7 +287,7 @@ In this section, you will create a test VM, and then test the load balancer.
 6.  Hover over the **LoadBalancerFrontEnd** component in the diagram, then hover over the **myBackendPool** component.
 7.  Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
 8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
- \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view":::](../media/network-insights-functional-dependency-view-2-ff3ce621.png#lightbox)
+ \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view":::](../media/network-insights-functional-dependency-view-2-e5d175bd.png#lightbox)
 9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
 10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
@@ -303,13 +303,13 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  This opens a large full **Metrics** page in the Azure Network Insights platform. The first tab you land on is the **Overview** tab, which shows the availability status of the load balancer and overall Data Throughput and Frontend and Backend Availability for each of the Frontend IPs attached to your Load Balancer. These metrics indicate whether the Frontend IP is responsive and the compute instances in your Backend Pool are individually responsive to inbound connections. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-2-1447de22.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Overview tab":::
     
 3.  Click the **Frontend & Backend Availability** tab and scroll down the page to see the Health Probe Status charts. If you see **values that are lower than 100** for these items, it indicates an outage of some kind on those resources. 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-5-893ae89d.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted":::](../media/network-insights-detailed-metrics-5-90c3a74b.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-5-893ae89d.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted":::](../media/network-insights-detailed-metrics-5-893ae89d.png#lightbox)
 4.  Click the **Data Throughput** tab and scroll down the page to see the other data throughput charts.
 5.  Hover over some of the data points in the charts, and you will see that the values change to show the exact value at that point in time. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-3-9e9d0595.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab":::
     
 6.  Click the **Flow Distribution** tab and scroll down the page to see the charts under the **VM Flow Creation and Network Traffic** section.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-4-25822780.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts":::](../media/network-insights-detailed-metrics-4-98a99d01.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-4-25822780.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts":::](../media/network-insights-detailed-metrics-4-25822780.png#lightbox)
 
 ## Task 13: View resource health
 
@@ -324,7 +324,7 @@ In this section, you will create a test VM, and then test the load balancer.
 5.  Then select the name of your load balancer from the list.
 6.  The **Resource health** page will identify any major availability issues with your load balancer resource. If there are any events under the **Health History** section, you can expand the health event to see more detail about the event. You can even save the detail about the event as a PDF file for later review and for reporting.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::](../media/resource-health-2-159e41ee.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::](../media/resource-health-2-27a75d1f.png#lightbox)
 
 ## Task 14: Configure diagnostic settings
 
@@ -332,7 +332,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  On the **IntLB-RG** page, click the name of the **myIntLoadBalancer** load balancer resource in the list of resources.
 3.  Under **Monitoring**, select **Diagnostic settings**, then click **Add diagnostic setting**.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png" alt-text="Add diagnostic setting.":::](../media/diagnostic-settings-1-d8dda125.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png" alt-text="Add diagnostic setting.":::](../media/diagnostic-settings-1-0e7abdc7.png#lightbox)
 
 4.  On the **Diagnostic setting** page, in the name box, type **myLBDiagnostics**.
 5.  Select the **AllMetrics** checkbox, then select the **Send to Log Analytics workspace** checkbox.
