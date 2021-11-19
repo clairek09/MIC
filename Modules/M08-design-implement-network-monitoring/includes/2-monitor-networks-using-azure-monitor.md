@@ -57,15 +57,15 @@ For several of your resources in Azure, you will see the data collected by Azure
 
 In the screenshot below for example, you can see the Monitoring tab from the Overview page of a virtual machine.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-tab-vm-1-66f9627e.png" alt-text="Monitoring tab of a virtual machine in Azure Monitor":::
-](../media/monitoring-tab-vm-1-2d882546.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-tab.png" alt-text="Monitoring tab of a virtual machine in Azure Monitor":::
+](../media/monitoring-tab.png#lightbox)
 
 Note the various charts displaying several key performance metrics for system components such as **CPU**, **Network**, and **Disk**.
 
 You can click on these graphs to open the data in **Metrics Explorer** in the Azure portal, which allows you to interactively analyze the data in your metric database and chart the values of multiple metrics over time. You can also pin the charts to a dashboard to view them with other visualizations later. You can also retrieve metrics by using the Azure monitoring REST API.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-tab-vm-2-5aed0bcd.png" alt-text="The Metrics pane for a virtual machine in Azure Monitor":::
-](../media/monitoring-tab-vm-2-311fe660.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-metrics.png" alt-text="The Metrics pane for a virtual machine in Azure Monitor":::
+](../media/monitoring-metrics.png#lightbox)
 
 The data collected by Azure Monitor Metrics is stored in a time-series database which is optimized for analyzing time-stamped data. Each set of metric values is a time series with the following properties:
 
@@ -157,7 +157,7 @@ In the example screenshot below, each tile represents a particular type of netwo
 
 If you select one of the tiles, you get a view of the metrics for that network resource. In the example screenshot below, you can see the metrics for the **ER and VPN connections** resource.
 
-:::image type="content" source="../media/network-insights-resource-metrics-aba3c5af.png":::
+:::image type="content" source="../media/network-insights-resource-metrics-aba3c5af.png" alt-text="Azure Monitor metrics for ExpressRoute and VPN connections":::
 
 
 You can select any item in this grid view. For example, you could select the icon in the **Health** column to get resource health for that connection, or select the value in the **Alert** column to go to the alerts and metrics page for the connection.
