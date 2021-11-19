@@ -80,7 +80,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 3.  On the **Create public IP address** page, under **SKU**, select **Basic**.
 4.  In the **Name** box, type **MyPublicIPAddress**.
 5.  Under **IP address assignment**, select **Static**.
-6.  In **DNS name label**, type **mypublicdns**.
+6.  In **DNS name label**, type **mypublicdnsxx** (where xx is your initials to make this unique).
 7.  Select your resource group from the list.
 
     :::image type="content" source="../media/create-public-ip-address-for-ddos-telemetry-ac54f174.png" alt-text="Create public IP address":::
@@ -283,7 +283,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 ## Task 7: Submit a DDoS service request to run a DDoS attack
 
 1.  Create an account with [BreakingPoint Cloud](https://breakingpoint.cloud/)
-2.  Set up your DDoS test as per the settings in the screenshot below, but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
+2.  Set up your DDoS test as per the settings in the screenshot below (you may need to select the 100k pps test size with the trial account), but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
 
     :::image type="content" source="../media/ddos-test-setup-0d944524.png" alt-text="DDoS Test Setup":::
 
@@ -291,6 +291,6 @@ In this step you will create a virtual machine, assign a public IP address to it
 3.  On the Azure portal home page, click **All resources**.
 4.  In the resources list, click your **MyPublicIPAddress** resource, then under **Monitoring**, click **Metrics**.
 5.  In the **Metric** box, select **Under DDoS attack or not** from the list.
-6.  And here you can see DDoS attack as it happened.
+6.  And here you can see DDoS attack as it happened. Note it may take the full 10 minutes before you see the results.
 
 :::image type="content" source="../media/metrics-showing-resource-under-attack-a666d0a5.png" alt-text="Metrics showing resource under DDoS attack":::
