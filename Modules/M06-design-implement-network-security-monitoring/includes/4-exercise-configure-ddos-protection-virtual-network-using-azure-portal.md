@@ -12,6 +12,7 @@ In this exercise, you will:
  -  Task 5: Configure DDoS diagnostic logs
  -  Task 6: Configure DDoS alerts
  -  Task 7: Submit a DDoS service request to run a DDoS attack
+ -  Task 8: Clean up resources 
 
 ## Task 1: Create a resource group
 
@@ -294,3 +295,20 @@ In this step you will create a virtual machine, assign a public IP address to it
 6.  And here you can see DDoS attack as it happened. Note it may take the full 10 minutes before you see the results.
 
 :::image type="content" source="../media/metrics-showing-resource-under-attack-a666d0a5.png" alt-text="Metrics showing resource under DDoS attack":::
+
+
+
+## Task 8: Clean up resources
+
+> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'MyResourceGroup' -Force -AsJob
+   ```
+
+
+> [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
