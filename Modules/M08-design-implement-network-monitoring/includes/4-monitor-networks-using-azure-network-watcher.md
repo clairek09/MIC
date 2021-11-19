@@ -156,7 +156,7 @@ To create a monitor in **Connection Monitor** by using the **Azure portal**:
 
 2.  In the left pane, under **Monitoring**, select **Connection monitor**, and then click **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-2-1a0aee12.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-2-1a0aee12.png" alt-text="Netwrok Watcher connection monitor creation.":::
 
 
 3.  On the **Basics** tab of the **Create Connection Monitor** page, you need to enter the following information for your new connection monitor:
@@ -198,7 +198,7 @@ To create a monitor in **Connection Monitor** by using the **Azure portal**:
 
 10. Click **Next: Review + create >>**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-7-7b2cba6d.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-7-7b2cba6d.png" alt-text="Review of the connection monitor settings.":::
 
 
 11. Review your information, and then click **Create**.
@@ -220,8 +220,7 @@ Traffic analytics examines the raw NSG flow logs and captures reduced logs by ag
 
 The diagram below illustrates the data flow:
 
-[:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics":::
-](../media/traffic-analytics-data-flow-logs-ccc5dfe4.png#lightbox)
+[:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics":::](../media/traffic-analytics-data-flow-logs-ccc5dfe4.png#lightbox)
 
 The key components of Traffic Analytics are:
 
