@@ -56,7 +56,7 @@ In this section, you will create two instances of a web application deployed in 
         Name
       :::column-end:::
       :::column:::
-        **ContosoWebAppEastUS**
+        **ContosoWebAppEastUSxx** (where xx are your initials to make the name unique)
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -139,7 +139,7 @@ In this section, you will create two instances of a web application deployed in 
         Name
       :::column-end:::
       :::column:::
-        **ContosoWebAppWestEurope**
+        **ContosoWebAppWestEuropexx** (where xx are your initials to make the name unique)
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -191,7 +191,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
         Name
       :::column-end:::
       :::column:::
-        **Contoso-TMProfile**
+        **Contoso-TMProfilexx** (where xx are your initials to make the name unique)
       :::column-end:::
     :::row-end:::
     :::row:::
