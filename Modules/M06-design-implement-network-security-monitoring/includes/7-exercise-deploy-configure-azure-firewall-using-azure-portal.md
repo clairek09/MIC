@@ -125,7 +125,7 @@ In this task, you will create the workload virtual machine and place it in the W
         Image
       :::column-end:::
       :::column:::
-        **Windows Server 2016 Datacenter - Gen 1**
+        **Windows Server 2022 Datacenter - Gen 1**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -133,9 +133,7 @@ In this task, you will create the workload virtual machine and place it in the W
         Size
       :::column-end:::
       :::column:::
-        Select **See all sizes**, then choose **B1s** in the list and choose **Select**
-    
-    **(Standard\_B1s - 1 vcpu, 1 GiB memory**
+        **Standard_D2s_v3** - 2vcpus, 8GiB memory
       :::column-end:::
     :::row-end:::
     :::row:::
