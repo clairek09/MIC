@@ -181,7 +181,7 @@ In this step you will create a virtual machine, assign a public IP address to it
         Image
       :::column-end:::
       :::column:::
-        **Ubuntu Server 18.04 LTS - Gen 1**
+        **Ubuntu Server 18.04 LTS - Gen 1** ((Select Configure VM Generation link if needed)
       :::column-end:::
     :::row-end:::
     :::row:::
