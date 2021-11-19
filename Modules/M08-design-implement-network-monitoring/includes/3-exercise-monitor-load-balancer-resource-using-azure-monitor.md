@@ -285,8 +285,8 @@ In this section, you will create a test VM, and then test the load balancer.
 5.  Use the **Zoom In (+)** and **Zoom Out (-)** buttons in the bottom right corner of the page, to zoom in and out of the topology diagram (alternatively you can use your mouse wheel if you have one). You can also drag the topology diagram around the page to move it.
 6.  Hover over the **LoadBalancerFrontEnd** component in the diagram, then hover over the **myBackendPool** component.
 7.  Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
-8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram. \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view":::
-    ](../media/network-insights-functional-dependency-view-2-ff3ce621.png#lightbox)
+8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
+ \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view":::](../media/network-insights-functional-dependency-view-2-ff3ce621.png#lightbox)
 9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
 10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
@@ -318,13 +318,13 @@ In this section, you will create a test VM, and then test the load balancer.
 3.  On the **Service Health>Service issues** page, in the left-hand menu click **Resource Health**.
 4.  On the **Service Health>Resource health** page, in the **Resource type** drop-down list, scroll down the list and select **Load balancer**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/resource-health-1-1f3265fd.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/resource-health-1-1f3265fd.png" alt-text="Resource health page for loadbalancer.":::
 
 
 5.  Then select the name of your load balancer from the list.
 6.  The **Resource health** page will identify any major availability issues with your load balancer resource. If there are any events under the **Health History** section, you can expand the health event to see more detail about the event. You can even save the detail about the event as a PDF file for later review and for reporting.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/resource-health-2-27a75d1f.png":::
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::
 ](../media/resource-health-2-159e41ee.png#lightbox)
 
 ## Task 14: Configure diagnostic settings
@@ -333,7 +333,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  On the **IntLB-RG** page, click the name of the **myIntLoadBalancer** load balancer resource in the list of resources.
 3.  Under **Monitoring**, select **Diagnostic settings**, then click **Add diagnostic setting**.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png":::
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png" alt-text="Add diagnostic setting.":::
 ](../media/diagnostic-settings-1-d8dda125.png#lightbox)
 
 4.  On the **Diagnostic setting** page, in the name box, type **myLBDiagnostics**.
