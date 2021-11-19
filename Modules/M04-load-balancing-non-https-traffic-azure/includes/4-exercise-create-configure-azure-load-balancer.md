@@ -23,10 +23,10 @@ In this exercise, you will:
 In this section, you will create a virtual network and a subnet.
 
 1.  Log in to the Azure portal.
-2.  On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
-3.  Click **Create**.
+2.  On the Azure portal home page, naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services.
+3.  Select **Create** on the Virtual networks page
 
-    :::image type="content" source="../media/create-virtual-network-1-e9ef917a.png" alt-text="create a virtual network from the Azure portal":::
+    :::image type="content" source="../media/create-virtual-network.png" alt-text="create a virtual network from the Azure portal":::
 
 
 4.  On the **Basics** tab, use the information in the table below to create the virtual network.
@@ -68,7 +68,7 @@ In this section, you will create a virtual network and a subnet.
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     
@@ -189,7 +189,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -533,7 +533,7 @@ In this section, you will create a test VM, and then test the load balancer.
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     :::row:::
