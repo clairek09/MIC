@@ -154,7 +154,7 @@ Congratulations! You have configured and tested an Azure Front Door.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
     
     ```
 
