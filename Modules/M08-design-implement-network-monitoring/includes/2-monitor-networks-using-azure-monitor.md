@@ -81,13 +81,13 @@ The data collected by Azure Monitor Metrics is stored in a time-series database 
 
 You can access metrics from the **Metrics** option in the Azure Monitor menu.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics-1-bf14d258.png" alt-text="Select a scope pane for metrics on a virtual machine in Azure Monitor":::
-](../media/azure-monitor-metrics-1-9d331bca.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics-scope.png" alt-text="Select a scope pane for metrics on a virtual machine in Azure Monitor":::
+](../media/azure-monitor-metrics-scope.png#lightbox)
 
 You can also access metrics from the **Metrics** menu of most other services and resources in the Azure portal. The screenshot below for example, displays the **Metrics** page for a virtual network resource.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics-2-c012b164.png" alt-text="The Metrics pane for a virtual network in Azure Monitor":::
-](../media/azure-monitor-metrics-2-8611f9a9.png#lightbox)
+\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics.png" alt-text="The Metrics pane for a virtual network in Azure Monitor":::
+](../media/azure-monitor-metrics.png#lightbox)
 
 ### Create metric charts with metrics explorer
 
