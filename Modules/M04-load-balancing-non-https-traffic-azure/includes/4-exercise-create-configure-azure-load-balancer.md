@@ -74,9 +74,9 @@ In this section, you will create a virtual network and a subnet.
     
 5.  Click **Next : IP Addresses**.
 6.  On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
-7.  Under **Subnet name**, select the word **default**.
-8.  In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
-9.  Click **Save**.
+7.  On the **IP Address** tab, select **+ Add subnet**.
+8.  In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+9.  Click **Add**.
 10. Click **Add subnet,** provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24.** Click **Add**
 11. Click **Next : Security**.
 12. Under **BastionHost** select **Enable**, then enter the information from the table below.
@@ -145,7 +145,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 > [!NOTE]
 > do not select one from the list
 
-1.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
+1.  On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 2.  Click **Create**. 
 
     :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="create a load balancer":::
