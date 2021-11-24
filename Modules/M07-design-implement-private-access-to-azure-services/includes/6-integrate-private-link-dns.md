@@ -171,7 +171,7 @@ The following diagram shows the DNS resolution for both networks, on-premises an
 
 ## Multiple Choice
 
-What resrouce is associated with a Private Endpoint that contains the information to configure your Private Endpoint DNS?  
+What resource is associated with a Private Endpoint that contains the information to configure your Private Endpoint DNS?  
 ( ) The virtual network {{Incorrect, the virtual network does not include the information needed to configure your Private Endpoint DNS.}}
 (x) The network interface {{Correct! The network interface information includes FQDN and private IP addresses for your Private Link resource.}}
 ( ) The private DNS zone {{Incorrect, the private DNS zone does not include the information needed to configure your Private Endpoint DNS.}}
