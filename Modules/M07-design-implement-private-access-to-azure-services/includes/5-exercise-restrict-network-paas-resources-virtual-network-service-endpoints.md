@@ -151,9 +151,9 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
     |          Name           |       Allow-RDP-All       |
 4.  And then select **Add**.
 
-\[!Warning\]
-
-RDP port 3389 is exposed to the Internet. This is only recommended for testing. For production environments, we recommend using a VPN or private connection.
+> [!Warning]
+> 
+> RDP port 3389 is exposed to the Internet. This is only recommended for testing. For production environments, we recommend using a VPN or private connection.
 
 5.  Under **Settings**, select **Subnets**.
 6.  Select **+ Associate.**
@@ -252,13 +252,15 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
 ## Task 10: Confirm access to storage account
 
-1.  Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/private-virtual-machine-connect-1c139669.png" alt-text="select RDP to connect to virtual machine":::
+1.  Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP. 
+
+    :::image type="content" source="../media/private-virtual-machine-connect-1c139669.png" alt-text="select RDP to connect to virtual machine":::
     
 2.  After selecting the Connect button and RDP, select the Download RDP File button. A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.
 3.  Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4.  Select **OK**.
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
-6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
+6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace \<storage-account-key\> , \<storage-account-name\> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
     
     ```azurecli
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
