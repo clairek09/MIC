@@ -1,4 +1,4 @@
-Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table. You can override some of Azure's system routes with [custom routes](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview), and add additional custom routes to route tables. Azure routes outbound traffic from a subnet based on the routes in a subnet's route table.
+Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table. You can override some of Azure's system routes with [custom routes](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview), and add additional custom routes to route tables. Azure routes outbound traffic from a subnet based on the routes in a subnet's route table.
 
 ## System routes
 
@@ -152,7 +152,7 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
  -  **Virtual network (VNet) peering**: When you create a virtual network peering between two virtual networks, a route is added for each address range within the address space of each virtual network.
  -  **Virtual network gateway:** When you add a virtual network gateway to a virtual network, Azure adds one or more routes with Virtual network gateway as the next hop type. The source is listed as virtual network gateway because the gateway adds the routes to the subnet.
     
-     -  If your on-premises network gateway exchanges border gateway protocol ([BGP](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)) routes with an Azure virtual network gateway, a route is added for each route propagated from the on-premises network gateway. There are limits to the number of routes you can propagate to an Azure virtual network gateway, so you should summarize on-premises routes to the largest address ranges possible. For more information on the number of routes you can propagate, see [Networking limits](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json).
+     -  If your on-premises network gateway exchanges border gateway protocol ([BGP](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview)) routes with an Azure virtual network gateway, a route is added for each route propagated from the on-premises network gateway. There are limits to the number of routes you can propagate to an Azure virtual network gateway, so you should summarize on-premises routes to the largest address ranges possible. For more information on the number of routes you can propagate, see [Networking limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json).
 
 **VirtualNetworkServiceEndpoint:** Azure adds the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
 
@@ -237,7 +237,7 @@ You can view the effective routes for each network interface by using the Azure 
 
 ### View effective routes in Azure portal
 
-1.  Log into the Azure portal with an Azure account that has the [necessary permissions](https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface).
+1.  Log into the Azure portal with an Azure account that has the [necessary permissions](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface).
 2.  In the search box, enter the name of the VM that you want to investigate.
 3.  Select the VM from the search results.
 4.  Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name. 
@@ -266,9 +266,9 @@ Get-AzEffectiveRouteTable `
 
 Steps you might take to resolve the routing problem might include:
 
-1.  Add a custom route to override a default route. Learn how to [add a custom route](https://docs.microsoft.com/azure/virtual-network/manage-route-table).
-2.  Change or remove a custom route that causes traffic to be routed to an undesired location. Learn how to [change](https://docs.microsoft.com/azure/virtual-network/manage-route-table) or [delete](https://docs.microsoft.com/azure/virtual-network/manage-route-table) a custom route.
-3.  Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/manage-route-table).
+1.  Add a custom route to override a default route. Learn how to [add a custom route](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table).
+2.  Change or remove a custom route that causes traffic to be routed to an undesired location. Learn how to [change](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table) or [delete](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table) a custom route.
+3.  Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table).
 4.  Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended.
 
 ## Secure a VNet by using forced tunneling
