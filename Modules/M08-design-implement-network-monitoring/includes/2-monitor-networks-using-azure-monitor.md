@@ -13,15 +13,15 @@ Just a few examples of what you can do with Azure Monitor include:
 
 The diagram below offers a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor. On the left are the sources of monitoring data that populate these data stores. On the right are the different functions that Azure Monitor performs with this collected data. This includes such actions as analysis, alerting, and streaming to external systems.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-monitor-overview-15b1f34a.png" alt-text="Diagram illustrating a high-level view of Azure Monitor":::
+:::image type="content" source="../media/azure-monitor-overview-15b1f34a.png" alt-text="Diagram illustrating a high-level view of Azure Monitor":::
 
 
 ### Monitor data types in Azure Monitor
 
 The data collected by Azure Monitor fits into one of two fundamental types:
 
- -  **Metrics** \- Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios.
- -  **Logs** \- Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis.
+ -  **Metrics** - Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios.
+ -  **Logs** - Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis.
 
 ### Azure Monitor metrics
 
@@ -39,17 +39,17 @@ The table below provides a summary of the various types of tasks you can perform
 |  Export   |             Route Metrics to Logs to analyze data in Azure Monitor Metrics together with data in Azure Monitor Logs and to store metric values for longer than 93 days<br>Stream Metrics to an Event Hub to route them to external systems.             |
 |  Archive  |                                                                   Archive the performance or health history of your resource for compliance, auditing, or offline reporting purposes.                                                                   |
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-monitor-metrics-overview-bb85daba.png" alt-text="Diagram illustrating a high-level view of Azure Monitor metrics":::
+:::image type="content" source="../media/azure-monitor-metrics-overview-bb85daba.png" alt-text="Diagram illustrating a high-level view of Azure Monitor metrics":::
 
 
 ### Azure Monitor metrics sources
 
 There are three fundamental sources of metrics collected by Azure Monitor. Once these metrics are collected in the Azure Monitor metric database, they can be evaluated together regardless of their source.
 
- -  **Azure resources** \- Platform metrics are created by Azure resources and give you visibility into their health and performance. Each type of resource creates a distinct set of metrics without any configuration required. Platform metrics are collected from Azure resources at one-minute frequency unless specified otherwise in the metric's definition.
- -  **Applications** \- Metrics are created by Application Insights for your monitored applications and help you detect performance issues and track trends in how your application is being used. This includes such values as Server response time and Browser exceptions.
- -  **Virtual machine agents** \- Metrics are collected from the guest operating system of a virtual machine. Enable guest OS metrics for Windows virtual machines with Windows Diagnostic Extension (WAD) and for Linux virtual machines with InfluxData Telegraf Agent.
- -  **Custom metrics** \- You can define metrics in addition to the standard metrics that are automatically available. You can define custom metrics in your application that is monitored by Application Insights or create custom metrics for an Azure service using the custom metrics API.
+ -  **Azure resources** - Platform metrics are created by Azure resources and give you visibility into their health and performance. Each type of resource creates a distinct set of metrics without any configuration required. Platform metrics are collected from Azure resources at one-minute frequency unless specified otherwise in the metric's definition.
+ -  **Applications** - Metrics are created by Application Insights for your monitored applications and help you detect performance issues and track trends in how your application is being used. This includes such values as Server response time and Browser exceptions.
+ -  **Virtual machine agents** - Metrics are collected from the guest operating system of a virtual machine. Enable guest OS metrics for Windows virtual machines with Windows Diagnostic Extension (WAD) and for Linux virtual machines with InfluxData Telegraf Agent.
+ -  **Custom metrics** - You can define metrics in addition to the standard metrics that are automatically available. You can define custom metrics in your application that is monitored by Application Insights or create custom metrics for an Azure service using the custom metrics API.
 
 ## Metrics Explorer
 
@@ -57,15 +57,13 @@ For several of your resources in Azure, you will see the data collected by Azure
 
 In the screenshot below for example, you can see the Monitoring tab from the Overview page of a virtual machine.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-tab.png" alt-text="Monitoring tab of a virtual machine in Azure Monitor":::
-](../media/monitoring-tab.png#lightbox)
+:::image type="content" source="../media/monitoring-tab.png" alt-text="Monitoring tab of a virtual machine in Azure Monitor" lightbox="../media/monitoring-tab.png":::
 
 Note the various charts displaying several key performance metrics for system components such as **CPU**, **Network**, and **Disk**.
 
 You can click on these graphs to open the data in **Metrics Explorer** in the Azure portal, which allows you to interactively analyze the data in your metric database and chart the values of multiple metrics over time. You can also pin the charts to a dashboard to view them with other visualizations later. You can also retrieve metrics by using the Azure monitoring REST API.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/monitoring-metrics.png" alt-text="The Metrics pane for a virtual machine in Azure Monitor":::
-](../media/monitoring-metrics.png#lightbox)
+:::image type="content" source="../media/monitoring-metrics.png" alt-text="The Metrics pane for a virtual machine in Azure Monitor" lightbox="../media/monitoring-metrics.png":::
 
 The data collected by Azure Monitor Metrics is stored in a time-series database which is optimized for analyzing time-stamped data. Each set of metric values is a time series with the following properties:
 
@@ -81,13 +79,11 @@ The data collected by Azure Monitor Metrics is stored in a time-series database 
 
 You can access metrics from the **Metrics** option in the Azure Monitor menu.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics-scope.png" alt-text="Select a scope pane for metrics on a virtual machine in Azure Monitor":::
-](../media/azure-monitor-metrics-scope.png#lightbox)
+:::image type="content" source="../media/azure-monitor-metrics-scope.png" alt-text="Select a scope pane for metrics on a virtual machine in Azure Monitor" lightbox="../media/azure-monitor-metrics-scope.png":::
 
 You can also access metrics from the **Metrics** menu of most other services and resources in the Azure portal. The screenshot below for example, displays the **Metrics** page for a virtual network resource.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/azure-monitor-metrics.png" alt-text="The Metrics pane for a virtual network in Azure Monitor":::
-](../media/azure-monitor-metrics.png#lightbox)
+:::image type="content" source="../media/azure-monitor-metrics.png" alt-text="The Metrics pane for a virtual network in Azure Monitor" lightbox="../media/azure-monitor-metrics.png":::
 
 ### Create metric charts with metrics explorer
 
@@ -101,23 +97,22 @@ Start in the following order:
 4.  To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
 5.  Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-scope.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted":::
-](../media/metrics-explorer-scope.png#lightbox)
+    :::image type="content" source="../media/metrics-explorer-scope.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted" lightbox="../media/metrics-explorer-scope.png":::
 
 6.  For some resources, you must pick a namespace. The namespace is just a way to organize metrics so that you can easily find them. For example, storage accounts have separate namespaces for storing Files, Tables, Blobs, and Queues metrics. Many resource types only have one namespace.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-namespace.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted":::
-](../media/metrics-explorer-namespace.png#lightbox)
+    :::image type="content" source="../media/metrics-explorer-namespace.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted" lightbox="../media/metrics-explorer-namespace.png":::
+
 
 7.  Select a metric from the list of available metrics. This list will vary depending on what resource and scope you select.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-metrics.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted":::
-](../media/metrics-explorer-metrics.png#lightbox)
+    :::image type="content" source="../media/metrics-explorer-metrics.png" alt-text="The Metrics Explorer pane in Azure Monitor - Metrics highlighted" lightbox="../media/metrics-explorer-metrics.png":::
+
 
 8.  Optionally, you can change the metric aggregation. For example, you might want your chart to show minimum, maximum, or average values of the metric.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/metrics-explorer-aggregation.png" alt-text="The Metrics Explorer pane in Azure Monitor - Aggregation highlighted":::
-](../media/metrics-explorer-aggregation.png#lightbox)
+    :::image type="content" source="../media/metrics-explorer-aggregation.png" alt-text="The Metrics Explorer pane in Azure Monitor - Aggregation highlighted" lightbox="../media/metrics-explorer-aggregation.png":::
+
 
 ## Monitor network resources with Azure Monitor Network Insights
 
@@ -130,8 +125,8 @@ Azure Monitor Network Insights is structured around these key components of moni
  -  Traffic
  -  Diagnostic Toolkit
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-overview.png" alt-text="Azure Monitor Network Insights - Networks page, all tabs highlighted":::
-](../media/network-insights-overview.png#lightbox)
+:::image type="content" source="../media/network-insights-overview.png" alt-text="Azure Monitor Network Insights - Networks page, all tabs highlighted" lightbox="../media/network-insights-overview.png":::
+
 
 ### Network health and metrics
 
@@ -143,8 +138,7 @@ You can customize the resource health and alerts view by using filters such as *
 
 You can use the search box to search for network resources and their associated resources. For example, a public IP is associated with an application gateway, so a search for the public IP's DNS name would return both the public IP and the associated application gateway.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-search.png" alt-text="Azure Monitor Network Insights - Network health tab":::
-](../media/network-insights-search.png#lightbox)
+:::image type="content" source="../media/network-insights-search.png" alt-text="Azure Monitor Network Insights - Network health tab" lightbox="../media/network-insights-search.png":::
 
 **Network resource health and metrics**
 
@@ -179,29 +173,29 @@ The **Connectivity** tab of Azure Monitor Network Insights provides an easy way 
 
 Tests are grouped by **Sources** and **Destinations** tiles and display the reachability status for each test. Reachable settings provide easy access to configurations for your reachability criteria, based on **Checks failed(%)** and **RTT(ms)**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-connectivity-1-7cb895e6.png" alt-text="Azure Monitor Network Insights - Connectivity tab":::
+:::image type="content" source="../media/network-insights-connectivity-1-7cb895e6.png" alt-text="Azure Monitor Network Insights - Connectivity tab":::
 
 
 After you set the values, the status for each test updates based on the selection criteria.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-connectivity-2-0340ff43.png" alt-text="Azure Monitor Network Insights - Connectivity tab - Criteria detailed view":::
+:::image type="content" source="../media/network-insights-connectivity-2-0340ff43.png" alt-text="Azure Monitor Network Insights - Connectivity tab - Criteria detailed view":::
 
 
 From here, you can then select any source or destination tile to open it up in metric view. In the example screenshot below, the metrics for the **Destinations>Virtual machines** tile are being displayed.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-connectivity-3-f763fc34.png" alt-text="Azure Monitor Network Insights - Connectivity tab - Virtual machine Sources and Destinations view":::
+:::image type="content" source="../media/network-insights-connectivity-3-f763fc34.png" alt-text="Azure Monitor Network Insights - Connectivity tab - Virtual machine Sources and Destinations view":::
 
 
 ### Traffic
 
 The **Traffic** tab of Azure Monitor Network Insights provides access to all NSGs configured for **NSG flow logs** and **Traffic Analytics** for the selected set of subscriptions, grouped by location. The search functionality provided on this tab enables you to identify the NSGs configured for the searched IP address. You can search for any IP address in your environment. The tiled regional view will display all NSGs along with the NSG flow logs and Traffic Analytics configuration status.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-traffic-1-9eff50e0.png" alt-text="Azure Monitor Network Insights - Traffic tab":::
+:::image type="content" source="../media/network-insights-traffic-1-9eff50e0.png" alt-text="Azure Monitor Network Insights - Traffic tab":::
 
 
 If you select any region tile, a grid view will appear which shows NSG flow logs and Traffic Analytics in a view that is simple to interpret and configure.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-traffic-2-101165df.png" alt-text="Azure Monitor Network Insights - Traffic tab - detailed NSG pane":::
+:::image type="content" source="../media/network-insights-traffic-2-101165df.png" alt-text="Azure Monitor Network Insights - Traffic tab - detailed NSG pane":::
 
 
 In this grid view you can select an icon in the **Flow log Configuration Status** column to edit the NSG flow log and Traffic Analytics configuration. Or you can select a value in the **Alert** column to go to the traffic alerts configured for that NSG, and you can navigate to the Traffic Analytics view by selecting the **Traffic Analytics Workspace**.
