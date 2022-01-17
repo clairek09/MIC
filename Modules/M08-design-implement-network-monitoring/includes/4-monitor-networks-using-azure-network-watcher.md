@@ -22,9 +22,9 @@ Azure Network Watcher is a regional service that enables you to monitor and diag
 
 **Network Topology:** The topology capability enables you to generate a visual diagram of the resources in a virtual network, and the relationships between the resources.
 
-\[!Note\]
-
-To use Network Watcher, you must be an Owner, Contributor, or Network Contributor. If you create a custom role, the role must be able to read, write, and delete the Network Watcher.
+> [!Note]
+>
+> To use Network Watcher, you must be an Owner, Contributor, or Network Contributor. If you create a custom role, the role must be able to read, write, and delete the Network Watcher.
 
 ### configure Network Watcher
 
@@ -34,33 +34,33 @@ To create a Network Watcher in the Azure portal:
 
 1.  Navigate to **All services> Networking>Network Watcher**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-0-5ad38bb6.png" alt-text="Opening Network Watcher from the Azure portal home page":::
+    :::image type="content" source="../media/network-watcher-enable-0-5ad38bb6.png" alt-text="Opening Network Watcher from the Azure portal home page":::
 
 
 2.  Right-click your subscription and choose **Enable network watcher in all regions**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-1-4fcca76f.png" alt-text="Network Watcher - Overview page - enable network watcher highlighted":::
+    :::image type="content" source="../media/network-watcher-enable-1-4fcca76f.png" alt-text="Network Watcher - Overview page - enable network watcher highlighted":::
 
 
 3.  Note that the status is now showing as **Enabled**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-2-05c351de.png" alt-text="Network Watcher - Overview page - showing network watcher enabled":::
+    :::image type="content" source="../media/network-watcher-enable-2-05c351de.png" alt-text="Network Watcher - Overview page - showing network watcher enabled":::
 
 
 4.  If you expand the regions, you will see that all regions within this subscription are enabled.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-3-327fb995.png" alt-text="Network Watcher - Overview page - showing network watcher enabled on all regions":::
+    :::image type="content" source="../media/network-watcher-enable-3-327fb995.png" alt-text="Network Watcher - Overview page - showing network watcher enabled on all regions":::
 
 
 5.  When you enable Network Watcher using the portal, the name of the Network Watcher instance is automatically set to NetworkWatcher\_region\_name where region\_name corresponds to the Azure region where the instance is enabled. For example, a Network Watcher enabled in the West US region is named **NetworkWatcher\_westus**.
 6.  The Network Watcher instance is automatically created in a resource group named **NetworkWatcherRG**. The resource group is created if it does not already exist.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-4-97c5e90d.png" alt-text="Resource Groups list- Network Watcher resource group highlighted":::
+    :::image type="content" source="../media/network-watcher-enable-4-97c5e90d.png" alt-text="Resource Groups list- Network Watcher resource group highlighted":::
 
 
 7.  To disable a Network Watcher for a region in the Azure portal, expand the regions section, right click the name of the region you wish to disable the Network Watcher on, and click **Disable network watcher**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-watcher-enable-5-b4d63873.png" alt-text="Network Watcher - Overview page - Disable network watcher highlighted":::
+    :::image type="content" source="../media/network-watcher-enable-5-b4d63873.png" alt-text="Network Watcher - Overview page - Disable network watcher highlighted":::
 
 
 ## Configure NSG Flow Logs
@@ -87,7 +87,7 @@ You can enable NSG flow logs from any of the following:
 1.  To configure the parameters of NSG flow logs in the Azure portal, navigate to the **NSG Flow Logs** section in **Network Watcher**.
 2.  Click the name of the NSG to bring up the **Settings** pane for the Flow log.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/flow-logs-1-99740570.png" alt-text="Network Watcher - Flow logs settings page":::
+    :::image type="content" source="../media/flow-logs-1-99740570.png" alt-text="Network Watcher - Flow logs settings page":::
 
 
 3.  Change the parameters you want and click **Save** to deploy the changes.
@@ -98,7 +98,7 @@ You can enable NSG flow logs from any of the following:
 
 Connection Monitor provides unified end-to-end connection monitoring in Azure Network Watcher. The Connection Monitor feature supports hybrid and Azure cloud deployments. Network Watcher provides tools to monitor, diagnose, and view connectivity-related metrics for your Azure deployments.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connection-monitor-overview-1-a7b21492.png" alt-text="Diagram illustrating a high-level view of Connection Monitor":::
+:::image type="content" source="../media/connection-monitor-overview-1-a7b21492.png" alt-text="Diagram illustrating a high-level view of Connection Monitor":::
 
 
 Here are some use cases for Connection Monitor:
@@ -142,7 +142,7 @@ Connection Monitor includes the following entities:
  -  **Test group** – The group that contains source endpoints, destination endpoints, and test configurations. A connection monitor can contain more than one test group.
  -  **Test** – The combination of a source endpoint, destination endpoint, and test configuration. A test is the most granular level at which monitoring data is available. The monitoring data includes the percentage of checks that failed and the round-trip time (RTT).
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-0-5d950fb6.png" alt-text="Diagram illustrating the key components of Connection Monitor":::
+:::image type="content" source="../media/create-connection-monitor-0-5d950fb6.png" alt-text="Diagram illustrating the key components of Connection Monitor":::
 
 
 You can create a connection monitor using Azure portal, ARMClient or PowerShell.
@@ -151,54 +151,54 @@ To create a monitor in **Connection Monitor** by using the **Azure portal**:
 
 1.  On the Azure portal home page, go to **Network Watcher**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-1-190ac3a4.png" alt-text="Opening Network Watcher from the Azure portal home page using the Network Watcher tile":::
+    :::image type="content" source="../media/create-connection-monitor-1-190ac3a4.png" alt-text="Opening Network Watcher from the Azure portal home page using the Network Watcher tile":::
 
 
 2.  In the left pane, under **Monitoring**, select **Connection monitor**, and then click **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-2-1a0aee12.png" alt-text="Netwrok Watcher connection monitor creation.":::
+    :::image type="content" source="../media/create-connection-monitor-2-1a0aee12.png" alt-text="Netwrok Watcher connection monitor creation.":::
 
 
 3.  On the **Basics** tab of the **Create Connection Monitor** page, you need to enter the following information for your new connection monitor:
 
-|        **Field**        |                                                                                                                                    **Information**                                                                                                                                     |
-|:-----------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Connection Monitor Name |                                                                                              Enter a name for your connection monitor. Use the standard naming rules for Azure resources.                                                                                              |
-|      Subscription       |                                                                                                                     Select your Azure subscription from the list.                                                                                                                      |
-|         Region          |                                                                                    Select a region for your connection monitor. You can select only the source VMs that are created in this region.                                                                                    |
-| Workspace configuration | Choose a custom workspace or the default workspace. Your workspace holds your monitoring data.<br><br>To use the default workspace, select the check box.<br><br>To choose a custom workspace, clear the check box. Then select the subscription and region for your custom workspace. |
+    |        **Field**        |                                                                                                                                    **Information**                                                                                                                                     |
+    |:-----------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+    | Connection Monitor Name |                                                                                              Enter a name for your connection monitor. Use the standard naming rules for Azure resources.                                                                                              |
+    |      Subscription       |                                                                                                                     Select your Azure subscription from the list.                                                                                                                      |
+    |         Region          |                                                                                    Select a region for your connection monitor. You can select only the source VMs that are created in this region.                                                                                    |
+    | Workspace configuration | Choose a custom workspace or the default workspace. Your workspace holds your monitoring data.<br><br>To use the default workspace, select the check box.<br><br>To choose a custom workspace, clear the check box. Then select the subscription and region for your custom workspace. |
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-3-8cea37c5.png" alt-text="Create Connection Monitor - Basics tab":::
+    :::image type="content" source="../media/create-connection-monitor-3-8cea37c5.png" alt-text="Create Connection Monitor - Basics tab":::
 
 
 4.  Click **Next: Test groups >>**.
 5.  On the next page, you can add sources, test configurations, and destinations in your test groups. Each test group in a connection monitor includes sources and destinations that get tested on network parameters. They are tested for the percentage of checks that fail and the round-trip-time (RTT) over test configurations.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-4-69cb63c6.png" alt-text="Create Connection Monitor - Test groups tab - Add test group":::
+    :::image type="content" source="../media/create-connection-monitor-4-69cb63c6.png" alt-text="Create Connection Monitor - Test groups tab - Add test group":::
 
 
 6.  Click **Add Test Group**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-5-3edf4b77.png" alt-text="Create Connection Monitor - Test groups tab - New test group listed":::
+    :::image type="content" source="../media/create-connection-monitor-5-3edf4b77.png" alt-text="Create Connection Monitor - Test groups tab - New test group listed":::
 
 
 7.  Click **Next: Create Alerts >>**.
 8.  On the **Create alert** tab, you can set up alerts on tests that are failing based on the thresholds set in test configurations.
 9.  You need to enter the following information for your alert:
 
- -  Create alert (check box): You can select this check box to create a metric alert in Azure Monitor. When you select this check box, the other fields will be enabled for editing. (Note: Additional charges for the alert will be applicable.)
- -  Scope (Resource/Hierarchy): The values here are automatically filled in for you, based on the values you specified on the **Basics** tab.
- -  Condition: The alert is created on the Test Result(preview) metric. When the result of the connection monitor test is a failing result, the alert rule will fire.
- -  Action group: You can enter your email directly or you can create alerts via action groups. If you enter your email directly, an action group with the name NPM Email ActionGroup is created. The email ID is added to that action group. If you choose to use action groups, you need to select a previously created action group.
- -  Alert rule name: This is the name of the connection monitor and is already filled in for you.
- -  Enable rule upon creation: Select this check box to enable the alert rule based on the condition (default setting). Disable this check box if you want to create the rule without enabling it - perhaps for evaluation and testing purposes, or because you are just not ready to deploy it yet.
-
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-6-0b171ed4.png" alt-text="Create Connection Monitor - Create Alerts tab":::
+    - Create alert (check box): You can select this check box to create a metric alert in Azure Monitor. When you select this check box, the other fields will be enabled for editing. (Note: Additional charges for the alert will be applicable.)
+    - Scope (Resource/Hierarchy): The values here are automatically filled in for you, based on the values you specified on the **Basics** tab.
+    - Condition: The alert is created on the Test Result(preview) metric. When the result of the connection monitor test is a failing result, the alert rule will fire.
+    - Action group: You can enter your email directly or you can create alerts via action groups. If you enter your email directly, an action group with the name NPM Email ActionGroup is created. The email ID is added to that action group. If you choose to use action groups, you need to select a previously created action group.
+    - Alert rule name: This is the name of the connection monitor and is already filled in for you.
+    - Enable rule upon creation: Select this check box to enable the alert rule based on the condition (default setting). Disable this check box if you want to create the rule without enabling it - perhaps for evaluation and testing purposes, or because you are just not ready to deploy it yet.
+    
+    :::image type="content" source="../media/create-connection-monitor-6-0b171ed4.png" alt-text="Create Connection Monitor - Create Alerts tab":::
 
 
 10. Click **Next: Review + create >>**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-connection-monitor-7-7b2cba6d.png" alt-text="Review of the connection monitor settings.":::
+    :::image type="content" source="../media/create-connection-monitor-7-7b2cba6d.png" alt-text="Review of the connection monitor settings.":::
 
 
 11. Review your information, and then click **Create**.
@@ -220,7 +220,7 @@ Traffic analytics examines the raw NSG flow logs and captures reduced logs by ag
 
 The diagram below illustrates the data flow:
 
-[:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics":::](../media/traffic-analytics-data-flow-logs-980b3d12.png#lightbox)
+:::image type="content" source="../media/traffic-analytics-data-flow-logs-980b3d12.png" alt-text="Diagram illustrating Traffic Analytics" lightbox="../media/traffic-analytics-data-flow-logs-980b3d12.png":::
 
 The key components of Traffic Analytics are:
 
@@ -238,7 +238,7 @@ To view Traffic Analytics, search for **Network Watcher** in the portal search b
 
 The example screenshot below shows the Traffic Analytics dashboard.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/traffic-analytics-dashboard-6f25b7bb.png" alt-text="Network Watcher - Traffic Analytics dashboard":::
+:::image type="content" source="../media/traffic-analytics-dashboard-6f25b7bb.png" alt-text="Network Watcher - Traffic Analytics dashboard":::
 
 
 ## quiz title: Check your knowledge
