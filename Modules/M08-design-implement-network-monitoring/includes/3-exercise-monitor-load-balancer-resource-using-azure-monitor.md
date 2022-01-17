@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. Then you will create a Log Analytics workspace, and use Azure Monitor Insights to view information about your internal load balancer. You will view the Functional Dependency View, then view detailed metrics for the load balancer resource, and view resource health information for the load balancer. Finally, you will configure the load balancer's diagnostic settings to send metrics to the Log Analytics workspace you created.
 
@@ -33,7 +34,7 @@ In this section, you will create a virtual network and a subnet.
 2.  On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
 3.  Click **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-1-ef3b2636.png" alt-text="Create virtual network":::
+    :::image type="content" source="../media/create-virtual-network-1-ef3b2636.png" alt-text="Create virtual network":::
 
 
 4.  On the **Basics** tab, use the information in the table below to create the virtual network.
@@ -69,7 +70,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 3.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 4.  Click **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-4-c6145228.png" alt-text="Create Load Balancer":::
+    :::image type="content" source="../media/create-load-balancer-4-c6145228.png" alt-text="Create Load Balancer":::
 
 
 5.  On the **Basics** tab, use the information in the table below to create the load balancer.
@@ -104,7 +105,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
     |  Associated to  | **Virtual machines** |
 4.  Click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-bda6fa3d.png" alt-text="Show backend pool created in load balancer":::
+    :::image type="content" source="../media/create-backend-pool-bda6fa3d.png" alt-text="Show backend pool created in load balancer":::
 
 
 ## Task 4: Create a health probe
@@ -124,7 +125,7 @@ The load balancer monitors the status of your app with a health probe. The healt
     | Unhealthy threshold |       **2**       |
 3.  Click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-healthprobe-ac729f47.png" alt-text="Show health probe created in load balancer":::
+    :::image type="content" source="../media/create-healthprobe-ac729f47.png" alt-text="Show health probe created in load balancer":::
 
 
 ## Task 5: Create a load balancer rule
@@ -149,7 +150,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
     |      Floating IP       |       **Disabled**       |
 3.  Click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-loadbalancerrule-f1760138.png" alt-text="Show load balancing rule created in load balancer":::
+    :::image type="content" source="../media/create-loadbalancerrule-f1760138.png" alt-text="Show load balancing rule created in load balancer":::
 
 
 ## Task 6: Create backend servers
@@ -178,7 +179,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 5.  Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 6.  On the **myBackendPool** page, click **Save**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vms-backend-pool-fc955e23.png" alt-text="Show VMs added to backend pool in load balancer":::
+    :::image type="content" source="../media/add-vms-backend-pool-fc955e23.png" alt-text="Show VMs added to backend pool in load balancer":::
 
 
 ## Task 8: Install IIS on the VMs
@@ -249,14 +250,14 @@ In this section, you will create a test VM, and then test the load balancer.
     
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/load-balancer-web-test-2-ca6d40e1.png" alt-text="Browser window showing Hello World response from VM3":::
+    :::image type="content" source="../media/load-balancer-web-test-2-ca6d40e1.png" alt-text="Browser window showing Hello World response from VM3":::
 
 
 ## Task 10: Create a Log Analytics Workspace
 
 1.  On the Azure portal home page, click **All services**, then in the search box at the top of the page type **Log Analytics**, and select **Log Analytics workspaces** from the filtered list.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/log-analytics-workspace-1-eb5ae955.png" alt-text="Accessing Log Analytics workspaces from the Azure portal home page":::
+    :::image type="content" source="../media/log-analytics-workspace-1-eb5ae955.png" alt-text="Accessing Log Analytics workspaces from the Azure portal home page":::
 
 
 2.  Click **Create**.
@@ -270,14 +271,14 @@ In this section, you will create a test VM, and then test the load balancer.
     |     Region     |       **West US**        |
 4.  Click **Review + Create**, then click **Create**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/log-analytics-workspace-2-39f7db04.png" alt-text="Log Analytics workspaces list":::
+    :::image type="content" source="../media/log-analytics-workspace-2-39f7db04.png" alt-text="Log Analytics workspaces list":::
 
 
 ## Task 11: Use Functional Dependency View
 
 1.  On the Azure portal home page, click **All resources**, then in the resources list, select **myIntLoadBalancer**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-functional-dependency-view-1-4be2e3f6.png" alt-text="All resources list in the Azure portal":::
+    :::image type="content" source="../media/network-insights-functional-dependency-view-1-4be2e3f6.png" alt-text="All resources list in the Azure portal":::
 
 
 2.  Under **Monitoring**, select **Insights**.
@@ -287,13 +288,15 @@ In this section, you will create a test VM, and then test the load balancer.
 6.  Hover over the **LoadBalancerFrontEnd** component in the diagram, then hover over the **myBackendPool** component.
 7.  Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
 8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
- \[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view":::](../media/network-insights-functional-dependency-view-2-e5d175bd.png#lightbox)
+ 
+    :::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view" lightbox="../media/network-insights-functional-dependency-view-2-e5d175bd.png":::
+
 9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
 10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
 11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-basic-metrics-view-2d3d85cd.png" alt-text="Azure Monitor Network Insights - Basic metrics view":::
+    :::image type="content" source="../media/network-insights-basic-metrics-view-2d3d85cd.png" alt-text="Azure Monitor Network Insights - Basic metrics view":::
 
 
 ## Task 12: View detailed metrics
@@ -303,13 +306,15 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  This opens a large full **Metrics** page in the Azure Network Insights platform. The first tab you land on is the **Overview** tab, which shows the availability status of the load balancer and overall Data Throughput and Frontend and Backend Availability for each of the Frontend IPs attached to your Load Balancer. These metrics indicate whether the Frontend IP is responsive and the compute instances in your Backend Pool are individually responsive to inbound connections. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-2-1447de22.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Overview tab":::
     
 3.  Click the **Frontend & Backend Availability** tab and scroll down the page to see the Health Probe Status charts. If you see **values that are lower than 100** for these items, it indicates an outage of some kind on those resources. 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-5-893ae89d.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted":::](../media/network-insights-detailed-metrics-5-893ae89d.png#lightbox)
+    
+    :::image type="content" source="../media/network-insights-detailed-metrics-5-893ae89d.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted" lightbox="../media/network-insights-detailed-metrics-5-893ae89d.png":::
+
 4.  Click the **Data Throughput** tab and scroll down the page to see the other data throughput charts.
 5.  Hover over some of the data points in the charts, and you will see that the values change to show the exact value at that point in time. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-3-9e9d0595.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab":::
     
 6.  Click the **Flow Distribution** tab and scroll down the page to see the charts under the **VM Flow Creation and Network Traffic** section.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/network-insights-detailed-metrics-4-25822780.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts":::](../media/network-insights-detailed-metrics-4-25822780.png#lightbox)
+    :::image type="content" source="../media/network-insights-detailed-metrics-4-25822780.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - VM Flow Creation and Network Traffic charts" lightbox="../media/network-insights-detailed-metrics-4-25822780.png":::
 
 ## Task 13: View resource health
 
@@ -318,13 +323,13 @@ In this section, you will create a test VM, and then test the load balancer.
 3.  On the **Service Health>Service issues** page, in the left-hand menu click **Resource Health**.
 4.  On the **Service Health>Resource health** page, in the **Resource type** drop-down list, scroll down the list and select **Load balancer**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/resource-health-1-1f3265fd.png" alt-text="Resource health page for loadbalancer.":::
+    :::image type="content" source="../media/resource-health-1-1f3265fd.png" alt-text="Resource health page for loadbalancer.":::
 
 
 5.  Then select the name of your load balancer from the list.
 6.  The **Resource health** page will identify any major availability issues with your load balancer resource. If there are any events under the **Health History** section, you can expand the health event to see more detail about the event. You can even save the detail about the event as a PDF file for later review and for reporting.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::](../media/resource-health-2-27a75d1f.png#lightbox)
+    [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::](../media/resource-health-2-27a75d1f.png#lightbox)
 
 ## Task 14: Configure diagnostic settings
 
@@ -332,19 +337,20 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  On the **IntLB-RG** page, click the name of the **myIntLoadBalancer** load balancer resource in the list of resources.
 3.  Under **Monitoring**, select **Diagnostic settings**, then click **Add diagnostic setting**.
 
-\[!div class="mx-imgBorder"\] [:::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png" alt-text="Add diagnostic setting.":::](../media/diagnostic-settings-1-0e7abdc7.png#lightbox)
+    :::image type="content" source="../media/diagnostic-settings-1-0e7abdc7.png" alt-text="Add diagnostic setting." lightbox="../media/diagnostic-settings-1-0e7abdc7.png":::
 
 4.  On the **Diagnostic setting** page, in the name box, type **myLBDiagnostics**.
 5.  Select the **AllMetrics** checkbox, then select the **Send to Log Analytics workspace** checkbox.
 6.  Select your subscription from the list, then select **myLAworkspace (westus)** from the workspace drop-down list.
 7.  Click **Save**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/diagnostic-settings-2-767305bb.png" alt-text="Diagnostic setting page for load balancer":::
+:::image type="content" source="../media/diagnostic-settings-2-767305bb.png" alt-text="Diagnostic setting page for load balancer":::
 
 
 ## Task 15: Clean up resources
 
-\[!NOTE\] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
@@ -354,4 +360,5 @@ In this section, you will create a test VM, and then test the load balancer.
     
     ```
 
-\[!NOTE\] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE]
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
