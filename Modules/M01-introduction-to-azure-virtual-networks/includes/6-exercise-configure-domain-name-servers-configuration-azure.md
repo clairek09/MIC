@@ -838,6 +838,6 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 15. On TestVM1, open a command prompt and enter the command ipconfig /all.
 16. Verify that the IP address is the same as the one you noted in the DNS zone.
 17. Enter the command ping TestVM2.contoso.com.
-18. Verify that you receive four replies from TestVM2.
+18. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
 
 Congratulations! You have created a private DNS Zone, added a name resolution and auto-registration link, and tested name resolution in your configuration.
