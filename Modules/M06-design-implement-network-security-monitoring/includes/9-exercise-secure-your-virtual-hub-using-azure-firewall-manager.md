@@ -220,7 +220,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 4.  In **Resource group**, select **fw-manager-rg**.
 5.  Under **Policy details**, for the **Name**, enter **Policy-01**.
 6.  In **Region** select your region.
-7.  Click **Next : DNS Settings**.
+7.  In **Policy tier**, select **Standard**. Click **Next : DNS Settings**.
 8.  Click **Next : TLS Inspection (preview)**.
 9.  Click **Next : Rules**.
 10. On the **Rules** tab, click **Add a rule collection**.
