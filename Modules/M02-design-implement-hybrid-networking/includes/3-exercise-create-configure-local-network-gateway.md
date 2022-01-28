@@ -31,7 +31,7 @@ In this exercise, you will:
     ```
     
     ```powershell
-    New-AzResourceGroup -Name $RGName -Location West US
+    New-AzResourceGroup -Name $RGName -Location "eastus"
     ```
     
     ```powershell
