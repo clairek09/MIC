@@ -288,14 +288,14 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 3.  Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4.  Select **OK**.
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
-6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace \<storage-account-key\> , \<storage-account-name\> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
+6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace \<storage-account-key\> , \<storage-account-name\> with contosostoragewestxx and marketing.
     
     ```azurecli
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
     
        $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
     
-       New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share" -Credential $credential
+       New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\marketing" -Credential $credential
     
     ```
     
@@ -311,7 +311,7 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 4.  Close the remote desktop session to the ContosoWestPublic VM.
 5.  From your computer, browse to the Azure portal.
 6.  Enter the name of the storage account you created in the **Search resources, services, and docs** box. When the name of your storage account appears in the search results, select it.
-7.  Select **File shares** then select my-file-share.
+7.  Select **File shares** then select marketing.
 8.  You receive the error shown in the following screenshot:
 
 
