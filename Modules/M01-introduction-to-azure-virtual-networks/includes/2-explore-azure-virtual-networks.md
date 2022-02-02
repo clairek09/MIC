@@ -82,7 +82,7 @@ All Azure resources are created in an Azure region and subscription. A resource 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
 
-:::image type="content" source="../media/microsoft-global-wan-b9362e87.png" alt-text="World map showing Azure global network.":::
+:::image type="content" source="../media/microsoft-global-wan-b9362e87.png" alt-text="Screen capture of a World map showing Azure global network.":::
 
 
 ### Azure Availability Zones
