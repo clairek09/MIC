@@ -15,7 +15,7 @@ In this exercise, you will:
 ## Task 1: Create a private DNS Zone
 
 1.  Go to [Azure portal](https://portal.azure.com/).
-2.  On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.
+2.  On the Azure home page, in the search bar, enter dns, and then select **Private DNS zones**.
 
     :::image type="content" source="../media/create-private-dns-zone-48970f32.png" alt-text="Azure portal home page with dns search.":::
     
@@ -255,7 +255,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Create TestVM1
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
 
 2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
@@ -530,7 +530,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Create TestVM2
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
 
 2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
