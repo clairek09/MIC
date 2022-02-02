@@ -108,7 +108,7 @@ Before you can create a VNet, you must create a resource group. A resource group
 
 ### Create a Virtual Network by using the portal
 
-Log in to the Azure portal, and then click **Create a resource**:
+Log in to the Azure portal, and then select **Create a resource**:
 
 :::image type="content" source="../media/create-resource-db103aae.png" alt-text="Azure portal with Create a resource highlighted.":::
 
@@ -226,4 +226,4 @@ In the **Review + create** tab, you can define tags, which can help you to organ
 :::image type="content" source="../media/review-create-vnet-511dedf4.png" alt-text="Create virtual network - review tab.":::
 
 
-Click **Create** to create your virtual network.
+Select **Create** to create your virtual network.
