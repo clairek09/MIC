@@ -6,7 +6,6 @@ In this exercise, you will create an ExpressRoute circuit using the Azure portal
 :::image type="content" source="../media/environment-diagram-5c93199a.png" alt-text="Diagram ExpressRoute circuit layout for exercise":::
 
 
-To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 In this exercise, you will:
 
