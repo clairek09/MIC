@@ -69,120 +69,25 @@ In this task, you will create a single virtual network with two subnets.
 
 In this task, you will create the workload virtual machine and place it in the Workload-SN subnet created previously.
 
-1.  On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual machine** and select **Virtual machine** when it appears.
-2.  On the **Virtual machine** page, click **Create**.
-3.  On the **Basics** tab, create a new VM using the information in the table below.
-    
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Subscription
-      :::column-end:::
-      :::column:::
-        Select your subscription
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Resource group
-      :::column-end:::
-      :::column:::
-        **Test-FW-RG**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Virtual machine name
-      :::column-end:::
-      :::column:::
-        **Srv-Work**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Region
-      :::column-end:::
-      :::column:::
-        Your region
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Availability options
-      :::column-end:::
-      :::column:::
-        **No infrastructure redundancy required**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Image
-      :::column-end:::
-      :::column:::
-        **Windows Server 2022 Datacenter - Gen 1**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Size
-      :::column-end:::
-      :::column:::
-        **Standard_D2s_v3** - 2vcpus, 8GiB memory
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Username
-      :::column-end:::
-      :::column:::
-        **MyAdmin**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Password
-      :::column-end:::
-      :::column:::
-        **TestPa$$w0rd!**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Confirm password
-      :::column-end:::
-      :::column:::
-        **TestPa$$w0rd!**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Public inbound ports
-      :::column-end:::
-      :::column:::
-        Select **None**
-      :::column-end:::
-    :::row-end:::
-    
-    
-    :::image type="content" source="../media/create-vm-azure-firewall-test-basics-8656ed61.png" alt-text="Create a virtual machine - Basics tab":::
-    
-4.  Click **Next : Disks**.
-5.  Click **Next : Networking**.
-6.  Ensure that **Test-FW-VN** is selected for the virtual network and the subnet is **Workload-SN**.
-7.  For **Public IP**, select **None**.
-8.  Click **Next : Management**.
-9.  Under **Monitoring**, set **Boot diagnostics** to **Disable**.
-10. Click **Review + create**.
-11. Click **Create**.
-12. When deployment of the VM completes, click **Go to resource**.
-13. On the **Overview** page of **Srv-Work**, on the right of the page under **Networking**, take a note of the **Private IP address** for this VM (e.g., **10.0.2.4**).
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
+
+3. Deploy the following ARM templates to create the VM needed for this exercise:
+
+   ```powershell
+   $RGName = "Test-FW-RG"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile firewall.json -TemplateParameterFile firewall.parameters.json
+   ```
+  
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+
+5. Verify that the virtual machine has been created.
+
+6. When deployment of the VM completes, select **Go to resource**.
+
+7. On the **Overview** page of **Srv-Work**, on the right of the page under **Networking**, take a note of the **Private IP address** for this VM (e.g., **10.0.2.4**).
 
 ## Task 4: Deploy the firewall and firewall policy
 
@@ -218,7 +123,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
     :::row-end:::
     :::row:::
       :::column:::
-        Virtual machine name
+        Firewall name
       :::column-end:::
       :::column:::
         **Test-FW01**
@@ -796,7 +701,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 1.  Open **Remote Desktop Connection** on your PC.
 2.  In the **Computer** box, enter the firewall's public IP address (e.g., **20.90.136.51**) followed by **:3389** (e.g., **20.90.136.51:3389**).
-3.  In the **Username** box, enter **MyAdmin**.
+3.  In the **Username** box, enter **TestUser**.
 4.  Click **Connect**.
 
     :::image type="content" source="../media/remote-desktop-connection-1-f59fb40f.png" alt-text="RDP connection to firewall's public IP address":::
