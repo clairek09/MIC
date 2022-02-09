@@ -17,7 +17,7 @@ The benefits of using virtual network peering, whether local or global, include:
  -  The ability to peer a virtual network created through Resource Manager to one created through the classic deployment model.
  -  No downtime to resources in either virtual network is required when creating the peering, or after the peering is created.
 
-The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
+The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US East region.
 
 :::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate.":::
 
