@@ -8,13 +8,17 @@ In this unit, you will learn about requirements for IP addressing when integrati
 
 ## Use dynamic and static public IP addresses
 
-In Azure Resource Manager, a [public IP](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-public-ip-address) address is a resource that has its own properties. Some of the resources you can associate a public IP address resource with:
+In Azure Resource Manager, a [public IP](https://docs.microsoft.com/azure/virtual-network/virtual-network-public-ip-address) address is a resource that has its own properties. Some of the resources you can associate a public IP address resource with:
 
- -  Virtual machine network interfaces
- -  Internet-facing load balancers
- -  VPN gateways
- -  Application gateways
+ -  Virtual machine network interfaces 
+ -  Virtual machine scale sets
+ -  Public Load Balancers
+ -  Virtual Network Gateways (VPN/ER)
+ -  NAT gateways
+ -  Application Gateways
  -  Azure Firewall
+ -  Bastion Host
+ -  Route Server 
 
 Public IP addresses are created with an IPv4 or IPv6 address, which can be either static or dynamic.
 
