@@ -197,7 +197,7 @@ Here is an example where you have a virtual network that includes three subnets.
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
-:::image type="content" source="../media/create-routing-table-328ecc82.png" alt-text="Screenshot of the Create route table page. BGP route propagation is Enabled.":::
+:::image type="content" source="../media/create-routing-table.png" alt-text="Screenshot of the Create route table blade in the Azure portal.":::
 
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
